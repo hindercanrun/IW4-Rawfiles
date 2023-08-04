@@ -1,24 +1,26 @@
-/********************************************
-*          dumped by: aerosoul94            *
-*********************************************/
-
 {
-	menuDef
+	menuDef 
 	{
-		name "default_menu"
-		rect 0 0 0 0 0 0
+		name default
+		rect 0 0 640 480 0 0
 		forecolor 1 1 1 1
-		itemDef
+		focuscolor 1 1 1 1
+		fullscreen 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+
+		itemDef 
 		{
-			name "default"
-			rect 0 0 0 0 0 0
+			rect -85 0 170 20 2 3
 			visible 1
-			forecolor 0.9 0.9 0.9 0.9
+			style 1
+			forecolor 1 1 1 1
 			type 1
-			textfont 1
-			textaligny 14
-			textscale 0.4583
-			text "@MENU_MENU_COULDNT_BE_FOUND"
+			textfont 9
+			textalign 9
+			textscale 0.375
+			text "@MENU_COULDNT_BE_FOUND"
 		}
 	}
 }

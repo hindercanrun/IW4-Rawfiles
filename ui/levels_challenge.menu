@@ -101,7 +101,7 @@
 			forecolor 1 1 1 0.5
 			background "mw2_main_cloud_overlay"
 			textscale 0.55
-			exp rect x 0 - 107 ) - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
+			exp rect x ( ( 0 - 107 ) - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
 		}
 		itemDef
 		{
@@ -112,7 +112,7 @@
 			forecolor 1 1 1 0.5
 			background "mw2_main_cloud_overlay"
 			textscale 0.55
-			exp rect x - 107 + 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
+			exp rect x ( ( - 107 + 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
 		}
 		itemDef
 		{
@@ -123,7 +123,7 @@
 			forecolor 1 1 1 0
 			background "mockup_bg_glow"
 			textscale 0.55
-			exp forecolor a ( sin( milliseconds( ) / 1500 ) + 1 ) * 0.25 ) + 0.25 )
+			exp forecolor a ( ( ( sin( milliseconds( ) / 1500 ) + 1 ) * 0.25 ) + 0.25 )
 		}
 		itemDef
 		{
@@ -134,7 +134,7 @@
 			forecolor 1 1 1 0
 			background "mockup_bg_glow"
 			textscale 0.55
-			exp forecolor a ( sin( milliseconds( ) / 480 ) + 1 ) * 0.25 ) + 0.25 )
+			exp forecolor a ( ( ( sin( milliseconds( ) / 480 ) + 1 ) * 0.25 ) + 0.25 )
 		}
 		itemDef
 		{

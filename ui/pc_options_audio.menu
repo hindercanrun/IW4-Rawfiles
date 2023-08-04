@@ -1,7 +1,3 @@
-/*********************************************************
-***************** Dumped by aerosoul94 *******************
-*********************************************************/
-
 {
 	menuDef
 	{
@@ -10,39 +6,50 @@
 		forecolor 1 1 1 1
 		focuscolor 1 1 1 1
 		blurWorld 7
+
 		onOpen
 		{
 			setLocalVarBool "ui_hideBack" ( 1 );
+
 			if ( !localvarint( "ui_showAudioApply" ) )
 			{
 				exec "setfromdvar ui_snd_khz		snd_khz";
 				exec "setfromdvar ui_snd_enableEq	snd_enableEq";
 				exec "setfromdvar ui_outputConfig	snd_outputConfiguration";
 			}
+
 			execnow "profile_menuDvarsSetup; resetViewport";
 		}
+
 		onClose
 		{
 			setLocalVarBool "ui_hideBack" ( 0 );
 		}
+
 		onEsc
 		{
 			close self;
+
 			if ( !( menuisopen( "pc_options_advanced_video" ) || menuisopen( "pc_options_video" ) || menuisopen( "pc_options_Audio" ) || menuisopen( "pc_options_controls" ) || menuisopen( "pc_options_voice" ) ) && localvarbool( "ui_showPicApply" ) && !localvarbool( "ui_showApply" ) && !localvarbool( "ui_showAudioApply" ) )
 			{
 				execnow "setfromdvar r_picmip ui_r_picmip";
 				execnow "setfromdvar r_picmip_bump ui_r_picmip_bump";
 				execnow "setfromdvar r_picmip_spec ui_r_picmip_spec";
 				execnow "setfromdvar r_picmip_manual ui_r_picmip_manual";
+
 				exec "wait; wait; r_applyPicmip";
+
 				setLocalVarBool "ui_showPicApply" ( 0 );
 			}
+
 			if ( !( menuisopen( "pc_options_advanced_video" ) || menuisopen( "pc_options_video" ) || menuisopen( "pc_options_Audio" ) || menuisopen( "pc_options_controls" ) || menuisopen( "pc_options_voice" ) ) && localvarbool( "ui_showApply" ) || localvarbool( "ui_showAudioApply" ) )
 			{
 				open "all_restart_popmenu";
 			}
+
 			execnow "profile_menuDvarsFinish; resetViewport";
 		}
+
 		itemDef
 		{
 			rect -427 -240 854 480 2 2
@@ -54,6 +61,7 @@
 			textscale 0.55
 			visible when ( ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) && ( dvarstring( "gameMode" ) == "mp" || ( dvarstring( "gameMode" ) == "so" && !dvarbool( "solo_play" ) ) ) )
 		}
+
 		itemDef
 		{
 			rect 0 0 640 480 4 4
@@ -65,6 +73,7 @@
 			textscale 0.55
 			visible when ( ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect 0 0 1708 480 0 0
@@ -74,9 +83,10 @@
 			forecolor 1 1 1 0.5
 			background "mw2_main_cloud_overlay"
 			textscale 0.55
-			exp rect x ( ( 0 - 107 ) - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
-			visible when ( ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
+			exp rect x ( ( 0 - 107 ) - ( ( float( milliseconds() % 60000 ) / 60000 ) * ( 854 ) ) )
+			visible when ( !( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect 0 0 -1708 -480 0 0
@@ -86,9 +96,10 @@
 			forecolor 1 1 1 0.5
 			background "mw2_main_cloud_overlay"
 			textscale 0.55
-			exp rect x ( ( - 107 + 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
-			visible when ( ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
+			exp rect x ( ( - 107 + 854 ) + ( ( float( milliseconds() % 50000 ) / 50000 ) * ( 854 ) ) )
+			visible when ( !( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect -427 -240 854 480 2 2
@@ -100,6 +111,7 @@
 			textscale 0.55
 			visible when ( dvarstring( "gameMode" ) == "sp" && ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect -427 -240 854 480 2 2
@@ -111,6 +123,7 @@
 			textscale 0.55
 			visible when ( dvarstring( "gameMode" ) == "so" && ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect -427 -240 854 480 2 2
@@ -122,6 +135,7 @@
 			textscale 0.55
 			visible when ( dvarstring( "gameMode" ) == "mp" && ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect 0 0 640 480 4 4
@@ -131,9 +145,10 @@
 			forecolor 1 1 1 0
 			background "mockup_bg_glow"
 			textscale 0.55
-			exp forecolor a ( ( ( sin( milliseconds( ) / 1500 ) + 1 ) * 0.25 ) + 0.25 )
-			visible when ( ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
+			exp forecolor a ( ( ( sin( milliseconds() / 1500 ) + 1 ) * 0.25 ) + 0.25 )
+			visible when ( !( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect 0 0 640 480 4 4
@@ -143,9 +158,10 @@
 			forecolor 1 1 1 0
 			background "mockup_bg_glow"
 			textscale 0.55
-			exp forecolor a ( ( ( sin( milliseconds( ) / 480 ) + 1 ) * 0.25 ) + 0.25 )
-			visible when ( ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
+			exp forecolor a ( ( ( sin( milliseconds() / 480 ) + 1 ) * 0.25 ) + 0.25 )
+			visible when ( !( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect -64 0 280 480 1 0
@@ -157,6 +173,7 @@
 			textscale 0.55
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
 			rect 0 0 640 480 4 4
@@ -166,8 +183,9 @@
 			forecolor 0.25 0.25 0.25 0.75
 			background "gradient_fadein"
 			textscale 0.55
-			visible when ( ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
+			visible when ( !( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect 0 0 640 480 4 4
@@ -177,8 +195,9 @@
 			forecolor 0.25 0.25 0.25 0.75
 			background "gradient_fadein"
 			textscale 0.55
-			visible when ( ! ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
+			visible when ( !( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) ) )
 		}
+
 		itemDef
 		{
 			rect 0 0 272 28 1 1
@@ -191,6 +210,7 @@
 			textscale 0.5
 			text "@MENU_OPTIONS_CAPS"
 		}
+
 		itemDef
 		{
 			rect -64 28 336 20 1 1
@@ -208,9 +228,11 @@
 			text "@MENU_VIDEO"
 			visible when ( 1 )
 			disabled when ( 0 )
+
 			action
 			{
 				play "mouse_click";
+
 				close "pc_options_video";
 				close "pc_options_voice";
 				close "pc_options_adanced_video";
@@ -240,26 +262,36 @@
 				close "pc_options_audio";
 				close "pc_options_video";
 				close "main_controls";
+
 				open "pc_options_video";
 			}
+
 			onFocus
 			{
 				play "mouse_over";
+
 				if ( dvarstring( "gameMode" ) != "mp" )
 				{
 					setItemColor "mw2_button" backcolor 0 0 0 0;
 				}
+
 				setItemColor self backcolor 0 0 0 1;
+
 				setLocalVarBool "ui_menuAButton" ( 1 );
-				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy() );
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 "0.0";
+
 				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+
 				setLocalVarBool "ui_menuAButton" ( 0 );
 			}
 		}
+
 		itemDef
 		{
 			rect -64 48 336 20 1 1
@@ -276,9 +308,11 @@
 			textscale 0.375
 			text "@MENU_AUDIO"
 			visible when ( 1 )
+
 			action
 			{
 				play "mouse_click";
+
 				close "pc_options_video";
 				close "pc_options_voice";
 				close "pc_options_adanced_video";
@@ -308,26 +342,36 @@
 				close "pc_options_audio";
 				close "pc_options_video";
 				close "main_controls";
+
 				open "pc_options_audio";
 			}
+
 			onFocus
 			{
 				play "mouse_over";
+
 				if ( dvarstring( "gameMode" ) != "mp" )
 				{
 					setItemColor "mw2_button" backcolor 0 0 0 0;
 				}
+
 				setItemColor self backcolor 0 0 0 1;
+
 				setLocalVarBool "ui_menuAButton" ( 1 );
-				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy() );
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 "0.0";
+
 				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+
 				setLocalVarBool "ui_menuAButton" ( 0 );
 			}
 		}
+
 		itemDef
 		{
 			rect -64 68 336 20 1 1
@@ -344,9 +388,11 @@
 			textscale 0.375
 			text "@MENU_CONTROLS"
 			visible when ( 1 )
+
 			action
 			{
 				play "mouse_click";
+				
 				close "pc_options_video";
 				close "pc_options_voice";
 				close "pc_options_adanced_video";
@@ -376,26 +422,36 @@
 				close "pc_options_audio";
 				close "pc_options_video";
 				close "main_controls";
+
 				open "pc_options_controls";
 			}
+			
 			onFocus
 			{
 				play "mouse_over";
+
 				if ( dvarstring( "gameMode" ) != "mp" )
 				{
 					setItemColor "mw2_button" backcolor 0 0 0 0;
 				}
+
 				setItemColor self backcolor 0 0 0 1;
+
 				setLocalVarBool "ui_menuAButton" ( 1 );
-				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy() );
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 "0.0";
+				
 				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+
 				setLocalVarBool "ui_menuAButton" ( 0 );
 			}
 		}
+
 		itemDef
 		{
 			rect -64 88 336 20 1 1
@@ -413,9 +469,11 @@
 			text "@MENU_VOICE"
 			visible when ( 1 )
 			disabled when ( dvarstring( "gameMode" ) == "sp" || dvarstring( "gameMode" ) == "so" )
+
 			action
 			{
 				play "mouse_click";
+
 				close "pc_options_video";
 				close "pc_options_voice";
 				close "pc_options_adanced_video";
@@ -445,26 +503,36 @@
 				close "pc_options_audio";
 				close "pc_options_video";
 				close "main_controls";
+
 				open "pc_options_voice";
 			}
+
 			onFocus
 			{
 				play "mouse_over";
+
 				if ( dvarstring( "gameMode" ) != "mp" )
 				{
 					setItemColor "mw2_button" backcolor 0 0 0 0;
 				}
+
 				setItemColor self backcolor 0 0 0 1;
+
 				setLocalVarBool "ui_menuAButton" ( 1 );
-				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy() );
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 "0.0";
+
 				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+
 				setLocalVarBool "ui_menuAButton" ( 0 );
 			}
 		}
+
 		itemDef
 		{
 			rect 0 108 216 1 1 1
@@ -476,6 +544,7 @@
 			textscale 0.55
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
 			rect -64 108 336 20 1 1
@@ -492,30 +561,41 @@
 			textscale 0.375
 			text "@MENU_RESET_SYSTEM_DEFAULTS"
 			visible when ( 1 )
-			disabled when ( ( ( dvarstring( "gameMode" ) == "so" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby( ) ) ) || ( dvarstring( "gameMode" ) == "mp" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby( ) ) ) ) )
+			disabled when ( ( ( dvarstring( "gameMode" ) == "so" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby() ) ) || ( dvarstring( "gameMode" ) == "mp" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby() ) ) ) )
+
 			action
 			{
 				play "mouse_click";
+
 				open "options_graphics_defaults";
 			}
+			
 			onFocus
 			{
 				play "mouse_over";
+
 				if ( dvarstring( "gameMode" ) != "mp" )
 				{
 					setItemColor "mw2_button" backcolor 0 0 0 0;
 				}
+
 				setItemColor self backcolor 0 0 0 1;
+
 				setLocalVarBool "ui_menuAButton" ( 1 );
-				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy() );
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 "0.0";
+
 				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+
 				setLocalVarBool "ui_menuAButton" ( 0 );
 			}
 		}
+
 		itemDef
 		{
 			rect -64 -20 336 20 1 3
@@ -532,11 +612,13 @@
 			textscale 0.375
 			text "@PLATFORM_BACK_CAPS"
 			visible when ( 1 )
+
 			action
 			{
 				play "mouse_click";
-				play "mouse_click";
+
 				"escape" self;
+
 				if ( !( menuisopen( "pc_options_advanced_video" ) || menuisopen( "pc_options_video" ) || menuisopen( "pc_options_Audio" ) || menuisopen( "pc_options_controls" ) || menuisopen( "pc_options_voice" ) ) )
 				{
 					if ( localvarbool( "ui_showPicApply" ) && !localvarbool( "ui_showApply" ) )
@@ -545,32 +627,43 @@
 						execnow "setfromdvar r_picmip_bump ui_r_picmip_bump";
 						execnow "setfromdvar r_picmip_spec ui_r_picmip_spec";
 						execnow "setfromdvar r_picmip_manual ui_r_picmip_manual";
+
 						exec "wait; wait; r_applyPicmip";
+
 						setLocalVarBool "ui_showPicApply" ( 0 );
 					}
+
 					if ( localvarbool( "ui_showApply" ) || localvarbool( "ui_showAudioApply" ) )
 					{
 						open "all_restart_popmenu";
 					}
 				}
 			}
+
 			onFocus
 			{
 				play "mouse_over";
+
 				if ( dvarstring( "gameMode" ) != "mp" )
 				{
 					setItemColor "mw2_button" backcolor 0 0 0 0;
 				}
+
 				setItemColor self backcolor 0 0 0 1;
+
 				setLocalVarBool "ui_menuAButton" ( 1 );
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 "0.0";
+
 				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+
 				setLocalVarBool "ui_menuAButton" ( 0 );
 			}
 		}
+
 		itemDef
 		{
 			rect 232 88 344 20 1 1
@@ -586,19 +679,23 @@
 			text "@MENU_DISABLED"
 			exp forecolor a ( !int( getprofiledata( "subtitles" ) ) )
 			visible when ( !dvarbool( "ui_multiplayer" ) )
+		
 			action
 			{
 				play "mouse_click";
 			}
+	
 			onFocus
 			{
 				setItemColor self backcolor 0 0 0 1 play "mouse_over";
 			}
+	
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 0;
 			}
 		}
+
 		itemDef
 		{
 			rect 232 88 344 20 1 1
@@ -614,19 +711,23 @@
 			text "@MENU_ENABLED"
 			exp forecolor a ( int( getprofiledata( "subtitles" ) ) )
 			visible when ( !dvarbool( "ui_multiplayer" ) )
+
 			action
 			{
 				play "mouse_click";
 			}
+
 			onFocus
 			{
 				setItemColor self backcolor 0 0 0 1 play "mouse_over";
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 0;
 			}
 		}
+
 		itemDef
 		{
 			rect 232 88 344 20 1 1
@@ -640,20 +741,25 @@
 			textalignx 180
 			textscale 0.375
 			visible when ( !dvarbool( "ui_multiplayer" ) )
+
 			action
 			{
 				play "mouse_click";
+
 				exec "profile_toggleSubtitles";
 			}
+
 			onFocus
 			{
 				setItemColor self backcolor 0 0 0 1 play "mouse_over";
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 0;
 			}
 		}
+
 		itemDef
 		{
 			rect 232 0 344 28 1 1
@@ -665,6 +771,7 @@
 			textscale 0.5
 			text "@MENU_SOUND"
 		}
+
 		itemDef
 		{
 			rect 412 31 344 20 1 1
@@ -674,15 +781,18 @@
 			textscale 0.55
 			dvarFloat "(null)" 0.8 0 0.8
 			visible when ( 1 )
+
 			action
 			{
-				execnow "profile_menuDvarsFinish" ;;
+				execnow "profile_menuDvarsFinish";
 			}
+
 			onFocus
 			{
 				play "mouse_over";
 			}
 		}
+
 		itemDef
 		{
 			rect 232 28 344 20 1 1
@@ -696,6 +806,7 @@
 			text "@MENU_MASTER_VOLUME"
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
 			rect 232 48 344 20 1 1
@@ -712,21 +823,26 @@
 			dvar "ui_outputConfig"
 			dvarStrList { "@MENU_WINDOWS_DEFAULT" "Windows default" "@MENU_MONO" "Mono" "@MENU_STEREO" "Stereo" "@MENU_FOUR_SPEAKERS" "4 speakers" "@MENU_FIVE_ONE_SPEAKERS" "5.1 speakers" }
 			visible when ( 1 )
-			disabled when ( ( ( dvarstring( "gameMode" ) == "so" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby( ) ) ) || ( dvarstring( "gameMode" ) == "mp" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby( ) ) ) ) )
+			disabled when ( ( ( dvarstring( "gameMode" ) == "so" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby() ) ) || ( dvarstring( "gameMode" ) == "mp" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby() ) ) ) )
+
 			action
 			{
 				play "mouse_click";
+
 				setLocalVarBool "ui_showAudioApply" ( 1 );
 			}
+
 			onFocus
 			{
 				setItemColor self backcolor 0 0 0 1 play "mouse_over";
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 0 0 0 0;
 			}
 		}
+
 		itemDef
 		{
 			rect 232 48 344 20 1 1
@@ -740,8 +856,9 @@
 			textscale 0.375
 			text "@MENU_SPEAKER_CONFIG"
 			visible when ( 1 )
-			disabled when ( ( ( dvarstring( "gameMode" ) == "so" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby( ) ) ) || ( dvarstring( "gameMode" ) == "mp" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby( ) ) ) ) )
+			disabled when ( ( ( dvarstring( "gameMode" ) == "so" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby() ) ) || ( dvarstring( "gameMode" ) == "mp" && ( dvarbool( "cl_ingame" ) || dvarbool( "sv_running" ) || inlobby() ) ) ) )
 		}
+
 		itemDef
 		{
 			rect 232 88 344 20 1 1

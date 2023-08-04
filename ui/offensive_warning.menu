@@ -1,7 +1,3 @@
-/*********************************************************
-***************** Dumped by aerosoul94 *******************
-*********************************************************/
-
 {
 	menuDef
 	{
@@ -9,6 +5,7 @@
 		rect -150 -164 300 164 2 2
 		popup
 		legacySplitScreenScale
+		visible 1
 		style 1
 		forecolor 1 1 1 1
 		backcolor 1 1 1 1
@@ -17,27 +14,22 @@
 		fadeCycle 1
 		fadeClamp 1
 		fadeAmount 0.1
-		execKey 2
-		{
-		}
-		execKeyInt 14
-		{
-		}
+
 		onOpen
 		{
 			setLocalVarInt "ui_centerPopup" ( 1 );
+
 			setfocus "No";
 		}
+
 		onClose
 		{
 			setLocalVarInt "ui_centerPopup" ( 0 );
 		}
-		onEsc
-		{
-		}
+
 		itemDef
 		{
-			rect -1004 -644 1708 960 2 2
+			rect -854 -480 1708 960 0 0
 			decoration
 			visible 1
 			style 1
@@ -46,9 +38,10 @@
 			background "white"
 			textscale 0.55
 		}
+
 		itemDef
 		{
-			rect -1004 -644 1708 960 2 2
+			rect -854 -480 1708 960 0 0
 			decoration
 			visible 1
 			style 1
@@ -57,9 +50,10 @@
 			background "xpbar_stencilbase"
 			textscale 0.55
 		}
+
 		itemDef
 		{
-			rect -150 -164 300 164 2 2
+			rect 0 0 300 164 0 0
 			decoration
 			visible 1
 			style 1
@@ -68,31 +62,34 @@
 			background "white"
 			textscale 0.55
 		}
+
 		itemDef
 		{
-			rect -150 -164 1708 480 2 2
+			rect 0 0 1708 480 0 0
 			decoration
 			visible 1
 			style 3
 			forecolor 1 1 1 0.75
 			background "mw2_popup_bg_fogstencil"
 			textscale 0.55
-			exp rect x ( 0 - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
+			exp rect x ( 0 - ( ( float( milliseconds() % 60000 ) / 60000 ) * ( 854 ) ) )
 		}
+
 		itemDef
 		{
-			rect -150 -164 -1708 -480 2 2
+			rect 0 0 -1708 -480 0 0
 			decoration
 			visible 1
 			style 3
 			forecolor 0.85 0.85 0.85 1
 			background "mw2_popup_bg_fogscroll"
 			textscale 0.55
-			exp rect x ( 0 - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
+			exp rect x ( 0 - ( ( float( milliseconds() % 60000 ) / 60000 ) * ( 854 ) ) )
 		}
+
 		itemDef
 		{
-			rect -150 -164 300 0 2 2
+			rect 0 0 300 0 0 0
 			decoration
 			visible 1
 			style 3
@@ -101,31 +98,34 @@
 			textscale 0.55
 			exp rect h ( ( 24 + 7 * 20 ) )
 		}
+
 		itemDef
 		{
-			rect -150 -164 -1708 -480 2 2
+			rect 0 0 -1708 -480 0 0
 			decoration
 			visible 1
 			style 3
 			forecolor 1 1 1 0.75
 			background "mw2_popup_bg_fogstencil"
 			textscale 0.55
-			exp rect x ( ( - 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
+			exp rect x ( ( - 854 ) + ( ( float( milliseconds() % 50000 ) / 50000 ) * ( 854 ) ) )
 		}
+
 		itemDef
 		{
-			rect -150 -164 -1708 -480 2 2
+			rect 0 0 -1708 -480 0 0
 			decoration
 			visible 1
 			style 3
 			forecolor 0.85 0.85 0.85 1
 			background "mw2_popup_bg_fogscroll"
 			textscale 0.55
-			exp rect x ( ( - 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
+			exp rect x ( ( - 854 ) + ( ( float( milliseconds() % 50000 ) / 50000 ) * ( 854 ) ) )
 		}
+
 		itemDef
 		{
-			rect -150 -164 300 0 1 1
+			rect 0 0 300 0 1 1
 			decoration
 			visible 1
 			style 3
@@ -134,9 +134,10 @@
 			textscale 0.55
 			exp rect h ( ( 24 + 7 * 20 ) )
 		}
+
 		itemDef
 		{
-			rect -214 -228 64 64 2 2
+			rect -64 -64 64 64 0 0
 			decoration
 			visible 1
 			style 3
@@ -145,9 +146,10 @@
 			textscale 0.55
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
-			rect -150 -228 300 64 2 2
+			rect 0 -64 300 64 0 0
 			decoration
 			visible 1
 			style 3
@@ -156,9 +158,10 @@
 			textscale 0.55
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
-			rect 150 -228 64 64 2 2
+			rect 300 -64 64 64 0 0
 			decoration
 			visible 1
 			style 3
@@ -167,9 +170,10 @@
 			textscale 0.55
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
-			rect 150 -164 64 0 2 2
+			rect 300 0 64 0 0 0
 			decoration
 			visible 1
 			style 3
@@ -179,9 +183,10 @@
 			exp rect h ( ( 24 + 7 * 20 ) )
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
-			rect 150 -164 64 64 2 2
+			rect 300 0 64 64 0 0
 			decoration
 			visible 1
 			style 3
@@ -191,9 +196,10 @@
 			exp rect y ( ( 0 - 0 ) + ( ( 24 + 7 * 20 ) ) )
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
-			rect -150 -164 300 64 2 2
+			rect 0 0 300 64 0 0
 			decoration
 			visible 1
 			style 3
@@ -203,9 +209,10 @@
 			exp rect y ( ( 0 - 0 ) + ( ( 24 + 7 * 20 ) ) )
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
-			rect -214 -164 64 64 2 2
+			rect -64 0 64 64 0 0
 			decoration
 			visible 1
 			style 3
@@ -215,9 +222,10 @@
 			exp rect y ( ( 0 - 0 ) + ( ( 24 + 7 * 20 ) ) )
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
-			rect -214 -164 64 0 2 2
+			rect -64 0 64 0 0 0
 			decoration
 			visible 1
 			style 3
@@ -227,9 +235,10 @@
 			exp rect h ( ( 24 + 7 * 20 ) )
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
-			rect -150 -164 300 24 2 2
+			rect 0 0 300 24 0 0
 			decoration
 			visible 1
 			style 1
@@ -241,9 +250,10 @@
 			textscale 0.375
 			text "@MENU_SP_OFFENSIVE_TITLE"
 		}
+
 		itemDef
 		{
-			rect -146 -144 292 42 2 2
+			rect 4 20 292 42 0 0
 			decoration
 			autowrapped
 			visible 1
@@ -255,9 +265,10 @@
 			text "@MENU_SP_OFFENSIVE_SKIP_2"
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
-			rect -146 -144 292 42 2 2
+			rect 4 20 292 42 0 0
 			decoration
 			autowrapped
 			visible 1
@@ -270,10 +281,11 @@
 			text "@PLATFORM_OFFENSIVE_NO_PANELTY"
 			visible when ( 1 )
 		}
+
 		itemDef
 		{
 			name "Yes"
-			rect -146 -40 292 20 2 2
+			rect 4 124 292 20 0 0
 			visible 1
 			group "mw2_popup_button"
 			style 1
@@ -286,34 +298,40 @@
 			textalignx -24
 			textscale 0.375
 			text "@MENU_SP_OFFENSIVE_SKIP_YES_ASK_LATER"
+
 			action
 			{
 				play "mouse_click";
-				execnow "profile_SetHasEverPlayed_MainMenu; profile_toggleCanSkipOffensiveMissions 1; updategamerprofile";
+
 				close self;
-				close "main_lockout";
-				open "main_selection";
 			}
+
 			onFocus
 			{
 				play "mouse_over";
+
 				if ( dvarstring( "gameMode" ) != "mp" )
 				{
 					setItemColor "mw2_popup_button" backcolor 0 0 0 0;
 				}
+
 				setItemColor self backcolor 0 0 0 1;
+
 				setLocalVarBool "ui_popupAButton" ( 1 );
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 1 1 1 0;
+
 				setLocalVarBool "ui_popupAButton" ( 0 );
 			}
 		}
+
 		itemDef
 		{
 			name "No"
-			rect -146 -20 292 20 2 2
+			rect 4 144 292 20 0 0
 			visible 1
 			group "mw2_popup_button"
 			style 1
@@ -326,24 +344,34 @@
 			textalignx -24
 			textscale 0.375
 			text "@MENU_SP_OFFENSIVE_SKIP_NO_WONT_GET_OFFENDED"
+
 			action
 			{
 				play "mouse_click";
-				open "offensive_warning_2" close self;
+
+				close self;
+
+				open "offensive_warning_2";
 			}
+
 			onFocus
 			{
 				play "mouse_over";
+
 				if ( dvarstring( "gameMode" ) != "mp" )
 				{
 					setItemColor "mw2_popup_button" backcolor 0 0 0 0;
 				}
+
 				setItemColor self backcolor 0 0 0 1;
+
 				setLocalVarBool "ui_popupAButton" ( 1 );
 			}
+
 			leaveFocus
 			{
 				setItemColor self backcolor 1 1 1 0;
+
 				setLocalVarBool "ui_popupAButton" ( 0 );
 			}
 		}
