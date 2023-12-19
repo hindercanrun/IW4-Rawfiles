@@ -1,0 +1,520 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd_PC.cfg"
+FILENOTES           ""
+
+REFERENCE			PLATFORM_FOLLOWPREVIOUSPLAYER
+LANG_ENGLISH		"^3&&1^7 - Previous player"
+
+REFERENCE			PLATFORM_FOLLOWSTOP
+LANG_ENGLISH		"^3&&1^7 - Stop following"
+
+REFERENCE			PLATFORM_STANCEHINT_JUMP
+LANG_ENGLISH		"Press^3 &&1 ^7to jump"
+
+REFERENCE			PLATFORM_STANCEHINT_STAND
+LANG_ENGLISH		"Press^3 &&1 ^7to stand"
+
+REFERENCE			PLATFORM_STANCEHINT_CROUCH
+LANG_ENGLISH		"Press^3 &&1 ^7to crouch"
+
+REFERENCE			PLATFORM_STANCEHINT_PRONE
+LANG_ENGLISH		"Press^3 &&1 ^7to go prone"
+
+REFERENCE			PLATFORM_SWAPWEAPONS
+LANG_ENGLISH		"Press^3 &&1 ^7to swap for"
+
+REFERENCE			PLATFORM_MANTLE
+LANG_ENGLISH		"Press^3 &&1 ^7to  "
+
+REFERENCE			PLATFORM_HOLD_BREATH
+LANG_ENGLISH		"Hold^3 &&1 ^7to steady"
+
+REFERENCE			PLATFORM_PICKUPNEWWEAPON
+LANG_ENGLISH		"Press^3 &&1 ^7to pick up"
+
+REFERENCE			PLATFORM_THROWBACKGRENADE
+LANG_ENGLISH		"^3&&1 ^7throw back"
+
+REFERENCE			PLATFORM_USEAION30CAL
+LANG_ENGLISH		"Press USE^3 &&1 ^7to commandeer the .30 cal"
+
+REFERENCE			PLATFORM_PRESS_TO_SKIP
+LANG_ENGLISH		"Press^3 [{+activate}] ^7to skip"
+
+REFERENCE			PLATFORM_PRESS_TO_SPAWN
+LANG_ENGLISH		"Press^3 [{+activate}] ^7to spawn"
+
+REFERENCE			PLATFORM_PRESS_TO_RESPAWN
+LANG_ENGLISH		"Press^3 [{+activate}] ^7to respawn"
+
+REFERENCE			PLATFORM_HOLD_TO_USE
+LANG_ENGLISH		"Press^3 &&1 ^7to use"
+
+REFERENCE			PLATFORM_HOLD_TO_DROP
+LANG_ENGLISH		"Press^3 &&1 ^7to drop"
+
+REFERENCE			PLATFORM_HOLD_TO_PLANT_EXPLOSIVES
+LANG_ENGLISH		"Hold^3 &&1 ^7to plant explosives  "
+
+REFERENCE			PLATFORM_HOLD_TO_DEFUSE_EXPLOSIVES
+LANG_ENGLISH		"Hold^3 &&1 ^7to defuse explosives  "
+
+REFERENCE			PLATFORM_EOG_PRESS_ESC
+LANG_ENGLISH		"Press^3 ESC ^7to^2 Create a Class ^7and more"
+
+REFERENCE			PLATFORM_SAVE_AND_QUIT
+LANG_ENGLISH		"Save and Quit"
+
+REFERENCE			PLATFORM_QUIT
+LANG_ENGLISH		"Quit"
+
+REFERENCE			PLATFORM_BACK
+LANG_ENGLISH		"Back"
+
+REFERENCE			PLATFORM_YES
+LANG_ENGLISH		"Yes"
+
+REFERENCE			PLATFORM_NO
+LANG_ENGLISH		"No"
+
+REFERENCE			PLATFORM_RELOAD
+LANG_ENGLISH		"Reload"
+
+REFERENCE			PLATFORM_LOW_AMMO_NO_RELOAD
+LANG_ENGLISH		"Low Ammo"
+
+REFERENCE			PLATFORM_PICK_UP_STOPPING_POWER
+LANG_ENGLISH		"Press^3 &&1 ^7to pick up Stopping Power"
+
+REFERENCE			PLATFORM_PICK_UP_JUGGERNAUT
+LANG_ENGLISH		"Press^3 &&1 ^7to pick up Juggernaut"
+
+REFERENCE			PLATFORM_PICK_UP_DOUBLE_TAP
+LANG_ENGLISH		"Press^3 &&1 ^7to pick up Double Tap"
+
+REFERENCE			PLATFORM_PICK_UP_LAST_STAND
+LANG_ENGLISH		"Press^3 &&1 ^7to pick up Last Stand"
+
+REFERENCE			PLATFORM_PICK_UP_MARTYRDOM
+LANG_ENGLISH		"Press^3 &&1 ^7to pick up Martyrdom"
+
+REFERENCE			PLATFORM_PICK_UP_SLEIGHT_OF_HAND
+LANG_ENGLISH		"Press^3 &&1 ^7to pick up Sleight of Hand"
+
+REFERENCE			PLATFORM_PLAY_ONLINE
+LANG_ENGLISH		"Play Online"
+
+REFERENCE			PLATFORM_NOMOTD
+LANG_ENGLISH		"Go online to get Modern Warfare 2 news and updates"
+
+REFERENCE			PLATFORM_NOMOTD_MP
+LANG_ENGLISH		"Welcome to Modern Warfare 2 multiplayer"
+
+REFERENCE			PLATFORM_FOLLOWNEXTPLAYER
+LANG_ENGLISH		"^3&&1^7 - Next player"
+
+REFERENCE			PLATFORM_LOCSEL_DIR_CONTROLS
+LANG_ENGLISH		"Hold [Right Mouse] to set direction"
+
+REFERENCE			PLATFORM_LOCSEL_POSITION_CONTROLS
+LANG_ENGLISH		"Use the mouse to select a target"
+
+REFERENCE			PLATFORM_PRESS_TO_SET_AIRSTRIKE
+LANG_ENGLISH		"Press Fire to set Air Strike location"
+
+REFERENCE			PLATFORM_COWARDS_WAY_OUT
+LANG_ENGLISH		"Hold^3 [{+activate}] ^7Coward's way out"
+
+REFERENCE			PLATFORM_DISCONNECTED_FROM_SERVER
+LANG_ENGLISH		"Disconnected from server"
+
+REFERENCE			PLATFORM_STATSREADERROR
+LANG_ENGLISH		"An error occurred while reading the stats data. Your stats have been reset."
+
+REFERENCE			PLATFORM_DYK_MSG1
+LANG_ENGLISH		"Gain XP! You get experience points(XP) for getting kills, completing challenges, and completing matches on Ranked servers."
+
+REFERENCE			PLATFORM_DYK_MSG2
+LANG_ENGLISH		"Level up! As you gain XP, you earn promotions, unlockables, and new challenges."
+
+REFERENCE			PLATFORM_DYK_MSG3
+LANG_ENGLISH		"Customize your weapon! You can add a camouflage pattern or attachment to your weapons in Create-a-class."
+
+REFERENCE			PLATFORM_DYK_MSG4
+LANG_ENGLISH		"Design your own class! Create-a-class lets you choose your weapons and perks, then name the class to your liking."
+
+REFERENCE			PLATFORM_DYK_MSG5
+LANG_ENGLISH		"Use teamwork! If you damage an enemy but someone else gets the kill, you are awarded assist points."
+
+REFERENCE			PLATFORM_DYK_MSG6
+LANG_ENGLISH		"Get hardcore.  Hardcore modes remove your hud and make weapons even more deadly."
+
+REFERENCE			PLATFORM_DYK_MSG7
+LANG_ENGLISH		"Custom games!  Unranked games can play any game mode with custom rules."
+
+REFERENCE			PLATFORM_DYK_MSG8
+LANG_ENGLISH		"Challenges are rewarding.  Weapon challenges unlock attachments and camouflage patterns for use in Create-a-class."
+
+REFERENCE			PLATFORM_DYK_MSG9
+LANG_ENGLISH		"Get more XP!  You get extra XP bonuses for completing Challenges, located in Rank and Challenges."
+
+REFERENCE			PLATFORM_DYK_MSG10
+LANG_ENGLISH		"Listen in... You can hear the enemy team's voice chat with the Eavesdrop perk."
+
+REFERENCE			PLATFORM_DYK_MSG11
+LANG_ENGLISH		"Be aware... You can spot enemy explosive devices like claymores and C4 with the Bomb Squad perk."
+
+REFERENCE			PLATFORM_DYK_MSG12
+LANG_ENGLISH		"Take a stand!  Pull out your pistol and make that last ditch effort to get some kills before you die with the Last Stand perk."
+
+REFERENCE			PLATFORM_DYK_MSG13
+LANG_ENGLISH		"Combine your air support!  Call in an airstrike in combination with a UAV for a pinpoint accurate carpet bomb."
+
+REFERENCE			PLATFORM_DYK_MSG14
+LANG_ENGLISH		"Chopper down!  Don't be afraid to fire at enemy choppers with your primary weapon.  It may do less damage than a rocket, but it definitely hurts."
+
+REFERENCE			PLATFORM_DYK_MSG15
+LANG_ENGLISH		"Find the enemy!  Calling in a UAV shows enemies on your radar as red dots.  Knowing the enemy position is a big advantage."
+
+REFERENCE			PLATFORM_DYK_MSG17
+LANG_ENGLISH		"Defend your flags!  In the Domination game mode, holding marked objectives gives your team points.  The more objectives you hold, the more points you get."
+
+REFERENCE			PLATFORM_DYK_MSG18
+LANG_ENGLISH		"Watch those corners!  Be careful playing Search and Destroy - when you die you don't respawn."
+
+REFERENCE			PLATFORM_DYK_MSG19
+LANG_ENGLISH		"Escort the bomb!  Protect the bomb carrier in Sabotage.  It takes teamwork to get to the enemy objective."
+
+REFERENCE			PLATFORM_DYK_MSG20
+LANG_ENGLISH		"Call in radar!  You can earn radar for you and your team by getting 3 kills in a row without dying."
+
+REFERENCE			PLATFORM_DYK_MSG21
+LANG_ENGLISH		"Call in an airstrike!  Get 5 kills in a row without dying and you can call in an air strike on the position of your choice."
+
+REFERENCE			PLATFORM_DYK_MSG22
+LANG_ENGLISH		"Call in a chopper!  You can earn helicopter air support by getting 7 kills in a row without dying."
+
+REFERENCE			PLATFORM_DYK_MSG23
+LANG_ENGLISH		"Back to basics... The Old School game modes don't have classes.  Everyone starts with the same weapons and must pick up new weapons and perks in the level."
+
+REFERENCE			PLATFORM_DYK_MSG24
+LANG_ENGLISH		"Pick your shots!  When you fire a weapon WITHOUT a silencer, you appear as a red dot on your enemies' compass."
+
+REFERENCE			PLATFORM_DYK_MSG25
+LANG_ENGLISH		"Get quiet...  Using a silencer doesn't show your shots as a red dot on the enemy compass, but your weapon's range is reduced."
+
+REFERENCE			PLATFORM_DYK_MSG26
+LANG_ENGLISH		"Stealth technology.  Using the UAV Jammer perk will prevent you from showing as a red dot on the enemy compass."
+
+REFERENCE			PLATFORM_DYK_MSG27
+LANG_ENGLISH		"Grenades from a rifle mounted grenade launcher need to travel before they are armed.  They do damage if they hit your enemy, but only explode at a distance."
+
+REFERENCE			PLATFORM_DYK_MSG28
+LANG_ENGLISH		"Create your own game mode!  Start your own server and tweak game mode settings to whatever you like."
+
+REFERENCE			PLATFORM_DYK_MSG29
+LANG_ENGLISH		"Dominate with teamwork!  Domination flags capture faster with multiple teammates capturing together."
+
+REFERENCE			PLATFORM_DYK_MSG30
+LANG_ENGLISH		"Use your knife!  Melee the enemy with your knife for a fast and humiliating kill."
+
+REFERENCE			PLATFORM_DYK_MSG31
+LANG_ENGLISH		"Run faster!  Pressing sprint will allow you to run faster for a short amount of time, but you can't use your weapon."
+
+REFERENCE			PLATFORM_DYK_MSG32
+LANG_ENGLISH		"Hold your breath!  Hold your breath with scoped weapons for increased accuracy."
+
+REFERENCE			PLATFORM_DYK_MSG33
+LANG_ENGLISH		"Throw back grenades!  Look for the grenade throwback icon when a grenade is near you.  You can throw back the enemy's grenades."
+
+REFERENCE			PLATFORM_DYK_MSG34
+LANG_ENGLISH		"Shoot through walls!  Different weapons can fire through many different surfaces with reduced damage."
+
+REFERENCE			PLATFORM_DYK_MSG35
+LANG_ENGLISH		"Use your inventory!  Items like grenade launchers, RPGs, claymores, and C4 are stored in your inventory."
+
+REFERENCE			PLATFORM_DYK_MSG36
+LANG_ENGLISH		"Explosive shortcut!  Double tap the use key to detonate thrown C4 while using another weapon."
+
+REFERENCE			PLATFORM_NOTSIGNEDINTOPROFILE
+LANG_ENGLISH		"You have not chosen a profile yet."
+
+REFERENCE			PLATFORM_UNEXPECTEDDOWNLOADMESSAGE
+LANG_ENGLISH		"Unexpected www download message."
+
+REFERENCE			PLATFORM_DOWNLOADDISCONNECTED
+LANG_ENGLISH		"Client dropped to download files."
+
+REFERENCE			PLATFORM_PRESS_TO_SAFESPAWN
+LANG_ENGLISH		"[{+frag}] Safe Spawn"
+
+REFERENCE			PLATFORM_RESUPPLY
+LANG_ENGLISH		"[{+activate}] Resupply"
+
+REFERENCE			PLATFORM_GET_SENTRY
+LANG_ENGLISH		"[{+activate}]Sentry"
+
+REFERENCE			PLATFORM_GET_AUTO_SHOT
+LANG_ENGLISH		"[{+activate}]Auto_Shot"
+
+REFERENCE			PLATFORM_GET_THUMPER
+LANG_ENGLISH		"[{+activate}]Thumper"
+
+REFERENCE			PLATFORM_GET_RANDOM
+LANG_ENGLISH		"[{+activate}] Random Item"
+
+REFERENCE			PLATFORM_VEH_BOOST
+LANG_ENGLISH		"[Space] Boost"
+
+REFERENCE			PLATFORM_VEH_BRAKE
+LANG_ENGLISH		"[S] Reverse"
+
+REFERENCE			PLATFORM_VEH_FIRE
+LANG_ENGLISH		"[Left Mouse] Fire"
+
+REFERENCE			PLATFORM_VEH_THROTTLE
+LANG_ENGLISH		"[W] Throttle"
+
+REFERENCE			PLATFORM_GET_KIT
+LANG_ENGLISH		"[{+activate}] New kit"
+
+REFERENCE			PLATFORM_REVIVE
+LANG_ENGLISH		"[{+activate}] Revive player"
+
+REFERENCE			PLATFORM_USEONLINESTATS_TRUE
+LANG_ENGLISH		"IwNet Unlocks: On"
+
+REFERENCE			PLATFORM_USEONLINESTATS_FALSE
+LANG_ENGLISH		"IwNet Unlocks: Off"
+
+REFERENCE			PLATFORM_FIND_GAME
+LANG_ENGLISH		"Find Game"
+
+REFERENCE			PLATFORM_DESC_FIND_GAME
+LANG_ENGLISH		"Pick a game mode and quickly join a game online."
+
+REFERENCE			PLATFORM_DESC_FIND_GAME_LOCKED
+LANG_ENGLISH		"Only the party host can find games."
+
+REFERENCE			PLATFORM_BACK_CAPS
+LANG_ENGLISH		"BACK ^0- ^3ESC^7"
+
+REFERENCE			PLATFORM_DETONATE
+LANG_ENGLISH		"Press [{+activate}] to detonate"
+
+REFERENCE			PLATFORM_GET_KILLSTREAK
+LANG_ENGLISH		"[{+activate}] Killstreak"
+
+REFERENCE			PLATFORM_USE_BUTTONMOVE_TO_POSITION
+LANG_ENGLISH		"Use the mouse to position"
+
+REFERENCE			PLATFORM_USE_BUTTONLOOK_TO_AIM
+LANG_ENGLISH		"Hold ^3[Right Mouse]^7 to aim"
+
+REFERENCE			PLATFORM_PRESS_BUTTON_TO_CONFIRM_TARGET
+LANG_ENGLISH		"Press ^3[Left Mouse]^7 to confirm target"
+
+REFERENCE			PLATFORM_PLAY_ONLINE_CAPS
+LANG_ENGLISH		"PLAY"
+
+REFERENCE			PLATFORM_SYSTEM_LINK_CAPS
+LANG_ENGLISH		"LAN PARTY"
+
+REFERENCE			PLATFORM_FIND_GAME_CAPS
+LANG_ENGLISH		"FIND GAME"
+
+REFERENCE			PLATFORM_SYSTEM_LINK_TITLE
+LANG_ENGLISH		"LAN PARTY"
+
+REFERENCE			PLATFORM_GAME_SUMMARY_CAPS
+LANG_ENGLISH		"GAME SUMMARY ^0- ^3F1^7"
+
+REFERENCE			PLATFORM_PREDATOR_MISSILE_AIM
+LANG_ENGLISH		"Steer"
+
+REFERENCE			PLATFORM_PREDATOR_MISSILE_BOOST
+LANG_ENGLISH		"[{+attack}] Boost"
+
+REFERENCE			PLATFORM_CONTINUE_CAPS
+LANG_ENGLISH		"CONTINUE"
+
+REFERENCE			PLATFORM_CLOSE_CAPS
+LANG_ENGLISH		"CLOSE"
+
+REFERENCE			PLATFORM_PRESS_TO_COPYCAT
+LANG_ENGLISH		"Press^3 [{weapnext}] ^7 Steal their class!"
+
+REFERENCE			PLATFORM_ACCEPT_INVITE
+LANG_ENGLISH		"Accept Invite"
+
+REFERENCE			PLATFORM_OFFENSIVE_NO_PANELTY
+LANG_ENGLISH		"(You will not be penalized in terms of game completion.)"
+
+REFERENCE			PLATFORM_DYK_IW4_MSG1
+LANG_ENGLISH		"Complete Perk challenges to unlock upgraded Perks."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG2
+LANG_ENGLISH		"Get Killstreak Rewards by getting consecutive kills without dying."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG3
+LANG_ENGLISH		"Use weapon attachments to unlock special weapon attachments."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG4
+LANG_ENGLISH		"Some killstreak rewards are controllable but leave you vulnerable on the ground."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG5
+LANG_ENGLISH		"Check out all of your Accolades in the Barracks."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG6
+LANG_ENGLISH		"Private Matches allow you to play with friends on a LAN or online."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG7
+LANG_ENGLISH		"Swap out Frag grenades for Tactical Insertion, Blast Shield, and other equipment."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG8
+LANG_ENGLISH		"Deathstreaks give you a boost when things aren't going your way."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG9
+LANG_ENGLISH		"Bullets can ricochet off of Riot Shields and kill!"
+
+REFERENCE			PLATFORM_DYK_IW4_MSG10
+LANG_ENGLISH		"Edit your Callsign to show off Titles and Emblems you've earned."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG11
+LANG_ENGLISH		"Scroll left and right on the Game Summary for more detailed info."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG12
+LANG_ENGLISH		"Titles and Emblems you've earned don't reset after entering Prestige Mode."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG13
+LANG_ENGLISH		"Shutting down mid-game will cause you to lose your Match Bonus."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG14
+LANG_ENGLISH		"Care Package is an airdrop that awards a random killstreak reward or ammo."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG15
+LANG_ENGLISH		"Tactical Insertion is a flare that marks where your next respawn will be."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG16
+LANG_ENGLISH		"Destroy red flares to prevent an enemy Tactical Insertion."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG17
+LANG_ENGLISH		"Semtex will stick to your enemy."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG18
+LANG_ENGLISH		"Blast Shield increases your resistance to explosions but limits your view."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG19
+LANG_ENGLISH		"Even when your Riot Shield is on your back it blocks bullets."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG20
+LANG_ENGLISH		"The Heartbeat Sensor attachment detects enemies that are close by."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG21
+LANG_ENGLISH		"The Cold-Blooded perk makes you invisible to thermal vision, UAV, and enemy air support."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG22
+LANG_ENGLISH		"Hardline makes killstreak rewards require 1 less kill."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG23
+LANG_ENGLISH		"You can crawl while in Last Stand."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG24
+LANG_ENGLISH		"Crouch with the Riot Shield to protect your feet."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG25
+LANG_ENGLISH		"The Painkiller Deathstreak gives you extra protection when you respawn."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG26
+LANG_ENGLISH		"Point your Riot Shield directly at the person shooting you for maximum effectiveness."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG27
+LANG_ENGLISH		"Sentry Guns can be temporarily disabled by using Flashbangs or Stun Grenades on them."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG28
+LANG_ENGLISH		"The Predator Missile lets you control a missile fired from above."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG29
+LANG_ENGLISH		"Crouch with the Riot Shield to cover your feet and get maximum protection."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG30
+LANG_ENGLISH		"Killstreak Rewards are unlocked in the order you choose."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG31
+LANG_ENGLISH		"3rd Person modes allow you to experience tactical gameplay from an over the shoulder perspective."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG32
+LANG_ENGLISH		"The default Classes contain items unlocked at later levels, giving you a preview of things to come."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG33
+LANG_ENGLISH		"The Scavenger Perk lets you resupply your loadout by taking it from fallen foes."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG34
+LANG_ENGLISH		"Steal your killer's loadout during killcam with the Copycat Deathstreak."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG35
+LANG_ENGLISH		"The Tactical Knife attachment for Handguns speeds up your melee."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG36
+LANG_ENGLISH		"The Bling Perk allows you to have 2 attachments on your primary weapon."
+
+REFERENCE			PLATFORM_CALL_NUKE
+LANG_ENGLISH		"Press and hold ^3&&1^7 for Nuclear Strike."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG37
+LANG_ENGLISH		"Survive a Final Stand bleedout and you stand back up."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG38
+LANG_ENGLISH		"Killstreak Rewards attained from airdrop crates do not count towards your killstreak count."
+
+REFERENCE			PLATFORM_DYK_IW4_MSG39
+LANG_ENGLISH		"Akimbo weapons give you more firepower but restrict your ability to aim down the sight."
+
+REFERENCE			PLATFORM_CHANGE_PROFILE_CAPS
+LANG_ENGLISH		"CHANGE PROFILE"
+
+REFERENCE			PLATFORM_UNLOCK_KILLSTREAK
+LANG_ENGLISH		"Click to unlock killstreak."
+
+REFERENCE			PLATFORM_VIEW_CHALLENGES
+LANG_ENGLISH		"^3F2^0-^7 View Challenges"
+
+REFERENCE			PLATFORM_STEAM_AUTH_DENIED
+LANG_ENGLISH		"Steam authorization failed."
+
+REFERENCE			PLATFORM_STEAM_KICK_CHEAT
+LANG_ENGLISH		"Cheat detected."
+
+REFERENCE			PLATFORM_STEAM_CONNECT_FAIL
+LANG_ENGLISH		"Steam connect failed."
+
+REFERENCE			PLATFORM_VIEW_CHALLENGE_DETAILS
+LANG_ENGLISH		"^3F2^0-^7 Challenge Details"
+
+REFERENCE			PLATFORM_STEAM_JOIN_FAIL
+LANG_ENGLISH		"Failed to join Steam lobby."
+
+REFERENCE			PLATFORM_JOIN_FRIEND_FAILED
+LANG_ENGLISH		"Failed to join friend's game."
+
+REFERENCE			PLATFORM_POPUP_CONNECTION
+LANG_ENGLISH		"Connecting to IWNet"
+
+REFERENCE			PLATFORM_STEAM_OFFLINE
+LANG_ENGLISH		"Must be signed in to Steam in Online mode to play."
+
+REFERENCE			PLATFORM_STEAM_DISCONNECTED
+LANG_ENGLISH		"Disconnected from Steam."
+
+ENDMARKER

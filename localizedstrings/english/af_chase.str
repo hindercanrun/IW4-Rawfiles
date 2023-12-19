@@ -1,0 +1,67 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE			AF_CHASE_OBJ_CRASH
+LANG_ENGLISH		"Search the crash site."
+
+REFERENCE			AF_CHASE_PURSUE
+LANG_ENGLISH		"Don't let Shepherd get away."
+
+REFERENCE			AF_CHASE_MISSION_FAILED_KEEP_UP
+LANG_ENGLISH		"Shepherd got away."
+
+REFERENCE			AF_CHASE_MISSION_FAILED_IN_THE_OPEN
+LANG_ENGLISH		"Stay clear of open areas as much as possible!"
+
+REFERENCE			AF_CHASE_FAILED_TO_SHOOT_DOWN
+LANG_ENGLISH		"Shepherd escaped on the Helicopter."
+
+REFERENCE			AF_CHASE_FAILED_TO_PULL_KNIFE
+LANG_ENGLISH		"Price was killed."
+
+REFERENCE			AF_CHASE_LOCATE_SHEPHERD
+LANG_ENGLISH		"Locate Shepherd."
+
+REFERENCE			AF_CHASE_KILL_SHEPHERD
+LANG_ENGLISH		"Kill Shepherd."
+
+REFERENCE			AF_CHASE_PRESS_USE
+LANG_ENGLISH		"^3[{+activate}]^7"
+
+REFERENCE			AF_CHASE_INTROSCREEN_LINE1
+LANG_ENGLISH		""Endgame""
+
+REFERENCE			AF_CHASE_INTROSCREEN_LINE2
+LANG_ENGLISH		"Day 7 - [{FAKE_INTRO_TIME:18:10:22}]"
+
+REFERENCE			AF_CHASE_INTROSCREEN_LINE3
+LANG_ENGLISH		"'Soap' MacTavish"
+
+REFERENCE			AF_CHASE_INTROSCREEN_LINE4
+LANG_ENGLISH		"Site Hotel Bravo, Afghanistan"
+
+REFERENCE			AF_CHASE_HINT_CRAWL_RIGHT
+LANG_ENGLISH		"^3Right Mouse^7"
+
+REFERENCE			AF_CHASE_HINT_CRAWL_LEFT
+LANG_ENGLISH		"^3Left Mouse^7"
+
+REFERENCE			AF_CHASE_FAILED_TO_CRAWL
+LANG_ENGLISH		"Price was killed."
+
+REFERENCE			AF_CHASE_HINT_MELEE_EMPTY
+LANG_ENGLISH		"^3[{+melee}]^7"
+
+ENDMARKER
