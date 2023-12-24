@@ -1,0 +1,1907 @@
+{
+    	menuDef
+	{
+		name "pmc_missions"
+		rect 0 0 640 480 0 0
+		forecolor 1 1 1 1
+		focuscolor 1 1 1 1
+		fullscreen 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		onOpen
+		{
+			focusfirst;
+		}
+		onEsc
+		{
+			close self;
+		}
+		itemDef
+		{
+			rect -107 0 854 480 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			background "animbg_blur_back"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -107 0 1708 480 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			background "animbg_blur_fogscroll"
+			textscale 0.55
+			exp rect x ( ( - 107 ) - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect -107 0 854 480 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			background "animbg_blur_front"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -120 0 420 68 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 0.95 0.175
+			background "white"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 300 0 16 -68 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 0.95 0.175
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -120 414 1200 64 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 0.95 0.175
+			background "white"
+			textscale 0.55
+			visible when ( 1 && 0 )
+		}
+		itemDef
+		{
+			rect -120 416 420 64 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 0.95 0.175
+			background "white"
+			textscale 0.55
+			visible when ( 1 && ( 0 == 0 ) )
+		}
+		itemDef
+		{
+			rect 300 416 16 64 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 0.95 0.175
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 && ( 0 == 0 ) )
+		}
+		itemDef
+		{
+			rect 316 432 440 64 0 0
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 0.95 0.175
+			background "white"
+			textscale 0.55
+			visible when ( 1 && ( 0 == 0 ) )
+		}
+		itemDef
+		{
+			name "change_filter"
+			rect 90 -4 0 0 1 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@PLATFORM_CHANGE_FILTER"
+			visible when ( 0 )
+			execKey "BUTTON_Y"
+			{
+				play "mouse_click";
+				execnow "toggle lb_filter 0 1";
+			}
+		}
+		itemDef
+		{
+			name "goto_top"
+			rect -40 -4 0 0 2 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 1
+			textscale 0.375
+			text "@PLATFORM_GOTOTOP"
+			visible when ( 0 )
+		}
+		itemDef
+		{
+			name "accept_button"
+			rect 44 -4 0 0 2 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 1
+			textscale 0.375
+			text "@PLATFORM_SELECT"
+			visible when ( 0 )
+		}
+		itemDef
+		{
+			name "refresh"
+			rect -20 -4 0 0 2 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 2
+			textscale 0.375
+			text "@PLATFORM_REFRESH"
+			visible when ( 0 )
+		}
+		itemDef
+		{
+			name "pgup"
+			rect -180 -4 0 0 3 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@PLATFORM_PGUP"
+			visible when ( 0 )
+		}
+		itemDef
+		{
+			name "pgdown"
+			rect -90 -4 0 0 3 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textscale 0.375
+			text "@PLATFORM_PGDOWN"
+			visible when ( 0 )
+		}
+		itemDef
+		{
+			rect 0 -20 16 16 1 3
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			background "ui_arrow_left"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 18 -4 0 0 1 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 12
+			textscale 0.375
+			text "@PLATFORM_BACK"
+			visible when ( ( !menuisopen( "menu_cac_assault" ) && !menuisopen( "menu_cac_heavygunner" ) && !menuisopen( "menu_cac_sniper" ) && !menuisopen( "menu_cac_specops" ) && !menuisopen( "menu_cac_demolitions" ) ) )
+		}
+		itemDef
+		{
+			rect 18 -4 0 0 1 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 12
+			textscale 0.375
+			text "@PLATFORM_SAVECUSTOMMODE"
+			visible when ( ( menuisopen( "menu_cac_assault" ) || menuisopen( "menu_cac_heavygunner" ) || menuisopen( "menu_cac_sniper" ) || menuisopen( "menu_cac_specops" ) || menuisopen( "menu_cac_demolitions" ) ) )
+		}
+		itemDef
+		{
+			rect 48 40 0 0 0 0
+			decoration
+			visible 1
+			forecolor 1 0.8 0.4 1
+			textfont 1
+			textalign 4
+			textscale 0.5833
+			textstyle 6
+			exp text ( "PMC Contracts" )
+		}
+		itemDef
+		{
+			rect 10 80 290 320 0 0
+			style 3
+			border 1
+			bordersize 1
+			decoration
+			visible 1
+			bordercolor 1 1 1 0.3
+			textscale 0.55
+			exp material ( "white" )
+		}
+		itemDef
+		{
+			rect 310 80 320 320 0 0
+			style 3
+			border 1
+			bordersize 1
+			decoration
+			visible 1
+			bordercolor 1 1 1 0.3
+			textscale 0.55
+			exp material ( "white" )
+		}
+		itemDef
+		{
+			rect 312 82 316 110 0 0
+			style 3
+			decoration
+			visible 1
+			textscale 0.55
+			exp material ( "white" )
+		}
+		itemDef
+		{
+			rect 320 140 305 50 0 0
+			decoration
+			autowrapped
+			visible 1
+			forecolor 1 0.8 0.4 1
+			textalign 12
+			textscale 0.4
+			textstyle 3
+			exp text ( dvarstring( "ui_pmc_name" ) )
+		}
+		itemDef
+		{
+			rect 320 195 305 105 0 0
+			decoration
+			autowrapped
+			visible 1
+			forecolor 1 0.8 0.4 1
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			exp text ( dvarstring( "ui_pmc_unlock" ) )
+		}
+		itemDef
+		{
+			rect 320 195 305 105 0 0
+			decoration
+			autowrapped
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			exp text ( dvarstring( "ui_pmc_desc" ) )
+		}
+		itemDef
+		{
+			rect 320 310 305 80 0 0
+			decoration
+			autowrapped
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			exp text ( dvarstring( "ui_pmc_prize" ) )
+		}
+		itemDef
+		{
+			rect 320 375 305 60 0 0
+			decoration
+			autowrapped
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			exp text ( dvarstring( "ui_pmc_players" ) )
+		}
+		itemDef
+		{
+			rect 320 375 305 60 0 0
+			decoration
+			autowrapped
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			textalign 6
+			textscale 0.4
+			textstyle 3
+			exp text ( dvarstring( "ui_pmc_threat" ) )
+		}
+		itemDef
+		{
+			name "contract_01"
+			rect 540 85 85 85 0 0
+			group "act_group"
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( "pmc_contract_01" )
+		}
+		itemDef
+		{
+			name "contract_02"
+			rect 540 85 85 85 0 0
+			group "act_group"
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( "pmc_contract_02" )
+		}
+		itemDef
+		{
+			name "contract_03"
+			rect 540 85 85 85 0 0
+			group "act_group"
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( "pmc_contract_03" )
+		}
+		itemDef
+		{
+			name "contract_04"
+			rect 540 85 85 85 0 0
+			group "act_group"
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( "pmc_contract_04" )
+		}
+		itemDef
+		{
+			name "contract_05"
+			rect 540 85 85 85 0 0
+			group "act_group"
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( "pmc_contract_05" )
+		}
+		itemDef
+		{
+			name "contract_06"
+			rect 540 85 85 85 0 0
+			group "act_group"
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( "pmc_contract_06" )
+		}
+		itemDef
+		{
+			name "contract_07"
+			rect 540 85 85 85 0 0
+			group "act_group"
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( "pmc_contract_07" )
+		}
+		itemDef
+		{
+			name "contract_locked"
+			rect 540 85 85 85 0 0
+			group "act_group"
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( "pmc_contract_locked" )
+		}
+		itemDef
+		{
+			name "noimage"
+			rect 540 85 85 85 0 0
+			group "act_group"
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( "black" )
+		}
+		itemDef
+		{
+			rect 100 50 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 50 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 50 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 1 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 50 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 1 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 51 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 1 && localvarstring( "ui_choicegroup" ) == "levels" && 1 )
+		}
+		itemDef
+		{
+			rect 100 50 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_1_NAME" )
+			action
+			{
+				play "mouse_click";
+				setdvar "ui_load_level" "pmc_crossfire";
+				open "format_select";
+				exec "set pmc_force_gametype pmc_gametype_elimination; 	set pmc_force_density pmc_diff_light;	 set pmc_force_xp_reward 500;	set pmc_use_forced_settings 1";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 1 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "contract_01";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_1_NAME";
+				exec "set ui_pmc_desc @MENU_PMC_CONTRACT_1_DESC";
+				exec "set ui_pmc_prize @MENU_PMC_CONTRACT_1_PRIZE";
+				exec "set ui_pmc_players @MENU_PMC_CONTRACT_1_PLAYERS";
+				exec "set ui_pmc_threat @MENU_PMC_CONTRACT_1_THREAT";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 100 74 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 74 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 74 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 2 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 74 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 2 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 75 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 2 && localvarstring( "ui_choicegroup" ) == "levels" && 1 )
+		}
+		itemDef
+		{
+			rect 100 74 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_2_NAME" )
+			action
+			{
+				play "mouse_click";
+				setdvar "ui_load_level" "pmc_crash";
+				open "format_select";
+				exec "set pmc_force_gametype pmc_gametype_objective; 	set pmc_force_density pmc_diff_moderate; set pmc_force_xp_reward 2000;	set pmc_use_forced_settings 1";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 2 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "contract_02";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_2_NAME";
+				exec "set ui_pmc_desc @MENU_PMC_CONTRACT_2_DESC";
+				exec "set ui_pmc_prize @MENU_PMC_CONTRACT_2_PRIZE";
+				exec "set ui_pmc_players @MENU_PMC_CONTRACT_2_PLAYERS";
+				exec "set ui_pmc_threat @MENU_PMC_CONTRACT_2_THREAT";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 100 98 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 98 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 98 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 3 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 98 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 3 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 99 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 3 && localvarstring( "ui_choicegroup" ) == "levels" && 1 )
+		}
+		itemDef
+		{
+			rect 100 98 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_3_NAME" )
+			action
+			{
+				play "mouse_click";
+				setdvar "ui_load_level" "pmc_strike";
+				open "format_select";
+				exec "set pmc_force_gametype pmc_gametype_defend; 		set pmc_force_density pmc_diff_heavy;	 set pmc_force_xp_reward 1500;	set pmc_use_forced_settings 1";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 3 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "contract_03";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_3_NAME";
+				exec "set ui_pmc_desc @MENU_PMC_CONTRACT_3_DESC";
+				exec "set ui_pmc_prize @MENU_PMC_CONTRACT_3_PRIZE";
+				exec "set ui_pmc_players @MENU_PMC_CONTRACT_3_PLAYERS";
+				exec "set ui_pmc_threat @MENU_PMC_CONTRACT_3_THREAT";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 100 122 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 122 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 122 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 4 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 122 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 4 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 123 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 4 && localvarstring( "ui_choicegroup" ) == "levels" && 1 )
+		}
+		itemDef
+		{
+			rect 100 122 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_4_NAME" )
+			action
+			{
+				play "mouse_click";
+				setdvar "ui_load_level" "pmc_highrise";
+				open "format_select";
+				exec "set pmc_force_gametype pmc_gametype_elimination; 	set pmc_force_density pmc_diff_heavy;	 set pmc_force_xp_reward 2000;	set pmc_use_forced_settings 1";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 4 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "contract_04";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_4_NAME";
+				exec "set ui_pmc_desc @MENU_PMC_CONTRACT_4_DESC";
+				exec "set ui_pmc_prize @MENU_PMC_CONTRACT_4_PRIZE";
+				exec "set ui_pmc_players @MENU_PMC_CONTRACT_4_PLAYERS";
+				exec "set ui_pmc_threat @MENU_PMC_CONTRACT_4_THREAT";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 100 146 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 146 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 146 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 5 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 146 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 5 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 147 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 5 && localvarstring( "ui_choicegroup" ) == "levels" && 1 )
+		}
+		itemDef
+		{
+			rect 100 146 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_5_NAME" )
+			action
+			{
+				play "mouse_click";
+				setdvar "ui_load_level" "co_hunted";
+				open "format_select" ;;
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 5 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "contract_05";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_5_NAME";
+				exec "set ui_pmc_desc @MENU_PMC_CONTRACT_5_DESC";
+				exec "set ui_pmc_prize @MENU_PMC_CONTRACT_5_PRIZE";
+				exec "set ui_pmc_players @MENU_PMC_CONTRACT_5_PLAYERS";
+				exec "set ui_pmc_threat @MENU_PMC_CONTRACT_5_THREAT";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 100 170 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 170 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 170 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 6 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 170 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 6 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 171 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 6 && localvarstring( "ui_choicegroup" ) == "levels" && 1 )
+		}
+		itemDef
+		{
+			rect 100 170 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_6_NAME" )
+			action
+			{
+				play "mouse_click";
+				setdvar "ui_load_level" "co_scoutsniper";
+				open "format_select" ;;
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 6 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "contract_06";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_6_NAME";
+				exec "set ui_pmc_desc @MENU_PMC_CONTRACT_6_DESC";
+				exec "set ui_pmc_prize @MENU_PMC_CONTRACT_6_PRIZE";
+				exec "set ui_pmc_players @MENU_PMC_CONTRACT_6_PLAYERS";
+				exec "set ui_pmc_threat @MENU_PMC_CONTRACT_6_THREAT";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 100 194 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 194 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 194 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 7 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 194 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 7 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 195 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 7 && localvarstring( "ui_choicegroup" ) == "levels" && 1 )
+		}
+		itemDef
+		{
+			rect 100 194 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_7_NAME" )
+			action
+			{
+				play "mouse_click";
+				setdvar "ui_load_level" "co_blackout";
+				open "format_select" ;;
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 7 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "contract_07";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_7_NAME";
+				exec "set ui_pmc_desc @MENU_PMC_CONTRACT_7_DESC";
+				exec "set ui_pmc_prize @MENU_PMC_CONTRACT_7_PRIZE";
+				exec "set ui_pmc_players @MENU_PMC_CONTRACT_7_PLAYERS";
+				exec "set ui_pmc_threat @MENU_PMC_CONTRACT_7_THREAT";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 100 218 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 218 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 218 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 8 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 218 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 8 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 219 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 8 && localvarstring( "ui_choicegroup" ) == "levels" && 0 )
+		}
+		itemDef
+		{
+			rect 100 218 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@NULL_EMPTY" )
+			action
+			{
+				play "mouse_click";
+				;;
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 8 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "contract_locked";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_8_NAME";
+				exec "set ui_pmc_unlock @MENU_PMC_CONTRACT_8_UNLOCK";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 100 218 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 218 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 218 240 22 1 1
+			decoration
+			visible 1
+			forecolor 0.5 0.5 0.5 0.5
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_8_NAME" )
+		}
+		itemDef
+		{
+			rect 100 242 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 242 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 242 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 9 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 242 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 9 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 243 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 9 && localvarstring( "ui_choicegroup" ) == "levels" && 0 )
+		}
+		itemDef
+		{
+			rect 100 242 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@NULL_EMPTY" )
+			action
+			{
+				play "mouse_click";
+				;;
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 9 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "contract_locked";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_9_NAME";
+				exec "set ui_pmc_unlock @MENU_PMC_CONTRACT_9_UNLOCK";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 100 242 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 242 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 242 240 22 1 1
+			decoration
+			visible 1
+			forecolor 0.5 0.5 0.5 0.5
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_9_NAME" )
+		}
+		itemDef
+		{
+			rect 100 338 234.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "gradient_fadein" )
+		}
+		itemDef
+		{
+			rect 334.5 338 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.9 1 0.07
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 100 338 234.5 22 1 1
+			style 3
+			bordersize 2
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			bordercolor 0.8 0.95 1 0.4
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 13 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 334.5 338 5.5 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.9 0.95 1 0.35
+			background "button_highlight_end"
+			textscale 0.55
+			visible when ( localvarint( "ui_highlight" ) == 13 && localvarstring( "ui_choicegroup" ) == "levels" )
+		}
+		itemDef
+		{
+			rect 96 339 240 22 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 1
+			textalign 10
+			textaligny -1
+			textscale 0.33
+			text "@PLATFORM_UI_SELECTBUTTON"
+			visible when ( localvarint( "ui_highlight" ) == 13 && localvarstring( "ui_choicegroup" ) == "levels" && 1 )
+		}
+		itemDef
+		{
+			rect 100 338 240 22 1 1
+			visible 1
+			forecolor 0.69 0.69 0.69 1
+			type 1
+			textfont 1
+			textalign 10
+			textalignx -26
+			textscale 0.4
+			textstyle 6
+			visible when ( 1 )
+			exp text ( "@MENU_PMC_CONTRACT_CUSTOM_NAME" )
+			action
+			{
+				play "mouse_click";
+				open "settings_custom_pmc";
+				play "mouse_click" ;;
+			}
+			onFocus
+			{
+				play "mouse_over";
+				setLocalVarInt "ui_highlight" ( 13 );
+				setLocalVarString "ui_choicegroup" ( "levels" );
+				hide "act_group";
+				show "noimage";
+				exec "set ui_pmc_desc @NULL_EMPTY";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_name @NULL_EMPTY";
+				exec "set ui_pmc_unlock @NULL_EMPTY";
+				; exec "set ui_pmc_name @MENU_PMC_CONTRACT_CUSTOM_NAME";
+				exec "set ui_pmc_desc @MENU_PMC_CONTRACT_CUSTOM_DESC";
+				exec "set ui_pmc_prize @NULL_EMPTY";
+				exec "set ui_pmc_players @NULL_EMPTY";
+				exec "set ui_pmc_threat @NULL_EMPTY";
+			}
+			leaveFocus
+			{
+				setLocalVarInt "ui_highlight" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 56 76 44 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "specialty_new" )
+		}
+		itemDef
+		{
+			rect 56 100 44 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "specialty_new" )
+		}
+		itemDef
+		{
+			rect 56 124 44 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "specialty_new" )
+		}
+		itemDef
+		{
+			rect 56 148 44 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "specialty_new" )
+		}
+		itemDef
+		{
+			rect 56 172 44 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "specialty_new" )
+		}
+		itemDef
+		{
+			rect 56 196 44 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "specialty_new" )
+		}
+		itemDef
+		{
+			rect 56 220 44 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "specialty_locked" )
+		}
+		itemDef
+		{
+			rect 56 244 44 22 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			visible when ( 1 )
+			exp material ( "specialty_locked" )
+		}
+	}
+	menuDef
+	{
+		name "settings_custom_pmc_@menu_pmc_custom_contract_type"
+		rect -272 64 272 18 2 1
+		style 1
+		popup
+		forecolor 1 1 1 1
+		focuscolor 1 1 1 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		exp rect y ( localvarint( "ui_popupYPos" ) )
+		onOpen
+		{
+			focusfirst;
+			setfocusbydvar "pmc_force_gametype";
+			setLocalVarBool "ui_hideSelectButton" ( 1 );
+		}
+		onClose
+		{
+			setLocalVarBool "ui_hideSelectButton" ( 0 );
+		}
+		onEsc
+		{
+			play "mouse_click";
+			close self;
+		}
+		itemDef
+		{
+			rect -272 64 0 0 2 1
+			style 3
+			decoration
+			visible 1
+			textscale 0.55
+			exp material ( "white" )
+		}
+		itemDef
+		{
+			rect -1272 -936 4000 4000 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 0.35
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -128 64 110 55 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.35 0.35 0.35 1
+			textscale 0.55
+			exp material ( "white" )
+		}
+		itemDef
+		{
+			rect -144 48 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_tl"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -128 48 110 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_t"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -18 48 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_tr"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -18 64 16 55 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_r"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -18 119 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_br"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -128 119 110 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_b"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -144 119 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_bl"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -144 64 16 55 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_l"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -128 64 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_CUSTOM_CONTRACT_ELIMINATION"
+			dvarTest "pmc_force_gametype"
+			focusDvar { 1 }
+			visible when ( "@MENU_PMC_CUSTOM_CONTRACT_ELIMINATION" != "" )
+			action
+			{
+				setdvar "pmc_force_gametype" 1 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 79 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_CUSTOM_CONTRACT_OBJECTIVE"
+			dvarTest "pmc_force_gametype"
+			focusDvar { 2 }
+			visible when ( "@MENU_PMC_CUSTOM_CONTRACT_OBJECTIVE" != "" )
+			action
+			{
+				setdvar "pmc_force_gametype" 2 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 94 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_CUSTOM_CONTRACT_DEFEND"
+			dvarTest "pmc_force_gametype"
+			focusDvar { 3 }
+			visible when ( "@MENU_PMC_CUSTOM_CONTRACT_DEFEND" != "" )
+			action
+			{
+				setdvar "pmc_force_gametype" 3 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 109 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			dvarTest "pmc_force_gametype"
+			focusDvar { 0 }
+			visible when ( "" != "" )
+			action
+			{
+				setdvar "pmc_force_gametype" 0 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 124 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			dvarTest "pmc_force_gametype"
+			focusDvar { 0 }
+			visible when ( "" != "" )
+			action
+			{
+				setdvar "pmc_force_gametype" 0 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 139 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			dvarTest "pmc_force_gametype"
+			focusDvar { 0 }
+			visible when ( "" != "" )
+			action
+			{
+				setdvar "pmc_force_gametype" 0 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+	}
+}

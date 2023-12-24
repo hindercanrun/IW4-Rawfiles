@@ -1,0 +1,277 @@
+{
+    menuDef
+	{
+		name "settings_custom_pmc_@menu_pmc_custom_contract_density"
+		rect -272 82 272 18 2 1
+		style 1
+		popup
+		forecolor 1 1 1 1
+		focuscolor 1 1 1 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		exp rect y ( localvarint( "ui_popupYPos" ) )
+		onOpen
+		{
+			focusfirst;
+			setfocusbydvar "pmc_force_density";
+			setLocalVarBool "ui_hideSelectButton" ( 1 );
+		}
+		onClose
+		{
+			setLocalVarBool "ui_hideSelectButton" ( 0 );
+		}
+		onEsc
+		{
+			play "mouse_click";
+			close self;
+		}
+		itemDef
+		{
+			rect -272 82 0 0 2 1
+			style 3
+			decoration
+			visible 1
+			textscale 0.55
+			exp material ( "white" )
+		}
+		itemDef
+		{
+			rect -1272 -918 4000 4000 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 0.35
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -128 82 110 70 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.35 0.35 0.35 1
+			textscale 0.55
+			exp material ( "white" )
+		}
+		itemDef
+		{
+			rect -144 66 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_tl"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -128 66 110 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_t"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -18 66 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_tr"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -18 82 16 70 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_r"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -18 152 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_br"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -128 152 110 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_b"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -144 152 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_bl"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -144 82 16 70 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_l"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -128 82 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_CUSTOM_CONTRACT_DENSITY_LIGHT"
+			dvarTest "pmc_force_density"
+			focusDvar { 1 }
+			visible when ( "@MENU_PMC_CUSTOM_CONTRACT_DENSITY_LIGHT" != "" )
+			action
+			{
+				setdvar "pmc_force_density" 1 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 97 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_CUSTOM_CONTRACT_DENSITY_MODERATE"
+			dvarTest "pmc_force_density"
+			focusDvar { 2 }
+			visible when ( "@MENU_PMC_CUSTOM_CONTRACT_DENSITY_MODERATE" != "" )
+			action
+			{
+				setdvar "pmc_force_density" 2 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 112 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_CUSTOM_CONTRACT_DENSITY_HEAVY"
+			dvarTest "pmc_force_density"
+			focusDvar { 3 }
+			visible when ( "@MENU_PMC_CUSTOM_CONTRACT_DENSITY_HEAVY" != "" )
+			action
+			{
+				setdvar "pmc_force_density" 3 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 127 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_CUSTOM_CONTRACT_DENSITY_MAXIMUM"
+			dvarTest "pmc_force_density"
+			focusDvar { 4 }
+			visible when ( "@MENU_PMC_CUSTOM_CONTRACT_DENSITY_MAXIMUM" != "" )
+			action
+			{
+				setdvar "pmc_force_density" 4 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 142 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			dvarTest "pmc_force_density"
+			focusDvar { 0 }
+			visible when ( "" != "" )
+			action
+			{
+				setdvar "pmc_force_density" 0 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 157 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			dvarTest "pmc_force_density"
+			focusDvar { 0 }
+			visible when ( "" != "" )
+			action
+			{
+				setdvar "pmc_force_density" 0 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+	}
+}

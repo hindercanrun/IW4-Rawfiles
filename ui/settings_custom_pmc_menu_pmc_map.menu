@@ -1,0 +1,277 @@
+{
+    menuDef
+	{
+		name "settings_custom_pmc_@menu_pmc_map"
+		rect -272 118 272 18 2 1
+		style 1
+		popup
+		forecolor 1 1 1 1
+		focuscolor 1 1 1 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		exp rect y ( localvarint( "ui_popupYPos" ) )
+		onOpen
+		{
+			focusfirst;
+			setfocusbydvar "pmc_map";
+			setLocalVarBool "ui_hideSelectButton" ( 1 );
+		}
+		onClose
+		{
+			setLocalVarBool "ui_hideSelectButton" ( 0 );
+		}
+		onEsc
+		{
+			play "mouse_click";
+			close self;
+		}
+		itemDef
+		{
+			rect -272 118 0 0 2 1
+			style 3
+			decoration
+			visible 1
+			textscale 0.55
+			exp material ( "white" )
+		}
+		itemDef
+		{
+			rect -1272 -882 4000 4000 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 0.35
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -128 118 110 70 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.35 0.35 0.35 1
+			textscale 0.55
+			exp material ( "white" )
+		}
+		itemDef
+		{
+			rect -144 102 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_tl"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -128 102 110 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_t"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -18 102 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_tr"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -18 118 16 70 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_r"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -18 188 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_br"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -128 188 110 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_b"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -144 188 16 16 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_bl"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -144 118 16 70 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0 0 0 1
+			background "drop_shadow_l"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -128 118 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_STRIKE"
+			dvarTest "pmc_map"
+			focusDvar { 1 }
+			visible when ( "@MENU_PMC_STRIKE" != "" )
+			action
+			{
+				setdvar "pmc_map" 1 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 133 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_CROSSFIRE"
+			dvarTest "pmc_map"
+			focusDvar { 2 }
+			visible when ( "@MENU_PMC_CROSSFIRE" != "" )
+			action
+			{
+				setdvar "pmc_map" 2 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 148 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_CRASH"
+			dvarTest "pmc_map"
+			focusDvar { 3 }
+			visible when ( "@MENU_PMC_CRASH" != "" )
+			action
+			{
+				setdvar "pmc_map" 3 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 163 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			text "@MENU_PMC_HIGHRISE"
+			dvarTest "pmc_map"
+			focusDvar { 4 }
+			visible when ( "@MENU_PMC_HIGHRISE" != "" )
+			action
+			{
+				setdvar "pmc_map" 4 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 178 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			dvarTest "pmc_map"
+			focusDvar { 0 }
+			visible when ( "" != "" )
+			action
+			{
+				setdvar "pmc_map" 0 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+		itemDef
+		{
+			rect -128 193 128 15 2 1
+			visible 1
+			forecolor 0.65 0.65 0.65 1
+			textalign 8
+			textalignx 12
+			textscale 0.375
+			dvarTest "pmc_map"
+			focusDvar { 0 }
+			visible when ( "" != "" )
+			action
+			{
+				setdvar "pmc_map" 0 play "mouse_click";
+				close self;
+			}
+			leaveFocus
+			{
+				play "mouse_submenu_over";
+			}
+		}
+	}
+}
