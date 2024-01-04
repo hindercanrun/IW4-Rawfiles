@@ -1,0 +1,154 @@
+{
+    "aliasName": "elev_musak_loop",
+    "count": 1,
+    "head": [
+        {
+            "aliasName": "elev_musak_loop",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 225,
+            "distMin": 80,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 0.649999976158142,
+            "pitchMin": 0.649999976158142,
+            "probability": 1,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 1.38574405137081e-41,
+            "soundfile": "null.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.436000019311905,
+            "volMin": 0.436000019311905,
+            "volumeFalloffCurve": "$default"
+        }
+    ]
+}

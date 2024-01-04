@@ -1,0 +1,145 @@
+techset,,2d
+material,,white
+material,,mw2_main_background
+material,,mw2_main_cloud_overlay
+material,,mw2_main_sp_image
+material,,mw2_main_co_image
+material,,mw2_main_mp_image
+material,,mockup_bg_glow
+material,,gradient_fadein_fadebottom
+material,,gradient_fadein
+material,,menu_button_selection_bar
+material,,menu_setting_selection_bar
+menu,
+menufile,ui/pc_options_audio.menu
+material,,pc_keyboard_mouse
+material,,difficulty_star_empty
+material,,difficulty_star
+menu,
+material,,xpbar_stencilbase
+material,,mw2_popup_bg_fogstencil
+material,,mw2_popup_bg_fogscroll
+material,,mockup_popup_bg_stencilfill
+material,,small_box_lightfx
+material,,drop_shadow_tl
+material,,drop_shadow_t
+material,,drop_shadow_tr
+material,,drop_shadow_r
+material,,drop_shadow_br
+material,,drop_shadow_b
+material,,drop_shadow_bl
+material,,drop_shadow_l
+material,,popup_button_selection_bar
+menu,
+menufile,ui/coop_lobby.menu
+material,,black
+material,,line_horizontal
+menu,
+menu,
+menufile,ui/pc_options_advanced_video.menu
+menu,
+menufile,ui/pc_options_video.menu
+menu,
+menufile,ui/options_graphics_defaults.menu
+menu,
+menu,
+menufile,ui/options_graphics_pc.menu
+menu,
+menu,
+menufile,ui/pc_options_controls.menu
+localize,Open
+localize,Moderate
+localize,Strict
+localize,Your NAT Type:
+localize,Your NAT type is Moderate.  This means players may have trouble connecting to you and joining your party.
+localize,Your NAT type is Strict.  This means it is hard for other players to connect to you - so if you invite people they may not make it into your party.  
+localize,Your NAT type is Moderate.  This means players may have trouble connecting to you and joining your Private Match lobby.
+localize,Your NAT type is Strict.  This means it is hard for other players to connect to you - so if you invite people they may not make it into your Private Match lobby.  
+localize,Challenges, Accolades, and Options.
+localize,Invalid Password.
+localize,Prestige has a price: Everything you've unlocked including weapons, experience and challenges will be reset; you'll have to rank up again to reacquire them.
+
+Only your titles, emblems and play lists will be unaffected.
+localize,Trade all of your accomplishments for a bit of prestige.  In addition to your new prestige rank icon, you'll gain access to some new titles, emblems and challenges.
+
+Other players will see your new prestige rank icon in the lobby, and game.
+localize,Go to ^2www.infinityward.com/nat^7 to OPEN your router's NAT.
+
+localize,Other players may have difficulties connecting to you - players you invited may not make it into your lobby. Go to ^2www.infinityward.com/nat^7 to OPEN your router's NAT.
+localize,Finding games: <&&1ms ping
+localize,Storm
+localize,Stormy warehouse district.  Intense team battles.
+localize,Salvage
+localize,A snow-covered junkyard.  Lots of fast paced action.
+localize,Bailout
+localize,Overrun apartment complex. Long sight lines with great flank routes.
+localize,Crash
+localize,Downed Sea Knight in a desert town. Fantastic team games.
+localize,Overgrown
+localize,Large overgrown rural Russian area. Sniper ghillie suits make for good cover.
+localize,Vacant
+localize,Deserted Russian office. Intense interior fighting.
+localize,Make Leader
+localize,Make &&1 the new party leader?
+localize,Change Party Leader
+localize,You are now the party leader.
+localize,Bonus Maps
+localize,Invite to party
+localize,Invite friend to party
+localize,Party invitation
+localize,&&1 invites you to join their party.
+localize,&&1 invites you to join their party.
+Accepting this invite will disband your party.
+localize,Join party
+localize,Decline
+localize,Download Maps
+localize,Download Content
+localize,DOWNLOAD MAPS
+localize,DOWNLOAD CONTENT
+localize,Bonus multiplayer maps.
+localize,Download bonus multiplayer maps.
+localize,Strike
+localize,Large urban desert town.  Excellent team games.
+localize,Trailer Park
+localize,Medium-sized trailer park with lots of cover and flank routes. Fight from all angles.
+
+
+localize,Fuel
+localize,Large oil refinery.  Good balance of medium to long range fire fights.
+localize,Carnival
+localize,Large abandoned theme park. Great for all game modes.
+localize,You do not have this map.  You can get this map by downloading map packs from Steam.
+localize,Maps downloaded from Steam.
+localize,This playlist requires a map pack that you do not have. You can download map packs from Steam.
+rawfile,patch
+techset,2d
+material,white
+material,mw2_main_background
+material,mw2_main_cloud_overlay
+material,mw2_main_sp_image
+material,mw2_main_co_image
+material,mw2_main_mp_image
+material,mockup_bg_glow
+material,gradient_fadein_fadebottom
+material,gradient_fadein
+material,menu_button_selection_bar
+material,menu_setting_selection_bar
+material,pc_keyboard_mouse
+material,difficulty_star_empty
+material,difficulty_star
+material,xpbar_stencilbase
+material,mw2_popup_bg_fogstencil
+material,mw2_popup_bg_fogscroll
+material,mockup_popup_bg_stencilfill
+material,small_box_lightfx
+material,drop_shadow_tl
+material,drop_shadow_t
+material,drop_shadow_tr
+material,drop_shadow_r
+material,drop_shadow_br
+material,drop_shadow_b
+material,drop_shadow_bl
+material,drop_shadow_l
+material,popup_button_selection_bar
+material,black
+material,line_horizontal

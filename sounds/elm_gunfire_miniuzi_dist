@@ -1,0 +1,894 @@
+{
+    "aliasName": "elm_gunfire_miniuzi_dist",
+    "count": 6,
+    "head": [
+        {
+            "aliasName": "elm_gunfire_miniuzi_dist",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.10000002384186,
+            "pitchMin": 0.899999976158142,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 6.82152092433321e-42,
+            "soundfile": "amb_elements/elm_gun_miniuzi_dist01.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.271200001239777,
+            "volMin": 0.135600000619888,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_gunfire_miniuzi_dist",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.10000002384186,
+            "pitchMin": 0.899999976158142,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 6.82152092433321e-42,
+            "soundfile": "amb_elements/elm_gun_miniuzi_dist02.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.271200001239777,
+            "volMin": 0.135600000619888,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_gunfire_miniuzi_dist",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.10000002384186,
+            "pitchMin": 0.899999976158142,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 6.82152092433321e-42,
+            "soundfile": "amb_elements/elm_gun_miniuzi_dist03.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.271200001239777,
+            "volMin": 0.135600000619888,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_gunfire_miniuzi_dist",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.10000002384186,
+            "pitchMin": 0.899999976158142,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 6.82152092433321e-42,
+            "soundfile": "amb_elements/elm_gun_miniuzi_dist04.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.271200001239777,
+            "volMin": 0.135600000619888,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_gunfire_miniuzi_dist",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.10000002384186,
+            "pitchMin": 0.899999976158142,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 6.82152092433321e-42,
+            "soundfile": "amb_elements/elm_gun_miniuzi_dist05.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.271200001239777,
+            "volMin": 0.135600000619888,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_gunfire_miniuzi_dist",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.10000002384186,
+            "pitchMin": 0.899999976158142,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 6.82152092433321e-42,
+            "soundfile": "amb_elements/elm_gun_miniuzi_dist06.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.271200001239777,
+            "volMin": 0.135600000619888,
+            "volumeFalloffCurve": "$default"
+        }
+    ]
+}

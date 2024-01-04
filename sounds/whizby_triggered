@@ -1,0 +1,2818 @@
+{
+    "aliasName": "whizby_triggered",
+    "count": 19,
+    "head": [
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_01.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_02.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_03.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_04.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_05.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_06.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_07.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_08.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_09.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_10.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_11.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_12.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_13.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_14.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_15.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_16.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_17.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_18.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "whizby_triggered",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 2500000,
+            "distMin": 500000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.29999995231628,
+            "pitchMin": 0.5,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 5.20722509343102e-42,
+            "soundfile": "whizbys/bullet_whizby_19.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.789640009403229,
+            "volMin": 0.706520020961761,
+            "volumeFalloffCurve": "$default"
+        }
+    ]
+}

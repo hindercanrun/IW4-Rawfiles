@@ -1,0 +1,12 @@
+{
+    "attenuation": {
+        "image": "falloff_linear",
+        "samplerState": 98
+    },
+    "cucoloris": {
+        "image": "",
+        "samplerState": 0
+    },
+    "lmapLookupStart": 1,
+    "name": "light_dynamic"
+}

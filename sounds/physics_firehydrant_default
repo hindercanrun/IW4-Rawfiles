@@ -1,0 +1,598 @@
+{
+    "aliasName": "physics_firehydrant_default",
+    "count": 4,
+    "head": [
+        {
+            "aliasName": "physics_firehydrant_default",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 950,
+            "distMin": 7,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 1,
+            "secondaryAliasName": "physics_firehydrant_impact",
+            "sequence": 0,
+            "slavePercentage": 2.3317606446365e-42,
+            "soundfile": "physics/mtl_hydrant_impact1c.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.544049978256226,
+            "volMin": 0.460350006818771,
+            "volumeFalloffCurve": "weapon2"
+        },
+        {
+            "aliasName": "physics_firehydrant_default",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 950,
+            "distMin": 7,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 1,
+            "secondaryAliasName": "physics_firehydrant_impact",
+            "sequence": 0,
+            "slavePercentage": 2.3317606446365e-42,
+            "soundfile": "physics/mtl_hydrant_impact2c.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.544049978256226,
+            "volMin": 0.460350006818771,
+            "volumeFalloffCurve": "weapon2"
+        },
+        {
+            "aliasName": "physics_firehydrant_default",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 950,
+            "distMin": 7,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 1,
+            "secondaryAliasName": "physics_firehydrant_impact",
+            "sequence": 0,
+            "slavePercentage": 2.3317606446365e-42,
+            "soundfile": "physics/mtl_hydrant_impact3c.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.544049978256226,
+            "volMin": 0.460350006818771,
+            "volumeFalloffCurve": "weapon2"
+        },
+        {
+            "aliasName": "physics_firehydrant_default",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 950,
+            "distMin": 7,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 1,
+            "secondaryAliasName": "physics_firehydrant_impact",
+            "sequence": 0,
+            "slavePercentage": 2.3317606446365e-42,
+            "soundfile": "physics/mtl_hydrant_impact4c.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 1,
+            "volMax": 0.544049978256226,
+            "volMin": 0.460350006818771,
+            "volumeFalloffCurve": "weapon2"
+        }
+    ]
+}

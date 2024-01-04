@@ -1,0 +1,1338 @@
+{
+    "aliasName": "elm_insect_fly",
+    "count": 9,
+    "head": [
+        {
+            "aliasName": "elm_insect_fly",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 2.51673204192737e-42,
+            "soundfile": "amb_elements/elm_insect_fly01.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.162720009684563,
+            "volMin": 0.063280001282692,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_insect_fly",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 2.51673204192737e-42,
+            "soundfile": "amb_elements/elm_insect_fly02.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.162720009684563,
+            "volMin": 0.063280001282692,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_insect_fly",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 2.51673204192737e-42,
+            "soundfile": "amb_elements/elm_insect_fly03.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.162720009684563,
+            "volMin": 0.063280001282692,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_insect_fly",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 2.51673204192737e-42,
+            "soundfile": "amb_elements/elm_insect_fly04.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.162720009684563,
+            "volMin": 0.063280001282692,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_insect_fly",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 2.51673204192737e-42,
+            "soundfile": "amb_elements/elm_insect_fly05.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.162720009684563,
+            "volMin": 0.063280001282692,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_insect_fly",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 2.51673204192737e-42,
+            "soundfile": "amb_elements/elm_insect_fly06.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.162720009684563,
+            "volMin": 0.063280001282692,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_insect_fly",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 2.51673204192737e-42,
+            "soundfile": "amb_elements/elm_insect_fly07.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.162720009684563,
+            "volMin": 0.063280001282692,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_insect_fly",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 2.51673204192737e-42,
+            "soundfile": "amb_elements/elm_insect_fly08.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.162720009684563,
+            "volMin": 0.063280001282692,
+            "volumeFalloffCurve": "$default"
+        },
+        {
+            "aliasName": "elm_insect_fly",
+            "centerPercentage": 0.0,
+            "chainAliasName": null,
+            "distMax": 500000,
+            "distMin": 100000,
+            "envelopMax": 0.0,
+            "envelopMin": 0.0,
+            "envelopPercentage": 0.0,
+            "flags": 0,
+            "lfePercentage": 1,
+            "mixerGroup": null,
+            "pitchMax": 1.04999995231628,
+            "pitchMin": 0.949999988079071,
+            "probability": 0.5,
+            "secondaryAliasName": null,
+            "sequence": 0,
+            "slavePercentage": 2.51673204192737e-42,
+            "soundfile": "amb_elements/elm_insect_fly09.wav",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "entryCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0.0,
+                                "levels1": 0.0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": true,
+                "name": ""
+            },
+            "startDelay": 0,
+            "subtitle": null,
+            "type": 2,
+            "volMax": 0.162720009684563,
+            "volMin": 0.063280001282692,
+            "volumeFalloffCurve": "$default"
+        }
+    ]
+}

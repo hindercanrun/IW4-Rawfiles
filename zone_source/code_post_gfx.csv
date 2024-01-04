@@ -1,0 +1,2165 @@
+vertexdecl,ppcc0t0t0
+vertexshader,trivial_vertcol_simple.hlsl
+pixelshader,trivial_vertcol_simple.hlsl
+techset,2d
+image,3_cursor3
+material,ui_cursor
+image,$black_3d
+image,$black_cube
+rawfile,options_graphics.cfg
+rawfile,options_graphics_set.cfg
+image,breakpoint_image
+material,code_breakpoint
+localize,Reenter Password:
+localize,Yes
+localize,Multiplayer
+localize,Quit
+localize,Options
+localize,Save/Load Game
+localize,Load Game
+localize,New Game
+localize,Training
+localize,Resume Game
+localize,Back To Game
+localize,You are currently in a game
+localize,Do you wish to continue?
+localize,Choose Your Skill Level
+localize,Regular
+localize,Hardened
+localize,Veteran
+localize,Back
+localize,Start training?
+localize,Switch to Multiplayer?
+localize,No
+localize,Save Game List
+localize,Show Auto Saves
+localize,Show Manual Saves
+localize,Name
+localize,Date
+localize,Save As:
+localize,Delete
+localize,Load
+localize,Save
+localize,Delete selected save game?
+localize,Overwrite existing file?
+localize,OK
+localize,You must specify a filename!
+localize,Are you sure you want to quit?
+localize,Controls
+localize,CONTROLS
+localize,Look
+localize,Move
+localize,Shoot...
+localize,Save/Interact
+localize,Control Defaults
+localize,System
+localize,Graphics
+localize,Sound
+localize,Performance
+localize,Driver Info
+localize,Optimal Video and Audio
+localize,Credits
+localize,Reset to Default
+localize,Each setting will be restored
+localize,to its default value.
+localize,Are you sure?
+localize,Your controls are now set
+localize,to their original default values.
+localize,Close
+localize,Options - System
+localize,Set Recommended
+localize,Quality
+localize,Quality:  Recommended
+localize,Resolution
+localize,Color Depth
+localize,Full Screen
+localize,Geometric Detail
+localize,Character Textures
+localize,General Textures
+localize,Texture Filter
+localize,Texture Quality
+localize,Nvidia Distance Fog
+localize,Brightness
+localize,Language
+localize,Apply Language Change
+localize,Apply
+localize,APPLY
+localize,Your settings are now set
+localize,Options - Controls
+localize,Look Up
+localize,Look Down
+localize,Mouse Look
+localize,Center View
+localize,Free Look
+localize,Invert Mouse
+localize,Smooth Mouse
+localize,Mouse Sensitivity
+localize,Show Objectives/Scores
+localize,Use
+localize,Quick Save
+localize,Quick Load
+localize,Screenshot
+localize,Forward
+localize,Backpedal
+localize,Move Left
+localize,Move Right
+localize,Lean Left
+localize,Lean Right
+localize,Stand
+localize,Crouch
+localize,Prone
+localize,Jump/Stance Up
+localize,Stance Down
+localize,Stance Up
+localize,Toggle Crouch
+localize,Toggle Prone
+localize,Hold Crouch
+localize,Hold Prone
+localize,Turn Left
+localize,Turn Right
+localize,Hold Strafe
+localize,Wall Marks
+localize,Ejecting Brass
+localize,Dynamic Lights
+localize,Low Quality Sky
+localize,Sync Every Frame
+localize,Nvidia fog type
+localize,Attack
+localize,Toggle Aim Down the Sight
+localize,Aim Down the Sight
+localize,Melee
+localize,Reload
+localize,Toggle Semi-Automatic 
+localize,Select First Weapon
+localize,Select Second Weapon
+localize,Select Pistol
+localize,Select Grenade
+localize,Next Weapon
+localize,Previous Weapon
+localize,Last Weapon Used
+localize,Effects Volume
+localize,Music Volume
+localize,Sound Quality
+localize,Speaker Config
+localize,This will apply sound
+localize,settings and return
+localize,to the Main Menu.
+localize,Notice
+localize,Error
+localize,Exit
+localize,This will apply video
+localize,Restart Level
+localize,Restart Mission
+localize,Load Last Save
+localize,Main Menu
+localize,MAIN MENU
+localize,Click to Start the Mission
+localize,Next Level
+localize,This will set
+localize,recommended video settings
+localize,and return to the Main Menu.
+localize,Join an Internet Game
+localize,Join a LAN Game
+localize,Disconnect
+localize,Start New Server
+localize,Multiplayer Options
+localize,Mods
+localize,Mods:
+localize,Single Player
+localize,Click for Auto-Update
+localize,Switch to Main Menu?
+localize,Download Auto-Update Patch?
+localize,Version Installed:
+localize,Version Available:
+localize,CD KEY
+localize,Enter your encryption key in the field below.
+localize,Key:
+localize,Cancel
+localize,Verify
+localize,New Favorite
+localize,Name: 
+localize,IP Address: 
+localize,Filter Servers
+localize,View Empty:
+localize,View Full:
+localize,Friendly Fire:  
+localize,Show Max Lives:
+localize,Show Tourney:
+localize,Type:
+localize,Server Name
+localize,Map Name
+localize,#Players
+localize,Ping
+localize,Get New List
+localize,Refresh List
+localize,Password
+localize,Add To Favorites
+localize,Del. Favorite
+localize,Server Info
+localize,Find Friend
+localize,Accept
+localize,Connection Type:
+localize,Launch
+localize,Select MOD name to Launch
+localize,Join Server
+localize,Create Server
+localize,Enter CD-Key
+localize,Show Scores:
+localize,Chat
+localize,Team Chat
+localize,Quick Chat
+localize,Show Compass:
+localize,Team Overlay:
+localize,Chat Icon Time:
+localize,Net Data Rate:
+localize,Player Name
+localize,Refresh
+localize,Continue
+localize,High Quality
+localize,Normal
+localize,Fast
+localize,Fastest
+localize,Custom
+localize,Interact
+localize,Restore Defaults
+localize,Stand/Jump
+localize,Go to Crouch
+localize,Go to Prone
+localize,Load selected game?
+localize,Delete selected favorite from list?
+localize,Vote Yes
+localize,Vote No
+localize,Change Rate of Fire
+localize,Draw HUD
+localize,Draw Crosshair
+localize,Quick Refresh
+localize,World Dynamic Light Quality
+localize,Show Blood
+localize,This will apply the
+localize,language change and return
+localize,640*480
+localize,800*600
+localize,1024*768
+localize,1152*864
+localize,1280*1024
+localize,1600*1200
+localize,2048*1536
+localize,Low
+localize,High
+localize,Extra
+localize,Bilinear
+localize,Trilinear
+localize,Anisotropic
+localize,Default
+localize,16 bit
+localize,32 bit
+localize,English
+localize,French
+localize,German
+localize,Italian
+localize,Spanish
+localize,British
+localize,Russian
+localize,Korean
+localize,Taiwanese
+localize,Japanese
+localize,Chinese
+localize,Thai
+localize,On
+localize,Off
+localize,Everything
+localize,Models Only
+localize,None
+localize,Nicest
+localize,NV Radial
+localize,NV Plane
+localize,11khz (Low Quality, Least Memory)
+localize,22khz (Normal Quality, Medium Memory)
+localize,44khz (High Quality, Most Memory)
+localize,Windows Default
+localize,Mono
+localize,Stereo
+localize,4 Speakers
+localize,5.1 Speakers
+localize,Game Mode Settings
+localize,Server Settings
+localize,Game Mode:  
+localize,Server Name:  
+localize,Dedicated:  
+localize,Pure:  
+localize,Maximum Players:  
+localize,Minimum Ping:  
+localize,Maximum Ping:  
+localize,Maximum Rate:  
+localize,Password:  
+localize,Both
+localize,<=28.8k
+localize,33.6k
+localize,56k
+localize,ISDN
+localize,LAN/Cable/DSL
+localize,Score Limit (player points):  
+localize,Score Limit (team points):  
+localize,Time Limit (minutes):  
+localize,Force Respawning:  
+localize,Friendly Indicators:  
+localize,Carrier Indicator:  
+localize,Grace Period (seconds):  
+localize,Round Length (minutes):  
+localize,Round Limit (rounds):  
+localize,to the game.
+localize,Number of Corpses
+localize,Tiny
+localize,Small
+localize,Medium
+localize,Large
+localize,Insane
+localize,Settings will be applied
+localize,next time the game
+localize,is started.
+localize,Join
+localize,All current progress will be lost.
+localize,Play Demo Level
+localize,Enable Console
+localize,Subtitles
+localize,LOD:  
+localize,Aggressive
+localize,Join a Game
+localize,Resume Game?
+localize,Connection
+localize,Type
+localize,Reset to
+localize,to its optimal value.
+localize,Restart Level?
+localize,Start
+localize,LAN
+localize,Internet
+localize,Level of Detail:  
+localize,Add selected server to favorites?
+localize,Reflect
+localize,Shared
+localize,Killcam:  
+localize,Allow Voting:  
+localize,Auto-Update
+localize,Allow Sniper Rifles:  
+localize,With Password:
+localize,Without Password:
+localize,Pure Servers only:
+localize,Friendly Fire:
+localize,Killcam:
+localize,All
+localize,Volume
+localize,Game Volume
+localize,Model Detail
+localize,Minimum
+localize,Unlimited
+localize,Maximum
+localize,Polish
+localize,Safe
+localize,Safe Mode
+localize,Dedicated Only:
+localize,Auto-Balance Teams:  
+localize,Allow Enemy Spectating:  
+localize,Allow Free Spectating:  
+localize,Allow Downloading
+localize,Press START button
+localize,Split Screen
+localize,Split Screen Offline
+localize,Start Game
+localize,Join Game
+localize,Cycle Items:  
+localize,Use Item:  
+localize,Hold Breath
+localize,Melee/Hold Breath
+localize,Voice Chat
+localize,Record Level
+localize,Level Adjust
+localize,Level Indicator
+localize,Multiplayer Options
+localize,Voice
+localize,Voice Chat
+localize,Voice Chat:
+localize,Campaign
+localize,Sensitivity
+localize,Very High
+localize,Look Inversion
+localize,Enabled
+localize,Enabled (Default)
+localize,Disabled
+localize,Disabled (Default)
+localize,Vibration
+localize,Stick Layout
+localize,Classic
+localize,Lefty
+localize,Diver
+localize,Button Layout
+localize,Southpaw
+localize,Legacy
+localize,Legacy Southpaw
+localize,Legacy Flipped
+localize,System Link
+localize,Join Game
+localize,Create Game
+localize,Select Next Mission
+localize,Completed
+localize,Locked
+localize,Unlock
+localize,Reset
+localize,Load Mission?
+localize,Status:
+localize,Not Started
+localize,In Progress
+localize,Completed Regular
+localize,Completed Hardened
+localize,Completed Veteran
+localize,Aspect Ratio
+localize,Texture Resolution
+localize,Normal Map Resolution
+localize,Specular Map Resolution
+localize,Very Low
+localize,Auto
+localize,Standard 4:3
+localize,Wide 16:9
+localize,Wide 16:10
+localize,Menu couldn't be found!
+localize,Stance Up/Jump
+localize,Use/Reload
+localize,Switch Weapon
+localize,Throw Grenade
+localize,Change Grenade Type
+localize,Aim Down Sight
+localize,Fire Weapon
+localize,Objectives/Menu
+localize,Change Difficulty
+localize,Right
+localize,Move Forward
+localize,Rotate Left/Right
+localize,Move Back
+localize,Strafe Left/Right
+localize,We need to find &&1 more players
+localize,Waiting for more players
+localize,Match beginning in
+localize,Xbox LIVE
+localize,Xbox LIVE Lobby
+localize,Quick Match: Standard
+localize,Play a Quick Match which will not affect your Rank
+localize,Quick Match: Ranked
+localize,Play a Quick Match which will affect your Rank
+localize,Custom Match: Standard
+localize,Play a Custom Match which will not affect your Rank
+localize,Custom Match: Ranked
+localize,Play a Custom Match which will affect your Rank
+localize,Time Limit
+localize,2 Minutes
+localize,3 Minutes
+localize,4 Minutes
+localize,4 Minutes (Default)
+localize,5 Minutes
+localize,10 Minutes
+localize,15 Minutes
+localize,15 Minutes (Default)
+localize,30 Minutes
+localize,30 Minutes (Default)
+localize,45 Minutes
+localize,1 Hour
+localize,Score Limit
+localize,5 Points
+localize,5 Points (Default)
+localize,10 Points
+localize,10 Points (Default)
+localize,15 Points
+localize,20 Points
+localize,25 Points
+localize,25 Points (Default)
+localize,30 Points
+localize,50 Points
+localize,50 Points (Default)
+localize,100 Points
+localize,100 Points (Default)
+localize,200 Points
+localize,300 Points
+localize,300 Points (Default)
+localize,400 Points
+localize,400 Points (Default)
+localize,450 Points
+localize,450 Points (Default)
+localize,600 Points
+localize,600 Points (Default)
+localize,800 Points
+localize,1000 Points
+localize,Sign In
+localize,Quick Options
+localize,5 Rounds
+localize,10 Rounds
+localize,15 Rounds
+localize,20 Rounds
+localize,Round Length
+localize,Round Limit
+localize,Players
+localize,Modifiers
+localize,Maps
+localize,Random
+localize,Game Modes
+localize,A game type will be selected at random.
+localize,Deathmatch
+localize,You are all alone.  Eliminate everyone else.
+localize,Team Deathmatch
+localize,Capture the Flag
+localize,Get the enemy team's flag, bring it to your base, and capture it by touching your flag while it's at your base.
+localize,Headquarters
+localize,Teams race to set up a radio and defend it for points.  If the enemy team sets up a radio, you must destroy it.
+localize,Search and Destroy
+localize,Custom Match
+localize,Start Game Lobby
+localize,Change Game Type
+localize,Game Setup
+localize,Location:
+localize,Apply Settings?
+localize,Settings will be applied next time
+localize,the game is started.
+localize,Voice chat will be disabled because
+localize,your network settings
+localize,are too low to support voice chat.
+localize,Voice Chat
+localize,Change Weapon
+localize,Apply Language Settings?
+localize,Demolition
+localize,Repel the enemy assault and demolish their hardpoint.
+localize,Select Level
+localize,You will not survive.
+localize,Your abilities in combat
+localize,Your skills will be strained.
+localize,Autoaim when Aiming Down the Sight
+localize,Difficulty: Regular
+localize,Difficulty: Hardened
+localize,Difficulty: Veteran
+localize,will be tested.
+localize,to the breaking point.
+localize,For players who are new to
+localize,first person action games.
+localize,Mission Select
+localize,Weapon Menu
+localize,Number of Dynamic Lights
+localize,Red
+localize,Enable Crosshair
+localize,Crosshair Color
+localize,Automatic
+localize,Manual
+localize,Mission Select Menu
+localize,Next Mission
+localize,Continue Mission
+localize,You are not signed in to a profile. If you do not sign in you will be unable to save your progress. Do you wish to continue?
+localize,Are you sure you want to quit?
+localize,Warning
+localize,Capture Limit:  
+localize,Continue restart?
+localize,If you restart now, you will lose 
+localize,any progress that you have made 
+localize,in this mission.
+localize,Continue saving?
+localize,If you save now, 
+localize,you will lose any progress 
+localize,since your last checkpoint. 
+localize,Crosshair
+localize,Score Limit:
+localize,Time Limit:
+localize,Round Limit:
+localize,Round Length:
+localize,Reflected Damage
+localize,Shared Damage
+localize,Server Information
+localize,Progress Won't Be Saved
+localize,You must select a save device to save your progress!
+localize,Select Save Device
+localize,Continue Without Saving
+localize,Select Save Device
+localize,Re-Select Save Device
+localize,Unable to Write to Default Save Device
+localize,Save Device Selected
+localize,Extra Low
+localize,Retry Save
+localize,Quit Without Saving
+localize,Resume Without Saving
+localize,Find Game
+localize,Scoreboard
+localize,Easy
+localize,Cheat Unlocked
+localize,Host
+localize,Need &&1 players to be ready
+localize,Need 1 more player to be ready
+localize,The match is about to begin
+localize,Searching for available games
+localize,Soften Smoke Edges
+localize,World Only
+localize,TM
+localize,®
+localize,Player Select
+localize,New
+localize,New Player Name
+localize,Delete selected profile?
+localize,A profile with the same name already exists
+localize,There are no free profile slots.
+
+Remove an old profile first.
+localize,Profile creation failed.
+
+Make sure the disk isn't full and
+that you have file write privileges.
+
+localize,Profile deletion failed.
+
+There may be some read-only files,
+or you may not have file write privileges.
+
+localize,Throw Smoke Grenade
+localize,Throw Frag Grenade
+localize,Loading...
+localize,Connection:  
+localize,Ranking:
+localize,If you quit now, you will lose 
+localize,Quit Game?
+localize,Return to game
+localize,Find Ranked Game
+localize,Find Standard Game
+localize,Find an unranked match in which you can invite friends.
+localize,Find a ranked match for competitive play. Friends can not be invited to ranked matches.
+localize,Select the game type to play.
+localize,Cheats
+localize,Melee/Steady Sniper Rifle
+localize,Steady Sniper Rifle
+localize,Game Options
+localize,Create Player Profile
+localize,Anti-aliasing
+localize,2x
+localize,4x
+localize,Dual Video Cards
+localize,Click to Continue
+localize,You need a player profile to play Modern Warfare 2.
+localize,Select Profile
+localize,Key Code
+localize,Enter Key Code
+localize,Enter your key code in the field below.
+localize,11KHZ (Low)
+localize,22KHZ (Medium)
+localize,44KHZ (High)
+localize,Cannot switch player profiles while in game.
+localize,Quit Current Game?
+localize,Can't change settings while dead
+localize,Loading a level will cause you to lose your progress in a level you have not yet completed.
+localize,Congratulations
+localize,Find Standard Match
+localize,Find Ranked Match
+localize,Can not change settings
+localize,while running a server.
+localize,Shadows
+localize,Screen Refresh Rate
+localize,Extras
+localize,Crouch/Prone
+localize,Jump
+localize,Shader Version
+localize,DirectX® 9
+localize,We recommend using "Optimal Video and Audio."  Manually changing settings could result in poor performance.
+localize,Changing difficulty will restart the current level.
+localize,Play for fun with people who share similar profiles.
+localize,Play competitive matches to improve your TrueSkill™ rankings.
+localize,Get into a game quickly. Game settings are chosen randomly.
+localize,Find a session with the game settings you specify.
+localize,Select Game Type
+localize,Select Match Type
+localize,Player Match
+localize,Ranked Match
+localize,Quick Match
+localize,Spectator Mode
+localize,Online interactions not rated by the ESRB.
+localize,Set Location Preferences
+localize,Set your preferences for what locations you like to play
+localize,Texture Settings
+localize,Arsenal
+localize,Appearance
+localize,Stats
+localize,STATS
+localize,Challenges
+localize,&&1/&&2 PLAYERS
+localize,Waiting for 1 more player
+localize,Private Match
+localize,Create Party
+localize,CQB Test
+localize,Marksman
+localize,Training
+localize,Auto-aim
+localize,Save Device
+localize,1st pass
+localize,100% initial geo
+localize,40% initial geo
+localize,25% scripted
+localize,Prototype Level, 30% scripted
+localize,10% scripted
+localize,35% initial geo
+localize,5% scripted
+localize,30%
+localize,Initial geo in progress
+localize,Sprint
+localize,Online Stats
+localize,Experimental
+localize,Name your custom game mode
+localize,Name your custom class
+localize,Settings
+localize,Map
+localize,Game Mode
+localize,Create-a-Mode
+localize,PLACEHOLDER
+localize,PARTY
+localize,Reconnecting to party...
+localize,Kills
+localize,Deaths
+localize,Kill/Death
+localize,Streak
+localize,Wins
+localize,Losses
+localize,Win/Loss
+localize,Hits
+localize,Misses
+localize,Accuracy
+localize,Time Played
+localize,Experience
+localize,Ratio
+localize,&&1 player(s) in &&2's party.
+localize,Aim Assist
+localize,Player
+localize,Rank
+localize,Testing matches: &&1.&&2% - &&3/&&4 good games
+localize,Trying to join game &&1/&&2
+localize,Text prohibited due to profanity.
+localize,???
+localize,Applying Changes...
+localize,Making balanced teams
+localize,Finding more players to balance teams
+localize,Intermission
+localize,Your rank and unlocked items have been reset.
+localize,Level
+localize,Waiting for the host
+localize,Text is blank or contains illegal characters.
+localize,&&1 vote to skip - &&2 needed
+localize,Vote to skip?
+localize,Vote passed!
+localize,&&1 votes to skip - &&2 needed
+localize,Saving...
+localize,Sprint/Hold Breath
+localize,Combat
+localize,Grenade Launcher/Inventory
+localize,My Assault
+localize,My Spec Ops
+localize,My Heavy Gunner
+localize,My Demolitions
+localize,My Sniper
+localize,Texture Filtering
+localize,Anisotropic Filtering
+localize,Multiplayer Controls
+localize,LOBBY
+localize,If you accept this invite, you will quit your current game lobby.  Accept invitation?
+localize,If you join another session, you will disband your party.  Disband party?
+localize,Leave Party?
+localize,If you join another session, you will leave your party.  Leave party?
+localize,Leave Party
+localize,SPLIT SCREEN SIGN IN
+localize,SPLIT SCREEN SETUP
+localize,Player 1
+localize,Player 2
+localize,Player 3
+localize,Player 4
+localize,Specular Map
+localize,Throw Special Grenade
+localize,Stay In This Party
+localize,Voice Chat:  
+localize,CHEATS
+localize,Not Used
+localize,You have collected &&1 piece(s) of enemy intel.
+localize,No save device selected; 
+you will not be able to save your game progress.
+localize,You are now able to save your game progress.
+localize,Cheats
+localize,Difficulty Completed:
+localize,...
+localize,???
+localize,Get the hell out of there!
+localize,OPTIONS
+localize,Inventory
+localize,FRIENDS
+localize,Please reconnect your controller.
+localize,Auto-Assign
+localize,Spectator
+localize,End Game
+localize,Primary Attributes
+localize,Accuracy:
+localize,Damage:
+localize,Range:
+localize,Fire Rate:
+localize,Mobility:
+localize,Kill everyone. First player to reach the score limit ends the game, the top 3 players win.
+localize,Kill players on the opposing team. The first team to reach the score limit wins!
+localize,Teams take turns defending and destroying an objective.  
+localize,Win the match by eliminating the opposing team or capturing the center point.
+localize,ARENA.
+localize,Teams alternate in attacking and defending two bomb sites, both of which must be destroyed by the attacking team equipped with bombs.  
+localize,Demolition
+localize,Take turns escorting the VIP to the extraction zone.
+localize,VIP
+localize,1 bomb in the center of the map.  Grab it and destroy the enemy objective!
+localize,Capture and hold the designated positions to gain points.
+localize,Get the enemy flag and return it to yours to capture it.
+localize,Capture the headquarters and defend it from the enemy.
+localize,Teams take turns defending and capturing an objective.
+localize,Check how your score stacks up against your friends and the world.
+localize,Leave Game
+localize,Brightness...
+localize,Tactical
+localize,Rename
+localize,Reset to Default
+localize,XP Reward:
+localize,Lower Difficulty
+localize,Lower the difficulty from Regular to Recruit for all missions?
+localize,Lower the difficulty from Hardened to Regular for all missions?
+localize,Lower the difficulty from Veteran to Hardened for all missions?
+localize,Invite Friends
+localize,MISSIONS
+localize,Prologue
+localize,Act I
+localize,Act II
+localize,Act III
+localize,Epilogue
+localize,Special Ops
+localize,Dev. only
+localize,Unable to resume current level because save data is corrupted. Please restart the level from "Mission Select".
+localize,Save Corrupted
+localize,This will overwrite your current mission's progress.  Do you wish to continue?
+localize,If you continue, the progress in your 
+last mission will be overwritten.
+localize,DOWNLOADING GAME SETTINGS
+localize,WAITING FOR PARTY LEADER
+localize,Trade all of your accomplishments for a bit of prestige.  In addition to your new prestige rank icon, you'll gain access to some new titles, emblems and challenges.
+
+Other players will see your new prestige rank icon in the lobby, leaderboards, and game.
+localize,Do it all again?
+localize,More Info
+localize,Enter Prestige
+localize,Prestige has a price: Everything you've unlocked including weapons, experience and challenges will be reset; you'll have to rank up again to reacquire them.
+
+Only your Leaderboard rankings, titles, emblems, clan tag and play lists will be unaffected.
+localize,There's no going back...
+localize,Last Chance...
+localize,You can't earn achievements while cheats are enabled.
+localize,Photo-Negative
+localize,Super Contrast
+localize,Ragtime Warfare
+localize,Cluster Bombs
+localize,A Bad Year
+localize,Slow-Mo Ability
+localize,Infinite Ammo
+localize,Find 2 pieces of enemy intel to unlock.
+localize,Find 4 pieces of enemy intel to unlock.
+localize,Find 6 pieces of enemy intel to unlock.
+localize,Find 8 pieces of enemy intel to unlock.
+localize,Find 10 pieces of enemy intel to unlock.
+localize,Find 15 pieces of enemy intel to unlock.
+localize,Find 20 pieces of enemy intel to unlock.
+localize,Find 30 pieces of enemy intel to unlock.
+localize,For that arthouse feel.
+localize,Reprints not available.
+localize,Try combos of this and the other two color cheats for different effects.
+localize,Activates secret protocol Ragtime Warfare.
+localize,Throw a frag grenade and enjoy the show.
+localize,Shoot some enemies, see what happens.
+localize,Melee to turn on/off.
+localize,No reloading, no worries.
+localize,To unlock cheats, you must complete the game at least once in any difficulty.
+localize,This game saves data automatically at certain points. Do not switch off the
+power when the HDD access indicator is flashing.
+localize,READING SAVE DEVICE
+localize,Infinity Ward Intel
+localize,Move the slider to adjust the brightness of your screen.
+localize,Only the text in the two lower boxes should be visible.
+localize,Not Visible
+localize,Barely Visible
+localize,Easily Visible
+localize,BRIGHTNESS
+localize,CONTROLS
+localize,STICK LAYOUT
+localize,BUTTON LAYOUT
+localize,SENSITIVITY
+localize,INTEL
+localize,Leave game and party?
+localize,Warning: Leaving the game early will
+localize,forfeit your match bonus and will count
+localize,as a loss.
+localize,Tied &&1 - &&2
+localize,Losing &&1 - &&2
+localize,Winning &&1 - &&2
+localize,This will override your current settings for this class. Would you like to proceed?
+localize,PAUSED
+localize,Public Playlists
+localize,CHALLENGES
+localize,RANK & CHALLENGES
+localize,CHOOSE MAP
+localize,CHOOSE GAME MODE
+localize,SYSTEM LINK SETUP
+localize,Free for All
+localize,Resume Credits
+localize,Press START button to skip
+localize,Default Flipped
+localize,Lefty Flipped
+localize,Tactical Flipped
+localize,>>>
+localize,SENSITIVITY CUSTOM
+localize,Custom (&&1)
+localize,(Low) &&1
+localize,(Medium) &&1
+localize,(High) &&1
+localize,(Very High) &&1
+localize,(Insane) &&1
+localize,Rank & Challenges
+localize,JOIN SERVER
+localize,LEADERBOARDS
+localize,LEADERBOARD - WINS (GLOBAL)
+localize,LEADERBOARD - WINS (FRIENDS)
+localize,LEADERBOARD - KILLS (GLOBAL)
+localize,LEADERBOARD - KILLS (FRIENDS)
+localize,LEADERBOARD - SCORE (GLOBAL)
+localize,LEADERBOARD - SCORE (FRIENDS)
+localize,LEADERBOARD - ACCURACY (GLOBAL)
+localize,LEADERBOARD - ACCURACY (FRIENDS)
+localize,Cheat Enabled
+localize,Move
+Forward/Back
+localize,Look
+Up/Down
+localize,Arcade Mode
+localize,Full Challenge
+localize,Mission Challenge
+localize,Choose Arcade Mode
+localize,Complete the game to unlock Arcade Mode
+localize,Recruit
+localize,The difficulty you have selected is not recommended. Do you wish to continue?
+localize,The difficulty you have selected is easier than what was recommended. Do you wish to continue?
+localize,Select Difficulty
+localize,If you quit you will lose current level progress.
+localize,You have found &&1 of &&2 enemy intel items in this mission.
+localize,Best Arcade Score: &&1
+localize,Voice Volume
+localize,Earn points by quickly playing through the
+game in order. Best score: &&1
+localize,Try to earn the highest score
+in a mission of your choice.
+localize,Score
+localize,Cheats are available from the in-game pause menu.
+Arcade Mode is available from the main menu.
+localize,Congratulations!
+localize,You have unlocked Arcade Mode and Cheats.
+localize,TIME TRIAL :: GLOBAL
+localize,TIME TRIAL :: FRIENDS
+localize,ARCADE :: GLOBAL
+localize,ARCADE :: FRIENDS
+localize,Time Trial
+localize,Try Again
+localize,Restart the time trial.
+localize,Player Match Playlists
+localize,Depth of Field
+localize,Glow
+localize,EQ Filter
+localize,Bullet Impacts
+localize,Ragdoll
+localize,Until match begins.
+localize,Water Detail
+localize,Night Vision
+localize,Change Stance
+localize,Sprint/Steady Sniper Rifle
+localize,Air Support
+localize,Equipment
+localize,Secondary Equipment
+localize,Weapon Attachment
+localize,Restore Optimal Video and Audio settings?
+localize,Reset controls back to default settings?
+localize,Your control settings have been reset.
+localize,Launch without Mods
+localize,Tied with &&1 of &&2 points.
+localize,Losing with &&1 of &&2 points.
+localize,Winning with &&1 of &&2 points.
+localize,100%
+localize,Co-op Dev. only
+localize,Co-op Missions
+localize,Select Difficulty for Player 1
+localize,Select Difficulty for Player 2
+localize,Game Setup
+localize,Horizontal Margin
+localize,Vertical Margin
+localize,Switch Character
+localize,Top Player
+localize,Bottom Player
+localize,AC130
+localize,Infantry
+localize,Ready
+localize,Split Screen
+localize,For players who are new to first person action game.
+localize,Your abilities in combat will be tested.
+localize,One Flag CTF
+localize,Online
+localize,Offline Profile
+localize,Create New
+localize,Load
+localize,Browse and delete data
+localize,Select an offline profile
+to save your progress.
+localize,&&1 of &&2
+localize,Winning
+localize,Losing
+localize,Tied
+localize,Searching for opponents
+localize,Launching
+localize,Last Checkpoint
+localize,Waiting
+localize,HOST MIGRATION
+localize,STICK LAYOUT
+localize,BUTTON LAYOUT
+localize,SENSITIVITY
+localize,LOOK INVERSION
+localize,VIBRATION
+localize,HORIZONTAL MARGIN
+localize,VERTICAL MARGIN
+localize,GAME VOLUME
+localize,VOICE VOLUME
+localize,BRIGHTNESS
+localize,JOIN GAME
+localize,CREATE GAME
+localize,CALLSIGN & KILLSTREAKS
+localize,CREATE A CLASS
+localize,BARRACKS
+localize,START GAME
+localize,GAME SETUP
+localize,INVITE
+localize,CHANGE MAP
+localize,CHANGE GAME MODE
+localize,GAME RULES
+localize,TITLE
+localize,EMBLEM
+localize,KILLSTREAK REWARDS
+localize,PRIVATE MATCH
+localize,SPLIT SCREEN
+localize,OPTIONS
+localize,SINGLE PLAYER
+localize,CUSTOM CLASSES
+localize,PRIMARY
+localize,SECONDARY
+localize,Primary Weapons
+localize,Secondary Weapons
+localize,SPECIAL GRENADE
+localize,PERK 1
+localize,PERK 2
+localize,PERK 3
+localize,DEATH STREAK
+localize,RENAME
+localize,RESET CLASS
+localize,+&&1
+localize,ASSAULT RIFLES
+localize,SUB MACHINE GUNS
+localize,LIGHT MACHINE GUNS
+localize,SNIPER RIFLES
+localize,RIOT SHIELD
+localize,MACHINE PISTOLS
+localize,SHOTGUNS
+localize,HANDGUNS
+localize,LAUNCHERS
+localize,WEAPON CLASS
+localize,WEAPONS
+localize,ATTACHMENTS
+localize,CAMOUFLAGE
+localize,WEAPON CLASSES
+localize,UPGRADE
+localize,Start Match
+localize,START MATCH
+localize,Start the match.
+localize,Change Map
+localize,Only the lobby host can start the match.
+localize,Choose a different map.
+localize,Invite friends to your game.
+localize,Invite A Friend
+localize,Invite a friend to your game.
+localize,BOOTCAMP
+localize,Extra primary weapon attachment.
+localize,Extra secondary weapon attachment.
+localize,CIA
+localize,KILLER
+localize,HUMILIATION
+localize,ELITE
+localize,PERKS
+localize,KILLSTREAK
+localize,DEFCON
+localize,EQUIPMENT
+localize,Log Into IW.net
+localize,Username: 
+localize,Log In
+localize,Connecting...
+localize,Creating Account...
+localize,Create an IW.net Account
+localize,Create Account
+localize,Email: 
+localize,That account name is already taken.
+localize,That account name is invalid, please try another one.
+localize,Failed to create account.
+localize,You must log into a valid IW.net account to proceed.
+localize,You are now logged in.
+localize,No response was received from the IW.net servers.  Please try again soon.
+localize,There was a problem communicating with the IW.net servers.
+localize,The password supplied for this account was incorrect.
+localize,That username is not recognized.
+localize,That account is not able to log in to Modern Warfare 2.
+localize,This account has been banned.
+localize,Your account has been created successfully.
+localize,That username already exists.
+localize,That name is not allowed.
+localize,There was an error while trying to create your account.  Please try again soon.
+localize,VOTE TO SKIP
+localize,MAP: 
+localize,GAMETYPE: 
+localize,Select AC130 Pilot
+localize,This Special Operation requires two players.
+localize,Lower to Recruit
+localize,Lower to Regular
+localize,Lower to Hardened
+localize,Your data is corrupt, or the save device isn't inserted correctly.
+
+You must reset your rank and unlocks to continue.
+localize,Your data is corrupt, or didn't download properly.
+
+You must reset your rank and unlocks to continue.
+localize,Your data is from an old version of the game.
+
+You must reset your rank and unlocks to continue.
+localize,Reset Rank
+localize,Cancel
+localize,SELECT YOUR...
+localize,Personal stats
+localize,Titles
+localize,Emblems
+localize,Choose your title.
+localize,Choose your emblem.
+localize,Killstreak Reward
+localize,New killstreak rewards are available.
+localize,You must supply a username and password.
+localize,You must provide a valid email address.
+localize,Both password fields must match.
+localize,You must supply a username.
+localize,You must supply a password.
+localize,Your username must be at least 3 characters long.
+localize,Your password must be at least 4 characters long.
+localize,CHOOSE TEAM
+localize,You must enter a valid CD Key.
+localize,This CD Key has already been used.
+localize,CD Key:
+localize,Lobbies merged successfully
+localize,Trying to merge our lobby with another
+localize,Finding games - 50ms ping
+localize,dummy
+localize,dummy
+localize,No games found
+localize,&&1 potential games found
+localize,Finding games - 100ms ping
+localize,Finding games - 150ms ping
+localize,Finding games - 200ms ping
+localize,Finding games - 250ms ping
+localize,Finding games - 300ms ping
+localize,Finding games - 350ms ping
+localize,New Password:
+localize,Account Settings
+localize,Reset Password
+localize,Modern Warfare 2 Account Settings
+localize,Change Password
+localize,Change Email Address
+localize,Reset Account Password
+localize,Please enter the original CD Key used to create this account.
+localize,Done
+localize,Select OK to reset your password.  Your new password will be sent to the current email address associated with the account.
+localize,Your password has been reset.  Please check the email address associated with your account for an email containing your new password.
+localize,No account name was specified.
+localize,The CD Key provided was not valid.
+localize,The CD Key provided was not the one originally used to create this account.
+localize,This account has already had its password reset recently.  Please wait a few minutes and try again.
+localize,The requested action failed for an unknown reason.  Please wait a few minutes and try again.
+localize,Your password has been changed.
+localize,You are not currently signed into your Modern Warfare 2 account.  Please sign in and try again.
+localize,Your email address has been changed.
+localize,Please provide a valid email address.
+localize,RESUME GAME
+localize,NEW GAME
+localize,MISSION SELECT
+localize,SPECIAL OPS
+localize,MULTIPLAYER
+localize,AIM ASSIST
+localize,SUBTITLES
+localize,RECRUIT
+localize,HARDENED
+localize,REGULAR
+localize,VETERAN
+localize,YES
+localize,NO
+localize,TRY AGAIN
+localize,Difficulty
+localize,Set this player's difficulty.
+localize,Global Thermonuclear War
+localize,GAME SELECTION
+localize,Fetching Playlists
+localize,Updating Rank and Unlocks
+localize,Connecting to Matchmaking Server
+localize,Joining game session, attempt #&&1
+localize,Complete.
+localize,Use Equipment
+localize,N0M4D
+localize,N0M4D Flipped
+localize,More...
+localize,Losing Ground
+localize,Neutral
+localize,Gaining Ground
+localize,contested
+localize,Choose your 3 killstreaks!
+localize,Guests do not save progress.  Sign in to retain your stats!
+localize,Return to Sign In Menu
+localize,Please Wait
+localize,Online Status
+localize,DOWNLOADING...
+localize,Uploading Stats
+localize,Unable to apply settings while connected to a server.
+localize,QUIT
+localize,Movement
+localize,Actions
+localize,Reset Controls
+localize,Brightness adjustment has no effect when playing in a window.
+localize,Hold Aim Down the Sight
+localize,Throw Frag/Use Equipment
+localize,Inventory/Killstreak Reward
+localize,Secondary Inventory
+localize,Night Vision/Stopwatch
+localize,Hold Mouse Look
+localize,Text Chat
+localize,Text Team Chat
+localize,Optional
+localize,Advanced Video
+localize,Video
+localize,Audio
+localize,Mute All
+localize,ACT I
+localize,ACT II
+localize,ACT III
+localize,MUSEUM
+localize,S.S.D.D.
+localize,Demonstrate proper fire control for the local trainees.
+localize,Locate and protect codename Raptor during the beginning of the invasion.
+localize,The Hornet's Nest
+localize,Escape the favela.
+localize,Exodus
+localize,Assist in the evacuation of civilians and key personnel in the suburbs.
+localize,The Only Easy Day... Was Yesterday
+localize,Board the oilrig, rescue the hostages, and clear the route to the gulag.
+localize,Get to Whiskey Hotel.
+localize,Retake Whiskey Hotel.
+localize,Team Player
+localize,Search and destroy enemy forces in Afghanistan.
+localize,Cliffhanger
+localize,Locate and retrieve the ACS module from a crashed satellite.
+localize,No Russian
+localize,Earn Makarov's trust.
+localize,Find and capture arms-dealer Alejandro Rojas, hiding somewhere in the favela.
+localize,Takedown
+localize,Wolverines!
+localize,The Gulag
+localize,Rescue Prisoner #627.
+localize,Of Their Own Accord
+localize,Protect the evacuation site at the Washington Monument.
+localize,Contingency
+localize,Help Captain Price reach the Russian submarine.
+localize,Second Sun
+localize,Whiskey Hotel
+localize,Find and kill Makarov at his safe house on the Georgian-Russian border.
+localize,Loose Ends
+localize,The Enemy of My Enemy
+localize,Escape from General Shepherd's trap in the boneyard.
+localize,Endgame
+localize,Kill General Shepherd.
+localize,Search the Afghan cave network for General Shepherd.
+localize,Just Like Old Times
+localize,You are not signed in to a profile. 
+Do you wish to sign in?
+localize,You are not signed in to a profile. 
+You will not be able to save your progress. 
+Do you wish to sign in?
+localize,Two Player Split Screen
+localize,TWO PLAYER SPLIT SCREEN
+localize,Two Player Online
+localize,TWO PLAYER ONLINE
+localize,Waiting for host to start...
+localize,Need one more player...
+localize,Select your difficulty.
+localize,Assault
+localize,Elimination
+localize,Escort
+localize,Wave Defense
+localize,Timed Assault
+localize,Stealth
+localize,Assault & Defend
+localize,Vehicle Killspree
+localize,Driving
+localize,Timed Escort
+localize,Slow-mo Breach
+localize,Two Players Required
+localize,Civilians
+localize,Explosives & Knives Only
+localize,completion
+localize,Est. Opposition:
+localize,Classification: 
+localize,Est. Completion Time: 
+localize,Your Best Time: 
+localize,Timed Driving
+localize,SPECIAL OPS
+localize,Pick up the story where Modern Warfare™ ended and continue the single player experience.
+localize,Rank up, unlock new weapons, perks, killstreaks, and much more online and locally.
+localize,Collect all 69 stars alone or with a friend in a variety of custom challenging missions.
+localize,STORY
+localize,SOLO PLAY
+localize,TOTAL PROGRESS: 
+localize,None
+localize,Minimal
+localize,Light
+localize,Medium
+localize,Heavy
+localize,Massive
+localize,Leave Lobby?
+localize,Are you absolutely sure?
+localize,Veteran is extremely difficult, are you certain you want to play at Veteran Difficulty?
+localize,IW Best Time: 
+localize,SELECT SAVE DEVICE
+localize,Move the slider to adjust the horizontal margin.
+localize,Move the slider to adjust the vertical margin.
+localize,Stars Earned!
+localize,New Best Time!
+localize,NEXT UNLOCK: 
+localize,TIME PLAYED
+localize,PERCENTAGE COMPLETED
+localize,Not available for this Operation.
+localize,Start Op
+localize,Start the Operation.
+localize,Change Op
+localize,Choose a different Operation.
+localize,Partner has not unlocked this group.
+localize,Partner has not unlocked this Op and will not earn any Stars for completing it.
+localize,You have not unlocked this Op and will not earn any Stars for completing it.
+localize,Different difficulties selected.
+localize,Max reward: 
+localize,Has: &&1
+localize,Requires: &&1
+localize,We strongly recommend you play Campaign first.
+localize,Play Story
+localize,Continue to Special Ops
+localize,Continue to Multiplayer
+localize,"For the Record"
+localize,Choose a different Op
+localize,No Stars rewarded since you don't have this Op unlocked.
+localize,Not signed in
+localize,Return to the last checkpoint?
+localize,Game Progression:
+localize,Hardened Progress:
+localize,Veteran Progress:
+localize,Intel Items:
+localize,Total:
+localize,Play Time:
+localize,Campaign Play Time:
+localize,Multiplayer Play Time:
+localize,Total Play Time:
+localize,Special Ops Play Time:
+localize,D      H        M       S
+localize,Special Ops Progress:
+localize,Campaign Progress:
+localize,Multiplayer Progress:
+localize,Recruit & Regular Progress:
+localize,Stars Earned:
+localize,Total Stars:
+localize,&&1.&&2%
+localize,&&1%
+localize,&&1/&&2
+localize,completion &&1%
+localize,completion &&1.&&2%
+localize,Campaign not complete
+localize,Classified
+localize,Only host can change the Op.
+localize,Browse Ops
+localize,View unlocked Ops.
+localize,&&1/&&2 Intel Items found
+localize,enemy intelligence
+localize,Complete this Op on Hardened or Veteran difficulty to earn additional stars.
+localize,Skip Mission
+localize,The following mission may be disturbing or offensive to some players. You may skip this mission at anytime in the pause menu.
+localize,Skip this mission now
+localize,Disturbing Content Notice
+localize,Are you sure you want to skip this mission?
+localize,Some players may find one of the missions disturbing or offensive. Would you like to have the option to skip this mission?
+localize,Yes, ask me later
+localize,No, I will not be offended
+localize,If you answer yes you will never be asked about skipping levels again.
+localize,(The skip level option will be available in the pause menu.)
+localize,Yes, never ask me again
+localize,CREDITS
+localize,Infinity Ward Intel
+localize,Congratulations! 
+You've completed Special Ops.
+localize,CAMPAIGN
+localize,Show Timer
+localize,Timer/Night Vision
+localize,The player with the fastest CPU should invite.
+localize,Double click your friend's name in Steam to voice chat.
+image,server_hardware_unknown
+material,server_hardware_unknown
+image,server_hardware_dedicated
+material,server_hardware_linux_dedicated
+material,server_hardware_win_dedicated
+image,server_hardware_win_listen
+material,server_hardware_win_listen
+material,server_hardware_mac_listen
+material,server_hardware_mac_dedicated
+localize,
+image,$white
+image,$black
+image,$gray
+image,$identitynormalmap
+image,$pixelcostcolorcode
+rawfile,sp_launcher.cfg
+rawfile,rumble/damage_heavy
+rawfile,rumble/heavy_1s
+rawfile,rumble/heavy_2s
+rawfile,rumble/heavy_3s
+rawfile,rumble/light_1s
+rawfile,rumble/light_2s
+rawfile,rumble/light_3s
+rawfile,rumble/damage_light
+rawfile,rumble/defaultweapon_fire
+rawfile,rumble/defaultweapon_melee
+rawfile,rumble/damage_heavy_h.rmb
+rawfile,rumble/damage_heavy_l.rmb
+rawfile,rumble/damage_light_h.rmb
+rawfile,rumble/damage_light_l.rmb
+rawfile,rumble/defaultweapon_fire_h.rmb
+rawfile,rumble/defaultweapon_fire_l.rmb
+rawfile,rumble/defaultweapon_melee_h.rmb
+rawfile,rumble/defaultweapon_melee_l.rmb
+rawfile,rumble/tank_rumble
+rawfile,rumble/tank_rumble_h.rmb
+rawfile,rumble/tank_rumble_l.rmb
+rawfile,rumble/mig_rumble
+rawfile,rumble/artillery_rumble
+rawfile,rumble/artillery_rumble_h.rmb
+rawfile,rumble/artillery_rumble_l.rmb
+rawfile,rumble/grenade_rumble
+rawfile,rumble/grenade_rumble_h.rmb
+rawfile,rumble/grenade_rumble_l.rmb
+rawfile,rumble/riotshield_impact
+rawfile,rumble/riotshield_impact_h.rmb
+rawfile,rumble/riotshield_impact_l.rmb
+rawfile,rumble/viewmodel_small
+rawfile,rumble/viewmodel_small_h.rmb
+rawfile,rumble/viewmodel_small_l.rmb
+rawfile,rumble/viewmodel_medium
+rawfile,rumble/viewmodel_medium_h.rmb
+rawfile,rumble/viewmodel_medium_l.rmb
+rawfile,rumble/viewmodel_large
+rawfile,rumble/viewmodel_large_h.rmb
+rawfile,rumble/viewmodel_large_l.rmb
+rawfile,rumble/shotgun_fire
+rawfile,rumble/shotgun_fire_h.rmb
+rawfile,rumble/shotgun_fire_l.rmb
+rawfile,rumble/steady_rumble
+rawfile,rumble/steady_h
+rawfile,rumble/steady_l
+rawfile,scriptdebugger/help.txt
+rawfile,shock/default.shock
+rawfile,shock/hold_breath.shock
+rawfile,shock/pain.shock
+rawfile,shock/victoryscreen.shock
+rawfile,shock/flashbang.shock
+rawfile,shock/dog_bite.shock
+rawfile,radiant/keys.txt
+rawfile,codescripts/character.gsc
+rawfile,codescripts/delete.gsc
+rawfile,codescripts/struct.gsc
+rawfile,thumbstick_default.cfg
+rawfile,viewsensitivity_med.cfg
+rawfile,clear_num.cfg
+rawfile,football.cfg
+rawfile,developer.cfg
+rawfile,thumbstick_southpaw.cfg
+rawfile,thumbstick_legacy.cfg
+rawfile,thumbstick_legacysouthpaw.cfg
+rawfile,viewsensitivity_low.cfg
+rawfile,viewsensitivity_high.cfg
+rawfile,viewsensitivity_ultra.cfg
+rawfile,default_splitscreen.cfg
+rawfile,default_systemlink.cfg
+rawfile,default_xboxlive.cfg
+rawfile,default_480p.cfg
+rawfile,default_720p.cfg
+rawfile,ac130.cfg
+rawfile,test.cfg
+rawfile,minimap.cfg
+rawfile,noder.cfg
+rawfile,antfarmcodmw1.cfg
+rawfile,antfarmcodmw2.cfg
+rawfile,enable_art.cfg
+rawfile,enable_artscript.cfg
+sndcurve,default
+loaded_sound,null.wav
+sndcurve,$default
+sound,action_denied
+loaded_sound,misc/metal_click.wav
+sound,consider_prestige
+loaded_sound,explosions/exp_heli_flameup_med01.wav
+sound,enter_prestige
+loaded_sound,animal/animal_chicken_disturbed1.wav
+sound,exit_prestige
+loaded_sound,misc/mouse_ylover.wav
+sound,match_countdown_tick
+loaded_sound,user_interface/ui_select_hz_1.wav
+sound,mouse_click
+loaded_sound,user_interface/ui_over_v2.wav
+sound,mouse_over
+sound,mouse_submenu_over
+loaded_sound,mp/mp_experiencefill_onesecond.wav
+sound,mp_experience_tick
+loaded_sound,mp/mp_player_join_gate.wav
+sound,mp_player_join
+loaded_sound,mp/mp_player_leave_elec.wav
+sound,mp_player_leave
+sound,music_challenge_factory
+sound,music_mainmenu
+sound,music_mainmenu_mp
+sound,music_opening
+sound,null
+sound,other_adjust
+sound,volume_adjust
+image,devfonts_pc
+material,fonts/devfonts_pc
+material,fonts/devfonts_pc_glow
+font,fonts/smallDevFont
+image,gamefonts_pc
+material,fonts/gamefonts_pc
+material,fonts/gamefonts_pc_glow
+font,fonts/consoleFont
+font,fonts/bigDevFont
+font,fonts/bigFont
+font,fonts/smallFont
+font,fonts/boldFont
+font,fonts/normalFont
+font,fonts/extraBigFont
+font,fonts/objectiveFont
+font,fonts/hudBigFont
+font,fonts/hudSmallFont
+vertexshader,vertcol_simple_nofog_dtex.hlsl
+pixelshader,vertcol_simple_nofog.hlsl
+vertexdecl,ppcc0
+vertexshader,vertcol_untextured_dtex_nofog.hlsl
+pixelshader,vertcol_untextured_lin_nofog.hlsl
+techset,effect_blend_nofog
+image,missing_fx
+material,gfx_missing_fx
+fx,misc/missing_fx
+impactfx,default
+image,falloff_linear
+lightdef,light_dynamic
+lightdef,light_point_linear
+localize,Can't voice chat as a spectator.
+localize,SPECTATOR
+localize,Your complaint has been filed
+localize,Complaint dismissed
+localize,Server Host cannot be complained against
+localize,You were team-killed by the Server Host
+localize,File complaint against &&1 for team-killing?
+localize,Press '&&1' for YES, or '&&2' for No
+localize,VOTE
+localize,YES
+localize,NO
+localize,SPECTATING
+localize,You killed &&1
+localize,TEAMMATE
+localize,unknown
+localize,MISSION OBJECTIVES
+localize,Paused
+localize,renamed to
+localize,Connection Interrupted
+localize,&&1
+localize,&&1
+localize,Spectators
+localize,Score
+localize,Deaths
+localize,Ping
+localize,for
+localize,died
+localize,melee
+localize,suicide
+localize,falling
+localize,crush
+localize,drown
+localize,slime
+localize,Waiting for server to load new map
+localize,head shot
+localize,Prone Blocked
+localize,Can't Go Prone With This Weapon
+localize,Health
+localize,Listen Server
+localize,This weapon has no alternate mode to switch to.
+localize,Killed by &&1
+localize,Saving...
+localize,Save and Quit
+localize,If you save now, you will lose any progress 
+since your last checkpoint. 
+
+Continue saving?
+localize,If you restart now, you will lose 
+any progress that you have made 
+in this mission
+
+Continue restart?
+localize,Would you like to save your game progress?
+localize,Kills
+localize,Assists
+localize,Objective Below
+localize,Objective Above
+localize,&&1 saving replay at
+ &&2 -> &&3
+localize,Follow
+localize,^3&&1^7 - Previous player
+localize,^3&&1^7 - Stop following
+localize,Press^3 &&1 ^7to jump
+localize,Press^3 &&1 ^7to stand
+localize,Press^3 &&1 ^7to crouch
+localize,Press^3 &&1 ^7to go prone
+localize,Press^3 &&1 ^7to swap for
+localize,Press^3 &&1 ^7to  
+localize,Hold^3 &&1 ^7to steady
+localize,Press^3 &&1 ^7to pick up
+localize,^3&&1 ^7throw back
+localize,Press USE^3 &&1 ^7to commandeer the .30 cal
+localize,Press^3 [{+activate}] ^7to skip
+localize,Press^3 [{+activate}] ^7to spawn
+localize,Press^3 [{+activate}] ^7to respawn
+localize,Press^3 &&1 ^7to use
+localize,Press^3 &&1 ^7to drop
+localize,Hold^3 &&1 ^7to plant explosives  
+localize,Hold^3 &&1 ^7to defuse explosives  
+localize,Press^3 ESC ^7to^2 Create a Class ^7and more
+localize,Save and Quit
+localize,Quit
+localize,Back
+localize,Yes
+localize,No
+localize,Reload
+localize,Low Ammo
+localize,Press^3 &&1 ^7to pick up Stopping Power
+localize,Press^3 &&1 ^7to pick up Juggernaut
+localize,Press^3 &&1 ^7to pick up Double Tap
+localize,Press^3 &&1 ^7to pick up Last Stand
+localize,Press^3 &&1 ^7to pick up Martyrdom
+localize,Press^3 &&1 ^7to pick up Sleight of Hand
+localize,Play Online
+localize,Go online to get Modern Warfare 2 news and updates
+localize,Welcome to Modern Warfare 2 multiplayer
+localize,^3&&1^7 - Next player
+localize,Hold [Right Mouse] to set direction
+localize,Use the mouse to select a target
+localize,Press Fire to set Air Strike location
+localize,Hold^3 [{+activate}] ^7Coward's way out
+localize,Disconnected from server
+localize,An error occurred while reading the stats data. Your stats have been reset.
+localize,Gain XP! You get experience points(XP) for getting kills, completing challenges, and completing matches on Ranked servers.
+localize,Level up! As you gain XP, you earn promotions, unlockables, and new challenges.
+localize,Customize your weapon! You can add a camouflage pattern or attachment to your weapons in Create-a-class.
+localize,Design your own class! Create-a-class lets you choose your weapons and perks, then name the class to your liking.
+localize,Use teamwork! If you damage an enemy but someone else gets the kill, you are awarded assist points.
+localize,Get hardcore.  Hardcore modes remove your hud and make weapons even more deadly.
+localize,Custom games!  Unranked games can play any game mode with custom rules.
+localize,Challenges are rewarding.  Weapon challenges unlock attachments and camouflage patterns for use in Create-a-class.
+localize,Get more XP!  You get extra XP bonuses for completing Challenges, located in Rank and Challenges.
+localize,Listen in... You can hear the enemy team's voice chat with the Eavesdrop perk.
+localize,Be aware... You can spot enemy explosive devices like claymores and C4 with the Bomb Squad perk.
+localize,Take a stand!  Pull out your pistol and make that last ditch effort to get some kills before you die with the Last Stand perk.
+localize,Combine your air support!  Call in an airstrike in combination with a UAV for a pinpoint accurate carpet bomb.
+localize,Chopper down!  Don't be afraid to fire at enemy choppers with your primary weapon.  It may do less damage than a rocket, but it definitely hurts.
+localize,Find the enemy!  Calling in a UAV shows enemies on your radar as red dots.  Knowing the enemy position is a big advantage.
+localize,Defend your flags!  In the Domination game mode, holding marked objectives gives your team points.  The more objectives you hold, the more points you get.
+localize,Watch those corners!  Be careful playing Search and Destroy - when you die you don't respawn.
+localize,Escort the bomb!  Protect the bomb carrier in Sabotage.  It takes teamwork to get to the enemy objective.
+localize,Call in radar!  You can earn radar for you and your team by getting 3 kills in a row without dying.
+localize,Call in an airstrike!  Get 5 kills in a row without dying and you can call in an air strike on the position of your choice.
+localize,Call in a chopper!  You can earn helicopter air support by getting 7 kills in a row without dying.
+localize,Back to basics... The Old School game modes don't have classes.  Everyone starts with the same weapons and must pick up new weapons and perks in the level.
+localize,Pick your shots!  When you fire a weapon WITHOUT a silencer, you appear as a red dot on your enemies' compass.
+localize,Get quiet...  Using a silencer doesn't show your shots as a red dot on the enemy compass, but your weapon's range is reduced.
+localize,Stealth technology.  Using the UAV Jammer perk will prevent you from showing as a red dot on the enemy compass.
+localize,Grenades from a rifle mounted grenade launcher need to travel before they are armed.  They do damage if they hit your enemy, but only explode at a distance.
+localize,Create your own game mode!  Start your own server and tweak game mode settings to whatever you like.
+localize,Dominate with teamwork!  Domination flags capture faster with multiple teammates capturing together.
+localize,Use your knife!  Melee the enemy with your knife for a fast and humiliating kill.
+localize,Run faster!  Pressing sprint will allow you to run faster for a short amount of time, but you can't use your weapon.
+localize,Hold your breath!  Hold your breath with scoped weapons for increased accuracy.
+localize,Throw back grenades!  Look for the grenade throwback icon when a grenade is near you.  You can throw back the enemy's grenades.
+localize,Shoot through walls!  Different weapons can fire through many different surfaces with reduced damage.
+localize,Use your inventory!  Items like grenade launchers, RPGs, claymores, and C4 are stored in your inventory.
+localize,Explosive shortcut!  Double tap the use key to detonate thrown C4 while using another weapon.
+localize,You have not chosen a profile yet.
+localize,Unexpected www download message.
+localize,Client dropped to download files.
+localize,[{+frag}] Safe Spawn
+localize,[{+activate}] Resupply
+localize,[{+activate}]Sentry
+localize,[{+activate}]Auto_Shot
+localize,[{+activate}]Thumper
+localize,[{+activate}] Random Item
+localize,[Space] Boost
+localize,[S] Reverse
+localize,[Left Mouse] Fire
+localize,[W] Throttle
+localize,[{+activate}] New kit
+localize,[{+activate}] Revive player
+localize,IwNet Unlocks: On
+localize,IwNet Unlocks: Off
+localize,Find Game
+localize,Pick a game mode and quickly join a game online.
+localize,Only the party host can find games.
+localize,BACK ^0- ^3ESC^7
+localize,Press [{+activate}] to detonate
+localize,[{+activate}] Killstreak
+localize,Use the mouse to position
+localize,Hold ^3[Right Mouse]^7 to aim
+localize,Press ^3[Left Mouse]^7 to confirm target
+localize,PLAY
+localize,LAN PARTY
+localize,FIND GAME
+localize,LAN PARTY
+localize,GAME SUMMARY ^0- ^3F1^7
+localize,Steer
+localize,[{+attack}] Boost
+localize,CONTINUE
+localize,CLOSE
+localize,Press^3 [{weapnext}] ^7 Steal their class!
+localize,Accept Invite
+localize,(You will not be penalized in terms of game completion.)
+localize,Complete Perk challenges to unlock upgraded Perks.
+localize,Get Killstreak Rewards by getting consecutive kills without dying.
+localize,Use weapon attachments to unlock special weapon attachments.
+localize,Some killstreak rewards are controllable but leave you vulnerable on the ground.
+localize,Check out all of your Accolades in the Barracks.
+localize,Private Matches allow you to play with friends on a LAN or online.
+localize,Swap out Frag grenades for Tactical Insertion, Blast Shield, and other equipment.
+localize,Deathstreaks give you a boost when things aren't going your way.
+localize,Bullets can ricochet off of Riot Shields and kill!
+localize,Edit your Callsign to show off Titles and Emblems you've earned.
+localize,Scroll left and right on the Game Summary for more detailed info.
+localize,Titles and Emblems you've earned don't reset after entering Prestige Mode.
+localize,Shutting down mid-game will cause you to lose your Match Bonus.
+localize,Care Package is an airdrop that awards a random killstreak reward or ammo.
+localize,Tactical Insertion is a flare that marks where your next respawn will be.
+localize,Destroy red flares to prevent an enemy Tactical Insertion.
+localize,Semtex will stick to your enemy.
+localize,Blast Shield increases your resistance to explosions but limits your view.
+localize,Even when your Riot Shield is on your back it blocks bullets.
+localize,The Heartbeat Sensor attachment detects enemies that are close by.
+localize,The Cold-Blooded perk makes you invisible to thermal vision, UAV, and enemy air support.
+localize,Hardline makes killstreak rewards require 1 less kill.
+localize,You can crawl while in Last Stand.
+localize,Crouch with the Riot Shield to protect your feet.
+localize,The Painkiller Deathstreak gives you extra protection when you respawn.
+localize,Point your Riot Shield directly at the person shooting you for maximum effectiveness.
+localize,Sentry Guns can be temporarily disabled by using Flashbangs or Stun Grenades on them.
+localize,The Predator Missile lets you control a missile fired from above.
+localize,Crouch with the Riot Shield to cover your feet and get maximum protection.
+localize,Killstreak Rewards are unlocked in the order you choose.
+localize,3rd Person modes allow you to experience tactical gameplay from an over the shoulder perspective.
+localize,The default Classes contain items unlocked at later levels, giving you a preview of things to come.
+localize,The Scavenger Perk lets you resupply your loadout by taking it from fallen foes.
+localize,Steal your killer's loadout during killcam with the Copycat Deathstreak.
+localize,The Tactical Knife attachment for Handguns speeds up your melee.
+localize,The Bling Perk allows you to have 2 attachments on your primary weapon.
+localize,Press and hold ^3&&1^7 for Nuclear Strike.
+localize,Survive a Final Stand bleedout and you stand back up.
+localize,Killstreak Rewards attained from airdrop crates do not count towards your killstreak count.
+localize,Akimbo weapons give you more firepower but restrict your ability to aim down the sight.
+localize,CHANGE PROFILE
+localize,Click to unlock killstreak.
+localize,^3F2^0-^7 View Challenges
+localize,Steam authorization failed.
+localize,Cheat detected.
+localize,Steam connect failed.
+localize,^3F2^0-^7 Challenge Details
+localize,Failed to join Steam lobby.
+localize,Failed to join friend's game.
+localize,Connecting to IWNet
+localize,Must be signed in to Steam in Online mode to play.
+localize,Disconnected from Steam.
+image,default
+material,$default
+material,white
+material,black
+vertexshader,vertcol_simple_tools.hlsl
+pixelshader,vertcol_shaded.hlsl
+vertexdecl,ppcc0t0t0nn
+vertexshader,l_point_tc0.hlsl
+pixelshader,l_spot_b0c0.hlsl
+pixelshader,l_omni_b0c0.hlsl
+vertexshader,vertcol_untextured_nofog.hlsl
+techset,tools
+material,$additive
+material,$glare_blind
+material,$point
+material,$line
+material,$line_nodepth
+vertexdecl,pp
+vertexshader,transform_only.hlsl
+pixelshader,null.hlsl
+vertexshader,floatz_build.hlsl
+pixelshader,floatz_build.hlsl
+vertexshader,shadowmap_build.hlsl
+pixelshader,shadowmap_build_sm3.hlsl
+techset,depthprepass
+material,depthprepass
+pixelshader,floatz_clear.hlsl
+techset,shadowclear
+material,shadowclear
+vertexshader,shell_shock.hlsl
+pixelshader,shell_shock.hlsl
+techset,shell_shock
+material,shellshock
+vertexshader,shell_shock_flashed.hlsl
+pixelshader,shell_shock_flashed.hlsl
+techset,shell_shock_flashed
+material,shellshock_flashed
+vertexdecl,ppt0t0
+vertexshader,color_channel_mixer.hlsl
+pixelshader,color_channel_mixer.hlsl
+techset,color_channel_mixer
+material,color_channel_mixer
+material,frame_color_debug
+material,frame_alpha_debug
+pixelshader,blur_apply.hlsl
+techset,blur_apply
+material,blur_apply
+pixelshader,blur_apply_film.hlsl
+techset,blur_apply_film
+material,blur_apply_film
+pixelshader,blur_apply_film_color2.hlsl
+techset,blur_apply_film_color2
+material,blur_apply_film_color2
+vertexshader,textured_simple.hlsl
+pixelshader,textured_simple.hlsl
+techset,passthru_alpha
+material,feedbackreplace
+vertexshader,glow_consistent_setup.hlsl
+pixelshader,glow_consistent_setup.hlsl
+techset,glow_consistent_setup
+material,glow_consistent_setup
+pixelshader,glow_consistent_setup_color2.hlsl
+techset,glow_consistent_setup_color2
+material,glow_consistent_setup_color2
+vertexshader,glow_apply_bloom.hlsl
+pixelshader,glow_apply_bloom.hlsl
+techset,glow_apply_bloom
+material,glow_apply_bloom
+vertexshader,filter_symmetric_1.hlsl
+pixelshader,filter_symmetric_1.hlsl
+techset,filter_symmetric_1
+material,filter_symmetric_1
+vertexshader,filter_symmetric_2.hlsl
+pixelshader,filter_symmetric_2.hlsl
+techset,filter_symmetric_2
+material,filter_symmetric_2
+vertexshader,filter_symmetric_3.hlsl
+pixelshader,filter_symmetric_3.hlsl
+techset,filter_symmetric_3
+material,filter_symmetric_3
+vertexshader,filter_symmetric_4.hlsl
+pixelshader,filter_symmetric_4.hlsl
+techset,filter_symmetric_4
+material,filter_symmetric_4
+vertexshader,filter_symmetric_5.hlsl
+pixelshader,filter_symmetric_5.hlsl
+techset,filter_symmetric_5
+material,filter_symmetric_5
+vertexshader,filter_symmetric_6.hlsl
+pixelshader,filter_symmetric_6.hlsl
+techset,filter_symmetric_6
+material,filter_symmetric_6
+vertexshader,filter_symmetric_7.hlsl
+pixelshader,filter_symmetric_7.hlsl
+techset,filter_symmetric_7
+material,filter_symmetric_7
+vertexshader,filter_symmetric_8.hlsl
+pixelshader,filter_symmetric_8.hlsl
+techset,filter_symmetric_8
+material,filter_symmetric_8
+material,filter_symmetric_1_lin
+material,filter_symmetric_2_lin
+material,filter_symmetric_3_lin
+material,filter_symmetric_4_lin
+material,filter_symmetric_5_lin
+material,filter_symmetric_6_lin
+material,filter_symmetric_7_lin
+material,filter_symmetric_8_lin
+pixelshader,postfx_dof.hlsl
+techset,postfx_dof
+material,postfx_dof
+pixelshader,postfx_dof_color.hlsl
+techset,postfx_dof_color
+material,postfx_dof_color
+pixelshader,postfx_dof_color2.hlsl
+techset,postfx_dof_color2
+material,postfx_dof_color2
+pixelshader,postfx_color.hlsl
+techset,postfx_color
+material,postfx_color
+pixelshader,postfx_color2.hlsl
+techset,postfx_color2
+material,postfx_color2
+pixelshader,postfx.hlsl
+techset,postfx
+material,postfx
+pixelshader,postfx_mblur_dof.hlsl
+techset,postfx_mblur_dof
+material,postfx_mblur_dof
+pixelshader,postfx_mblur_dof_color.hlsl
+techset,postfx_mblur_dof_color
+material,postfx_mblur_dof_color
+pixelshader,postfx_mblur_dof_color2.hlsl
+techset,postfx_mblur_dof_color2
+material,postfx_mblur_dof_color2
+pixelshader,postfx_mblur_color.hlsl
+techset,postfx_mblur_color
+material,postfx_mblur_color
+pixelshader,postfx_mblur_color2.hlsl
+techset,postfx_mblur_color2
+material,postfx_mblur_color2
+pixelshader,postfx_mblur.hlsl
+techset,postfx_mblur
+material,postfx_mblur
+vertexshader,ps3_aadownsample.hlsl
+pixelshader,ps3_aadownsample.hlsl
+techset,ps3_aadownsample
+material,ps3_aadownsample
+vertexshader,particle_blend.hlsl
+pixelshader,particle_blend.hlsl
+techset,particle_blend
+material,particle_blend
+pixelshader,particle_zdownsample.hlsl
+techset,particle_zdownsample
+material,particle_zdownsample
+vertexshader,dof_downsample.hlsl
+pixelshader,dof_downsample.hlsl
+techset,dof_downsample
+material,dof_downsample
+pixelshader,dof_near_coc.hlsl
+techset,dof_near_coc
+material,dof_near_coc
+vertexshader,small_blur.hlsl
+pixelshader,small_blur.hlsl
+techset,small_blur
+material,small_blur
+image,statmon_warning_tris
+material,statmon_warning_tris
+image,console
+material,console
+image,warning@file
+material,code_warning_file
+image,warning@fps
+material,code_warning_fps
+image,voice_on_dim_#0
+material,nottalkingicon
+image,voice_on_#0
+material,talkingicon
+vertexshader,vertcol_simple_fog_nc.hlsl
+pixelshader,vertcol_simple_fog_nc.hlsl
+vertexshader,vertcol_untextured_nc_nofog.hlsl
+pixelshader,vertcol_untextured_lin_nc_nofog.hlsl
+techset,w_shadowcaster
+image,shadow
+material,w/shadowcaster
+vertexshader,vertcol_simple_fog_nc_dtex.hlsl
+vertexshader,vertcol_untextured_nc_dtex_nofog.hlsl
+techset,m_shadowcaster
+material,m/shadowcaster
+pixelshader,shadowmap_display.hlsl
+techset,shadowoverlay
+material,shadowoverlay
+techset,alternate_scene_overlay
+material,alternate_scene_overlay
+vertexshader,floatz_display.hlsl
+pixelshader,floatz_display.hlsl
+techset,floatzdisplay
+material,floatz_display
+vertexshader,floatz.hlsl
+pixelshader,floatz.hlsl
+techset,floatz
+material,$floatz
+vertexshader,processed_floatz.hlsl
+pixelshader,processed_floatz.hlsl
+techset,processed_floatz
+material,$processed_floatz
+vertexshader,transform_only_tools.hlsl
+techset,stencilshadow
+material,stencilshadow
+techset,stencildisplay
+material,stencildisplay
+vertexshader,pixel_cost_color_code.hlsl
+pixelshader,pixel_cost_color_code.hlsl
+techset,pixel_cost_color_code
+material,pixel_cost_color_code
+pixelshader,pixel_cost_add.hlsl
+techset,pixel_cost_add
+material,pixel_cost_add_depth_always
+material,pixel_cost_add_depth_disable
+material,pixel_cost_add_depth_equal
+material,pixel_cost_add_depth_less
+material,pixel_cost_add_depthwrite
+material,pixel_cost_add_nodepthwrite
+image,line_horizontal
+material,line_horizontal
+vertexshader,zfeather_dtex.hlsl
+pixelshader,zfeather_premul.hlsl
+techset,effect_zfeather_add
+vertexshader,vertcol_simple_fog_dtex.hlsl
+pixelshader,vertcol_simple_add_fog.hlsl
+techset,effect_add
+material,thermalbody_default
+vertexshader,vertcol_simple_dtex.hlsl
+pixelshader,vertcol_simple_screen.hlsl
+techset,effect_screen_nofog
+image,tracer#0
+material,gfx_tracer
+image,flare_clr_a
+material,gfx_tracer_thermal
+vertexshader,laser.hlsl
+pixelshader,laser.hlsl
+techset,laser
+image,laser
+image,laser_dust
+material,gfx_laser
+vertexshader,watersheeting_color_distort_blur.hlsl
+pixelshader,watersheeting_color_distort_blur.hlsl
+techset,watersheeting_color_distort_blur
+image,watersheeting_fx_distortion
+material,watersheeting_color_distort_blur
+vertexshader,cinematic.hlsl
+pixelshader,cinematic.hlsl
+techset,cinematic
+image,popups_alpha
+material,popmenu_bg
+menu,
+menu,
+material,xpbar_stencilbase
+image,menu_cloud_overlay
+material,mw2_popup_bg_fogstencil
+material,mw2_popup_bg_fogscroll
+material,mockup_popup_bg_stencilfill
+image,small_box_lightfx
+material,small_box_lightfx
+image,dropshadow_tl
+material,drop_shadow_tl
+image,dropshadow_t
+material,drop_shadow_t
+image,dropshadow_tr
+material,drop_shadow_tr
+image,dropshadow_r
+material,drop_shadow_r
+image,dropshadow_br
+material,drop_shadow_br
+image,dropshadow_b
+material,drop_shadow_b
+image,dropshadow_bl
+material,drop_shadow_bl
+image,dropshadow_l
+material,drop_shadow_l
+image,gradient_fadein
+material,gradient_fadein
+image,mw2_selection_bar
+material,menu_button_selection_bar
+image,mw2_popup_selection_bar
+material,popup_button_selection_bar
+menu,
+menu,
+menu,
+menu,
+menu,
+menu,
+menu,
+menu,
+material,cinematic
+menu,
+menu,
+menu,
+material,,mw2_main_background
+material,mw2_main_cloud_overlay
+image,mockup_bgglow
+material,mockup_bg_glow
+image,gradient
+material,gradient
+image,difficulty_star
+material,difficulty_star
+image,difficulty_star_empty
+material,difficulty_star_empty
+image,logo_iw
+material,logo_iw
+menu,
+image,end_game_victory_iw4
+material,victory_iw4
+menu,
+menu,
+menu,
+menu,
+menufile,ui/code.txt
+menu,
+menufile,ui/default.menu
+weapon,none
+xanim,player_mantle_up_57
+xanim,player_mantle_up_51
+xanim,player_mantle_up_45
+xanim,player_mantle_up_39
+xanim,player_mantle_up_33
+xanim,player_mantle_up_27
+xanim,player_mantle_up_21
+xanim,player_mantle_over_high
+xanim,player_mantle_over_low
+xanim,player_mantle_over_mid
+xanim,void
+xanim,void_loop
+techset,mc_effect_blend_nofog
+material,mc/gfx_missing_fx
+xmodelsurfs,fx10
+phys_collmap,void
+xmodel,void
+image,scrollbar
+material,ui_scrollbar
+image,scrollbar_arrow_dwn_a
+material,ui_scrollbar_arrow_dwn_a
+image,scrollbar_arrow_up_a
+material,ui_scrollbar_arrow_up_a
+image,scrollbar_arrow_left
+material,ui_scrollbar_arrow_left
+image,scrollbar_arrow_right
+material,ui_scrollbar_arrow_right
+image,scrollbar_thumb
+material,ui_scrollbar_thumb
+image,slider2
+material,ui_slider2
+image,sliderbutt_1
+material,ui_sliderbutt_1
+image,decode_characters
+material,decode_characters
+material,decode_characters_glow
+physpreset,default
+rawfile,soundaliases/channels.def
+stringtable,mp/defaultstringtable.csv
+pixelshader,textured_gamma.hlsl
+techset,default
+tracer,defaulttracer
+rawfile,clear_script_tools.cfg
+rawfile,code_post_gfx
+material,mw2_main_background

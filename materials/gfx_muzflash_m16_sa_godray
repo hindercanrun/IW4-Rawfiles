@@ -1,0 +1,74 @@
+{
+    "animationX": 1,
+    "animationY": 4,
+    "cameraRegion": 2,
+    "constantTable": [
+        {
+            "literal": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "name": "falloffBegin",
+            "nameHash": 1023779314
+        },
+        {
+            "literal": [
+                0.0,
+                0.0,
+                0.0,
+                0.5
+            ],
+            "name": "falloffEndCo",
+            "nameHash": 1797105402
+        },
+        {
+            "literal": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "name": "colorTint",
+            "nameHash": 3054254906
+        },
+        {
+            "literal": [
+                0.00526315812021494,
+                -0.0526315793395042,
+                4.54863262176514,
+                -0.137157991528511
+            ],
+            "name": "falloffParms’v¬;6”W½fŽ‘@%s\f¾*‰!\u0019\f",
+            "nameHash": 3185466613
+        }
+    ],
+    "gameFlags": 0,
+    "maps": [
+        {
+            "firstCharacter": 99,
+            "image": "m16_flares",
+            "lastCharacter": 112,
+            "sampleState": 11,
+            "semantic": 2,
+            "typeHash": 2695565377
+        }
+    ],
+    "name": "gfx_muzflash_m16_sa_godray",
+    "sortKey": 48,
+    "stateFlags": 19,
+    "stateMap": [
+        [
+            421628202,
+            12
+        ],
+        [
+            2282915858,
+            3835578668
+        ]
+    ],
+    "surfaceTypeBits": 0,
+    "techniqueSet->name": "effect_falloff_screen_nofog",
+    "unknown": 0
+}

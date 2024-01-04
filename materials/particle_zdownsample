@@ -1,0 +1,20 @@
+{
+    "animationX": 1,
+    "animationY": 1,
+    "cameraRegion": 4,
+    "constantTable": null,
+    "gameFlags": 0,
+    "maps": null,
+    "name": "particle_zdownsample",
+    "sortKey": 34,
+    "stateFlags": 27,
+    "stateMap": [
+        [
+            403867666,
+            3759013889
+        ]
+    ],
+    "surfaceTypeBits": 0,
+    "techniqueSet->name": "particle_zdownsample",
+    "unknown": 0
+}

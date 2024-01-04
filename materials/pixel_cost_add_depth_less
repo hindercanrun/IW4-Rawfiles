@@ -1,0 +1,20 @@
+{
+    "animationX": 1,
+    "animationY": 1,
+    "cameraRegion": 4,
+    "constantTable": null,
+    "gameFlags": 0,
+    "maps": null,
+    "name": "pixel_cost_add_depth_less",
+    "sortKey": 47,
+    "stateFlags": 19,
+    "stateMap": [
+        [
+            403867938,
+            4
+        ]
+    ],
+    "surfaceTypeBits": 0,
+    "techniqueSet->name": "pixel_cost_add",
+    "unknown": 0
+}

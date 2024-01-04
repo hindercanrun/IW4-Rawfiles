@@ -1,0 +1,20 @@
+{
+    "animationX": 1,
+    "animationY": 1,
+    "cameraRegion": 4,
+    "constantTable": null,
+    "gameFlags": 0,
+    "maps": null,
+    "name": "stencilshadow",
+    "sortKey": 34,
+    "stateFlags": 50,
+    "stateMap": [
+        [
+            1198098,
+            4161781956
+        ]
+    ],
+    "surfaceTypeBits": 0,
+    "techniqueSet->name": "stencilshadow",
+    "unknown": 0
+}

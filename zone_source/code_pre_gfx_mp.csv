@@ -1,0 +1,7 @@
+rawfile,codescripts/$default
+rawfile,configure_mp.csv
+rawfile,configure_mp.cfg
+rawfile,safemode_mp.cfg
+rawfile,default_mp_gamesettings.cfg
+rawfile,ragdoll.cfg
+rawfile,code_pre_gfx_mp
