@@ -1,0 +1,436 @@
+{
+    "isInUse": 1,
+    "name": "maps/co_hunted.d3dbsp",
+    "primaryLightCount": 13,
+    "primaryLights": [
+        {
+            "canUseShadowMap": 0,
+            "color": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "cosHalfFovExpanded": 0.0,
+            "cosHalfFovInner": 0.0,
+            "cosHalfFovOuter": 0.0,
+            "defName": "",
+            "dir": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "exponent": 0,
+            "origin": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "radius": 0.0,
+            "rotationLimit": 0.0,
+            "translationLimit": 0.0,
+            "type": 0,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 0,
+            "color": [
+                0.314900010824203,
+                0.380699992179871,
+                0.469999998807907
+            ],
+            "cosHalfFovExpanded": 0.0,
+            "cosHalfFovInner": 0.0,
+            "cosHalfFovOuter": 0.0,
+            "defName": "",
+            "dir": [
+                0.502570390701294,
+                0.578141033649445,
+                0.642787575721741
+            ],
+            "exponent": 0,
+            "origin": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "radius": 0.0,
+            "rotationLimit": 0.0,
+            "translationLimit": 0.0,
+            "type": 1,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.39999997615814,
+                1.12000000476837,
+                0.699999988079071
+            ],
+            "cosHalfFovExpanded": 0.499999970197678,
+            "cosHalfFovInner": 1,
+            "cosHalfFovOuter": 0.499999970197678,
+            "defName": "light_point_linear",
+            "dir": [
+                0.988011956214905,
+                0.0,
+                0.154376864433289
+            ],
+            "exponent": 2,
+            "origin": [
+                1030,
+                308,
+                169
+            ],
+            "radius": 300,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.25999999046326,
+                1.25999999046326,
+                1.39999997615814
+            ],
+            "cosHalfFovExpanded": 0.70710676908493,
+            "cosHalfFovInner": 1,
+            "cosHalfFovOuter": 0.70710676908493,
+            "defName": "light_point_linear",
+            "dir": [
+                0.775220930576324,
+                -0.0628529861569405,
+                0.628555417060852
+            ],
+            "exponent": 1,
+            "origin": [
+                1078.80004882812,
+                1200.09997558594,
+                71
+            ],
+            "radius": 90,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.5,
+                1.5,
+                1.5
+            ],
+            "cosHalfFovExpanded": 0.819152057170868,
+            "cosHalfFovInner": 0.923879504203796,
+            "cosHalfFovOuter": 0.819152057170868,
+            "defName": "light_point_linear",
+            "dir": [
+                0.6664217710495,
+                -0.368910580873489,
+                0.647909760475159
+            ],
+            "exponent": 1,
+            "origin": [
+                1097,
+                -4103.7998046875,
+                226.399993896484
+            ],
+            "radius": 320,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.39999997615814,
+                1.36728942394257,
+                1.25607407093048
+            ],
+            "cosHalfFovExpanded": 0.70710676908493,
+            "cosHalfFovInner": 0.906307756900787,
+            "cosHalfFovOuter": 0.70710676908493,
+            "defName": "light_point_linear",
+            "dir": [
+                0.191291227936745,
+                -0.0478228069841862,
+                0.980367541313171
+            ],
+            "exponent": 1,
+            "origin": [
+                1103.5,
+                0.5,
+                215
+            ],
+            "radius": 600,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                0.810000002384186,
+                0.810000002384186,
+                0.810000002384186
+            ],
+            "cosHalfFovExpanded": 0.499999970197678,
+            "cosHalfFovInner": 0.866025388240814,
+            "cosHalfFovOuter": 0.499999970197678,
+            "defName": "light_point_linear",
+            "dir": [
+                0.980580747127533,
+                0.196116149425507,
+                0.0
+            ],
+            "exponent": 1,
+            "origin": [
+                1242,
+                285,
+                80
+            ],
+            "radius": 250,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.39999997615814,
+                1.07973909378052,
+                0.835729956626892
+            ],
+            "cosHalfFovExpanded": 0.499999970197678,
+            "cosHalfFovInner": 0.866025388240814,
+            "cosHalfFovOuter": 0.499999970197678,
+            "defName": "light_point_linear",
+            "dir": [
+                0.873843431472778,
+                0.0267861317843199,
+                0.48546901345253
+            ],
+            "exponent": 1,
+            "origin": [
+                1369.5,
+                2239.60009765625,
+                113
+            ],
+            "radius": 260,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.60000002384186,
+                1.53098082542419,
+                1.44313764572144
+            ],
+            "cosHalfFovExpanded": 0.499999970197678,
+            "cosHalfFovInner": 0.70710676908493,
+            "cosHalfFovOuter": 0.499999970197678,
+            "defName": "light_point_linear",
+            "dir": [
+                -0.0243829935789108,
+                0.0,
+                0.999702751636505
+            ],
+            "exponent": 1,
+            "origin": [
+                1389,
+                1194,
+                155
+            ],
+            "radius": 600,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.20000004768372,
+                1.20000004768372,
+                1.20000004768372
+            ],
+            "cosHalfFovExpanded": 0.766044437885284,
+            "cosHalfFovInner": 0.965925812721252,
+            "cosHalfFovOuter": 0.766044437885284,
+            "defName": "light_point_linear",
+            "dir": [
+                0.0,
+                0.0,
+                1
+            ],
+            "exponent": 1,
+            "origin": [
+                2933.45581054688,
+                2371.97021484375,
+                238
+            ],
+            "radius": 1200,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.60000002384186,
+                1.53098082542419,
+                1.44313764572144
+            ],
+            "cosHalfFovExpanded": 0.499999970197678,
+            "cosHalfFovInner": 0.866025388240814,
+            "cosHalfFovOuter": 0.499999970197678,
+            "defName": "light_point_linear",
+            "dir": [
+                0.0,
+                0.0,
+                1
+            ],
+            "exponent": 1,
+            "origin": [
+                7254,
+                7990,
+                276
+            ],
+            "radius": 600,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.5,
+                1.5,
+                1.5
+            ],
+            "cosHalfFovExpanded": 0.5735764503479,
+            "cosHalfFovInner": 0.965925812721252,
+            "cosHalfFovOuter": 0.5735764503479,
+            "defName": "light_point_linear",
+            "dir": [
+                0.748869180679321,
+                0.476553112268448,
+                0.460534512996674
+            ],
+            "exponent": 1,
+            "origin": [
+                9100,
+                7173,
+                168
+            ],
+            "radius": 800,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 1,
+            "color": [
+                1.39999997615814,
+                1.39999997615814,
+                1.39999997615814
+            ],
+            "cosHalfFovExpanded": 0.737277328968048,
+            "cosHalfFovInner": 0.843391418457031,
+            "cosHalfFovOuter": 0.737277328968048,
+            "defName": "light_point_quadratic",
+            "dir": [
+                0.400384575128555,
+                -0.912507236003876,
+                -0.0838016197085381
+            ],
+            "exponent": 1,
+            "origin": [
+                800.599975585938,
+                327.399993896484,
+                31.2000007629395
+            ],
+            "radius": 380,
+            "rotationLimit": 1,
+            "translationLimit": 0.0,
+            "type": 2,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "isInUse": 1,
+    "name": "maps/iw4_credits.d3dbsp",
+    "primaryLightCount": 2,
+    "primaryLights": [
+        {
+            "canUseShadowMap": 0,
+            "color": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "cosHalfFovExpanded": 0.0,
+            "cosHalfFovInner": 0.0,
+            "cosHalfFovOuter": 0.0,
+            "defName": "",
+            "dir": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "exponent": 0,
+            "origin": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "radius": 0.0,
+            "rotationLimit": 0.0,
+            "translationLimit": 0.0,
+            "type": 0,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "canUseShadowMap": 0,
+            "color": [
+                0.880553424358368,
+                0.930250525474548,
+                0.995900392532349
+            ],
+            "cosHalfFovExpanded": 0.0,
+            "cosHalfFovInner": 0.0,
+            "cosHalfFovOuter": 0.0,
+            "defName": "",
+            "dir": [
+                0.105690032243729,
+                0.325280517339706,
+                0.939692616462708
+            ],
+            "exponent": 0,
+            "origin": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "radius": 0.0,
+            "rotationLimit": 0.0,
+            "translationLimit": 0.0,
+            "type": 1,
+            "unused": 0,
+            "up": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1727 @@
+techset,,mc_l_sm_r0c0n0s0p0
+techset,,mc_l_sm_r0c0p0
+techset,,mc_l_sm_r0c0s0p0
+techset,,mc_l_sm_r0c0n0p0
+techset,,mc_l_hsm_r0c0p0
+techset,,mc_l_hsm_r0c0s0p0
+techset,,mc_l_hsm_r0c0n0p0
+techset,,mc_l_hsm_r0c0n0s0p0
+techset,,mc_l_sm_b0c0n0s0
+techset,,mc_l_sm_b0c0
+techset,,mc_l_sm_b0c0s0
+techset,,mc_l_sm_b0c0n0
+techset,,mc_l_hsm_b0c0
+techset,,mc_l_hsm_b0c0s0
+techset,,mc_l_hsm_b0c0n0
+techset,,mc_l_hsm_b0c0n0s0
+image,~us_army_glove_spc-rgb&us_arm~ffb6930b
+image,us_army_glove_nml
+image,us_army_glove_col
+material,mc/mtl_us_army_glove
+image,~us_army_sleeve_gps_spc-rgb&u~71231169
+image,us_army_sleeve_gps_nml
+image,us_army_sleeve_gps_col
+material,mc/mtl_us_army_gps_sleeve
+image,~us_army_alpha_spc-rgb&us_arm~8def6c18
+image,us_army_alpha_nml
+image,us_army_alpha_col
+material,mc/mtl_us_army_alpha
+material,mc/mtl_us_army_metal_gps_sleeve
+xmodelsurfs,viewhands_us_army40
+xmodel,viewmodel_base_viewhands
+com_map,maps/iw4_credits.d3dbsp
+fx_map,maps/iw4_credits.d3dbsp
+vertexdecl,,pp
+vertexshader,,transform_only.hlsl
+pixelshader,,null.hlsl
+vertexshader,,floatz_build.hlsl
+pixelshader,,floatz_build.hlsl
+vertexshader,,shadowmap_build.hlsl
+pixelshader,,shadowmap_build_sm3.hlsl
+vertexdecl,,ppcc0t0t0
+vertexshader,,vertcol_simple_fog.hlsl
+pixelshader,,vertcol_shaded_fog_lin.hlsl
+vertexdecl,,ppcc0t0t0nn
+vertexshader,,lm_fog_tc0n0_sm3.hlsl
+pixelshader,lm_fog_r0c0n0_sm3.hlsl
+vertexshader,,lm_dfog_tc0n0_sm3.hlsl
+pixelshader,lm_dfog_r0c0n0_sm3.hlsl
+vertexdecl,,ppcc0t0t0nntt2
+vertexshader,,lm_sun_fog_tc0n0_sm3.hlsl
+pixelshader,lm_sun_fog_r0c0n0_sm3.hlsl
+vertexshader,,lm_sun_dfog_tc0n0_sm3.hlsl
+pixelshader,lm_sun_dfog_r0c0n0_sm3.hlsl
+vertexshader,,lm_sm_sun_fog_tc0n0_sm3.hlsl
+pixelshader,lm_sm_sun_fog_r0c0n0_sm3.hlsl
+vertexshader,,lm_sm_sun_dfog_tc0n0_sm3.hlsl
+pixelshader,lm_sm_sun_dfog_r0c0n0_sm3.hlsl
+vertexshader,,lm_omni_fog_tc0n0_sm3.hlsl
+pixelshader,lm_spot_fog_r0c0n0_sm3.hlsl
+vertexshader,,lm_omni_dfog_tc0n0_sm3.hlsl
+pixelshader,lm_spot_dfog_r0c0n0_sm3.hlsl
+vertexshader,,lm_sm_omni_fog_tc0n0_sm3.hlsl
+pixelshader,lm_sm_spot_fog_r0c0n0_sm3.hlsl
+vertexshader,,lm_sm_omni_dfog_tc0n0_sm3.hlsl
+pixelshader,lm_sm_spot_dfog_r0c0n0_sm3.hlsl
+pixelshader,lm_omni_fog_r0c0n0_sm3.hlsl
+pixelshader,lm_omni_dfog_r0c0n0_sm3.hlsl
+pixelshader,lm_sm_omni_fog_r0c0n0_sm3.hlsl
+pixelshader,lm_sm_omni_dfog_r0c0n0_sm3.hlsl
+vertexshader,,l_point_tc0n0.hlsl
+pixelshader,,l_spot_r0c0n0.hlsl
+pixelshader,,l_omni_r0c0n0.hlsl
+vertexshader,,l_point_sm_tc0n0.hlsl
+pixelshader,,l_spot_sm_r0c0n0.hlsl
+vertexdecl,,ppcc0
+vertexshader,,vertcol_untextured_nofog.hlsl
+pixelshader,,vertcol_untextured_lin_nofog.hlsl
+vertexdecl,,ppt0t0nntt1
+vertexshader,,debug_normals.hlsl
+pixelshader,,debug_normals.hlsl
+techset,wc_l_sm_r0c0n0
+vertexshader,,lm_fog_tc0_sm3.hlsl
+pixelshader,lm_fog_r0c0_sm3.hlsl
+vertexshader,,lm_dfog_tc0_sm3.hlsl
+pixelshader,lm_dfog_r0c0_sm3.hlsl
+vertexshader,,lm_sun_fog_tc0_sm3.hlsl
+pixelshader,lm_sun_fog_r0c0_sm3.hlsl
+vertexshader,,lm_sun_dfog_tc0_sm3.hlsl
+pixelshader,lm_sun_dfog_r0c0_sm3.hlsl
+vertexshader,,lm_sm_sun_fog_tc0_sm3.hlsl
+pixelshader,lm_sm_sun_fog_r0c0_sm3.hlsl
+vertexshader,,lm_sm_sun_dfog_tc0_sm3.hlsl
+pixelshader,lm_sm_sun_dfog_r0c0_sm3.hlsl
+vertexshader,,lm_omni_fog_tc0_sm3.hlsl
+pixelshader,lm_spot_fog_r0c0_sm3.hlsl
+vertexshader,,lm_omni_dfog_tc0_sm3.hlsl
+pixelshader,lm_spot_dfog_r0c0_sm3.hlsl
+vertexshader,,lm_sm_omni_fog_tc0_sm3.hlsl
+pixelshader,lm_sm_spot_fog_r0c0_sm3.hlsl
+vertexshader,,lm_sm_omni_dfog_tc0_sm3.hlsl
+pixelshader,lm_sm_spot_dfog_r0c0_sm3.hlsl
+pixelshader,lm_omni_fog_r0c0_sm3.hlsl
+pixelshader,lm_omni_dfog_r0c0_sm3.hlsl
+pixelshader,lm_sm_omni_fog_r0c0_sm3.hlsl
+pixelshader,lm_sm_omni_dfog_r0c0_sm3.hlsl
+vertexshader,,l_point_tc0.hlsl
+pixelshader,,l_spot_r0c0.hlsl
+pixelshader,,l_omni_r0c0.hlsl
+vertexshader,,l_point_sm_tc0.hlsl
+pixelshader,,l_spot_sm_r0c0.hlsl
+techset,wc_l_sm_r0c0
+vertexshader,,lm_hsm_sun_fog_tc0_sm3.hlsl
+pixelshader,lm_hsm_sun_fog_r0c0_sm3.hlsl
+vertexshader,,lm_hsm_sun_dfog_tc0_sm3.hlsl
+pixelshader,lm_hsm_sun_dfog_r0c0_sm3.hlsl
+vertexshader,,lm_hsm_omni_fog_tc0_sm3.hlsl
+pixelshader,lm_hsm_spot_fog_r0c0_sm3.hlsl
+vertexshader,,lm_hsm_omni_dfog_tc0_sm3.hlsl
+pixelshader,lm_hsm_spot_dfog_r0c0_sm3.hlsl
+pixelshader,lm_hsm_omni_fog_r0c0_sm3.hlsl
+pixelshader,lm_hsm_omni_dfog_r0c0_sm3.hlsl
+vertexshader,,l_point_hsm_tc0.hlsl
+pixelshader,,l_spot_hsm_r0c0.hlsl
+techset,wc_l_hsm_r0c0
+vertexshader,,lm_hsm_sun_fog_tc0n0_sm3.hlsl
+pixelshader,lm_hsm_sun_fog_r0c0n0_sm3.hlsl
+vertexshader,,lm_hsm_sun_dfog_tc0n0_sm3.hlsl
+pixelshader,lm_hsm_sun_dfog_r0c0n0_sm3.hlsl
+vertexshader,,lm_hsm_omni_fog_tc0n0_sm3.hlsl
+pixelshader,lm_hsm_spot_fog_r0c0n0_sm3.hlsl
+vertexshader,,lm_hsm_omni_dfog_tc0n0_sm3.hlsl
+pixelshader,lm_hsm_spot_dfog_r0c0n0_sm3.hlsl
+pixelshader,lm_hsm_omni_fog_r0c0n0_sm3.hlsl
+pixelshader,lm_hsm_omni_dfog_r0c0n0_sm3.hlsl
+vertexshader,,l_point_hsm_tc0n0.hlsl
+pixelshader,,l_spot_hsm_r0c0n0.hlsl
+techset,wc_l_hsm_r0c0n0
+vertexshader,sky.hlsl
+pixelshader,sky.hlsl
+techset,wc_sky
+image,sky_bigcity_ft
+image,*reflection_probe0
+image,*reflection_probe1
+image,*lightmap0_primary
+image,*lightmap0_secondary
+image,case_normal
+image,case512brown
+material,wc/case512brown
+image,case512green3
+material,wc/case512green3
+material,wc/sky_bigcity
+image,$outdoor
+gfx_map,maps/iw4_credits.d3dbsp
+game_map_sp,maps/iw4_credits.d3dbsp
+map_ents,maps/iw4_credits.d3dbsp
+col_map_mp,maps/iw4_credits.d3dbsp
+rawfile,maps/iw4_credits.gsc
+localize,Developed by Infinity Ward
+localize,PROJECT LEAD
+localize,JASON WEST
+localize,ENGINEERING LEADS
+localize,RICHARD BAKER
+localize,ROBERT FIELD
+localize,FRANCESCO GIGLIOTTI
+localize,EARL HAMMON, JR
+localize,ENGINEERING
+localize,CHAD BARB
+localize,ALESSANDRO BARTOLUCCI
+localize,SIMON COURNOYER
+localize,JON DAVIS
+localize,JOEL GOMPERT
+localize,JOHN HAGGERTY
+localize,CHRIS LAMBERT
+localize,JON SHIRING
+localize,JIESANG SONG
+localize,RAYME C. VINSON
+localize,ANDREW WANG
+localize,DESIGN LEADS
+localize,TODD ALDERMAN
+localize,STEVE FUKUDA
+localize,MACKEY MCCANDLISH
+localize,ZIED RIEKE
+localize,DESIGN AND SCRIPTING
+localize,ROGER ABRAHAMSSON
+localize,MOHAMMAD ALAVI
+localize,KEITH "NED" BELL
+localize,MIKE DENNY
+localize,CHRISTOPHER DIONNE
+localize,PRESTON GLENN  
+localize,CHAD GRENIER
+localize,JORDAN HIRSH
+localize,JAKE KEATING
+localize,JULIAN LUO
+localize,JASON MCCORD
+localize,BRENT MCLEOD
+localize,JON PORTER
+localize,ALEXANDER ROYCEWICZ
+localize,PAUL SANDLER
+localize,NATHAN SILVERS
+localize,SEAN SLAYBACK
+localize,GEOFFREY SMITH
+localize,CHARLIE WIEDERHOLD
+localize,ART DIRECTOR
+localize,RICHARD KRIEGLER
+localize,TECHNICAL ART DIRECTOR
+localize,MICHAEL A. BOON
+localize,ART LEADS
+localize,CHRISTOPHER CHERUBINI
+localize,JOEL EMSLIE
+localize,ROBERT GAINES
+localize,ART
+localize,BRAD ALLEN
+localize,PETER CHEN
+localize,WILLIAM CHO
+localize,DERRIC EADY
+localize,STEVEN GIESLER
+localize,JEFF HEATH
+localize,DAVID JOHNSON
+localize,RYAN M. LASTIMOSA
+localize,OSCAR LOPEZ
+localize,TIM MCGRATH
+localize,TAEHOON OH
+localize,SAMI ONUR
+localize,VELINDA PELAYO
+localize,SEROZH SARKISYAN
+localize,RICHARD N. SMITH
+localize,THEERAPOL SRISUPHAN
+localize,TODD SUE
+localize,ANIMATION LEADS
+localize,MARK GRIGSBY
+localize,PAUL MESSERLY
+localize,ANIMATION
+localize,BRUCE FERRIZ
+localize,CHANCE GLASCO
+localize,ZACH VOLKER
+localize,LEI YANG
+localize,MOTION CAPTURE INTEGRATION
+localize,MARIO PEREZ
+localize,TECHNICAL ANIMATION LEAD
+localize,ERIC PIERCE
+localize,TECHNICAL ANIMATION
+localize,NEEL KAR
+localize,CHENG LOR
+localize,AUDIO LEAD
+localize,MARK GANUS
+localize,AUDIO
+localize,CHRISSY ARYA
+localize,STEPHEN MILLER
+localize,WRITTEN BY
+localize,JESSE STERN
+localize,ADDITIONAL WRITING
+localize,STORY BY
+localize,WRITER'S ASSISTANT
+localize,AARON TRACY
+localize,VINCE ZAMPELLA
+localize,PRODUCER
+localize,MARK A. RUBIN
+localize,ASSOCIATE PRODUCERS
+localize,PETE BLUMEL
+localize,JOHN WASILCZYK
+localize,COMMUNITY RELATIONS MANAGER
+localize,ROBERT BOWLING
+localize,OFFICE MANAGER
+localize,JANICE LOHR TURNER
+localize,HUMAN RESOURCES GENERALIST
+localize,KRISTIN COTTERELL
+localize,EXECUTIVE ASSISTANT
+localize,CARLY GILLIS
+localize,ADMINISTRATIVE ASSISTANT
+localize,LISA STONE
+localize,IT MANAGER
+localize,BRYAN KUHN
+localize,SYSTEM ADMINISTRATOR
+localize,DREW MCCOY
+localize,INFORMATION SYSTEMS ANALYST
+localize,CHRIS LAI
+localize,UNIX SYSTEMS ARCHITECT
+localize,ROBERT A. DYE
+localize,CONCEPT ART
+localize,RICHARD SMITH
+localize,QUALITY ASSURANCE MANAGER
+localize,MIKE SEAL
+localize,QUALITY ASSURANCE FLOOR LEADS
+localize,ED HARMER
+localize,JUSTIN HARRIS
+localize,QUALITY ASSURANCE
+localize,MARY BENITEZ
+localize,CHELSY BERRY
+localize,CANDICE CAPEN
+localize,TERRAN CASEY
+localize,MICHAEL PENROD
+localize,ANTHONY RUBIN
+localize,GEORGEINA SCHALLER
+localize,CHRIS SHEPHERD
+localize,JOHN THEODORE
+localize,DANIEL WAPNER
+localize,MUSIC PRODUCED BY
+localize,HANS ZIMMER
+localize,MAIN THEMES BY
+localize,MUSIC COMPOSED BY
+localize,LORNE BALFE
+localize,ADDITIONAL MUSIC 
+localize,NICK PHOENIX
+localize,THOMAS BERGERSEN
+localize,DAVE METZGER
+localize,JACOB SHEA
+localize,NOAH SOROTA
+localize,ATLI ORVARSSON
+localize,ADDITIONAL ARRANGING AND PROGRAMMING
+localize,BART HENDRICKSON
+localize,CLAY DUNCAN
+localize,RYELAND ALLISON
+localize,ANDREW KAWCZYNSKI
+localize,TOM BRODERICK
+localize,MUSIC EDITOR
+localize,BOB BADAMI
+localize,DAN PINDER
+localize,MUSIC PRODUCTION SERVICES
+localize,STEVEN KOFSKY
+localize,SOLOISTS - GUITAR
+localize,PERCUSSION
+localize,SATNAM RAMGOTRA
+localize,VIOLIN
+localize,MUSIC RECORDED BY
+localize,ALAN MEYERSON
+localize,MUSIC MIXED BY
+localize,ADDITIONAL ENGINEERING
+localize,KATIA LEWIN PALOMO
+localize,SLAMM ANDREWS
+localize,JEFF BIGGERS
+localize,ASSISTANT ENGINEER
+localize,ADAM SCHMIDT
+localize,MUSIC MIXED AT REMOTE CONTROL PRODUCTIONS, INC.
+localize,VOICE TALENT
+localize,KEITH DAVID
+localize,CRAIG FAIRBRASS
+localize,LANCE HENRIKSEN
+localize,KEVIN MCKIDD
+localize,GLENN MORSHOWER
+localize,BILLY MURRAY
+localize,BARRY PEPPER
+localize,GABRIELLE AL-RAJHI
+localize,EUGENE ALPERS
+localize,WILL ARNETT
+localize,TROY BAKER
+localize,BRIAN BLOOM
+localize,ALEX BRONQUETTE
+localize,COY CLARK
+localize,MICHAEL CUDLITZ
+localize,ENAYAT DELAWARY
+localize,JOSH GILMAN
+localize,DANIEL GAMBURG
+localize,ANNA GRAVES
+localize,SVEN HOLMBERG
+localize,CURTIS JACKSON
+localize,BORIS KIEVSKY
+localize,KRISTOF KONRAD
+localize,MAURICIO LANGE
+localize,EUGENE LAZAREB
+localize,MATT LINDQUIST
+localize,DAVID LODGE
+localize,GRAHAM MCTAVISH
+localize,DAVE MALLOW
+localize,JORDAN MARDER
+localize,MATT MERCER
+localize,SAM SAKO
+localize,RANDY STONITSCH
+localize,FRED TATASCIORE
+localize,JUSTIN THEROUX
+localize,KIRK THORNTON
+localize,FRED TOMA
+localize,ROMAN VARSHAVSKY
+localize,ALEX VEADOV
+localize,JIM WARD
+localize,KAI WULFF
+localize,CINEMATIC MOVIES PROVIDED BY
+localize,SPOV
+localize,ALLEN LEITCH
+localize,YUGEN BLAKE
+localize,MILES CHRISTENSEN
+localize,PAUL HUNT
+localize,DAVID HICKS
+localize,JULIO DEAN
+localize,GEMMA THOMPSON
+localize,RHIWALLON LEADBEATER
+localize,ROB MILLINGTON
+localize,STEVE TOWNROW
+localize,VINCENT KANE
+localize,SPOV PRODUCTION BABIES
+localize,baby JACOB HARTLEY-BLAKE and mother SARAH
+localize,baby BEATRICE V.B. LEITCH and mother SCARLETT
+localize,baby ELSPETH M.A. LEITCH and mother SCARLETT
+localize,ADDITIONAL SOUND DESIGN, AUDIO IMPLEMENTATION AND CINEMATIC SOUND PRODUCTION PROVIDED BY:
+localize,EARBASH AUDIO, INC
+localize,ADDITIONAL MUSIC BY HARRY GREGSON-WILLIAMS AND STEPHEN BARTON
+localize,ADDITIONAL VOICE EDITING/INTEGRATION
+localize,JEREMY SIMPSON
+localize,NAKIA HARRIS
+localize,TITLE SEQUENCE / ADDITIONAL ART BY
+localize,SHADOWS IN DARKNESS
+localize,VYKARIAN
+localize,VOICE RECORDING FACILITIES IN LOS ANGELES PROVIDED BY
+localize,PCB PRODUCTIONS, ENCINO, CA
+localize,SIDE-UK, LONDON, UK
+localize,VOICE DIRECTION/DIALOG ENGINEERING
+localize,KEITH AREM
+localize,ADDITIONAL VOICE DIRECTION
+localize,SOUND EFFECTS RECORDING
+localize,JOHN PAUL FASAL
+localize,VIDEO EDITING
+localize,MOTION CAPTURE PROVIDED BY NEVERSOFT ENTERTAINMENT
+localize,MOTION CAPTURE LEAD
+localize,MOTION CAPTURE TECHNICIANS
+localize,STUNT ACTION DESIGNED BY 87ELEVEN ACTION FILM CO.
+localize,STUNT COORDINATOR
+localize,DANNY HERNANDEZ
+localize,STUNTS/MOTION CAPTURE ACTORS
+localize,CLAYTON BARBER
+localize,ALLEN JO
+localize,RALF KOCH
+localize,KENNY RICHARDS
+localize,JACKSON SPIDELL
+localize,JAKE SWALLOW
+localize,DON THEERATHADA
+localize,JUSTIN WILLIAMS
+localize,KOFI YIADOM
+localize,WWW.87ELEVEN.COM
+localize,ADDITIONAL DESIGN
+localize,STEVE MASSEY
+localize,ADDITIONAL ART
+localize,JOE SIMANELLO
+localize,MILITARY TECHNICAL ADVISORS
+localize,LT COL HANK KEIRSEY US ARMY (RET.)
+localize,EMILIO CUESTA USMC
+localize,WEAPONS PROVIDED BY
+localize,INDEPENDENT STUDIO SERVICES
+localize,ARMORER
+localize,LARRY ZANOFF
+localize,TRANSLATIONS
+localize,GABRIEL AL-RAJHI
+localize,ALEXANDRE BRONQUETE
+localize,ANTONINA THOMPSON
+localize,LEONELA B. WAHRICK
+localize,PREDATOR IS A U.S. REGISTERED TRADEMARK OF
+localize,SATELLITE IMAGERY PROVIDED BY GEOEYE
+localize,INTERNS
+localize,PRODUCTION BABIES
+localize,baby MARLEY BLUMEL and mother CATHY
+localize,baby HENRY MICHAEL BOON and mother TULIP
+localize,baby CORALINE BOWLING and mother HEATHER
+localize,baby GREG MCCOY and mother LAUREN
+localize,baby AUDREY MCLEOD and mother TAMMY
+localize,baby SHANNON SEOYEON OH and mother EUNYOUNG
+localize,baby MARLEE HENDRIX PEREZ and mother DALLAS BOBBIJO
+localize,baby EMILY JOYCE PORTER and mother WENDY
+localize,baby COOPER RIEKE and mother HATHERLY
+localize,baby LUKE SMITH and mother LISA
+localize,baby SONG EJOOK and mother JUNGWON
+localize,baby HUDSON GEOFF VOLKER and mother STACI
+localize,INFINITY WARD SPECIAL THANKS 
+localize,LAWRENCE GREEN
+localize,BENJAMIN HECKENDORN
+localize,JOSHUA LACROSS
+localize,SPECIAL THANKS TO THE MEN AND WOMEN OF NAVAL SPECIAL WARFARE WHO HELPED IN
+localize,THE DEVELOPMENT OF THIS GAME. THE US NAVY PROVIDED TECHNICAL SUPPORT, BUT
+localize,DOES NOT OFFICIALLY ENDORSE THIS PRODUCT. FOR MORE INFORMATION ON NAVY SEALS
+localize,PLEASE VISIT NAVY.COM/SEALS OR CALL 1.888.USN.SEAL TO SPEAK WITH A SEAL
+localize,TODAY.
+localize,ACTIVISION
+localize,PRODUCTION
+localize,CHRIS WILLIAMS
+localize,VINCENT FENNEL
+localize,TAYLOR LIVINGSTON
+localize,DEREK RACCA
+localize,PRODUCTION COORDINATOR
+localize,ADRIENNE ARRASMITH
+localize,PRODUCTION INTERN
+localize,JOHN BANAYAN
+localize,ADDITIONAL PRODUCTION
+localize,RHETT CHASSEREAU
+localize,SENIOR EXECUTIVE PRODUCER
+localize,MARCUS IREMONGER
+localize,HEAD OF PRODUCTION
+localize,STEVE ACKRICH
+localize,PUBLIC RELATIONS
+localize,DIRECTOR, OWNED PROPERTIES
+localize,MIKE MANTARRO
+localize,PR MANAGER
+localize,JOHN RAFACZ
+localize,JUNIOR PUBLICIST
+localize,MONICA PONTRELLI
+localize,JOSHUA SELINGER
+localize,EUROPEAN PR DIRECTOR
+localize,NICK GRANGE
+localize,SPECIAL THANKS
+localize,STEP 3
+localize,PRODUCTION SERVICES - EUROPE
+localize,SR. DIRECTOR OF PRODUCTION SERVICES - EUROPE
+localize,BARRY KEHOE
+localize,LOCALIZATION MANAGER 
+localize,FIONA EBBS
+localize,SENIOR LOCALIZATION PROJECT MANAGER
+localize,ANNETTE LEE
+localize,LOCALIZATION PROJECT MANAGER 
+localize,JACK O'HARA
+localize,LOCALIZATION SUPPORT ANALYST
+localize,CHRIS OSBERG
+localize,LOCALIZATION QA MANAGER
+localize,DAVID HICKEY
+localize,LOCALIZATION ASSISTANT QA MANAGER
+localize,YVONNE COSTELLO
+localize,LOCALIZATION QA TESTERS
+localize,LUIS HERNANDEZ DALMAU 
+localize,VINCENZO FERRARA 
+localize,LARA SOLA GALLEGO
+localize,JEREMY LEVI 
+localize,SEBASTIEN MAZZERBO 
+localize,DARIO MILONE 
+localize,KERILL MEIER O'BRIEN 
+localize,MARCELL WITEK 
+localize,IT NETWORK TECHNICIAN
+localize,FERGUS LINDSAY 
+localize,LOCALIZATION TOOLS & SUPPORT PROVIDED BY STEPHANIE DEMING & XLOC INC.
+localize,CENTRAL TECHNOLOGY
+localize,CHIEF TECHNOLOGY OFFICER
+localize,STEVE PEARCE
+localize,VP ART PRODUCTION
+localize,ALESSANDRO TENTO 
+localize,SENIOR ONLINE MANAGER
+localize,JOEL FASHINGBAUER
+localize,VP OF ONLINE 
+localize,JOHN BOJORQUEZ  
+localize,MANAGING DIRECTOR, DEMONWARE
+localize,PAT GRIFFITH 
+localize,TECHNICAL DIRECTOR
+localize,WADE BRAINERD 
+localize,ASSOCIATE SOFTWARE ENGINEER
+localize,RYAN FORD 
+localize,STUDIO CENTRAL - OUTSOURCING
+localize,DIRECTOR, ART PRODUCTION
+localize,RICCARD LINDE
+localize,BERNARDO ANTONIAZZI
+localize,MITCH BOWLER
+localize,PRODUCTION MANAGER
+localize,MICHAEL RESTIFO
+localize,CHRISTOPHER CODDING
+localize,BLADE GAMES WORLD, INC.
+localize,CEO
+localize,TOM SPERRY
+localize,DIRECTOR OF BUSINESS DEVELOPMENT
+localize,CLAAS GRIMM
+localize,PRODUCER
+localize,ZHU XIAOXIAO  
+localize,ART DIRECTOR
+localize,XIE HAITIAN 
+localize,ARTISTS
+localize,ZHOU CHEN
+localize,KAN JIANQING
+localize,CAI JINGYU
+localize,XU PING
+localize,ZHU SHI
+localize,WANG XIANGYU
+localize,NING XUSONG
+localize,YU YANG
+localize,DEMONWARE
+localize,NADIA ALRAMLI
+localize,DAVID BRENNAN
+localize,MORGAN BRICKLEY
+localize,LUKE BURDEN
+localize,AARON BURT
+localize,DAVID CAHILL
+localize,MICHAEL COLLINS
+localize,TIM CZERNIAK
+localize,BRENDAN DILLON
+localize,MALCOLM DOWSE
+localize,JONATHAN FRAWLEY
+localize,PAUL FROESE
+localize,EOGHAN GAFFNEY
+localize,ARTHUR GREEN
+localize,PADRAIC HALLINAN
+localize,STEFFEN HIGEL
+localize,TONY KELLY
+localize,JOHN KIRK
+localize,LANCE LAURSEN
+localize,DAMIEN MARSHALL
+localize,CRAIG MCINNES
+localize,IAN MCLEOD
+localize,EOIN O'FEARGHAIL
+localize,BYRON PILE
+localize,RUAIDHRÍ POWER
+localize,TILMAN SCHÄFER
+localize,GORDON SCHNEIDER
+localize,AMY SMITH
+localize,RONNY SOUTHWOOD
+localize,EMMANUEL STONE
+localize,JASON WEI
+localize,CHRISTOPHER WERNER
+localize,PETER WRIGHT
+localize,GLOBAL BRAND MANAGEMENT
+localize,VICE PRESIDENT OF MARKETING
+localize,ROB KOSTICH
+localize,DIRECTOR OF MARKETING 
+localize,BYRON BEEDE
+localize,GLOBAL BRAND MANAGER
+localize,GEOFF CARROLL
+localize,ASSOCIATE BRAND MANAGERS
+localize,JOE KORSMO
+localize,MIKE SCHAEFER
+localize,DAVID WANG
+localize,MARKETING COMMUNICATIONS
+localize,MARKETING COMMUNICATIONS SR. DIRECTOR
+localize,JACK OH
+localize,MARKETING COMMUNICATIONS MANAGER
+localize,KAREN STARR
+localize,INTERACTIVE MARKETING DIRECTOR
+localize,CARLSON CHOI
+localize,INTERACTIVE MARKETING MANAGER
+localize,CLINTON WU
+localize,INTERACTIVE MARKETING ASSOCIATE MANAGER
+localize,ERIC SO
+localize,ART SERVICES
+localize,ART SERVICES MANAGER
+localize,TODD PRUYN
+localize,ART SERVICES LEAD
+localize,CHRIS REINHART
+localize,ART SERVICES COORDINATOR
+localize,ADAM BAVA
+localize,BUSINESS AND LEGAL AFFAIRS
+localize,DAVID BLACKWELL
+localize,CHRIS COSBY
+localize,GREG DEUTSCH
+localize,JANE ELMS
+localize,KAP KANG 
+localize,KATE OGOSTA 
+localize,AMANDA O'KEEFE
+localize,TRAVIS STANSBURY
+localize,PHIL TERZIAN
+localize,MARY TUCK
+localize,OPERATIONS AND STUDIO PLANNING
+localize,SENIOR DIRECTOR OF PRODUCTION SERVICES
+localize,SUZAN RUDE
+localize,DIRECTOR OF EUROPEAN PARTNER RELATIONSHIPS
+localize,SAMUEL PETERSON
+localize,TALENT AND AUDIO MANAGEMENT GROUP
+localize,DIRECTOR, TALENT AND AUDIO MANAGEMENT GROUP
+localize,ADAM LEVENSON
+localize,TALENT ACQUISITION MANAGER
+localize,MARCHELE HARDIN
+localize,TALENT ASSOCIATE
+localize,NOAH SARID
+localize,TALENT COORDINATOR
+localize,STEFANI JONES
+localize,SOUND ARTIST
+localize,TREVOR BRESAW
+localize,AUDIO PROGRAMMING
+localize,BLAIR BITONTI
+localize,FINANCE
+localize,VP OF STUDIO FINANCE AND ROYALTIES
+localize,RAJ SAIN
+localize,FINANCE MANAGER
+localize,CLINTON ALLEN
+localize,HARJINDER SINGH
+localize,SR. FINANCIAL ANALYST
+localize,JASON JORDAN
+localize,FINANCE ANALYST
+localize,ADRIAN GOMEZ
+localize,FRANSISCA TAN
+localize,ACTIVISION SPECIAL THANKS
+localize,BRIAN WARD, STEVE PEARCE, DAVE STOHL
+localize,QUALITY ASSURANCE
+localize,VP QUALITY ASSURANCE/CUSTOMER SERVICE
+localize,PAUL STERNGOLD
+localize,QUALITY ASSURANCE PRODUCTION TESTING
+localize,QA PROJECT LEAD
+localize,ERIK MELEN 
+localize,QA TESTERS
+localize,XIAOHU ALCOCER 
+localize,MIKE ARDEN 
+localize,BRANDON ARONSON 
+localize,RICH BERNOT 
+localize,TARIKH BROWN 
+localize,ROBERT CHAPLAN 
+localize,JOE CHAVEZ 
+localize,KEVIN CHESTER 
+localize,QUENTIN (TREMAYNE) COBB 
+localize,CHARLES DAVIS 
+localize,JOHN ESTIOKO 
+localize,DAVION FARRIS 
+localize,CORY FURLOW 
+localize,JOHN GOLDSWORTHY 
+localize,ANDREW GRASS 
+localize,ANDREW GULOTTA
+localize,DANIEL HERSCHER
+localize,ULYSSES HOLGUIN
+localize,TABARI JEFFRIES
+localize,NATE KINNEY 
+localize,BRADON MILLER
+localize,SEAN MOLINE
+localize,MICHAEL MONTOYA
+localize,CARLOS MORAN 
+localize,ANTHONY MORENO
+localize,CRAIG NELSON
+localize,GABE NOTO 
+localize,PETE (ROMULO) PEDROZA
+localize,BRIAN POST
+localize,GREG SANDS
+localize,CHAD SCHMIDT
+localize,ADAM SMITH
+localize,LOU STUDDERT 
+localize,RYAN TRONDSEN 
+localize,JOSE VEGA
+localize,LEVETT WASHINGTON
+localize,MATT WELLMAN
+localize,QUALITY ASSURANCE FUNCTIONALITY, DAY SHIFT
+localize,QA PROJECT LEAD
+localize,SEAN BERRETT
+localize,QA FLOOR LEAD
+localize,JAY MENCONI
+localize,QA DATABASE SUPERVISOR
+localize,WAYNE WILLIAMS
+localize,QA TESTERS
+localize,JOSH BENTLEY
+localize,JARED BERRNSTEIN
+localize,AUSTIN BUCHINSKY
+localize,DOV CARSON
+localize,PHILLIP CHAN
+localize,ERNESTO CONSTANTINO
+localize,MIKE COOK
+localize,JORGE DIAZ
+localize,PAUL ESCOBAR
+localize,DANNY FLORES
+localize,PORFIRIO GAYTAN
+localize,JASON GILMORE
+localize,ALLEN GONZALEZ
+localize,SHAWN HENSHAW
+localize,MATT LASEKE
+localize,RICHARD LEDESMA
+localize,JOHN LEWIS
+localize,FRANKIE LUDENA
+localize,MIKE LUDENA
+localize,DUSTIN LUKE
+localize,OMAR MARRUFO
+localize,SERGIO MATA
+localize,ROBERT MCCABE
+localize,CALVIN MENDOZA
+localize,CASEY MERRELL
+localize,CONOR METZ
+localize,ERIC MILLER
+localize,STEVEN MITCHELL
+localize,MEGAN MURDOCK
+localize,EVAN NEWTON
+localize,HIDEKI OMEGA
+localize,LEROY PATTERSON
+localize,ROY PITTS
+localize,BRANDON RAMOS
+localize,DAVID RODELA
+localize,MIKE SPRAGG
+localize,WILLIAM STRANGE
+localize,CHRIS TEPPER-WEISE
+localize,CHRISTIAN VELASQUEZ
+localize,BRYAN WILSON
+localize,QA SENIOR PROJECT LEAD
+localize,HENRY P. VILLANUEVA
+localize,QA MANAGER
+localize,GLENN VISTANTE
+localize,QUALITY ASSURANCE FUNCTIONALITY, NIGHT SHIFT
+localize,QA PROJECT LEAD
+localize,TOM CHUA
+localize,QA FLOOR LEAD
+localize,JULIUS HIPOLITO
+localize,JOVANY ZUNIGA
+localize,QA TESTERS
+localize,BERNARD ABELLADA
+localize,JAMES ANDERSON
+localize,JOSE BARILLAS 
+localize,ANDREW CUSOLITO 
+localize,RYAN DATUIN 
+localize,ALYSSA DELHOTAL
+localize,ROBERT DUBE 
+localize,ANTHONY FRANCO
+localize,ANDRE HAFTEVANI
+localize,MATTHEW HIBBEN 
+localize,ANDREW JONES
+localize,JENNIFER KALINOWSKI
+localize,YUTA KANAGAWA
+localize,OSCAR LEAL
+localize,JEFF MIRES 
+localize,EDWIN PAYEN 
+localize,JUSTIN REID 
+localize,MIGUEL REYES
+localize,OSCAR RODRIGUEZ
+localize,ANTHONY RUIZ 
+localize,COLIN TISTAERT
+localize,LEONEL VALTIERRA
+localize,QA Senior Project Lead
+localize,FRANK SO
+localize,QA MANAGER
+localize,ADAM HARTSFIELD
+localize,TECHNICAL REQUIREMENTS GROUP
+localize,DIRECTOR, QA
+localize,CHRISTOPHER WILSON
+localize,TRG MANAGER
+localize,JOHN ROSSER
+localize,TRG SUBMISSIONS LEADS
+localize,DANIEL L. NICHOLS
+localize,CHRISTOPHER NORMAN
+localize,TRG SUBMISSIONS ADJUTANT
+localize,DUSTIN CARTER
+localize,QA CODE RELEASE GROUP
+localize,QA CERTIFICATION LAB SENIOR LEADS
+localize,CYRA TALTON
+localize,BRANDON VALDEZ
+localize,QA CERTIFICATION LAB PROJECT LEAD
+localize,FAUSTO LORENZANO
+localize,QA CRG  PROJECT LEAD
+localize,MATT RYAN
+localize,QA CRG FLOOR LEAD
+localize,JONATHAN MACK
+localize,QA CRG TESTERS
+localize,CHRISTIAN VASCO
+localize,QA NETWORK LAB
+localize,MANAGER, QA OPERATIONS
+localize,CHRIS KEIM
+localize,QA NETWORK LAB PROJECT LEADS
+localize,JESSIE JONES
+localize,LEONARD RODRIGUEZ
+localize,QA NETWORK LAB TESTER
+localize,BRYAN CHICE
+localize,QA MULTIPLAYER LAB
+localize,QA MULTIPLAYER LAB LEAD
+localize,GARRETT OSHIRO
+localize,QA MPL SENIOR TESTER
+localize,SHAMEN'E CHILDRESS
+localize,QA MPL ACTING FLOOR LEADS & TESTERS
+localize,MIKEY ACKLAND
+localize,MATT BRANNON
+localize,JON BUNCH
+localize,EMMANUEL CRUZ
+localize,NICK GRAM
+localize,MARIO IBARRA
+localize,BRUCE JAMES
+localize,BOBBY JONES
+localize,JAEMIN KANG
+localize,BRIAN LAY
+localize,CHRIS MINTZIAS
+localize,TRAVIS OTTEN
+localize,RICHARD SALMON
+localize,QA COMPATABILITY LAB
+localize,QA-CL LAB PROJECT LEADS
+localize,ROBERT FENOGLIO
+localize,FARID KAZIMI
+localize,AUSTIN KIENZLE
+localize,QA-CL LAB TESTERS
+localize,ALBERT LEE
+localize,WILLIAM WHALEY
+localize,QA MASTERING LAB
+localize,SR. MANAGER, QA TECHNOLOGIES
+localize,INDRA YEE
+localize,MASTERING LAB SUPERVISOR
+localize,JOHN DONNELLY
+localize,LEAD MASTERING LAB TECHNICIAN
+localize,SEAN KIM
+localize,SENIOR MASTERING LAB TECHNICIAN
+localize,DANNY FENG 
+localize,MASTERING LAB TECHNICIANS
+localize,TYREE DERAMUS
+localize,JOSE HERNANDEZ
+localize,KAI HSU
+localize,RODRIGO MAGANA
+localize,STEVEN RODRIGUEZ
+localize,LEEJAY RONQUILLO
+localize,ORBEL SHAKHMALIAN
+localize,GARY WASHINGTON
+localize,QA-MIS
+localize,SENIOR MANAGER, QA TECHNOLOGIES
+localize,QA-MIS MANAGER
+localize,DAVE GARCIA-GOMEZ
+localize,QA-MIS TECHNICIANS
+localize,CHRIS GILL
+localize,TEDDY HWANG
+localize,BRIAN MARTIN
+localize,JEREMY TORRES
+localize,LAWRENCE WEI
+localize,QA-MIS JUNIOR TECHNICIANS
+localize,LOVELY MORATA
+localize,NEAL NIKAIDO
+localize,ORREN WEBBER
+localize,TECHNOLOGY TECHNICIAN
+localize,SEAN OLSON
+localize,QA-MIS EQUIPMENT COORDINATORS
+localize,LONG LE
+localize,COLEMAN THAXTON III
+localize,QA DATABASE ADMINISTRATION GROUP
+localize,SENIOR LEAD DATABASE ADMINISTRATOR
+localize,JEREMY RICHARDS
+localize,LEAD DATABASE ADMINISTRATOR
+localize,KELLY HUFFINE
+localize,DATABASE TECHNICIANS
+localize,CHRISTOPHER SHANLEY
+localize,TIMOTHY TOLEDO 
+localize,DBS SENIOR TESTER
+localize,DBS TESTERS
+localize,ALLISON DIAZ
+localize,DAVID TRINH
+localize,RANDI WILLIAMS-PARDO
+localize,QA OPERATIONS GROUP
+localize,DIRECTOR, QA OPERATIONS
+localize,GEORGE VIEGAS
+localize,OPERATIONS & PLANNING SUPERVISOR
+localize,JEREMY SHORTELL
+localize,OPERATIONS ASSOCIATE
+localize,PAUL COLBERT
+localize,CUSTOMER SUPPORT
+localize,CUSTOMER SUPPORT MANAGERS
+localize,GARY BOLDUC
+localize,MICHAEL HILL
+localize,QA SPECIAL THANKS
+localize,ABBY ALVARADO, NURIA ANDRES, BRIAN CARLSON, MICHAEL CLARKE,
+localize,RANDOLPH D'AMORE, SETH D'AMORE, MARIA GONZALEZ, RACHEL OVERTON,
+localize,JACQUELINE JOLIE SHELTMIRE, NADINE THEUZILLOT, JENNIFER VITIELLO, MARC WILLIAMS,
+localize,RACHEL LEVINE, JOANNE VISTANTE, BETH KIEFNER
+localize,MANUAL DESIGN
+localize,IGNITED MINDS, LLC
+localize,PACKAGING DESIGN BY
+localize,HAMAGAMI/CARROLL, INC.
+localize,FONTS LICENSED FROM
+localize,MONOTYPE
+localize,T26
+localize,HARRY GREGSON-WILLIAMS
+localize,STEPHEN BARTON
+localize,ADDITIONAL SOUND DESIGN, AUDIO IMPLEMENTATION
+localize,AND CINEMATIC SOUND PRODUCTION PROVIDED BY:
+localize,AND CINEMATIC SOUND PRODUCTION PROVIDED BY
+localize,ANET HAMBARSUMIAN
+localize,JUSTIN PARISH
+localize,SEAN WATSON
+localize,KRISTINA ADELMEYER
+localize,GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.
+localize,WWW.GEOEYE.COM
+localize,Bink Video. Copyright © 1997-2009 by RAD Game Tools, Inc.
+localize,Miles Sound System. Copyright © 1991-2009 by RAD Game Tools, Inc.
+localize,The characters and events depicted in this game are fictitious.
+localize,Any similarity to actual persons, living or dead, is purely coincidental.
+localize,Captain Price
+localize,General Shepherd
+localize,'Soap' MacTavish
+localize,Ghost
+localize,Sergeant Foley
+localize,Corporal Dunn
+localize,Makarov
+localize,Nikolai
+localize,Overlord
+localize,ADDITIONAL VOICE TALENT
+localize,CAST (in order of appearance)
+localize,BILLY MURRAY     -     Captain Price
+localize,LANCE HENRIKSEN     -     General Shepherd
+localize,KEVIN MCKIDD     -     'Soap' MacTavish
+localize,CRAIG FAIRBRASS     -     Ghost
+localize,KEITH DAVID     -     Sergeant Foley
+localize,BARRY PEPPER     -     Corporal Dunn
+localize,ROMAN VARSHAVSKY     -     Makarov
+localize,SVEN HOLMBERG     -     Nikolai
+localize,GLENN MORSHOWER     -     Overlord
+localize,MUSIC SUPERVISOR
+localize,SCORE WRANGLER
+localize,BOB "call me old fashioned" BADAMI
+localize,ANDREW ZACK
+localize,PRODUCTION COORDINATOR FOR HANS ZIMMER
+localize,MARK MANCINA
+localize,BRIAN BAKER
+localize,MARK RUZICKA
+localize,QA AUDIO VISUAL LAB
+localize,QA AV LAB SENIOR PROJECT LEAD
+localize,VICTOR DURLING
+localize,QA AV LAB SENIOR TESTER
+localize,CLIFF HOOPER
+localize,QA AV LAB TESTERS
+localize,DELVEN RUTLEDGE
+localize,RYAN VISTEEN
+localize,"CRIME WAVE"
+localize,C. Jackson, J. Fragala, D. Zacharias, W. Witherspoon, A. Bond
+localize,50 Cent Music Publishing admin by Universal Music Publishing (ASCAP)
+localize,Jason Fragala (ASCAP)/Daniel Zacharias (ASCAP)
+localize,Gold Forever Music, Inc. (admin by Songs of Universal, Inc.) (BMI)
+
+localize,Contains elements from "I Can’t Believe You’re Gone" (Witherspoon/Bond)
+localize,Gold Forever Music, Inc. (admin by Songs of Universal, Inc.) (BMI)
+localize,Used By Permission. All Rights Reserved. Performed by The Barrino Brothers.
+localize,Used courtesy of Invictus Records/Holland, Dozier, Holland Productions.
+localize,"SURVIVAL SKILLS"
+localize,R. Ibanga Jr., K. Blake, L. Parker
+localize,Da Sour Milk Café Publishing (ASCAP), Target Practice Music (ASCAP)
+localize,BDP Music (Zomba Music/Universal Music Group)
+
+localize,Duck Down Music Inc. 2009
+localize,"DANGER"
+localize,Marco Polo & Torae
+localize,T. Carr, M. Bruno
+localize,Coney Island’s Finest (ASCAP), M. Bruno (SOCAN/SESAC)
+localize,"NEW NEW"
+localize,Suga City ft. Maria V
+localize,Arkansas Bo (Marlon Jennings) and Goines (Andrew Goins)
+localize,Conduit Publishing
+localize,Label Courtesy Credit: Conduit Entertainment
+localize,Duck Down Music Inc. 2009
+localize,KRS-ONE & BUCKSHOT
+localize,BATTLECHATTER DIALOGUE
+localize,ADDITIONAL MENU SCRIPTING
+localize,GAME DIRECTOR
+localize,PROJECT DIRECTOR
+localize,THE NAVY SEALS
+localize,PRESIDENT / CCO
+localize,CEO / CFO
+localize,PR DIRECTOR, OWNED PROPERTIES ( ATVI )
+localize,THE ANT FARM
+localize,EXECUTIVE CREATIVE DIRECTOR
+localize,ROB TROY
+localize,SCOTT CARSON
+localize,ANT FARM PRODUCTION BABIES
+localize,baby MARLEY TROY and mother LISA
+localize,DIRECTED BY
+localize,CATHIE ICHIGE
+localize,DIRECTOR OF MARKETING ( ATVI )
+localize,RECEPTION
+localize,CREATIVE STRATEGIST
+rawfile,maps/_credits.gsc
+techset,,2d
+image,logo_infinityward
+material,logo_infinityward
+image,logo_activision
+material,logo_activision
+loaded_sound,,null.wav
+sndcurve,,$default
+sound,aagun_fire_dist_long
+sound,aagun_fire_dist_short
+loaded_sound,explosions/exp_aagun_skyburt_dist01.wav
+sound,aagun_fire_skyburst
+sndcurve,,weapon2
+sound,alarm_metal_detector
+loaded_sound,user_interface/ui_arcade_checkpoint1.wav
+sound,arcademode_checkpoint
+loaded_sound,bodyfalls/bodyfall_metal01.wav
+loaded_sound,bodyfalls/bodyfall_metal02.wav
+loaded_sound,bodyfalls/bodyfall_metal03.wav
+sound,bodyfall_metal_large
+sound,bodyfall_metal_small
+loaded_sound,,bodyfalls/bodyfall_dirt01.wav
+loaded_sound,,bodyfalls/bodyfall_dirt02.wav
+loaded_sound,,bodyfalls/bodyfall_dirt03.wav
+sound,bodyfall_snow_large
+loaded_sound,,bodyfalls/bodyfall_dirt04.wav
+loaded_sound,,bodyfalls/bodyfall_dirt05.wav
+loaded_sound,,bodyfalls/mrk_bodyfall_dirtsand01.wav
+loaded_sound,,bodyfalls/mrk_bodyfall_dirtsand02.wav
+sound,bodyfall_snow_small
+sound,bodyslam_metal_large
+sound,bodyslam_metal_small
+sound,bodyslam_snow_large
+sound,bodyslam_snow_small
+loaded_sound,,misc/mrk_breathing_better10.wav
+loaded_sound,,misc/mrk_breathing_better11.wav
+loaded_sound,,misc/mrk_breathing_better12.wav
+sound,breathing_better
+loaded_sound,,weapons/foley/mrk_heartbeat_01.wav
+sound,breathing_heartbeat
+loaded_sound,,misc/mrk_breathing_hurt10.wav
+loaded_sound,,misc/mrk_breathing_hurt11.wav
+loaded_sound,,misc/mrk_breathing_hurt12.wav
+loaded_sound,,misc/mrk_breathing_hurt13.wav
+loaded_sound,,misc/mrk_breathing_hurt14.wav
+loaded_sound,,misc/mrk_breathing_hurt15.wav
+loaded_sound,,misc/mrk_breathing_hurt16.wav
+sound,breathing_hurt
+sound,breathing_hurt_start
+loaded_sound,,weapons/impact/impact_masonry_02.wav
+loaded_sound,,weapons/impact/impact_masonry_01.wav
+loaded_sound,,weapons/impact/impact_masonry_03.wav
+loaded_sound,,weapons/impact/impact_masonry_28.wav
+loaded_sound,,weapons/impact/impact_masonry_05.wav
+loaded_sound,,weapons/impact/impact_masonry_04.wav
+loaded_sound,,weapons/impact/impact_masonry_06.wav
+loaded_sound,,weapons/impact/impact_masonry_07.wav
+loaded_sound,,weapons/impact/impact_masonry_08.wav
+loaded_sound,,weapons/impact/impact_masonry_09.wav
+loaded_sound,,weapons/impact/impact_masonry_10.wav
+loaded_sound,,weapons/impact/impact_masonry_11.wav
+loaded_sound,,weapons/impact/impact_masonry_12.wav
+loaded_sound,,weapons/impact/impact_masonry_13.wav
+loaded_sound,,weapons/ricochet/mrk_rico_dirt02.wav
+sound,bullet_explode_asphalt
+sound,bullet_explode_asphault
+loaded_sound,,weapons/impact/impact_wood_01.wav
+loaded_sound,,weapons/impact/impact_wood_02.wav
+loaded_sound,,weapons/impact/impact_wood_03.wav
+loaded_sound,,weapons/impact/impact_wood_04.wav
+loaded_sound,,weapons/impact/impact_wood_05.wav
+loaded_sound,,weapons/impact/impact_wood_06.wav
+loaded_sound,,weapons/impact/impact_wood_07.wav
+loaded_sound,,weapons/impact/impact_wood_08.wav
+loaded_sound,,weapons/ricochet/mrk_rico_wood01.wav
+sound,bullet_explode_bark
+loaded_sound,,weapons/impact/bullet_glass01.wav
+loaded_sound,,weapons/impact/bullet_glass02.wav
+loaded_sound,,weapons/impact/bullet_glass03.wav
+loaded_sound,,weapons/impact/bullet_glass04.wav
+loaded_sound,,weapons/impact/bullet_glass05.wav
+loaded_sound,,weapons/impact/bullet_glass06.wav
+loaded_sound,,weapons/impact/bullet_glass07.wav
+loaded_sound,,weapons/impact/bullet_glass08.wav
+loaded_sound,,weapons/impact/bullet_glass09.wav
+loaded_sound,,weapons/impact/bullet_glass10.wav
+loaded_sound,,weapons/ricochet/mrk_rico_glass01.wav
+sound,bullet_explode_bottle
+loaded_sound,,weapons/ricochet/mrk_rico_mason02.wav
+loaded_sound,,weapons/ricochet/mrk_rico_mason03.wav
+sound,bullet_explode_brick
+loaded_sound,,weapons/impact/bullet_canvas01.wav
+loaded_sound,,weapons/impact/bullet_canvas02.wav
+loaded_sound,,weapons/impact/bullet_canvas03.wav
+loaded_sound,,weapons/impact/bullet_canvas04.wav
+loaded_sound,,weapons/impact/bullet_canvas05.wav
+loaded_sound,,weapons/impact/bullet_canvas06.wav
+loaded_sound,,weapons/impact/bullet_canvas07.wav
+loaded_sound,,weapons/impact/bullet_canvas08.wav
+loaded_sound,,weapons/impact/bullet_canvas09.wav
+sound,bullet_explode_canvas
+sound,bullet_explode_carpet
+loaded_sound,,weapons/impact/impact_masonry_15.wav
+loaded_sound,,weapons/impact/impact_masonry_16.wav
+loaded_sound,,weapons/impact/impact_masonry_19.wav
+loaded_sound,,weapons/impact/impact_masonry_21.wav
+loaded_sound,,weapons/impact/impact_masonry_25.wav
+sound,bullet_explode_ceramic
+sound,bullet_explode_cloth
+sound,bullet_explode_concrete
+loaded_sound,,weapons/impact/bullet_imp_crate01.wav
+loaded_sound,,weapons/impact/bullet_imp_crate02.wav
+loaded_sound,,weapons/impact/bullet_imp_crate03.wav
+loaded_sound,,weapons/impact/bullet_imp_crate04.wav
+sound,bullet_explode_crate
+sound,bullet_explode_cushion
+sound,bullet_explode_default
+loaded_sound,,weapons/impact/impact_dirt_01.wav
+loaded_sound,,weapons/impact/impact_dirt_02.wav
+loaded_sound,,weapons/impact/impact_dirt_03.wav
+loaded_sound,,weapons/impact/impact_dirt_04.wav
+loaded_sound,,weapons/impact/impact_dirt_05.wav
+loaded_sound,,weapons/impact/impact_dirt_06.wav
+loaded_sound,,weapons/impact/impact_dirt_07.wav
+loaded_sound,,weapons/impact/impact_dirt_08.wav
+loaded_sound,,weapons/impact/impact_dirt_09.wav
+loaded_sound,,weapons/impact/impact_dirt_10.wav
+loaded_sound,,weapons/impact/impact_dirt_11.wav
+loaded_sound,,weapons/impact/impact_dirt_12.wav
+loaded_sound,,weapons/impact/impact_dirt_13.wav
+loaded_sound,,weapons/impact/impact_dirt_14.wav
+loaded_sound,,weapons/impact/impact_dirt_15.wav
+loaded_sound,,weapons/impact/impact_masonry_22.wav
+sound,bullet_explode_dirt
+loaded_sound,,weapons/impact/mrk_impact_flesh21.wav
+loaded_sound,,weapons/impact/mrk_impact_flesh3b.wav
+loaded_sound,,weapons/impact/mrk_impact_flesh20c.wav
+loaded_sound,,weapons/impact/mrk_impact_flesh13b.wav
+loaded_sound,,weapons/impact/mrk_impact_flesh9b.wav
+loaded_sound,,weapons/impact/mrk_impact_flesh11b.wav
+loaded_sound,,weapons/impact/mrk_impact_flesh12b.wav
+loaded_sound,,weapons/impact/mrk_impact_flesh8b.wav
+loaded_sound,,weapons/impact/impact_flesh_06.wav
+loaded_sound,,weapons/impact/impact_flesh_16.wav
+sound,bullet_explode_flesh
+loaded_sound,,weapons/impact/impact_foliage_01.wav
+loaded_sound,,weapons/impact/impact_foliage_02.wav
+loaded_sound,,weapons/impact/impact_foliage_03.wav
+loaded_sound,,weapons/impact/impact_foliage_04.wav
+loaded_sound,,weapons/impact/impact_foliage_05.wav
+loaded_sound,,weapons/impact/impact_foliage_06.wav
+loaded_sound,,weapons/impact/impact_foliage_07.wav
+loaded_sound,,weapons/impact/impact_foliage_08.wav
+loaded_sound,,weapons/impact/impact_foliage_09.wav
+loaded_sound,,weapons/impact/impact_foliage_10.wav
+loaded_sound,,weapons/impact/impact_foliage_11.wav
+loaded_sound,,weapons/impact/impact_foliage_14.wav
+sound,bullet_explode_foliage
+sound,bullet_explode_fruit
+sound,bullet_explode_glass
+sound,bullet_explode_grass
+sound,bullet_explode_gravel
+loaded_sound,,weapons/impact/ric1.wav
+loaded_sound,,weapons/impact/ric2.wav
+loaded_sound,,weapons/impact/ric3.wav
+sound,bullet_explode_ice
+loaded_sound,,weapons/impact/impact_metal_a02.wav
+loaded_sound,,weapons/impact/impact_metal_a04.wav
+loaded_sound,,weapons/impact/impact_metal_a07.wav
+loaded_sound,,weapons/impact/impact_metal_a16.wav
+loaded_sound,,weapons/impact/impact_metal_a17.wav
+loaded_sound,,weapons/impact/impact_metal_b21.wav
+loaded_sound,,weapons/impact/impact_metal_b20.wav
+loaded_sound,,weapons/impact/impact_metal_a05.wav
+loaded_sound,,weapons/impact/impact_metal_a01.wav
+loaded_sound,,weapons/impact/impact_metal_a14.wav
+loaded_sound,,weapons/impact/impact_metal_a15.wav
+loaded_sound,,weapons/impact/impact_metal_a03.wav
+loaded_sound,,weapons/impact/impact_metal_b01.wav
+loaded_sound,,weapons/impact/impact_metal_b02.wav
+loaded_sound,,weapons/ricochet/mrk_rico_metal01.wav
+loaded_sound,,weapons/ricochet/mrk_rico_metal02.wav
+loaded_sound,,weapons/ricochet/mrk_rico_metal03.wav
+sound,bullet_explode_metal
+loaded_sound,,weapons/impact/bullet_water01.wav
+loaded_sound,,weapons/impact/bullet_water02.wav
+loaded_sound,,weapons/impact/bullet_water03.wav
+sound,bullet_explode_mud
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a01.wav
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a02.wav
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a03.wav
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a04.wav
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a05.wav
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a06.wav
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a07.wav
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a08.wav
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a09.wav
+loaded_sound,,weapons/impact/blt_imp_paintmetal_a10.wav
+sound,bullet_explode_paintedmetal
+loaded_sound,,weapons/impact/impact_wood_15.wav
+sound,bullet_explode_paper
+loaded_sound,,weapons/impact/bullet_imp_piano01.wav
+sound,bullet_explode_piano
+sound,bullet_explode_plaster
+sound,bullet_explode_plastic
+loaded_sound,,weapons/impact/bullet_imp_plate02.wav
+loaded_sound,,weapons/impact/bullet_imp_plate04.wav
+loaded_sound,,weapons/impact/bullet_imp_plate05.wav
+sound,bullet_explode_plate
+loaded_sound,,weapons/impact/impact_riotshield_01.wav
+loaded_sound,,weapons/impact/impact_riotshield_02.wav
+loaded_sound,,weapons/impact/impact_riotshield_03.wav
+loaded_sound,,weapons/impact/impact_riotshield_04.wav
+loaded_sound,,weapons/impact/impact_riotshield_05.wav
+sound,bullet_explode_riotshield
+loaded_sound,,weapons/impact/impact_masonry_20.wav
+loaded_sound,,weapons/impact/impact_masonry_24.wav
+sound,bullet_explode_rock
+loaded_sound,,weapons/impact/bullet_teddybear01.wav
+loaded_sound,,weapons/impact/bullet_teddybear05.wav
+sound,bullet_explode_rubber
+sound,bullet_explode_sand
+sound,bullet_explode_sandbag
+sound,bullet_explode_slush
+loaded_sound,,weapons/impact/impact_snow_01.wav
+loaded_sound,,weapons/impact/impact_snow_02.wav
+loaded_sound,,weapons/impact/impact_snow_03.wav
+sound,bullet_explode_snow
+loaded_sound,weapons/impact/imp_explosivernd_sweetner_b23.wav
+loaded_sound,weapons/impact/imp_explosivernd_sweetner_b28.wav
+loaded_sound,weapons/impact/imp_explosivernd_sweetner_b30.wav
+loaded_sound,weapons/impact/imp_explosivernd_sweetner_b32.wav
+loaded_sound,weapons/impact/imp_explosivernd_sweetner_b33.wav
+sound,bullet_explode_sweetner
+sound,bullet_explode_teddybear
+loaded_sound,,weapons/impact/impact_vase_01.wav
+loaded_sound,,weapons/impact/impact_vase_02.wav
+loaded_sound,,weapons/impact/impact_vase_03.wav
+sound,bullet_explode_vase
+loaded_sound,,weapons/impact/bullet_water04.wav
+loaded_sound,,weapons/impact/bullet_water05.wav
+sound,bullet_explode_water
+loaded_sound,,weapons/impact/impact_wood_09.wav
+loaded_sound,,weapons/impact/impact_wood_10.wav
+loaded_sound,,weapons/impact/impact_wood_14.wav
+loaded_sound,,weapons/impact/impact_wood_11.wav
+loaded_sound,,weapons/impact/impact_wood_12.wav
+loaded_sound,,weapons/impact/impact_wood_13.wav
+loaded_sound,,weapons/ricochet/mrk_rico_wood04.wav
+sound,bullet_explode_wood
+sound,bullet_large_snow
+sound,bullet_small_snow
+sound,bulletspray_large_snow
+sound,bulletspray_small_snow
+loaded_sound,,weapons/grenade/mrk_grenade_2.wav
+loaded_sound,,weapons/grenade/mrk_grenade_3.wav
+loaded_sound,,weapons/grenade/mrk_grenade_4.wav
+loaded_sound,,weapons/grenade/mrk_grenade_5.wav
+sound,clusterbomb_explode_default
+loaded_sound,,explosions/grenade_explo01.wav
+loaded_sound,,explosions/grenade_explo02.wav
+loaded_sound,explosions/grenade_explo03.wav
+loaded_sound,,weapons/grenade/weap_expl_flash_bang1.wav
+loaded_sound,,weapons/grenade/weap_expl_flash_bang2.wav
+loaded_sound,,weapons/grenade/weap_expl_flash_bang3.wav
+sound,clusterbomb_explode_layer
+sound,clusterbomb_explode_layer_2
+loaded_sound,,weapons/c4_detpack/c4_drop_dirt1.wav
+loaded_sound,,weapons/c4_detpack/c4_drop_dirt2.wav
+sound,detpack_wall_plant
+sound,door_cargo_container_burst_open
+sound,door_wood_double_kick
+sound,door_wood_fence_post_kick
+sound,door_wood_slow_creaky_open
+sound,exp_slamraam_destroyed
+sound,explo_metal_rand
+sound,explo_mine
+sound,explo_tree
+sound,foot_slide_npc_end
+sound,foot_slide_npc_loop
+sound,foot_slide_npc_start
+sound,foot_slide_plr_end
+sound,foot_slide_plr_loop
+sound,foot_slide_plr_start
+loaded_sound,,foley/foly_gear_rattle1.wav
+loaded_sound,,foley/foly_gear_rattle2.wav
+loaded_sound,,foley/foly_gear_rattle3.wav
+loaded_sound,,foley/foly_gear_rattle4.wav
+loaded_sound,,foley/foly_gear_rattle5.wav
+loaded_sound,,foley/foly_gear_rattle6.wav
+loaded_sound,,foley/foly_gear_rattle_walk1.wav
+loaded_sound,,foley/foly_gear_rattle_walk2.wav
+loaded_sound,,foley/foly_gear_rattle_walk3.wav
+loaded_sound,,foley/foly_gear_rattle_walk4.wav
+loaded_sound,,foley/foly_gear_rattle_walk5.wav
+loaded_sound,,foley/foly_gear_rattle_walk6.wav
+sound,gear_rattle_plr_run
+loaded_sound,,misc/mrk_breathing01.wav
+loaded_sound,,misc/mrk_breathing02.wav
+loaded_sound,,misc/mrk_breathing03.wav
+sound,gear_rattle_run
+loaded_sound,foley/foly_generic_draw_weapon1.wav
+sndcurve,,reaction
+loaded_sound,foley/foly_generic_draw_weapon2.wav
+loaded_sound,foley/foly_generic_draw_weapon3.wav
+sound,generic_npc_draw_weapon
+loaded_sound,foley/foly_generic_grab_pull1.wav
+loaded_sound,foley/foly_generic_grab_pull2.wav
+loaded_sound,foley/foly_generic_grab_pull3.wav
+sound,generic_npc_grab_pull_body
+loaded_sound,foley/foly_generic_kick_body1.wav
+loaded_sound,foley/foly_generic_kick_body2.wav
+loaded_sound,foley/foly_generic_kick_body3.wav
+sound,generic_npc_kick_body
+loaded_sound,foley/foly_generic_slam_wall1.wav
+loaded_sound,foley/foly_generic_slam_wall2.wav
+loaded_sound,foley/foly_generic_slam_wall3.wav
+sound,generic_npc_slam_against_wall
+sound,icicle_crack_large
+sound,icicle_crack_med
+sound,icicle_crack_small
+loaded_sound,footsteps/land_metal.wav
+sound,Land_metal
+sound,Land_plr_metal
+loaded_sound,footsteps/mrk_land_dirtsand.wav
+sound,Land_plr_sand
+loaded_sound,footsteps/land_snow.wav
+sound,Land_plr_snow
+sound,Land_sand
+sound,Land_snow
+loaded_sound,explosions/dst_luggage_burst_clothes01.wav
+sound,luggage_burst_clothes
+loaded_sound,explosions/dst_luggage_burst01.wav
+sound,luggage_burst_open
+loaded_sound,,explosions/grenade_explod_a10.wav
+loaded_sound,,explosions/grenade_explod_a12.wav
+loaded_sound,,explosions/grenade_explod_a14.wav
+loaded_sound,,explosions/grenade_explod_a15.wav
+sound,rocket_explode_asphalt
+sound,rocket_explode_asphault
+sound,rocket_explode_bark
+loaded_sound,,explosions/grenade_explod_a13.wav
+loaded_sound,,explosions/grenade_explod_a16.wav
+sound,rocket_explode_brick
+loaded_sound,explosions/mrk_rockexplosion_layer1.wav
+loaded_sound,explosions/mrk_rockexplosion_layer5.wav
+sound,rocket_explode_brick_layer
+sound,rocket_explode_carpet
+sound,rocket_explode_ceramic
+sound,rocket_explode_cloth
+sound,rocket_explode_concrete
+sound,rocket_explode_concrete_layer
+sound,rocket_explode_cushion
+sound,rocket_explode_default
+sound,rocket_explode_dirt
+sound,rocket_explode_flesh
+sound,rocket_explode_foliage
+sound,rocket_explode_fruit
+sound,rocket_explode_glass
+sound,rocket_explode_grass
+sound,rocket_explode_gravel
+sound,rocket_explode_ice
+sound,rocket_explode_metal
+sound,rocket_explode_mud
+sound,rocket_explode_paintedmetal
+sound,rocket_explode_paper
+sound,rocket_explode_plaster
+sound,rocket_explode_plastic
+sound,rocket_explode_riotshield
+sound,rocket_explode_rock
+sound,rocket_explode_rubber
+sound,rocket_explode_sand
+sound,rocket_explode_sand_layer
+sound,rocket_explode_slush
+sound,rocket_explode_snow
+sound,rocket_explode_water
+sound,rocket_explode_wood
+sound,scn_relaxed_guard_chair_death
+loaded_sound,,footsteps/foot_dirt01.wav
+sndcurve,,weapon1
+loaded_sound,,footsteps/foot_dirt02.wav
+loaded_sound,,footsteps/foot_dirt03.wav
+loaded_sound,,footsteps/foot_dirt04.wav
+sound,step_run_dirt
+loaded_sound,footsteps/foot_metal01.wav
+loaded_sound,footsteps/foot_metal02.wav
+loaded_sound,footsteps/foot_metal03.wav
+loaded_sound,footsteps/foot_metal04.wav
+sound,step_run_ladder
+sound,step_run_metal
+sound,step_run_plr_dirt
+sound,step_run_plr_ladder
+sound,step_run_plr_metal
+loaded_sound,,footsteps/mrk_foot_dirtsand01.wav
+loaded_sound,,footsteps/mrk_foot_dirtsand02.wav
+loaded_sound,,footsteps/mrk_foot_dirtsand03.wav
+loaded_sound,,footsteps/mrk_foot_dirtsand04.wav
+sound,step_run_plr_sand
+loaded_sound,,footsteps/foot_snow01.wav
+loaded_sound,,footsteps/foot_snow02.wav
+loaded_sound,,footsteps/foot_snow03.wav
+loaded_sound,,footsteps/foot_snow04.wav
+sound,step_run_plr_snow
+sound,step_run_sand
+sound,step_run_snow
+sound,step_sprint_metal
+sound,step_sprint_plr_metal
+sound,step_sprint_plr_snow
+sound,step_walk_dirt
+sound,step_walk_metal
+sound,step_walk_plr_dirt
+sound,step_walk_plr_metal
+sound,step_walk_plr_sand
+sound,step_walk_plr_snow
+sound,step_walk_sand
+sound,step_walk_snow
+loaded_sound,user_interface/ui_computer_text_delete1.wav
+sound,ui_pulse_text_delete
+loaded_sound,user_interface/ui_computer_text_blip1x.wav
+sound,ui_pulse_text_type
+loaded_sound,,doors/door_wd_kick.wav
+loaded_sound,,doors/door_wd_kick02.wav
+sound,wood_door_kick
+sound,generic_death_falling
+loaded_sound,events/elev_run_stop01.wav
+sound,elev_run_end
+loaded_sound,events/elev_run_loop01.wav
+sound,elev_run_loop
+loaded_sound,events/elev_run_start01.wav
+sound,elev_run_start
+sound,phy_cargocontainer_default
+sound,phy_pipe_default
+loaded_sound,physics/physics_car_tire_bounce01.wav
+loaded_sound,physics/physics_car_tire_bounce02.wav
+loaded_sound,physics/physics_car_tire_bounce03.wav
+sound,physics_parking_cone_default
+sound,physics_suburban_impact
+sound,physics_tank_impact
+sound,physics_technical_impact
+sound,physics_tire_default
+sound,physics_zodiac_impact
+sound,af_chase_ending_credits
+sound,af_chase_ending_credits_rear
+sound,ambient_ac130_int1
+sound,ambient_dcemp_heavy_rain
+sound,elm_helicopter_flyover_med
+sound,elm_industry
+sound,elm_jet_flyover_dist
+sound,elm_jet_flyover_med
+sound,elm_metal_stress
+sound,elm_stress
+sound,walla_rus_mountain_chatter
+sound,walla_rus_mountain_conv
+sound,emt_ac_metal_rattle
+sound,emt_fly_loop
+sound,emt_road_flare_burn
+sound,emt_single_ceiling_debris
+sound,emt_wood_creak_heavy
+sound,emt_wood_creak_heavy2
+sound,emt_wood_creak_light
+loaded_sound,fire/fire_woodtrash_small1v2res.wav
+loaded_sound,fire/fire_woodtrash_small2v2res.wav
+sound,fire_barrel_small
+sound,fire_metal_large
+sound,fire_metal_medium
+sound,fire_metal_small
+sound,fire_wood_large
+sound,fire_wood_medium
+sound,fire_wood_small
+loaded_sound,fire/fire_med_loop02_res.wav
+sound,vehicle_fire
+sound,vehicle_fire_medium
+loaded_sound,fire/fire_vehicle_small_loop1_res.wav
+sound,vehicle_fire_small
+loaded_sound,weapons/cal30/weap_30cal_cooldown_1.wav
+sound,tank_mg_cal30_cooldown
+loaded_sound,weapons/cal30/weap_30cal_loop_1.wav
+sound,tank_mg_cal30_loop
+loaded_sound,weapons/shotgun/weap_aa12_slmn_1.wav
+sndcurve,,weapon5
+sound,weap_aa12_fire_npc
+loaded_sound,weapons/shotgun/weap_shotgunsilenced_slmn_17.wav
+sound,weap_aa12silenced_fire_npc
+loaded_sound,,weapons/g36/weap_g36_slmn_1.wav
+sound,weap_ag36_fire_npc
+loaded_sound,,weapons/ak47/weap_ak47_slmn_21.wav
+sound,weap_ak47_fire_npc
+loaded_sound,,weapons/ak74u/weap_ak74_slmn_35c.wav
+sound,weap_ak74_fire_npc
+loaded_sound,,weapons/anaconda/wpnfire_revolver_44mag_mn.wav
+sound,weap_anaconda_fire_npc
+sound,weap_anacondashepard_fire_npc
+loaded_sound,,weapons/rpg7/weap_rpg_slmn_2.wav
+sound,weap_at4_fire_npc
+loaded_sound,weapons/aug/weap_aug_slmn_2b.wav
+sound,weap_aug_fire_npc
+loaded_sound,,weapons/barrett/weap_barrett_slmn_1.wav
+sound,weap_aw50sniper_fire_npc
+sound,weap_barrett_fire_npc
+loaded_sound,,weapons/shotgun/weap_win1200_slmn_2.wav
+sound,weap_benelli_m4_fire_npc
+loaded_sound,,weapons/c4_detpack/weap_detpack_safety.wav
+sound,weap_c4detpack_safety_npc
+sound,weap_c4detpack_safetyoff_npc
+loaded_sound,,weapons/c4_detpack/weap_detpack_trigger.wav
+sound,weap_c4detpack_trigger_npc
+loaded_sound,weapons/cheytac/weap_cheytac_slmn_2d3.wav
+sound,weap_cheytac_fire_npc
+loaded_sound,,weapons/rpd/wpnfire_rpd_v2_mn.wav
+sound,weap_degtyarev_rpd_fire_npc
+loaded_sound,,weapons/de/weap_deserteagle_slmn_2.wav
+sound,weap_deserteagle_fire_npc
+loaded_sound,,weapons/dragunov/weap_dragunov_slmn_1.wav
+sound,weap_dragunovsniper_fire_npc
+loaded_sound,weapons/famas/weap_famas_slmn_1.wav
+sound,weap_famas_fire_npc
+loaded_sound,weapons/fn2000/weap_fn2000_slmn_2b2.wav
+sound,weap_fn2000_fire_npc
+loaded_sound,,weapons/fnfal/weap_fnfal_slmn_01c.wav
+sound,weap_fnfal_fire_npc
+loaded_sound,,weapons/p90/weap_p90_slmn_1.wav
+sound,weap_fnp90_fire_npc
+loaded_sound,,weapons/p90/weap_p90_silencer_slmn_1.wav
+sound,weap_fnp90silenced_fire_npc
+sound,weap_g36c_fire_npc
+sound,weap_g3_fire_npc
+loaded_sound,,weapons/glock/weap_glock_slmn_1d2.wav
+sound,weap_glock_fire_npc
+loaded_sound,,weapons/gp25/weap_gp25_sl_1.wav
+sound,weap_gp25_fire_npc
+loaded_sound,weapons/kriss/wpnfire_kriss_v2_03_mn.wav
+sound,weap_kriss_fire_npc
+loaded_sound,weapons/m240/wpnfire_lmg_silenced_npc.wav
+sound,weap_lmgsilenced_fire_npc
+loaded_sound,,weapons/shotgun/weap_m1014_slmn_y1b.wav
+sound,weap_m1014_fire_npc
+loaded_sound,,weapons/m14/weap_m14_slmn_5.wav
+sound,weap_m14sniper_fire_npc
+loaded_sound,,weapons/m4/weap_m4_slmn_10.wav
+sound,weap_m16_fire_npc
+loaded_sound,,weapons/colt45/weap_usp45_slmn_y1b.wav
+sound,weap_m1911colt45_fire_npc
+loaded_sound,,weapons/m203/weap_m203_sl_1b.wav
+sound,weap_m203_fire_npc
+loaded_sound,weapons/m240/weap_m240_slmn_1e5.wav
+sound,weap_m240_fire_npc
+loaded_sound,,weapons/m249/weap_m249_sl_1.wav
+sound,weap_m249saw_fire_npc
+loaded_sound,,weapons/m249/weap_m249_mono5.wav
+sound,weap_m249saw_turret_fire
+loaded_sound,,weapons/m249/weap_m249_slst_1.wav
+sound,weap_m249saw_turret_fire_aki
+sound,weap_m249saw_turret_fire_npc
+sound,weap_m249saw_turret_fire_plr
+loaded_sound,,weapons/50cal/weap_50cal_temp_v2.wav
+sound,weap_m2_50cal_fire_npc
+sound,weap_m2turret_50cal_fire_npc
+loaded_sound,,weapons/sniper/weap_762mm_sniper_slmn_4.wav
+sound,weap_m40a3sniper_fire_npc
+loaded_sound,,weapons/m4/weap_m4_slmn_65d.wav
+sound,weap_m4carbine_fire_npc
+loaded_sound,,weapons/m4/weap_m4_silencer_slmn_2b.wav
+sound,weap_m4silenced_fire_npc
+loaded_sound,,weapons/m60/weap_m60_sl_1.wav
+sound,weap_m60_fire_npc
+loaded_sound,,weapons/m79/weap_m79_sl_2d.wav
+sound,weap_m79_fire_npc
+sound,weap_m82sniper_fire_npc
+loaded_sound,,weapons/beretta/weap_beretta_sl_3c.wav
+sound,weap_m9_fire_npc
+loaded_sound,weapons/magpul/weap_magpul_slmn_4b.wav
+sound,weap_magpul_fire_npc
+loaded_sound,weapons/magpul/weap_magpulsilenced_slmn_3d3.wav
+sound,weap_magpulsilenced_fire_npc
+loaded_sound,,weapons/mg42/mrk_mg42cooldown_1.wav
+sound,weap_mg42_cooldown_npc
+loaded_sound,,weapons/mg42/mrk_mg42loop_1b.wav
+sound,weap_mg42_loop_npc
+sound,weap_mg4_fire_npc
+loaded_sound,,weapons/miniuzi/weap_miniuzi_slmn_9.wav
+sound,weap_miniuzi_fire_npc
+loaded_sound,,weapons/colt45/weap_usp45sd_slmn_y1.wav
+sound,weap_miniuzisd_fire_npc
+sound,weap_mp44_fire_npc
+loaded_sound,,weapons/mp5/weap_mp5_slmn_6m3.wav
+sound,weap_mp5_fire_npc
+loaded_sound,,weapons/mp5/weap_mp5_silencer_slmn_2d.wav
+sound,weap_mp5sd_fire_npc
+loaded_sound,weapons/pp2000/weap_pp2000_slmn_01c.wav
+sound,weap_pp2000_fire_npc
+loaded_sound,weapons/shotgun/weap_sawshotgun_slmn_1d4.wav
+sound,weap_ranger_fire_npc
+sound,weap_rem700sniper_fire_npc
+sound,weap_rpd_turret_fire
+sound,weap_rpd_turret_fire_npc
+sound,weap_rpg_fire_npc
+loaded_sound,weapons/sa80/weap_sa80_slmn_1b.wav
+sound,weap_sa80_fire_npc
+loaded_sound,weapons/scar/weap_scar_slmn_06b4.wav
+sound,weap_scar_fire_npc
+sound,weap_shotgun_fire_npc
+loaded_sound,weapons/shotgun/weap_shotgunattach_slmn_1.wav
+sound,weap_shotgunattach_fire_npc
+loaded_sound,,weapons/skorpion/weap_skorpion_slmn_1bx.wav
+sound,weap_skorpion_fire_npc
+sound,weap_skorpionsd_fire_npc
+loaded_sound,weapons/sniper/weap_snipersilenced_slmn_1.wav
+sound,weap_snipersilenced_fire_npc
+loaded_sound,weapons/shotgun/weap_stryker_slmn_1b.wav
+sound,weap_stryker_fire_npc
+loaded_sound,weapons/tavor/wpnfire_tavor_v2_01_mn.wav
+sound,weap_tavor_fire_npc
+loaded_sound,weapons/ump45/weap_ump45_slmn_1c3b.wav
+sound,weap_ump45_fire_npc
+sound,weap_usp45_fire_npc
+sound,weap_usp45sd_fire_npc
+loaded_sound,weapons/wa2000/weap_wa2000_slmn_2.wav
+sound,weap_wa2000_fire_npc
+sound,weap_winch1200_fire_npc
+rawfile,iw4_credits
+techset,mc_l_sm_r0c0n0s0p0
+techset,mc_l_sm_r0c0p0
+techset,mc_l_sm_r0c0s0p0
+techset,mc_l_sm_r0c0n0p0
+techset,mc_l_hsm_r0c0p0
+techset,mc_l_hsm_r0c0s0p0
+techset,mc_l_hsm_r0c0n0p0
+techset,mc_l_hsm_r0c0n0s0p0
+techset,mc_l_sm_b0c0n0s0
+techset,mc_l_sm_b0c0
+techset,mc_l_sm_b0c0s0
+techset,mc_l_sm_b0c0n0
+techset,mc_l_hsm_b0c0
+techset,mc_l_hsm_b0c0s0
+techset,mc_l_hsm_b0c0n0
+techset,mc_l_hsm_b0c0n0s0
+vertexdecl,pp
+vertexshader,transform_only.hlsl
+pixelshader,null.hlsl
+vertexshader,floatz_build.hlsl
+pixelshader,floatz_build.hlsl
+vertexshader,shadowmap_build.hlsl
+pixelshader,shadowmap_build_sm3.hlsl
+vertexdecl,ppcc0t0t0
+vertexshader,vertcol_simple_fog.hlsl
+pixelshader,vertcol_shaded_fog_lin.hlsl
+vertexdecl,ppcc0t0t0nn
+vertexshader,lm_fog_tc0n0_sm3.hlsl
+vertexshader,lm_dfog_tc0n0_sm3.hlsl
+vertexdecl,ppcc0t0t0nntt2
+vertexshader,lm_sun_fog_tc0n0_sm3.hlsl
+vertexshader,lm_sun_dfog_tc0n0_sm3.hlsl
+vertexshader,lm_sm_sun_fog_tc0n0_sm3.hlsl
+vertexshader,lm_sm_sun_dfog_tc0n0_sm3.hlsl
+vertexshader,lm_omni_fog_tc0n0_sm3.hlsl
+vertexshader,lm_omni_dfog_tc0n0_sm3.hlsl
+vertexshader,lm_sm_omni_fog_tc0n0_sm3.hlsl
+vertexshader,lm_sm_omni_dfog_tc0n0_sm3.hlsl
+vertexshader,l_point_tc0n0.hlsl
+pixelshader,l_spot_r0c0n0.hlsl
+pixelshader,l_omni_r0c0n0.hlsl
+vertexshader,l_point_sm_tc0n0.hlsl
+pixelshader,l_spot_sm_r0c0n0.hlsl
+vertexdecl,ppcc0
+vertexshader,vertcol_untextured_nofog.hlsl
+pixelshader,vertcol_untextured_lin_nofog.hlsl
+vertexdecl,ppt0t0nntt1
+vertexshader,debug_normals.hlsl
+pixelshader,debug_normals.hlsl
+vertexshader,lm_fog_tc0_sm3.hlsl
+vertexshader,lm_dfog_tc0_sm3.hlsl
+vertexshader,lm_sun_fog_tc0_sm3.hlsl
+vertexshader,lm_sun_dfog_tc0_sm3.hlsl
+vertexshader,lm_sm_sun_fog_tc0_sm3.hlsl
+vertexshader,lm_sm_sun_dfog_tc0_sm3.hlsl
+vertexshader,lm_omni_fog_tc0_sm3.hlsl
+vertexshader,lm_omni_dfog_tc0_sm3.hlsl
+vertexshader,lm_sm_omni_fog_tc0_sm3.hlsl
+vertexshader,lm_sm_omni_dfog_tc0_sm3.hlsl
+vertexshader,l_point_tc0.hlsl
+pixelshader,l_spot_r0c0.hlsl
+pixelshader,l_omni_r0c0.hlsl
+vertexshader,l_point_sm_tc0.hlsl
+pixelshader,l_spot_sm_r0c0.hlsl
+vertexshader,lm_hsm_sun_fog_tc0_sm3.hlsl
+vertexshader,lm_hsm_sun_dfog_tc0_sm3.hlsl
+vertexshader,lm_hsm_omni_fog_tc0_sm3.hlsl
+vertexshader,lm_hsm_omni_dfog_tc0_sm3.hlsl
+vertexshader,l_point_hsm_tc0.hlsl
+pixelshader,l_spot_hsm_r0c0.hlsl
+vertexshader,lm_hsm_sun_fog_tc0n0_sm3.hlsl
+vertexshader,lm_hsm_sun_dfog_tc0n0_sm3.hlsl
+vertexshader,lm_hsm_omni_fog_tc0n0_sm3.hlsl
+vertexshader,lm_hsm_omni_dfog_tc0n0_sm3.hlsl
+vertexshader,l_point_hsm_tc0n0.hlsl
+pixelshader,l_spot_hsm_r0c0n0.hlsl
+techset,2d
+sndcurve,$default
+sndcurve,weapon2
+sndcurve,reaction
+sndcurve,weapon1
+sndcurve,weapon5

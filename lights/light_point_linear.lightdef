@@ -7,6 +7,6 @@
         "image": "",
         "samplerState": 0
     },
-    "lmapLookupStart": 35,
+    "lmapLookupStart": 1,
     "name": "light_point_linear"
 }

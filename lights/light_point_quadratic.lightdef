@@ -1,0 +1,12 @@
+{
+    "attenuation": {
+        "image": "falloff_quadratic",
+        "samplerState": 98
+    },
+    "cucoloris": {
+        "image": "",
+        "samplerState": 0
+    },
+    "lmapLookupStart": 35,
+    "name": "light_point_quadratic"
+}
