@@ -1,0 +1,891 @@
+{
+    menuDef
+    {
+        name                        "levels_game_coop"
+        fullscreen                  1
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        soundLoop                   "music_mainmenu_mp"
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        onOpen
+        {
+            focusFirst;
+        }
+        onESC
+        {
+            close self;
+        }
+        itemDef
+        {
+            rect                        -107 0 854 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "animbg_blur_back"
+        }
+        itemDef
+        {
+            rect                        -107 0 1708 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "animbg_blur_fogscroll"
+            exp rect x                  (- 107) - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        -107 0 854 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "animbg_blur_front"
+        }
+        itemDef
+        {
+            rect                        -120 -32 378 64 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        258 -32 16 -64 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        56 448 528 40 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        584 448 16 64 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        40 448 -16 64 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        -120 464 160 32 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        600 464 160 32 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "white"
+        }
+        itemDef
+        {
+            name                        "back"
+            text                        "@MENU_BACK"
+            rect                        -250 -26 40 20 2 3
+            style                       1
+            type                        1
+            visible                     when(1);
+            textaligny                  18
+            textscale                   0.375
+            textstyle                   3
+            textfont                    1
+            mouseEnter
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                close self;
+                open main_text;
+            }
+        }
+        itemDef
+        {
+            rect                        48 40 0 0 0 0
+            decoration                  
+            visible                     1
+            textalign                   4
+            textalignx                  -36
+            textaligny                  -36
+            textscale                   0.5833
+            textstyle                   6
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "Co-op Missions";
+        }
+        itemDef
+        {
+            rect                        18 40 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 40 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 40 234.5 22 1 1
+            style                       3
+            decoration                  
+            borderSize                  2
+            visible                     when(localvarint("ui_highlight") == 1 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            bordercolor                 0.8 0.95 1 0.4
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        252.5 40 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(localvarint("ui_highlight") == 1 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 40 240 22 1 1
+            type                        1
+            visible                     when(1);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.69 0.69 0.69 1
+            onFocus
+            {
+                play mouse_over;
+                setLocalVarInt ui_highlight 1;
+                setLocalVarString ui_choicegroup "levels";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+            }
+            action
+            {
+                play mouse_click;
+                setdvar ui_load_level co_blackout;
+                setdvar coop_mapName co_blackout;
+                open format_select;
+            }
+            exp text                    "Blackout";
+        }
+        itemDef
+        {
+            rect                        18 40 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 40 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 40 240 22 1 1
+            decoration                  
+            visible                     when(0);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.5 0.5 0.5 0.5
+            exp text                    "Blackout";
+        }
+        itemDef
+        {
+            rect                        18 64 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 64 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 64 234.5 22 1 1
+            style                       3
+            decoration                  
+            borderSize                  2
+            visible                     when(localvarint("ui_highlight") == 2 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            bordercolor                 0.8 0.95 1 0.4
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        252.5 64 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(localvarint("ui_highlight") == 2 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 64 240 22 1 1
+            type                        1
+            visible                     when(1);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.69 0.69 0.69 1
+            onFocus
+            {
+                play mouse_over;
+                setLocalVarInt ui_highlight 2;
+                setLocalVarString ui_choicegroup "levels";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+            }
+            action
+            {
+                play mouse_click;
+                setdvar ui_load_level co_armada;
+                setdvar coop_mapName co_armada;
+                open format_select;
+            }
+            exp text                    "Armada";
+        }
+        itemDef
+        {
+            rect                        18 64 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 64 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 64 240 22 1 1
+            decoration                  
+            visible                     when(0);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.5 0.5 0.5 0.5
+            exp text                    "Armada";
+        }
+        itemDef
+        {
+            rect                        18 88 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 88 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 88 234.5 22 1 1
+            style                       3
+            decoration                  
+            borderSize                  2
+            visible                     when(localvarint("ui_highlight") == 3 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            bordercolor                 0.8 0.95 1 0.4
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        252.5 88 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(localvarint("ui_highlight") == 3 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 88 240 22 1 1
+            type                        1
+            visible                     when(1);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.69 0.69 0.69 1
+            onFocus
+            {
+                play mouse_over;
+                setLocalVarInt ui_highlight 3;
+                setLocalVarString ui_choicegroup "levels";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+            }
+            action
+            {
+                play mouse_click;
+                setdvar ui_load_level co_crossfire;
+                setdvar coop_mapName co_crossfire;
+                open format_select;
+            }
+            exp text                    "Crossfire";
+        }
+        itemDef
+        {
+            rect                        18 88 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 88 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 88 240 22 1 1
+            decoration                  
+            visible                     when(0);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.5 0.5 0.5 0.5
+            exp text                    "Crossfire";
+        }
+        itemDef
+        {
+            rect                        18 112 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 112 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 112 234.5 22 1 1
+            style                       3
+            decoration                  
+            borderSize                  2
+            visible                     when(localvarint("ui_highlight") == 4 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            bordercolor                 0.8 0.95 1 0.4
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        252.5 112 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(localvarint("ui_highlight") == 4 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 112 240 22 1 1
+            type                        1
+            visible                     when(1);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.69 0.69 0.69 1
+            onFocus
+            {
+                play mouse_over;
+                setLocalVarInt ui_highlight 4;
+                setLocalVarString ui_choicegroup "levels";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+            }
+            action
+            {
+                play mouse_click;
+                setdvar ui_load_level co_overgrown;
+                setdvar coop_mapName co_overgrown;
+                open format_select;
+            }
+            exp text                    "Overgrown";
+        }
+        itemDef
+        {
+            rect                        18 112 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 112 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 112 240 22 1 1
+            decoration                  
+            visible                     when(0);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.5 0.5 0.5 0.5
+            exp text                    "Overgrown";
+        }
+        itemDef
+        {
+            rect                        18 136 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 136 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 136 234.5 22 1 1
+            style                       3
+            decoration                  
+            borderSize                  2
+            visible                     when(localvarint("ui_highlight") == 5 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            bordercolor                 0.8 0.95 1 0.4
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        252.5 136 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(localvarint("ui_highlight") == 5 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 136 240 22 1 1
+            type                        1
+            visible                     when(1);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.69 0.69 0.69 1
+            onFocus
+            {
+                play mouse_over;
+                setLocalVarInt ui_highlight 5;
+                setLocalVarString ui_choicegroup "levels";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+            }
+            action
+            {
+                play mouse_click;
+                setdvar ui_load_level co_hunted;
+                setdvar coop_mapName co_hunted;
+                open format_select;
+            }
+            exp text                    "Hunted/AC-130";
+        }
+        itemDef
+        {
+            rect                        18 136 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 136 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 136 240 22 1 1
+            decoration                  
+            visible                     when(0);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.5 0.5 0.5 0.5
+            exp text                    "Hunted/AC-130";
+        }
+        itemDef
+        {
+            rect                        18 160 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 160 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 160 234.5 22 1 1
+            style                       3
+            decoration                  
+            borderSize                  2
+            visible                     when(localvarint("ui_highlight") == 6 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            bordercolor                 0.8 0.95 1 0.4
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        252.5 160 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(localvarint("ui_highlight") == 6 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 160 240 22 1 1
+            type                        1
+            visible                     when(1);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.69 0.69 0.69 1
+            onFocus
+            {
+                play mouse_over;
+                setLocalVarInt ui_highlight 6;
+                setLocalVarString ui_choicegroup "levels";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+            }
+            action
+            {
+                play mouse_click;
+                setdvar ui_load_level co_launchfacility_a;
+                setdvar coop_mapName co_launchfacility_a;
+                open format_select;
+            }
+            exp text                    "Launchfacility A";
+        }
+        itemDef
+        {
+            rect                        18 160 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 160 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 160 240 22 1 1
+            decoration                  
+            visible                     when(0);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.5 0.5 0.5 0.5
+            exp text                    "Launchfacility A";
+        }
+        itemDef
+        {
+            rect                        18 184 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 184 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 184 234.5 22 1 1
+            style                       3
+            decoration                  
+            borderSize                  2
+            visible                     when(localvarint("ui_highlight") == 7 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            bordercolor                 0.8 0.95 1 0.4
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        252.5 184 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(localvarint("ui_highlight") == 7 && localvarstring("ui_choicegroup") == "levels");
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 184 240 22 1 1
+            type                        1
+            visible                     when(1);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.69 0.69 0.69 1
+            onFocus
+            {
+                play mouse_over;
+                setLocalVarInt ui_highlight 7;
+                setLocalVarString ui_choicegroup "levels";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+            }
+            action
+            {
+                play mouse_click;
+                setdvar ui_load_level co_airplane;
+                setdvar coop_mapName co_airplane;
+                open format_select;
+            }
+            exp text                    "Airplane";
+        }
+        itemDef
+        {
+            rect                        18 184 234.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            exp material                "gradient_fadein";
+        }
+        itemDef
+        {
+            rect                        252.5 184 5.5 22 1 1
+            style                       3
+            decoration                  
+            visible                     when(0);
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        18 184 240 22 1 1
+            decoration                  
+            visible                     when(0);
+            textalign                   10
+            textalignx                  -10
+            textscale                   0.4
+            textstyle                   6
+            textfont                    1
+            forecolor                   0.5 0.5 0.5 0.5
+            exp text                    "Airplane";
+        }
+    }
+}

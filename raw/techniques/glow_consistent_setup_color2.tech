@@ -1,0 +1,16 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "glow_consistent_setup.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "glow_consistent_setup_color2.hlsl"
+  {
+    colorMapSampler = sampler.resolvedScene;
+  }
+
+  vertex.position = code.position;
+  vertex.texcoord[0] = code.texcoord[0];
+}

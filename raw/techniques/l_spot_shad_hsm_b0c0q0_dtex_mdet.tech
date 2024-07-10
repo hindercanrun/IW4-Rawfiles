@@ -1,0 +1,30 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "l_point_hsm_tc0q0_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    shadowLookupMatrix = constant.transposeShadowLookupMatrix;
+  }
+
+  pixelShader 3.0 "l_spot_hsm_mdet_b0c0q0.hlsl"
+  {
+    attenuationSampler = sampler.light.attenuation;
+    colorMapSampler = material.colorMap;
+    detailMapSampler = material.detailMap;
+    shadowmapSamplerSpot = sampler.shadowmapSpot;
+    lightSpotDir = constant.light.spotDir;
+    lightSpotFactors = constant.light.spotFactors;
+    lightPosition = constant.light.position;
+    lightDiffuse = constant.light.diffuse;
+    detailScale = material.detailScale;
+    fogColorLinear = float4( 0, 0, 0, 0 );
+  }
+
+  vertex.position = code.position;
+  vertex.color[0] = code.color;
+  vertex.texcoord[0] = code.texcoord[0];
+  vertex.normal = code.normal;
+  vertex.texcoord[2] = code.tangent;
+}

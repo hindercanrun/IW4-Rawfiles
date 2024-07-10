@@ -1,0 +1,92 @@
+{
+    menuDef
+    {
+        name                        "compassv2"
+        rect                        2 -16 640 480 4 4
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     when(!(player("number") + 1 == dvarint(ui_remotemissile_playernum)) && (dvarbool(hud_missionFailed) == 0) && (dvarstring(createfx) != "on") && !flashbanged() && !usingvehicle() && !ui_active() && (dvarbool(compass) == 1) && (dvarbool(compassHideSansObjectivePointer) == 0));
+        itemDef
+        {
+            name                        "weaponbar_circle"
+            rect                        -88 -58.6667 88 56 10 10
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            background                  "hud_weaponbar_circle"
+            exp forecolor a             hudfade("compass");
+        }
+        itemDef
+        {
+            name                        "Shadow_Pass1"
+            rect                        -109 -78 130 130 10 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "hud_compass_alpha"
+            exp forecolor a             hudfade("compass");
+        }
+        itemDef
+        {
+            name                        "Shadow_Pass2"
+            rect                        -109 -78 130 130 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   166
+            textscale                   0.55
+            background                  "hud_compass_letters_shadow_step2"
+            exp forecolor a             hudfade("compass") - 0.25;
+        }
+        itemDef
+        {
+            name                        "Shadow_Pass3"
+            rect                        -109 -78 130 130 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   166
+            textscale                   0.55
+            background                  "hud_compass_letters_shadow_step3"
+            exp forecolor a             hudfade("compass");
+        }
+        itemDef
+        {
+            name                        "Pass1"
+            rect                        -110 -79 130 130 10 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "hud_compass_alpha"
+            exp forecolor a             hudfade("compass");
+        }
+        itemDef
+        {
+            name                        "Pass2"
+            rect                        -110 -79 130 130 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   166
+            textscale                   0.55
+            background                  "hud_compass_letters_step2"
+            exp forecolor a             hudfade("compass");
+        }
+        itemDef
+        {
+            name                        "Pass3"
+            rect                        -110 -79 130 130 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   166
+            textscale                   0.55
+            background                  "hud_compass_letters_step3"
+            exp forecolor a             hudfade("compass");
+        }
+    }
+}

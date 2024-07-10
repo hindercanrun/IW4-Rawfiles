@@ -1,0 +1,13 @@
+// ====================
+// Version 41
+// Calculated checksum did not match checksum in file
+// Overriding checksum to match original value
+// ====================
+version 41
+{
+  checksumoverride 1104745215;
+
+  struct root
+  {
+  };
+}

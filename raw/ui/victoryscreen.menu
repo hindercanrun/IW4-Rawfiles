@@ -1,0 +1,94 @@
+{
+    menuDef
+    {
+        name                        "victoryscreen"
+        fullscreen                  1
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        fadeInAmount                0.002
+        onOpen
+        {
+            execondvarintvalue ui_arcade_lost 1 disconnect;
+            uiScript closemenuondvar ui_arcade_lost 1 victoryscreen;
+            uiScript openmenuondvar ui_arcade_lost 1 main;
+            setdvar cl_paused 1;
+            setitemcolor fadebox backcolor 0 0 0 1;
+            fadeout fadebox;
+            exec updategamerprofile;
+            execOnDvarIntValue ui_showpopup 1 "openmenu victory_notice_popmenu";
+        }
+        onClose
+        {
+            setdvar cl_paused 0;
+            setdvar ui_requiredtraining "";
+        }
+        itemDef
+        {
+            rect                        -107 0 854 480 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.2 0.2 0.2 1
+        }
+        itemDef
+        {
+            rect                        -128 0 896 480 0 0
+            style                       3
+            decoration                  
+            visible                     when(dvarstring(mapname) == "cliffhanger");
+            textscale                   0.55
+            backcolor                   1 1 1 1
+            background                  "black"
+        }
+        itemDef
+        {
+            name                        "defaultbackdrop"
+            rect                        -427 -240 854 480 2 2
+            style                       3
+            decoration                  
+            visible                     when(dvarstring(ui_char_museum_mode) == "credits_1");
+            textscale                   0.55
+            background                  "victory_iw4"
+        }
+        itemDef
+        {
+            name                        "mainb"
+            text                        "@MENU_SP_CONTINUE_TO_SPECIAL_OPS"
+            rect                        250 420 128 16 0 0
+            type                        1
+            visible                     1
+            textalign                   5
+            textscale                   0.4583
+            textstyle                   6
+            textfont                    9
+            forecolor                   0.9 0.9 0.9 0.9
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                setdvar gamemode so;
+                exec disconnect;
+                close victoryscreen;
+                open main;
+            }
+        }
+        itemDef
+        {
+            name                        "fadebox"
+            rect                        -128 0 896 480 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0 1
+            forecolor                   0 0 0 1
+            background                  "white"
+        }
+    }
+}

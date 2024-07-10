@@ -1,0 +1,18 @@
+{
+    menuDef
+    {
+        name                        "main"
+        fullscreen                  1
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        soundLoop                   "music_mainmenu_mp"
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        onOpen
+        {
+            open main_text;
+            setdvar ui_showEndOfGame 0;
+        }
+    }
+}

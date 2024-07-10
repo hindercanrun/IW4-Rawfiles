@@ -1,0 +1,9 @@
+"unlit":
+"emissive":
+"emissive dfog":
+"emissive shadow":
+"emissive shadow dfog":
+  effect_add_falloff_dtex;
+
+"solid wireframe":
+  wireframe_solid_dtex;

@@ -1,0 +1,21 @@
+{
+    menuDef
+    {
+        name                        "overlay_grain"
+        rect                        0 0 640 480 0 0
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     when(((weaponname() == "viper_20mm") || (weaponname() == "viper_hydra") || (weaponname() == "viper_hellfire") || (weaponname() == "viper_tow")) || (dvarbool(remotemissile_active) == 1));
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.35
+            background                  "ac130_overlay_grain"
+        }
+    }
+}

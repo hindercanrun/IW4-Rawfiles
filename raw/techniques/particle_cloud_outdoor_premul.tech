@@ -1,0 +1,17 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "particle_cloud_outdoor.hlsl"
+  {
+    worldViewMatrix = constant.transposeWorldViewMatrix;
+    worldOutdoorLookupMatrix = constant.transposeWorldOutdoorLookupMatrix;
+    projectionMatrix = constant.transposeProjectionMatrix;
+  }
+
+  pixelShader 3.0 "particle_cloud_outdoor_premul.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    outdoorMapSampler = sampler.outdoor;
+  }
+  // Cannot dump vertex decl ppt0t0 due to being a referenced asset
+}

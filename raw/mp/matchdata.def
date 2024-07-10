@@ -1,0 +1,388 @@
+// ====================
+// Version 12
+// Calculated checksum did not match checksum in file
+// Overriding checksum to match original value
+// ====================
+version 12
+{
+  checksumoverride 656303050;
+
+  enum ENUM_0
+  {
+    "headshot",
+    "execution",
+    "avenger",
+    "defender",
+    "posthumous",
+    "revenge",
+    "buzzkill",
+    "firstblood",
+    "comeback",
+    "longshot",
+    "assistedsuicide",
+    "killstreak",
+    "carrying",
+    "planting",
+    "defusing",
+    "assaulting",
+    "defending"
+  };
+
+  enum ENUM_1
+  {
+    "capture",
+    "destroy",
+    "plant",
+    "defuse",
+    "pickup",
+    "return"
+  };
+
+  enum ENUM_2
+  {
+    "none",
+    "MOD_UNKNOWN",
+    "MOD_PISTOL_BULLET",
+    "MOD_RIFLE_BULLET",
+    "MOD_EXPLOSIVE_BULLET",
+    "MOD_GRENADE",
+    "MOD_GRENADE_SPLASH",
+    "MOD_PROJECTILE",
+    "MOD_PROJECTILE_SPLASH",
+    "MOD_MELEE",
+    "MOD_HEAD_SHOT",
+    "MOD_CRUSH",
+    "MOD_FALLING",
+    "MOD_SUICIDE",
+    "MOD_TRIGGER_HURT",
+    "MOD_EXPLOSIVE",
+    "MOD_IMPACT"
+  };
+
+  enum ENUM_3
+  {
+    "none",
+    "beretta393",
+    "beretta",
+    "usp",
+    "deserteagle",
+    "deserteaglegold",
+    "coltanaconda",
+    "glock",
+    "ak47",
+    "mp44",
+    "g3",
+    "g36c",
+    "m16",
+    "m4",
+    "fn2000",
+    "famas",
+    "fal",
+    "scar",
+    "tavor",
+    "masada",
+    "mp5k",
+    "uzi",
+    "p90",
+    "kriss",
+    "ump45",
+    "pp2000",
+    "tmp",
+    "m1014",
+    "ranger",
+    "striker",
+    "aa12",
+    "model1887",
+    "spas12",
+    "aug",
+    "rpd",
+    "sa80",
+    "mg4",
+    "m240",
+    "barrett",
+    "cheytac",
+    "m21",
+    "wa2000",
+    "gl",
+    "rpg",
+    "c4",
+    "claymore",
+    "m79",
+    "at4",
+    "javelin",
+    "stinger",
+    "c4death",
+    "frag_grenade",
+    "frag_grenade_short",
+    "frag_scavenger_grenade",
+    "flash_grenade",
+    "smoke_grenade",
+    "concussion_grenade",
+    "emp_grenade",
+    "smartarrow",
+    "riotshield",
+    "throwingknife",
+    "semtex",
+    "onemanarmy",
+    "airdrop_marker",
+    "airdrop_mega_marker",
+    "airdrop_sentry_marker",
+    "abrams_minigun_mp",
+    "ac130_105mm_mp",
+    "ac130_25mm_mp",
+    "ac130_40mm_mp",
+    "ac130_mp",
+    "artillery_mp",
+    "barrel_mp",
+    "bmp_turret_mp",
+    "bradley_turret_mp",
+    "bullet_ricochet_mp",
+    "cobra_20mm_mp",
+    "cobra_ffar_mp",
+    "cobra_player_minigun_mp",
+    "defaultweapon_mp",
+    "destructible_car",
+    "harrier_ffar_mp",
+    "harrier_20mm_mp",
+    "helicopter_mp",
+    "hind_ffar_mp",
+    "humvee_50cal_mp",
+    "m1a1_turret_mp",
+    "remotemissile_mp",
+    "remotemissile_projectile_mp",
+    "ricochet_mp",
+    "sentry_gun_mp",
+    "sentry_minigun_mp",
+    "train_mp",
+    "turret_minigun_mp",
+    "weapon_cobra_mk19_mp",
+    "saw_bipod_stand_mp",
+    "stealth_bomb_mp",
+    "minigun_littlebird_mp",
+    "pavelow_minigun_mp",
+    "nuke_mp"
+  };
+
+  enum ENUM_4
+  {
+    "none",
+    "gl",
+    "reflex",
+    "silencer",
+    "acog",
+    "grip",
+    "akimbo",
+    "thermal",
+    "shotgun",
+    "heartbeat",
+    "fmj",
+    "xmags",
+    "rof",
+    "eotech",
+    "tactical"
+  };
+
+  enum ENUM_5
+  {
+    "specialty_null",
+    "specialty_null_gl",
+    "specialty_null_grip",
+    "specialty_null_shotgun",
+    "specialty_null_attachment",
+    "specialty_parabolic",
+    "specialty_gpsjammer",
+    "specialty_holdbreath",
+    "specialty_quieter",
+    "specialty_longersprint",
+    "specialty_detectexplosive",
+    "specialty_explosivedamage",
+    "specialty_pistoldeath",
+    "specialty_grenadepulldeath",
+    "specialty_bulletdamage",
+    "specialty_bulletpenetration",
+    "specialty_bulletaccuracy",
+    "specialty_rof",
+    "specialty_fastreload",
+    "specialty_extraammo",
+    "specialty_twoprimaries",
+    "specialty_armorvest",
+    "specialty_fraggrenade",
+    "specialty_specialgrenade",
+    "specialty_burstfire",
+    "specialty_blastshield",
+    "specialty_akimbo",
+    "specialty_siege",
+    "specialty_shield",
+    "specialty_falldamage",
+    "specialty_fmj",
+    "specialty_delaymine",
+    "specialty_feigndeath",
+    "specialty_jumpdive",
+    "specialty_localjammer",
+    "specialty_shellshock",
+    "specialty_fastmantle",
+    "specialty_explosivebullets",
+    "specialty_thermal",
+    "specialty_lightweight",
+    "specialty_finalstand",
+    "specialty_blackbox",
+    "specialty_steelnerves",
+    "specialty_quickdraw",
+    "specialty_flashgrenade",
+    "specialty_concussiongrenade",
+    "specialty_smokegrenade",
+    "specialty_empgrenade",
+    "specialty_scavenger",
+    "specialty_sitrep",
+    "specialty_amplify",
+    "specialty_extendedmags",
+    "specialty_saboteur",
+    "specialty_coldblooded",
+    "specialty_marathon",
+    "specialty_challenger",
+    "specialty_rearview",
+    "specialty_tacticalinsertion",
+    "specialty_endgame",
+    "specialty_carepackage",
+    "specialty_onemanarmy",
+    "specialty_littlebird_support",
+    "specialty_extendedmelee",
+    "specialty_bling",
+    "specialty_heartbreaker",
+    "specialty_selectivehearing",
+    "specialty_fastsnipe",
+    "specialty_improvedholdbreath",
+    "specialty_primarydeath",
+    "specialty_secondarybling",
+    "specialty_spygame",
+    "specialty_spygame2",
+    "specialty_automantle",
+    "specialty_fastsprintrecovery",
+    "specialty_c4death",
+    "specialty_hardline",
+    "specialty_combathigh",
+    "specialty_dangerclose",
+    "javelin_mp",
+    "stinger_mp",
+    "c4_mp",
+    "claymore_mp",
+    "rpg_mp",
+    "at4_mp",
+    "m79_mp",
+    "smartarrow_mp",
+    "throwingknife_mp",
+    "semtex_mp",
+    "frag_grenade_mp"
+  };
+
+  enum ENUM_6
+  {
+    "none",
+    "uav",
+    "airstrike",
+    "helicopter",
+    "ac130",
+    "predator_missile",
+    "helicopter_minigun",
+    "helicopter_mk19",
+    "nuke",
+    "double_uav",
+    "auto_shotgun",
+    "precision_airstrike",
+    "counter_uav",
+    "sentry",
+    "sentry_gl",
+    "thumper",
+    "airdrop",
+    "tank",
+    "airdrop_sentry_minigun",
+    "airdrop_predator_missile",
+    "littlebird_support",
+    "stealth_airstrike",
+    "harrier_airstrike",
+    "super_airstrike",
+    "helicopter_blackbox",
+    "helicopter_flares",
+    "emp"
+  };
+
+  enum ENUM_7
+  {
+    "none",
+    "spectator",
+    "axis",
+    "allies"
+  };
+
+  struct root
+  {
+    string(17) buildVersion;
+    int buildNumber;
+    string(33) map;
+    string(33) gametype;
+    byte playerCount;
+    byte lifeCount;
+    byte eventCount;
+    byte killstreakCount;
+    int gameLength;
+    int dateTime;
+    bool hasBots;
+    STRUCT_4 players[128];
+    STRUCT_3 lives[250];
+    STRUCT_1 events[150];
+    STRUCT_2 killstreaks[125];
+  };
+
+  struct STRUCT_1
+  {
+    ENUM_1 eventType;
+    byte player;
+    int eventTime;
+    short eventPos[3];
+  };
+
+  struct STRUCT_2
+  {
+    ENUM_6 eventType;
+    byte player;
+    int eventTime;
+    short eventPos[3];
+  };
+
+  struct STRUCT_3
+  {
+    byte player;
+    short spawnPos[3];
+    bool wasTacticalInsertion;
+    bool altMode;
+    ENUM_7 team;
+    int spawnTime;
+    int duration;
+    ENUM_3 primaryWeapon;
+    ENUM_4 primaryAttachments[2];
+    ENUM_3 secondaryWeapon;
+    ENUM_4 secondaryAttachments[2];
+    ENUM_3 offhandWeapon;
+    ENUM_5 equipment;
+    ENUM_5 perks[3];
+    ENUM_2 mod;
+    ENUM_3 weapon;
+    ENUM_4 attachments[2];
+    byte attacker;
+    short attackerPos[3];
+    short deathPos[3];
+    short deathAngles[3];
+    float dotOfDeath;
+    byte multikill;
+    bool modifiers[ENUM_0];
+  };
+
+  struct STRUCT_4
+  {
+    string(17) xuid;
+    ENUM_7 team;
+    int score;
+    short assists;
+    byte longestStreak;
+  };
+}

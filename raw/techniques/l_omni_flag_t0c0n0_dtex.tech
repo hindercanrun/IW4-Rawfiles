@@ -1,0 +1,26 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "l_point_flag_tc0n0_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    flagParms = material.flagParms;
+  }
+
+  pixelShader 3.0 "l_omni_flag_t0c0n0.hlsl"
+  {
+    attenuationSampler = sampler.light.attenuation;
+    normalMapSampler = material.normalMap;
+    colorMapSampler = material.colorMap;
+    lightPosition = constant.light.position;
+    lightDiffuse = constant.light.diffuse;
+    fogColorLinear = float4( 0, 0, 0, 0 );
+  }
+
+  vertex.position = code.position;
+  vertex.color[0] = code.color;
+  vertex.texcoord[0] = code.texcoord[0];
+  vertex.normal = code.normal;
+  vertex.texcoord[2] = code.tangent;
+}

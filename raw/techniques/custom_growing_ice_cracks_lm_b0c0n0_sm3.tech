@@ -1,0 +1,16 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "custom_growing_ice_cracks_lm_fog_tc0n0_sm3.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "custom_growing_ice_cracks_lm_fog_b0c0n0_sm3.hlsl"
+  {
+    normalMapSampler = material.normalMap;
+    colorMapSampler = material.colorMap;
+  }
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

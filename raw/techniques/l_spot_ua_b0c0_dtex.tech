@@ -1,0 +1,12 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "l_point_ua_tc0_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    uvAnimParms = material.uvAnimParms;
+  }
+  // Cannot dump pixel shader l_spot_b0c0.hlsl due to being a referenced asset
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

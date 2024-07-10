@@ -1,0 +1,463 @@
+{
+    menuDef
+    {
+        name                        "cdkey_menu"
+        rect                        -150 -124 300 124 2 2
+        style                       1
+        backcolor                   1 1 1 1
+        focuscolor                  1 1 1 1
+        background                  "white"
+        popup                       
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        legacySplitScreenScale      
+        visible                     1
+        onOpen
+        {
+            setLocalVarInt ui_centerPopup 1;
+            setfocus firstkey;
+            setLocalVarInt ui_show_cancel 1;
+            uiScript getCDKey;
+        }
+        onClose
+        {
+            setLocalVarInt ui_centerPopup 0;
+        }
+        onESC
+        {
+            close self;
+            close self;
+        }
+        itemDef
+        {
+            rect                        -854 -480 1708 960 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0 0.35
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        -854 -480 1708 960 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   1 1 1 1
+            background                  "xpbar_stencilbase"
+        }
+        itemDef
+        {
+            rect                        0 0 300 124 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.5 0.5 0.5 1
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        0 0 1708 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  0 - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  0 - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 300 0 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "mockup_popup_bg_stencilfill"
+            exp rect h                  (24 + 5 * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  (- 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  (- 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 300 0 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0
+            background                  "small_box_lightfx"
+            exp rect h                  (24 + 5 * 20);
+        }
+        itemDef
+        {
+            rect                        -64 -64 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tl"
+        }
+        itemDef
+        {
+            rect                        0 -64 300 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_t"
+        }
+        itemDef
+        {
+            rect                        300 -64 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tr"
+        }
+        itemDef
+        {
+            rect                        300 0 64 0 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_r"
+            exp rect h                  (24 + 5 * 20);
+        }
+        itemDef
+        {
+            rect                        300 0 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_br"
+            exp rect y                  (0 - 0) + ((24 + 5 * 20));
+        }
+        itemDef
+        {
+            rect                        0 0 300 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_b"
+            exp rect y                  (0 - 0) + ((24 + 5 * 20));
+        }
+        itemDef
+        {
+            rect                        -64 0 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_bl"
+            exp rect y                  (0 - 0) + ((24 + 5 * 20));
+        }
+        itemDef
+        {
+            rect                        -64 0 64 0 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_l"
+            exp rect h                  (24 + 5 * 20);
+        }
+        itemDef
+        {
+            text                        "@MENU_KEY_CODE"
+            rect                        0 0 300 24 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   5
+            textalignx                  -4
+            textscale                   0.375
+            textfont                    9
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        4 20 292 42 0 0
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(localvarint("ui_show_cancel") == 0);
+            textalign                   5
+            textscale                   0.375
+            textfont                    3
+            exp text                    dvarstring(ui_cdkeyvalid);
+        }
+        itemDef
+        {
+            text                        "@MENU_ENTER_YOUR_KEY_CODE_IN_THE_FIELD_BELOW"
+            rect                        4 20 292 42 0 0
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     when(localvarint("ui_show_cancel") == 1);
+            textalign                   5
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            name                        "firstkey"
+            group                       "grpcdkey"
+            rect                        10 52 50 20 0 0
+            style                       1
+            type                        18
+            visible                     1
+            textalign                   9
+            textalignx                  -20
+            textscale                   0.3
+            textfont                    1
+            backcolor                   0 0 0 0.3
+            dvar                        "cdkey1"
+            maxChars                    4
+            maxCharsGotoNext            
+            maxPaintChars               256
+        }
+        itemDef
+        {
+            group                       "grpcdkey"
+            rect                        64 52 50 20 0 0
+            style                       1
+            type                        18
+            visible                     1
+            textalign                   9
+            textalignx                  -20
+            textscale                   0.3
+            textfont                    1
+            backcolor                   0 0 0 0.3
+            dvar                        "cdkey2"
+            maxChars                    4
+            maxCharsGotoNext            
+            maxPaintChars               256
+        }
+        itemDef
+        {
+            group                       "grpcdkey"
+            rect                        118 52 50 20 0 0
+            style                       1
+            type                        18
+            visible                     1
+            textalign                   9
+            textalignx                  -20
+            textscale                   0.3
+            textfont                    1
+            backcolor                   0 0 0 0.3
+            dvar                        "cdkey3"
+            maxChars                    4
+            maxCharsGotoNext            
+            maxPaintChars               256
+        }
+        itemDef
+        {
+            group                       "grpcdkey"
+            rect                        172 52 50 20 0 0
+            style                       1
+            type                        18
+            visible                     1
+            textalign                   9
+            textalignx                  -20
+            textscale                   0.3
+            textfont                    1
+            backcolor                   0 0 0 0.3
+            dvar                        "cdkey4"
+            maxChars                    4
+            maxCharsGotoNext            
+            maxPaintChars               256
+        }
+        itemDef
+        {
+            name                        "datafield"
+            text                        "-"
+            group                       "grpcdkey"
+            rect                        228 52 50 20 0 0
+            decoration                  
+            visible                     1
+            textalignx                  2
+            textaligny                  16
+            textscale                   0.3
+            textfont                    1
+            maxChars                    2
+        }
+        itemDef
+        {
+            group                       "grpcdkey"
+            rect                        240 52 50 20 0 0
+            style                       1
+            type                        18
+            visible                     1
+            textalign                   9
+            textalignx                  -20
+            textscale                   0.3
+            textfont                    1
+            backcolor                   0 0 0 0.3
+            accept
+            {
+                uiScript verifyCDKey;
+                setLocalVarInt ui_show_cancel 1;
+            }
+            dvar                        "cdkey5"
+            maxChars                    4
+            maxPaintChars               256
+        }
+        itemDef
+        {
+            name                        "verify"
+            text                        "@MENU_VERIFY"
+            group                       "mw2_popup_button"
+            rect                        4 84 292 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -24
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                uiScript verifyCDKey;
+                setLocalVarInt ui_show_cancel 0;
+            }
+        }
+        itemDef
+        {
+            name                        "cancel"
+            text                        "@MENU_CANCEL"
+            group                       "mw2_popup_button"
+            rect                        4 104 292 20 0 0
+            style                       1
+            type                        1
+            visible                     when(localvarint("ui_show_cancel"));
+            textalign                   6
+            textalignx                  -24
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                close self;
+            }
+        }
+        itemDef
+        {
+            name                        "close"
+            text                        "@MENU_CLOSE"
+            group                       "mw2_popup_button"
+            rect                        4 104 292 20 0 0
+            style                       1
+            type                        1
+            visible                     when(localvarint("ui_show_cancel") == 0);
+            textalign                   6
+            textalignx                  -24
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                close self;
+            }
+        }
+    }
+}

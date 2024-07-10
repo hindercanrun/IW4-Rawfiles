@@ -1,0 +1,21 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "objective_base_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    inverseTransposeWorldViewMatrix = constant.inverseWorldViewMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "objective_base.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    colorObjMax = material.colorObjMax;
+    colorObjMin = material.colorObjMin;
+  }
+
+  vertex.position = code.position;
+  vertex.texcoord[0] = code.texcoord[0];
+  vertex.normal = code.normal;
+}

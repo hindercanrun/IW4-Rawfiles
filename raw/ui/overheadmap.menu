@@ -1,0 +1,12 @@
+{
+    menuDef
+    {
+        name                        "overheadmap"
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     1
+    }
+}

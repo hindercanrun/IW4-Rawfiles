@@ -1,0 +1,253 @@
+{
+    menuDef
+    {
+        name                        "settings_quick_dm_@mpui_rules_max_health"
+        rect                        0 82 272 18 2 1
+        style                       1
+        focuscolor                  1 1 1 1
+        popup                       
+        visible                     1
+        exp rect Y                  localvarint("ui_popupYPos");
+        onOpen
+        {
+            focusFirst;
+            setfocusbydvar scr_player_maxhealth;
+            setLocalVarBool ui_hideSelectButton 1;
+        }
+        onClose
+        {
+            setLocalVarBool ui_hideSelectButton 0;
+        }
+        onESC
+        {
+            play mouse_click;
+            close self;
+        }
+        itemDef
+        {
+            rect                        -600 -800 2000 2000 0 0
+            type                        1
+            visible                     1
+            textscale                   0.55
+            textfont                    1
+            action
+            {
+                close self;
+            }
+        }
+        itemDef
+        {
+            rect                        144 0 110 70 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.35 0.35 0.35 1
+            exp material                "white";
+        }
+        itemDef
+        {
+            rect                        128 -16 16 16 2 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tl"
+        }
+        itemDef
+        {
+            rect                        144 -16 110 16 2 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_t"
+        }
+        itemDef
+        {
+            rect                        254 -16 16 16 2 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tr"
+        }
+        itemDef
+        {
+            rect                        254 0 16 70 2 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_r"
+        }
+        itemDef
+        {
+            rect                        254 70 16 16 2 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_br"
+        }
+        itemDef
+        {
+            rect                        144 70 110 16 2 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_b"
+        }
+        itemDef
+        {
+            rect                        128 70 16 16 2 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_bl"
+        }
+        itemDef
+        {
+            rect                        128 0 16 70 2 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_l"
+        }
+        itemDef
+        {
+            text                        "@MPUI_RULES_MINISCULE"
+            rect                        144 0 128 15 0 0
+            visible                     when("@MPUI_RULES_MINISCULE" != "");
+            textalign                   8
+            textalignx                  12
+            textscale                   0.375
+            forecolor                   0.65 0.65 0.65 1
+            leaveFocus
+            {
+                play mouse_submenu_over;
+            }
+            action
+            {
+                setdvar scr_player_maxhealth 30 play mouse_click;
+                close self;
+            }
+            dvarTest                    "scr_player_maxhealth"
+            focusDvar                   { "30" }
+        }
+        itemDef
+        {
+            text                        "@MPUI_RULES_HALF"
+            rect                        144 15 128 15 0 0
+            visible                     when("@MPUI_RULES_HALF" != "");
+            textalign                   8
+            textalignx                  12
+            textscale                   0.375
+            forecolor                   0.65 0.65 0.65 1
+            leaveFocus
+            {
+                play mouse_submenu_over;
+            }
+            action
+            {
+                setdvar scr_player_maxhealth 50 play mouse_click;
+                close self;
+            }
+            dvarTest                    "scr_player_maxhealth"
+            focusDvar                   { "50" }
+        }
+        itemDef
+        {
+            text                        "@MPUI_RULES_NORMAL"
+            rect                        144 30 128 15 0 0
+            visible                     when("@MPUI_RULES_NORMAL" != "");
+            textalign                   8
+            textalignx                  12
+            textscale                   0.375
+            forecolor                   0.65 0.65 0.65 1
+            leaveFocus
+            {
+                play mouse_submenu_over;
+            }
+            action
+            {
+                setdvar scr_player_maxhealth 100 play mouse_click;
+                close self;
+            }
+            dvarTest                    "scr_player_maxhealth"
+            focusDvar                   { "100" }
+        }
+        itemDef
+        {
+            text                        "@MPUI_RULES_DOUBLE"
+            rect                        144 45 128 15 0 0
+            visible                     when("@MPUI_RULES_DOUBLE" != "");
+            textalign                   8
+            textalignx                  12
+            textscale                   0.375
+            forecolor                   0.65 0.65 0.65 1
+            leaveFocus
+            {
+                play mouse_submenu_over;
+            }
+            action
+            {
+                setdvar scr_player_maxhealth 200 play mouse_click;
+                close self;
+            }
+            dvarTest                    "scr_player_maxhealth"
+            focusDvar                   { "200" }
+        }
+        itemDef
+        {
+            rect                        144 60 128 15 0 0
+            visible                     when("" != "");
+            textalign                   8
+            textalignx                  12
+            textscale                   0.375
+            forecolor                   0.65 0.65 0.65 1
+            leaveFocus
+            {
+                play mouse_submenu_over;
+            }
+            action
+            {
+                setdvar scr_player_maxhealth 0 play mouse_click;
+                close self;
+            }
+            dvarTest                    "scr_player_maxhealth"
+            focusDvar                   { "0" }
+        }
+        itemDef
+        {
+            rect                        144 75 128 15 0 0
+            visible                     when("" != "");
+            textalign                   8
+            textalignx                  12
+            textscale                   0.375
+            forecolor                   0.65 0.65 0.65 1
+            leaveFocus
+            {
+                play mouse_submenu_over;
+            }
+            action
+            {
+                setdvar scr_player_maxhealth 0 play mouse_click;
+                close self;
+            }
+            dvarTest                    "scr_player_maxhealth"
+            focusDvar                   { "0" }
+        }
+    }
+}

@@ -1,0 +1,2073 @@
+{
+    menuDef
+    {
+        name                        "popup_cac_secondary_camo"
+        rect                        -64 0 854 184 1 1
+        style                       1
+        backcolor                   1 1 1 1
+        focuscolor                  1 1 1 1
+        background                  "white"
+        outOfBoundsClick            
+        popup                       
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        allowedBinding              "+talk"
+        visible                     when(localvarint("ui_tabDepth") == localvarint("ui_popup_cac_secondary_camo_tabDepth"));
+        exp rect Y                  localvarfloat("ui_popupYPos") + localvarint("ui_tabDepth") * 20;
+        onOpen
+        {
+            focusFirst;
+            setLocalVarInt ui_tabDepth (localvarint("ui_tabDepth") + 1);
+            setLocalVarInt ui_popup_cac_secondary_camo_tabDepth (localvarint("ui_tabDepth"));
+            focusFirst;
+            focusFirst;
+            focusFirst;
+            focusFirst;
+            focusFirst;
+            focusFirst;
+            focusFirst;
+            focusFirst;
+            focusFirst;
+        }
+        onClose
+        {
+            setLocalVarInt ui_tabDepth (localvarint("ui_tabDepth") - 1);
+        }
+        onESC
+        {
+            close self;
+        }
+        execKeyInt 168
+        {
+            if (localvarstring("ui_selected_ref") != "none" && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon") + " " + localvarstring("ui_selected_ref")))
+            {
+                open menu_challenge_detail_popup;
+            }
+        }
+        itemDef
+        {
+            rect                        -854 -480 1708 960 1 1
+            style                       1
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            backcolor                   0 0 0 0.35
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        -854 -480 1708 960 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   1 1 1 1
+            background                  "xpbar_stencilbase"
+        }
+        itemDef
+        {
+            rect                        0 0 854 184 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.5 0.5 0.5 1
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        0 0 1708 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  0 - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  0 - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 854 0 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "mockup_popup_bg_stencilfill"
+            exp rect h                  (24 + 8 * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  (- 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  (- 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 854 0 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0
+            background                  "small_box_lightfx"
+            exp rect h                  (24 + 8 * 20);
+        }
+        itemDef
+        {
+            rect                        -32 -32 32 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tl"
+        }
+        itemDef
+        {
+            rect                        0 -32 854 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_t"
+        }
+        itemDef
+        {
+            rect                        854 -32 32 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tr"
+        }
+        itemDef
+        {
+            rect                        854 0 32 0 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_r"
+            exp rect h                  (24 + 8 * 20);
+        }
+        itemDef
+        {
+            rect                        854 0 32 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_br"
+            exp rect y                  (0 - 0) + ((24 + 8 * 20));
+        }
+        itemDef
+        {
+            rect                        0 0 854 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_b"
+            exp rect y                  (0 - 0) + ((24 + 8 * 20));
+        }
+        itemDef
+        {
+            rect                        -32 0 32 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_bl"
+            exp rect y                  (0 - 0) + ((24 + 8 * 20));
+        }
+        itemDef
+        {
+            rect                        -32 0 32 0 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_l"
+            exp rect h                  (24 + 8 * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 280 184 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   1 1 1 0
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (1 - 1));
+            textscale                   0.55
+            backcolor                   0.25 0.25 0.25 1
+            background                  "white"
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 1) * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (1 - 1));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    9
+            backcolor                   0 0 0 1
+            background                  "gradient_fadein"
+            exp text                    localvarstring("ui_tab1Name");
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 1) * 20);
+            exp forecolor r             1 - ((localvarint("ui_tabDepth") > 1) * 0.35);
+            exp forecolor g             1 - ((localvarint("ui_tabDepth") > 1) * 0.35);
+            exp forecolor b             1 - ((localvarint("ui_tabDepth") > 1) * 0.35);
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (2 - 1));
+            textscale                   0.55
+            backcolor                   0.25 0.25 0.25 1
+            background                  "white"
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 2) * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (2 - 1));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    9
+            backcolor                   0 0 0 1
+            background                  "gradient_fadein"
+            exp text                    localvarstring("ui_tab2Name");
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 2) * 20);
+            exp forecolor r             1 - ((localvarint("ui_tabDepth") > 2) * 0.35);
+            exp forecolor g             1 - ((localvarint("ui_tabDepth") > 2) * 0.35);
+            exp forecolor b             1 - ((localvarint("ui_tabDepth") > 2) * 0.35);
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (3 - 1));
+            textscale                   0.55
+            backcolor                   0.25 0.25 0.25 1
+            background                  "white"
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 3) * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (3 - 1));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    9
+            backcolor                   0 0 0 1
+            background                  "gradient_fadein"
+            exp text                    localvarstring("ui_tab3Name");
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 3) * 20);
+            exp forecolor r             1 - ((localvarint("ui_tabDepth") > 3) * 0.35);
+            exp forecolor g             1 - ((localvarint("ui_tabDepth") > 3) * 0.35);
+            exp forecolor b             1 - ((localvarint("ui_tabDepth") > 3) * 0.35);
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (4 - 1));
+            textscale                   0.55
+            backcolor                   0.25 0.25 0.25 1
+            background                  "white"
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 4) * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (4 - 1));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    9
+            backcolor                   0 0 0 1
+            background                  "gradient_fadein"
+            exp text                    localvarstring("ui_tab4Name");
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 4) * 20);
+            exp forecolor r             1 - ((localvarint("ui_tabDepth") > 4) * 0.35);
+            exp forecolor g             1 - ((localvarint("ui_tabDepth") > 4) * 0.35);
+            exp forecolor b             1 - ((localvarint("ui_tabDepth") > 4) * 0.35);
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (5 - 1));
+            textscale                   0.55
+            backcolor                   0.25 0.25 0.25 1
+            background                  "white"
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 5) * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 280 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(localvarint("ui_tabDepth") > (5 - 1));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    9
+            backcolor                   0 0 0 1
+            background                  "gradient_fadein"
+            exp text                    localvarstring("ui_tab5Name");
+            exp rect y                  - 20 - ((localvarint("ui_tabDepth") - 5) * 20);
+            exp forecolor r             1 - ((localvarint("ui_tabDepth") > 5) * 0.35);
+            exp forecolor g             1 - ((localvarint("ui_tabDepth") > 5) * 0.35);
+            exp forecolor b             1 - ((localvarint("ui_tabDepth") > 5) * 0.35);
+        }
+        itemDef
+        {
+            name                        "cac_camo_none"
+            group                       "mw2_popup_button"
+            rect                        0 4 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + ("none")));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_short"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                setLocalVarString ui_selected_ref ("none");
+                setLocalVarString ui_weapon_ref getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setLocalVarString ui_unlock_ref (localvarstring("ui_weapon_ref") + " " + "none");
+                setLocalVarString ui_challenge_ref (tablelookup("mp/unlockTable.csv", 0, localvarstring("ui_unlock_ref"), 3));
+                setLocalVarInt ui_challenge_state 1;
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_2"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 2;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_3"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 3;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_4"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 4;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_5"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 5;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_6"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 6;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_7"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 7;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_8"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 8;
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , none , false );
+            }
+            action
+            {
+                play mouse_click;
+                if (localvarint("ui_tabDepth") == 0)
+                {
+                    setLocalVarString ui_tab1Name ("@" + tablelookup("mp/camoTable.csv", 1, "none", 2));
+                }
+                if (localvarint("ui_tabDepth") == 1)
+                {
+                    setLocalVarString ui_tab2Name ("@" + tablelookup("mp/camoTable.csv", 1, "none", 2));
+                }
+                if (localvarint("ui_tabDepth") == 2)
+                {
+                    setLocalVarString ui_tab3Name ("@" + tablelookup("mp/camoTable.csv", 1, "none", 2));
+                }
+                if (localvarint("ui_tabDepth") == 3)
+                {
+                    setLocalVarString ui_tab4Name ("@" + tablelookup("mp/camoTable.csv", 1, "none", 2));
+                }
+                if (localvarint("ui_tabDepth") == 4)
+                {
+                    setLocalVarString ui_tab5Name ("@" + tablelookup("mp/camoTable.csv", 1, "none", 2));
+                }
+                if (localvarint("ui_tabDepth") == 5)
+                {
+                    setLocalVarString ui_tab6Name ("@" + tablelookup("mp/camoTable.csv", 1, "none", 2));
+                }
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , none , false );
+                setPlayerData ( customClasses , localVarInt ( classIndex ) , weaponSetups , 1 , camo , none );
+                if (!(tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0), 12) != "" || tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0), 12) != "") && (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_gl" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_grip" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_shotgun") || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_heartbeat")
+                {
+                    setPlayerData ( customClasses , localVarInt ( classIndex ) , perks , 0 , specialty_null );
+                }
+                setLocalVarString loadoutPrimary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon"));
+                setLocalVarString loadoutPrimaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0));
+                setLocalVarString loadoutPrimaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 1));
+                if (localvarstring("loadoutPrimaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutPrimaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutPrimaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "camo"));
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutSecondary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"));
+                setLocalVarString loadoutSecondaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0));
+                setLocalVarString loadoutSecondaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 1));
+                if (localvarstring("loadoutSecondaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutSecondaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutEquipment (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0));
+                setLocalVarString loadoutPerk1 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 1));
+                setLocalVarString loadoutPerk2 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 2));
+                setLocalVarString loadoutPerk3 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 3));
+                setLocalVarString loadoutStreak1 (getplayerdata("killstreaks", 0));
+                setLocalVarString loadoutStreak2 (getplayerdata("killstreaks", 1));
+                setLocalVarString loadoutStreak3 (getplayerdata("killstreaks", 2));
+                setLocalVarString loadoutDeathStreak (getplayerdata("customClasses", localvarint("classIndex"), "perks", 4) ());
+                setLocalVarString loadoutOffhandSecondary (getplayerdata("customClasses", localvarint("classIndex"), "specialGrenade") ());
+                setLocalVarString loadoutClassName (getplayerdata("customClasses", localvarint("classIndex"), "name") ());
+                close popup_cac_weapon_primary;
+                close popup_primary_attachments close popup_secondary_attachments close popup_cac_weapon_secondary;
+                close popup_cac_handgun_secondary;
+                close popup_cac_machinePistols_secondary;
+                close popup_cac_assault_primary;
+                close popup_cac_SMG_primary;
+                close popup_cac_LMG_primary;
+                close popup_cac_sniper_primary;
+                close popup_cac_shotgun_primary;
+                close popup_cac_assault_secondary;
+                close popup_cac_SMG_secondary;
+                close popup_cac_LMG_secondary;
+                close popup_cac_sniper_secondary;
+                close popup_cac_shotgun_secondary;
+                close popup_cac_template;
+                close popup_cac_primary_camo;
+                close popup_cac_secondary_camo;
+                close popup_cac_bling;
+                close popup_cac_perk2;
+                close popup_cac_rocket_secondary;
+                close popup_primary_attachments_bling;
+                close popup_secondary_attachments_bling;
+                close popup_cac_other_primary;
+            }
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, "none", 2);
+        }
+        itemDef
+        {
+            rect                        226 4 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && getplayerdata("camoNew", getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"), "none"));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        226 4 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + "none"));
+            textscale                   0.55
+            background                  "specialty_locked"
+        }
+        itemDef
+        {
+            name                        "cac_camo_desert"
+            group                       "mw2_popup_button"
+            rect                        0 24 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + ("desert")));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_short"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                setLocalVarString ui_selected_ref ("desert");
+                setLocalVarString ui_weapon_ref getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setLocalVarString ui_unlock_ref (localvarstring("ui_weapon_ref") + " " + "desert");
+                setLocalVarString ui_challenge_ref (tablelookup("mp/unlockTable.csv", 0, localvarstring("ui_unlock_ref"), 3));
+                setLocalVarInt ui_challenge_state 1;
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_2"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 2;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_3"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 3;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_4"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 4;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_5"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 5;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_6"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 6;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_7"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 7;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_8"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 8;
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , desert , false );
+            }
+            action
+            {
+                play mouse_click;
+                if (localvarint("ui_tabDepth") == 0)
+                {
+                    setLocalVarString ui_tab1Name ("@" + tablelookup("mp/camoTable.csv", 1, "desert", 2));
+                }
+                if (localvarint("ui_tabDepth") == 1)
+                {
+                    setLocalVarString ui_tab2Name ("@" + tablelookup("mp/camoTable.csv", 1, "desert", 2));
+                }
+                if (localvarint("ui_tabDepth") == 2)
+                {
+                    setLocalVarString ui_tab3Name ("@" + tablelookup("mp/camoTable.csv", 1, "desert", 2));
+                }
+                if (localvarint("ui_tabDepth") == 3)
+                {
+                    setLocalVarString ui_tab4Name ("@" + tablelookup("mp/camoTable.csv", 1, "desert", 2));
+                }
+                if (localvarint("ui_tabDepth") == 4)
+                {
+                    setLocalVarString ui_tab5Name ("@" + tablelookup("mp/camoTable.csv", 1, "desert", 2));
+                }
+                if (localvarint("ui_tabDepth") == 5)
+                {
+                    setLocalVarString ui_tab6Name ("@" + tablelookup("mp/camoTable.csv", 1, "desert", 2));
+                }
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , desert , false );
+                setPlayerData ( customClasses , localVarInt ( classIndex ) , weaponSetups , 1 , camo , desert );
+                if (!(tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0), 12) != "" || tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0), 12) != "") && (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_gl" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_grip" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_shotgun") || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_heartbeat")
+                {
+                    setPlayerData ( customClasses , localVarInt ( classIndex ) , perks , 0 , specialty_null );
+                }
+                setLocalVarString loadoutPrimary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon"));
+                setLocalVarString loadoutPrimaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0));
+                setLocalVarString loadoutPrimaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 1));
+                if (localvarstring("loadoutPrimaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutPrimaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutPrimaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "camo"));
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutSecondary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"));
+                setLocalVarString loadoutSecondaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0));
+                setLocalVarString loadoutSecondaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 1));
+                if (localvarstring("loadoutSecondaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutSecondaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutEquipment (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0));
+                setLocalVarString loadoutPerk1 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 1));
+                setLocalVarString loadoutPerk2 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 2));
+                setLocalVarString loadoutPerk3 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 3));
+                setLocalVarString loadoutStreak1 (getplayerdata("killstreaks", 0));
+                setLocalVarString loadoutStreak2 (getplayerdata("killstreaks", 1));
+                setLocalVarString loadoutStreak3 (getplayerdata("killstreaks", 2));
+                setLocalVarString loadoutDeathStreak (getplayerdata("customClasses", localvarint("classIndex"), "perks", 4) ());
+                setLocalVarString loadoutOffhandSecondary (getplayerdata("customClasses", localvarint("classIndex"), "specialGrenade") ());
+                setLocalVarString loadoutClassName (getplayerdata("customClasses", localvarint("classIndex"), "name") ());
+                close popup_cac_weapon_primary;
+                close popup_primary_attachments close popup_secondary_attachments close popup_cac_weapon_secondary;
+                close popup_cac_handgun_secondary;
+                close popup_cac_machinePistols_secondary;
+                close popup_cac_assault_primary;
+                close popup_cac_SMG_primary;
+                close popup_cac_LMG_primary;
+                close popup_cac_sniper_primary;
+                close popup_cac_shotgun_primary;
+                close popup_cac_assault_secondary;
+                close popup_cac_SMG_secondary;
+                close popup_cac_LMG_secondary;
+                close popup_cac_sniper_secondary;
+                close popup_cac_shotgun_secondary;
+                close popup_cac_template;
+                close popup_cac_primary_camo;
+                close popup_cac_secondary_camo;
+                close popup_cac_bling;
+                close popup_cac_perk2;
+                close popup_cac_rocket_secondary;
+                close popup_primary_attachments_bling;
+                close popup_secondary_attachments_bling;
+                close popup_cac_other_primary;
+            }
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, "desert", 2);
+        }
+        itemDef
+        {
+            rect                        226 24 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && getplayerdata("camoNew", getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"), "desert"));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        226 24 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + "desert"));
+            textscale                   0.55
+            background                  "specialty_locked"
+        }
+        itemDef
+        {
+            name                        "cac_camo_arctic"
+            group                       "mw2_popup_button"
+            rect                        0 44 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + ("arctic")));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_short"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                setLocalVarString ui_selected_ref ("arctic");
+                setLocalVarString ui_weapon_ref getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setLocalVarString ui_unlock_ref (localvarstring("ui_weapon_ref") + " " + "arctic");
+                setLocalVarString ui_challenge_ref (tablelookup("mp/unlockTable.csv", 0, localvarstring("ui_unlock_ref"), 3));
+                setLocalVarInt ui_challenge_state 1;
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_2"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 2;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_3"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 3;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_4"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 4;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_5"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 5;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_6"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 6;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_7"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 7;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_8"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 8;
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , arctic , false );
+            }
+            action
+            {
+                play mouse_click;
+                if (localvarint("ui_tabDepth") == 0)
+                {
+                    setLocalVarString ui_tab1Name ("@" + tablelookup("mp/camoTable.csv", 1, "arctic", 2));
+                }
+                if (localvarint("ui_tabDepth") == 1)
+                {
+                    setLocalVarString ui_tab2Name ("@" + tablelookup("mp/camoTable.csv", 1, "arctic", 2));
+                }
+                if (localvarint("ui_tabDepth") == 2)
+                {
+                    setLocalVarString ui_tab3Name ("@" + tablelookup("mp/camoTable.csv", 1, "arctic", 2));
+                }
+                if (localvarint("ui_tabDepth") == 3)
+                {
+                    setLocalVarString ui_tab4Name ("@" + tablelookup("mp/camoTable.csv", 1, "arctic", 2));
+                }
+                if (localvarint("ui_tabDepth") == 4)
+                {
+                    setLocalVarString ui_tab5Name ("@" + tablelookup("mp/camoTable.csv", 1, "arctic", 2));
+                }
+                if (localvarint("ui_tabDepth") == 5)
+                {
+                    setLocalVarString ui_tab6Name ("@" + tablelookup("mp/camoTable.csv", 1, "arctic", 2));
+                }
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , arctic , false );
+                setPlayerData ( customClasses , localVarInt ( classIndex ) , weaponSetups , 1 , camo , arctic );
+                if (!(tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0), 12) != "" || tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0), 12) != "") && (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_gl" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_grip" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_shotgun") || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_heartbeat")
+                {
+                    setPlayerData ( customClasses , localVarInt ( classIndex ) , perks , 0 , specialty_null );
+                }
+                setLocalVarString loadoutPrimary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon"));
+                setLocalVarString loadoutPrimaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0));
+                setLocalVarString loadoutPrimaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 1));
+                if (localvarstring("loadoutPrimaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutPrimaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutPrimaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "camo"));
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutSecondary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"));
+                setLocalVarString loadoutSecondaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0));
+                setLocalVarString loadoutSecondaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 1));
+                if (localvarstring("loadoutSecondaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutSecondaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutEquipment (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0));
+                setLocalVarString loadoutPerk1 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 1));
+                setLocalVarString loadoutPerk2 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 2));
+                setLocalVarString loadoutPerk3 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 3));
+                setLocalVarString loadoutStreak1 (getplayerdata("killstreaks", 0));
+                setLocalVarString loadoutStreak2 (getplayerdata("killstreaks", 1));
+                setLocalVarString loadoutStreak3 (getplayerdata("killstreaks", 2));
+                setLocalVarString loadoutDeathStreak (getplayerdata("customClasses", localvarint("classIndex"), "perks", 4) ());
+                setLocalVarString loadoutOffhandSecondary (getplayerdata("customClasses", localvarint("classIndex"), "specialGrenade") ());
+                setLocalVarString loadoutClassName (getplayerdata("customClasses", localvarint("classIndex"), "name") ());
+                close popup_cac_weapon_primary;
+                close popup_primary_attachments close popup_secondary_attachments close popup_cac_weapon_secondary;
+                close popup_cac_handgun_secondary;
+                close popup_cac_machinePistols_secondary;
+                close popup_cac_assault_primary;
+                close popup_cac_SMG_primary;
+                close popup_cac_LMG_primary;
+                close popup_cac_sniper_primary;
+                close popup_cac_shotgun_primary;
+                close popup_cac_assault_secondary;
+                close popup_cac_SMG_secondary;
+                close popup_cac_LMG_secondary;
+                close popup_cac_sniper_secondary;
+                close popup_cac_shotgun_secondary;
+                close popup_cac_template;
+                close popup_cac_primary_camo;
+                close popup_cac_secondary_camo;
+                close popup_cac_bling;
+                close popup_cac_perk2;
+                close popup_cac_rocket_secondary;
+                close popup_primary_attachments_bling;
+                close popup_secondary_attachments_bling;
+                close popup_cac_other_primary;
+            }
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, "arctic", 2);
+        }
+        itemDef
+        {
+            rect                        226 44 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && getplayerdata("camoNew", getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"), "arctic"));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        226 44 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + "arctic"));
+            textscale                   0.55
+            background                  "specialty_locked"
+        }
+        itemDef
+        {
+            name                        "cac_camo_woodland"
+            group                       "mw2_popup_button"
+            rect                        0 64 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + ("woodland")));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_short"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                setLocalVarString ui_selected_ref ("woodland");
+                setLocalVarString ui_weapon_ref getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setLocalVarString ui_unlock_ref (localvarstring("ui_weapon_ref") + " " + "woodland");
+                setLocalVarString ui_challenge_ref (tablelookup("mp/unlockTable.csv", 0, localvarstring("ui_unlock_ref"), 3));
+                setLocalVarInt ui_challenge_state 1;
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_2"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 2;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_3"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 3;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_4"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 4;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_5"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 5;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_6"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 6;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_7"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 7;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_8"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 8;
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , woodland , false );
+            }
+            action
+            {
+                play mouse_click;
+                if (localvarint("ui_tabDepth") == 0)
+                {
+                    setLocalVarString ui_tab1Name ("@" + tablelookup("mp/camoTable.csv", 1, "woodland", 2));
+                }
+                if (localvarint("ui_tabDepth") == 1)
+                {
+                    setLocalVarString ui_tab2Name ("@" + tablelookup("mp/camoTable.csv", 1, "woodland", 2));
+                }
+                if (localvarint("ui_tabDepth") == 2)
+                {
+                    setLocalVarString ui_tab3Name ("@" + tablelookup("mp/camoTable.csv", 1, "woodland", 2));
+                }
+                if (localvarint("ui_tabDepth") == 3)
+                {
+                    setLocalVarString ui_tab4Name ("@" + tablelookup("mp/camoTable.csv", 1, "woodland", 2));
+                }
+                if (localvarint("ui_tabDepth") == 4)
+                {
+                    setLocalVarString ui_tab5Name ("@" + tablelookup("mp/camoTable.csv", 1, "woodland", 2));
+                }
+                if (localvarint("ui_tabDepth") == 5)
+                {
+                    setLocalVarString ui_tab6Name ("@" + tablelookup("mp/camoTable.csv", 1, "woodland", 2));
+                }
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , woodland , false );
+                setPlayerData ( customClasses , localVarInt ( classIndex ) , weaponSetups , 1 , camo , woodland );
+                if (!(tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0), 12) != "" || tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0), 12) != "") && (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_gl" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_grip" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_shotgun") || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_heartbeat")
+                {
+                    setPlayerData ( customClasses , localVarInt ( classIndex ) , perks , 0 , specialty_null );
+                }
+                setLocalVarString loadoutPrimary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon"));
+                setLocalVarString loadoutPrimaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0));
+                setLocalVarString loadoutPrimaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 1));
+                if (localvarstring("loadoutPrimaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutPrimaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutPrimaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "camo"));
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutSecondary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"));
+                setLocalVarString loadoutSecondaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0));
+                setLocalVarString loadoutSecondaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 1));
+                if (localvarstring("loadoutSecondaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutSecondaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutEquipment (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0));
+                setLocalVarString loadoutPerk1 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 1));
+                setLocalVarString loadoutPerk2 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 2));
+                setLocalVarString loadoutPerk3 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 3));
+                setLocalVarString loadoutStreak1 (getplayerdata("killstreaks", 0));
+                setLocalVarString loadoutStreak2 (getplayerdata("killstreaks", 1));
+                setLocalVarString loadoutStreak3 (getplayerdata("killstreaks", 2));
+                setLocalVarString loadoutDeathStreak (getplayerdata("customClasses", localvarint("classIndex"), "perks", 4) ());
+                setLocalVarString loadoutOffhandSecondary (getplayerdata("customClasses", localvarint("classIndex"), "specialGrenade") ());
+                setLocalVarString loadoutClassName (getplayerdata("customClasses", localvarint("classIndex"), "name") ());
+                close popup_cac_weapon_primary;
+                close popup_primary_attachments close popup_secondary_attachments close popup_cac_weapon_secondary;
+                close popup_cac_handgun_secondary;
+                close popup_cac_machinePistols_secondary;
+                close popup_cac_assault_primary;
+                close popup_cac_SMG_primary;
+                close popup_cac_LMG_primary;
+                close popup_cac_sniper_primary;
+                close popup_cac_shotgun_primary;
+                close popup_cac_assault_secondary;
+                close popup_cac_SMG_secondary;
+                close popup_cac_LMG_secondary;
+                close popup_cac_sniper_secondary;
+                close popup_cac_shotgun_secondary;
+                close popup_cac_template;
+                close popup_cac_primary_camo;
+                close popup_cac_secondary_camo;
+                close popup_cac_bling;
+                close popup_cac_perk2;
+                close popup_cac_rocket_secondary;
+                close popup_primary_attachments_bling;
+                close popup_secondary_attachments_bling;
+                close popup_cac_other_primary;
+            }
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, "woodland", 2);
+        }
+        itemDef
+        {
+            rect                        226 64 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && getplayerdata("camoNew", getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"), "woodland"));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        226 64 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + "woodland"));
+            textscale                   0.55
+            background                  "specialty_locked"
+        }
+        itemDef
+        {
+            name                        "cac_camo_digital"
+            group                       "mw2_popup_button"
+            rect                        0 84 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + ("digital")));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_short"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                setLocalVarString ui_selected_ref ("digital");
+                setLocalVarString ui_weapon_ref getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setLocalVarString ui_unlock_ref (localvarstring("ui_weapon_ref") + " " + "digital");
+                setLocalVarString ui_challenge_ref (tablelookup("mp/unlockTable.csv", 0, localvarstring("ui_unlock_ref"), 3));
+                setLocalVarInt ui_challenge_state 1;
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_2"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 2;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_3"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 3;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_4"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 4;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_5"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 5;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_6"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 6;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_7"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 7;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_8"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 8;
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , digital , false );
+            }
+            action
+            {
+                play mouse_click;
+                if (localvarint("ui_tabDepth") == 0)
+                {
+                    setLocalVarString ui_tab1Name ("@" + tablelookup("mp/camoTable.csv", 1, "digital", 2));
+                }
+                if (localvarint("ui_tabDepth") == 1)
+                {
+                    setLocalVarString ui_tab2Name ("@" + tablelookup("mp/camoTable.csv", 1, "digital", 2));
+                }
+                if (localvarint("ui_tabDepth") == 2)
+                {
+                    setLocalVarString ui_tab3Name ("@" + tablelookup("mp/camoTable.csv", 1, "digital", 2));
+                }
+                if (localvarint("ui_tabDepth") == 3)
+                {
+                    setLocalVarString ui_tab4Name ("@" + tablelookup("mp/camoTable.csv", 1, "digital", 2));
+                }
+                if (localvarint("ui_tabDepth") == 4)
+                {
+                    setLocalVarString ui_tab5Name ("@" + tablelookup("mp/camoTable.csv", 1, "digital", 2));
+                }
+                if (localvarint("ui_tabDepth") == 5)
+                {
+                    setLocalVarString ui_tab6Name ("@" + tablelookup("mp/camoTable.csv", 1, "digital", 2));
+                }
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , digital , false );
+                setPlayerData ( customClasses , localVarInt ( classIndex ) , weaponSetups , 1 , camo , digital );
+                if (!(tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0), 12) != "" || tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0), 12) != "") && (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_gl" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_grip" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_shotgun") || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_heartbeat")
+                {
+                    setPlayerData ( customClasses , localVarInt ( classIndex ) , perks , 0 , specialty_null );
+                }
+                setLocalVarString loadoutPrimary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon"));
+                setLocalVarString loadoutPrimaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0));
+                setLocalVarString loadoutPrimaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 1));
+                if (localvarstring("loadoutPrimaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutPrimaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutPrimaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "camo"));
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutSecondary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"));
+                setLocalVarString loadoutSecondaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0));
+                setLocalVarString loadoutSecondaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 1));
+                if (localvarstring("loadoutSecondaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutSecondaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutEquipment (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0));
+                setLocalVarString loadoutPerk1 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 1));
+                setLocalVarString loadoutPerk2 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 2));
+                setLocalVarString loadoutPerk3 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 3));
+                setLocalVarString loadoutStreak1 (getplayerdata("killstreaks", 0));
+                setLocalVarString loadoutStreak2 (getplayerdata("killstreaks", 1));
+                setLocalVarString loadoutStreak3 (getplayerdata("killstreaks", 2));
+                setLocalVarString loadoutDeathStreak (getplayerdata("customClasses", localvarint("classIndex"), "perks", 4) ());
+                setLocalVarString loadoutOffhandSecondary (getplayerdata("customClasses", localvarint("classIndex"), "specialGrenade") ());
+                setLocalVarString loadoutClassName (getplayerdata("customClasses", localvarint("classIndex"), "name") ());
+                close popup_cac_weapon_primary;
+                close popup_primary_attachments close popup_secondary_attachments close popup_cac_weapon_secondary;
+                close popup_cac_handgun_secondary;
+                close popup_cac_machinePistols_secondary;
+                close popup_cac_assault_primary;
+                close popup_cac_SMG_primary;
+                close popup_cac_LMG_primary;
+                close popup_cac_sniper_primary;
+                close popup_cac_shotgun_primary;
+                close popup_cac_assault_secondary;
+                close popup_cac_SMG_secondary;
+                close popup_cac_LMG_secondary;
+                close popup_cac_sniper_secondary;
+                close popup_cac_shotgun_secondary;
+                close popup_cac_template;
+                close popup_cac_primary_camo;
+                close popup_cac_secondary_camo;
+                close popup_cac_bling;
+                close popup_cac_perk2;
+                close popup_cac_rocket_secondary;
+                close popup_primary_attachments_bling;
+                close popup_secondary_attachments_bling;
+                close popup_cac_other_primary;
+            }
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, "digital", 2);
+        }
+        itemDef
+        {
+            rect                        226 84 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && getplayerdata("camoNew", getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"), "digital"));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        226 84 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + "digital"));
+            textscale                   0.55
+            background                  "specialty_locked"
+        }
+        itemDef
+        {
+            name                        "cac_camo_red_urban"
+            group                       "mw2_popup_button"
+            rect                        0 104 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + ("red_urban")));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_short"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                setLocalVarString ui_selected_ref ("red_urban");
+                setLocalVarString ui_weapon_ref getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setLocalVarString ui_unlock_ref (localvarstring("ui_weapon_ref") + " " + "red_urban");
+                setLocalVarString ui_challenge_ref (tablelookup("mp/unlockTable.csv", 0, localvarstring("ui_unlock_ref"), 3));
+                setLocalVarInt ui_challenge_state 1;
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_2"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 2;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_3"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 3;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_4"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 4;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_5"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 5;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_6"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 6;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_7"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 7;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_8"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 8;
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , red_urban , false );
+            }
+            action
+            {
+                play mouse_click;
+                if (localvarint("ui_tabDepth") == 0)
+                {
+                    setLocalVarString ui_tab1Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_urban", 2));
+                }
+                if (localvarint("ui_tabDepth") == 1)
+                {
+                    setLocalVarString ui_tab2Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_urban", 2));
+                }
+                if (localvarint("ui_tabDepth") == 2)
+                {
+                    setLocalVarString ui_tab3Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_urban", 2));
+                }
+                if (localvarint("ui_tabDepth") == 3)
+                {
+                    setLocalVarString ui_tab4Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_urban", 2));
+                }
+                if (localvarint("ui_tabDepth") == 4)
+                {
+                    setLocalVarString ui_tab5Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_urban", 2));
+                }
+                if (localvarint("ui_tabDepth") == 5)
+                {
+                    setLocalVarString ui_tab6Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_urban", 2));
+                }
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , red_urban , false );
+                setPlayerData ( customClasses , localVarInt ( classIndex ) , weaponSetups , 1 , camo , red_urban );
+                if (!(tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0), 12) != "" || tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0), 12) != "") && (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_gl" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_grip" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_shotgun") || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_heartbeat")
+                {
+                    setPlayerData ( customClasses , localVarInt ( classIndex ) , perks , 0 , specialty_null );
+                }
+                setLocalVarString loadoutPrimary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon"));
+                setLocalVarString loadoutPrimaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0));
+                setLocalVarString loadoutPrimaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 1));
+                if (localvarstring("loadoutPrimaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutPrimaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutPrimaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "camo"));
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutSecondary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"));
+                setLocalVarString loadoutSecondaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0));
+                setLocalVarString loadoutSecondaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 1));
+                if (localvarstring("loadoutSecondaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutSecondaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutEquipment (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0));
+                setLocalVarString loadoutPerk1 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 1));
+                setLocalVarString loadoutPerk2 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 2));
+                setLocalVarString loadoutPerk3 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 3));
+                setLocalVarString loadoutStreak1 (getplayerdata("killstreaks", 0));
+                setLocalVarString loadoutStreak2 (getplayerdata("killstreaks", 1));
+                setLocalVarString loadoutStreak3 (getplayerdata("killstreaks", 2));
+                setLocalVarString loadoutDeathStreak (getplayerdata("customClasses", localvarint("classIndex"), "perks", 4) ());
+                setLocalVarString loadoutOffhandSecondary (getplayerdata("customClasses", localvarint("classIndex"), "specialGrenade") ());
+                setLocalVarString loadoutClassName (getplayerdata("customClasses", localvarint("classIndex"), "name") ());
+                close popup_cac_weapon_primary;
+                close popup_primary_attachments close popup_secondary_attachments close popup_cac_weapon_secondary;
+                close popup_cac_handgun_secondary;
+                close popup_cac_machinePistols_secondary;
+                close popup_cac_assault_primary;
+                close popup_cac_SMG_primary;
+                close popup_cac_LMG_primary;
+                close popup_cac_sniper_primary;
+                close popup_cac_shotgun_primary;
+                close popup_cac_assault_secondary;
+                close popup_cac_SMG_secondary;
+                close popup_cac_LMG_secondary;
+                close popup_cac_sniper_secondary;
+                close popup_cac_shotgun_secondary;
+                close popup_cac_template;
+                close popup_cac_primary_camo;
+                close popup_cac_secondary_camo;
+                close popup_cac_bling;
+                close popup_cac_perk2;
+                close popup_cac_rocket_secondary;
+                close popup_primary_attachments_bling;
+                close popup_secondary_attachments_bling;
+                close popup_cac_other_primary;
+            }
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, "red_urban", 2);
+        }
+        itemDef
+        {
+            rect                        226 104 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && getplayerdata("camoNew", getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"), "red_urban"));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        226 104 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + "red_urban"));
+            textscale                   0.55
+            background                  "specialty_locked"
+        }
+        itemDef
+        {
+            name                        "cac_camo_blue_tiger"
+            group                       "mw2_popup_button"
+            rect                        0 124 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + ("blue_tiger")));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_short"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                setLocalVarString ui_selected_ref ("blue_tiger");
+                setLocalVarString ui_weapon_ref getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setLocalVarString ui_unlock_ref (localvarstring("ui_weapon_ref") + " " + "blue_tiger");
+                setLocalVarString ui_challenge_ref (tablelookup("mp/unlockTable.csv", 0, localvarstring("ui_unlock_ref"), 3));
+                setLocalVarInt ui_challenge_state 1;
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_2"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 2;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_3"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 3;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_4"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 4;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_5"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 5;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_6"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 6;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_7"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 7;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_8"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 8;
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , blue_tiger , false );
+            }
+            action
+            {
+                play mouse_click;
+                if (localvarint("ui_tabDepth") == 0)
+                {
+                    setLocalVarString ui_tab1Name ("@" + tablelookup("mp/camoTable.csv", 1, "blue_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 1)
+                {
+                    setLocalVarString ui_tab2Name ("@" + tablelookup("mp/camoTable.csv", 1, "blue_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 2)
+                {
+                    setLocalVarString ui_tab3Name ("@" + tablelookup("mp/camoTable.csv", 1, "blue_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 3)
+                {
+                    setLocalVarString ui_tab4Name ("@" + tablelookup("mp/camoTable.csv", 1, "blue_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 4)
+                {
+                    setLocalVarString ui_tab5Name ("@" + tablelookup("mp/camoTable.csv", 1, "blue_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 5)
+                {
+                    setLocalVarString ui_tab6Name ("@" + tablelookup("mp/camoTable.csv", 1, "blue_tiger", 2));
+                }
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , blue_tiger , false );
+                setPlayerData ( customClasses , localVarInt ( classIndex ) , weaponSetups , 1 , camo , blue_tiger );
+                if (!(tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0), 12) != "" || tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0), 12) != "") && (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_gl" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_grip" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_shotgun") || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_heartbeat")
+                {
+                    setPlayerData ( customClasses , localVarInt ( classIndex ) , perks , 0 , specialty_null );
+                }
+                setLocalVarString loadoutPrimary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon"));
+                setLocalVarString loadoutPrimaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0));
+                setLocalVarString loadoutPrimaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 1));
+                if (localvarstring("loadoutPrimaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutPrimaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutPrimaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "camo"));
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutSecondary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"));
+                setLocalVarString loadoutSecondaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0));
+                setLocalVarString loadoutSecondaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 1));
+                if (localvarstring("loadoutSecondaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutSecondaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutEquipment (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0));
+                setLocalVarString loadoutPerk1 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 1));
+                setLocalVarString loadoutPerk2 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 2));
+                setLocalVarString loadoutPerk3 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 3));
+                setLocalVarString loadoutStreak1 (getplayerdata("killstreaks", 0));
+                setLocalVarString loadoutStreak2 (getplayerdata("killstreaks", 1));
+                setLocalVarString loadoutStreak3 (getplayerdata("killstreaks", 2));
+                setLocalVarString loadoutDeathStreak (getplayerdata("customClasses", localvarint("classIndex"), "perks", 4) ());
+                setLocalVarString loadoutOffhandSecondary (getplayerdata("customClasses", localvarint("classIndex"), "specialGrenade") ());
+                setLocalVarString loadoutClassName (getplayerdata("customClasses", localvarint("classIndex"), "name") ());
+                close popup_cac_weapon_primary;
+                close popup_primary_attachments close popup_secondary_attachments close popup_cac_weapon_secondary;
+                close popup_cac_handgun_secondary;
+                close popup_cac_machinePistols_secondary;
+                close popup_cac_assault_primary;
+                close popup_cac_SMG_primary;
+                close popup_cac_LMG_primary;
+                close popup_cac_sniper_primary;
+                close popup_cac_shotgun_primary;
+                close popup_cac_assault_secondary;
+                close popup_cac_SMG_secondary;
+                close popup_cac_LMG_secondary;
+                close popup_cac_sniper_secondary;
+                close popup_cac_shotgun_secondary;
+                close popup_cac_template;
+                close popup_cac_primary_camo;
+                close popup_cac_secondary_camo;
+                close popup_cac_bling;
+                close popup_cac_perk2;
+                close popup_cac_rocket_secondary;
+                close popup_primary_attachments_bling;
+                close popup_secondary_attachments_bling;
+                close popup_cac_other_primary;
+            }
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, "blue_tiger", 2);
+        }
+        itemDef
+        {
+            rect                        226 124 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && getplayerdata("camoNew", getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"), "blue_tiger"));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        226 124 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + "blue_tiger"));
+            textscale                   0.55
+            background                  "specialty_locked"
+        }
+        itemDef
+        {
+            name                        "cac_camo_red_tiger"
+            group                       "mw2_popup_button"
+            rect                        0 144 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + ("red_tiger")));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_short"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                setLocalVarString ui_selected_ref ("red_tiger");
+                setLocalVarString ui_weapon_ref getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setLocalVarString ui_unlock_ref (localvarstring("ui_weapon_ref") + " " + "red_tiger");
+                setLocalVarString ui_challenge_ref (tablelookup("mp/unlockTable.csv", 0, localvarstring("ui_unlock_ref"), 3));
+                setLocalVarInt ui_challenge_state 1;
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_2"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 2;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_3"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 3;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_4"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 4;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_5"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 5;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_6"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 6;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_7"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 7;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_8"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 8;
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , red_tiger , false );
+            }
+            action
+            {
+                play mouse_click;
+                if (localvarint("ui_tabDepth") == 0)
+                {
+                    setLocalVarString ui_tab1Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 1)
+                {
+                    setLocalVarString ui_tab2Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 2)
+                {
+                    setLocalVarString ui_tab3Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 3)
+                {
+                    setLocalVarString ui_tab4Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 4)
+                {
+                    setLocalVarString ui_tab5Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_tiger", 2));
+                }
+                if (localvarint("ui_tabDepth") == 5)
+                {
+                    setLocalVarString ui_tab6Name ("@" + tablelookup("mp/camoTable.csv", 1, "red_tiger", 2));
+                }
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , red_tiger , false );
+                setPlayerData ( customClasses , localVarInt ( classIndex ) , weaponSetups , 1 , camo , red_tiger );
+                if (!(tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0), 12) != "" || tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0), 12) != "") && (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_gl" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_grip" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_shotgun") || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_heartbeat")
+                {
+                    setPlayerData ( customClasses , localVarInt ( classIndex ) , perks , 0 , specialty_null );
+                }
+                setLocalVarString loadoutPrimary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon"));
+                setLocalVarString loadoutPrimaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0));
+                setLocalVarString loadoutPrimaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 1));
+                if (localvarstring("loadoutPrimaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutPrimaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutPrimaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "camo"));
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutSecondary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"));
+                setLocalVarString loadoutSecondaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0));
+                setLocalVarString loadoutSecondaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 1));
+                if (localvarstring("loadoutSecondaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutSecondaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutEquipment (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0));
+                setLocalVarString loadoutPerk1 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 1));
+                setLocalVarString loadoutPerk2 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 2));
+                setLocalVarString loadoutPerk3 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 3));
+                setLocalVarString loadoutStreak1 (getplayerdata("killstreaks", 0));
+                setLocalVarString loadoutStreak2 (getplayerdata("killstreaks", 1));
+                setLocalVarString loadoutStreak3 (getplayerdata("killstreaks", 2));
+                setLocalVarString loadoutDeathStreak (getplayerdata("customClasses", localvarint("classIndex"), "perks", 4) ());
+                setLocalVarString loadoutOffhandSecondary (getplayerdata("customClasses", localvarint("classIndex"), "specialGrenade") ());
+                setLocalVarString loadoutClassName (getplayerdata("customClasses", localvarint("classIndex"), "name") ());
+                close popup_cac_weapon_primary;
+                close popup_primary_attachments close popup_secondary_attachments close popup_cac_weapon_secondary;
+                close popup_cac_handgun_secondary;
+                close popup_cac_machinePistols_secondary;
+                close popup_cac_assault_primary;
+                close popup_cac_SMG_primary;
+                close popup_cac_LMG_primary;
+                close popup_cac_sniper_primary;
+                close popup_cac_shotgun_primary;
+                close popup_cac_assault_secondary;
+                close popup_cac_SMG_secondary;
+                close popup_cac_LMG_secondary;
+                close popup_cac_sniper_secondary;
+                close popup_cac_shotgun_secondary;
+                close popup_cac_template;
+                close popup_cac_primary_camo;
+                close popup_cac_secondary_camo;
+                close popup_cac_bling;
+                close popup_cac_perk2;
+                close popup_cac_rocket_secondary;
+                close popup_primary_attachments_bling;
+                close popup_secondary_attachments_bling;
+                close popup_cac_other_primary;
+            }
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, "red_tiger", 2);
+        }
+        itemDef
+        {
+            rect                        226 144 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && getplayerdata("camoNew", getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"), "red_tiger"));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        226 144 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + "red_tiger"));
+            textscale                   0.55
+            background                  "specialty_locked"
+        }
+        itemDef
+        {
+            name                        "cac_camo_orange_fall"
+            group                       "mw2_popup_button"
+            rect                        0 164 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + ("orange_fall")));
+            textalign                   4
+            textalignx                  68
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_short"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                setLocalVarString ui_selected_ref ("orange_fall");
+                setLocalVarString ui_weapon_ref getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setLocalVarString ui_unlock_ref (localvarstring("ui_weapon_ref") + " " + "orange_fall");
+                setLocalVarString ui_challenge_ref (tablelookup("mp/unlockTable.csv", 0, localvarstring("ui_unlock_ref"), 3));
+                setLocalVarInt ui_challenge_state 1;
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_2"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 2;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_3"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 3;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_4"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 4;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_5"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 5;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_6"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 6;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_7"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 7;
+                }
+                if ((localvarstring("ui_challenge_ref") == "ch_expert_" + localvarstring("ui_weapon_ref") + "_8"))
+                {
+                    setLocalVarString ui_challenge_ref "ch_expert_" + localvarstring("ui_weapon_ref");
+                    setLocalVarInt ui_challenge_state 8;
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , orange_fall , false );
+            }
+            action
+            {
+                play mouse_click;
+                if (localvarint("ui_tabDepth") == 0)
+                {
+                    setLocalVarString ui_tab1Name ("@" + tablelookup("mp/camoTable.csv", 1, "orange_fall", 2));
+                }
+                if (localvarint("ui_tabDepth") == 1)
+                {
+                    setLocalVarString ui_tab2Name ("@" + tablelookup("mp/camoTable.csv", 1, "orange_fall", 2));
+                }
+                if (localvarint("ui_tabDepth") == 2)
+                {
+                    setLocalVarString ui_tab3Name ("@" + tablelookup("mp/camoTable.csv", 1, "orange_fall", 2));
+                }
+                if (localvarint("ui_tabDepth") == 3)
+                {
+                    setLocalVarString ui_tab4Name ("@" + tablelookup("mp/camoTable.csv", 1, "orange_fall", 2));
+                }
+                if (localvarint("ui_tabDepth") == 4)
+                {
+                    setLocalVarString ui_tab5Name ("@" + tablelookup("mp/camoTable.csv", 1, "orange_fall", 2));
+                }
+                if (localvarint("ui_tabDepth") == 5)
+                {
+                    setLocalVarString ui_tab6Name ("@" + tablelookup("mp/camoTable.csv", 1, "orange_fall", 2));
+                }
+                setLocalVarString tempName getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon");
+                setPlayerData ( camoNew , localVarString ( tempName ) , orange_fall , false );
+                setPlayerData ( customClasses , localVarInt ( classIndex ) , weaponSetups , 1 , camo , orange_fall );
+                if (!(tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0), 12) != "" || tablelookup("mp/attachmentTable.csv", 4, getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0), 12) != "") && (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_gl" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_grip" || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_shotgun") || getplayerdata("customClasses", localvarint("classIndex"), "perks", 0) == "specialty_null_heartbeat")
+                {
+                    setPlayerData ( customClasses , localVarInt ( classIndex ) , perks , 0 , specialty_null );
+                }
+                setLocalVarString loadoutPrimary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "weapon"));
+                setLocalVarString loadoutPrimaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 0));
+                setLocalVarString loadoutPrimaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "attachment", 1));
+                if (localvarstring("loadoutPrimaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutPrimaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutPrimaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 0, "camo"));
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutSecondary (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"));
+                setLocalVarString loadoutSecondaryAttachment (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 0));
+                setLocalVarString loadoutSecondaryAttachment2 (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "attachment", 1));
+                if (localvarstring("loadoutSecondaryAttachment2") == "")
+                {
+                    setLocalVarString loadoutSecondaryAttachment2 ("none");
+                }
+                setLocalVarString loadoutSecondaryCamo (getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "camo"));
+                setLocalVarString loadoutEquipment (getplayerdata("customClasses", localvarint("classIndex"), "perks", 0));
+                setLocalVarString loadoutPerk1 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 1));
+                setLocalVarString loadoutPerk2 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 2));
+                setLocalVarString loadoutPerk3 (getplayerdata("customClasses", localvarint("classIndex"), "perks", 3));
+                setLocalVarString loadoutStreak1 (getplayerdata("killstreaks", 0));
+                setLocalVarString loadoutStreak2 (getplayerdata("killstreaks", 1));
+                setLocalVarString loadoutStreak3 (getplayerdata("killstreaks", 2));
+                setLocalVarString loadoutDeathStreak (getplayerdata("customClasses", localvarint("classIndex"), "perks", 4) ());
+                setLocalVarString loadoutOffhandSecondary (getplayerdata("customClasses", localvarint("classIndex"), "specialGrenade") ());
+                setLocalVarString loadoutClassName (getplayerdata("customClasses", localvarint("classIndex"), "name") ());
+                close popup_cac_weapon_primary;
+                close popup_primary_attachments close popup_secondary_attachments close popup_cac_weapon_secondary;
+                close popup_cac_handgun_secondary;
+                close popup_cac_machinePistols_secondary;
+                close popup_cac_assault_primary;
+                close popup_cac_SMG_primary;
+                close popup_cac_LMG_primary;
+                close popup_cac_sniper_primary;
+                close popup_cac_shotgun_primary;
+                close popup_cac_assault_secondary;
+                close popup_cac_SMG_secondary;
+                close popup_cac_LMG_secondary;
+                close popup_cac_sniper_secondary;
+                close popup_cac_shotgun_secondary;
+                close popup_cac_template;
+                close popup_cac_primary_camo;
+                close popup_cac_secondary_camo;
+                close popup_cac_bling;
+                close popup_cac_perk2;
+                close popup_cac_rocket_secondary;
+                close popup_primary_attachments_bling;
+                close popup_secondary_attachments_bling;
+                close popup_cac_other_primary;
+            }
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, "orange_fall", 2);
+        }
+        itemDef
+        {
+            rect                        226 164 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && getplayerdata("camoNew", getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon"), "orange_fall"));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        226 164 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && !isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + "orange_fall"));
+            textscale                   0.55
+            background                  "specialty_locked"
+        }
+        itemDef
+        {
+            rect                        8 0 200 184 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.5
+            background                  "small_box_lightfx"
+        }
+        itemDef
+        {
+            rect                        8 0 200 184 2 1
+            decoration                  
+            visible                     1
+            textalign                   4
+            textalignx                  4
+            textscale                   0.375
+            textfont                    9
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, localvarstring("ui_selected_ref"), 2);
+        }
+        itemDef
+        {
+            rect                        8 24 -300 100 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            exp material                tablelookup("mp/camoTable.csv", 1, localvarstring("ui_selected_ref"), 4);
+        }
+        itemDef
+        {
+            rect                        8 24 -300 100 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_selected_ref") == "none");
+            textscale                   0.55
+            forecolor                   0 0 0 0.5
+            exp material                "ui_camoskin_woodland";
+        }
+        itemDef
+        {
+            rect                        8 124 400 20 2 1
+            decoration                  
+            autowrapped                 
+            visible                     when(isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + localvarstring("ui_selected_ref")));
+            textalign                   4
+            textalignx                  4
+            textscale                   0.375
+            textfont                    3
+            backcolor                   0 0 0 0.35
+            forecolor                   1 1 1 0.65
+            background                  "black"
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, localvarstring("ui_selected_ref"), 3);
+        }
+        itemDef
+        {
+            text                        "@MPUI_UNLOCKED_BY_CHALLENGE_PRE"
+            rect                        8 124 400 20 2 1
+            decoration                  
+            autowrapped                 
+            visible                     when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + localvarstring("ui_selected_ref")));
+            textalign                   4
+            textalignx                  4
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 1 0.65
+        }
+        itemDef
+        {
+            rect                        8 124 400 20 2 1
+            decoration                  
+            autowrapped                 
+            visible                     when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + localvarstring("ui_selected_ref")));
+            textalign                   4
+            textalignx                  4
+            textaligny                  20
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 1 0.65
+            exp text                    locstring("@" + tablelookup("mp/allChallengesTable.csv", 0, localvarstring("ui_challenge_ref"), 1)) + locstring("@" + tablelookup("mp/allChallengesTable.csv", 0, localvarstring("ui_challenge_ref"), 3) + "_" + localvarint("ui_challenge_state"));
+        }
+        itemDef
+        {
+            text                        "@PLATFORM_VIEW_CHALLENGE_DETAILS"
+            rect                        8 124 400 20 2 1
+            decoration                  
+            autowrapped                 
+            visible                     when(!isitemunlocked(getplayerdata("customClasses", localvarint("classIndex"), "weaponSetups", 1, "weapon") + " " + localvarstring("ui_selected_ref")));
+            textalign                   4
+            textalignx                  4
+            textaligny                  40
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 1 0.65
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "watersheeting_color_distort_blur.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "watersheeting_color_distort_blur.hlsl"
+  {
+    colorMapSampler = sampler.feedback;
+    normalMapSampler = material.detailMap;
+  }
+
+  vertex.position = code.position;
+  vertex.texcoord[0] = code.texcoord[0];
+}

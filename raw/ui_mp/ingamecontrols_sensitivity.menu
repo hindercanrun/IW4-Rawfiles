@@ -1,0 +1,208 @@
+{
+    menuDef
+    {
+        name                        "ingamecontrols_sensitivity"
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        blurWorld                   6
+        legacySplitScreenScale      
+        onOpen
+        {
+            setfocus sensitivity_medium;
+            setfocusbydvar input_viewSensitivity;
+        }
+        onClose
+        {
+            exec updategamerprofile;
+        }
+        onESC
+        {
+            close ingamecontrols_sensitivity;
+            open ingame_controls;
+        }
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0 0.5
+        }
+        itemDef
+        {
+            rect                        0 55 854 75 4 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "gradient_top"
+        }
+        itemDef
+        {
+            rect                        0 351 854 75 4 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "gradient_bottom"
+        }
+        itemDef
+        {
+            rect                        -128 0 896 66 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.1412 0.1412 0.1412 1
+        }
+        itemDef
+        {
+            rect                        -128 66 896 2 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "line_horizontal"
+        }
+        itemDef
+        {
+            rect                        -128 416 896 64 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.1412 0.1412 0.1412 1
+        }
+        itemDef
+        {
+            rect                        -128 414 896 2 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "line_horizontal"
+        }
+        itemDef
+        {
+            name                        "cancel"
+            text                        "@PLATFORM_BACK"
+            rect                        505 422 100 16 0 0
+            type                        1
+            visible                     when(!localvarbool("ui_hideBack"));
+            textalign                   9
+            textscale                   0.4583
+            textfont                    1
+            action
+            {
+                close self;
+            }
+        }
+        itemDef
+        {
+            text                        "LOOK SENSITIVITY"
+            rect                        48 40 0 0 0 0
+            decoration                  
+            visible                     1
+            textscale                   0.5833
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+        }
+        itemDef
+        {
+            name                        "sensitivity_low"
+            text                        "@MENU_LOW"
+            rect                        80 80 128 24 0 0
+            type                        1
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                exec "exec viewSensitivity_low" close ingamecontrols_sensitivity;
+                open ingame_controls;
+            }
+            dvarTest                    "input_viewSensitivity"
+            focusDvar                   { "0.8" }
+        }
+        itemDef
+        {
+            name                        "sensitivity_medium"
+            text                        "@MENU_MEDIUM"
+            rect                        80 100 128 24 0 0
+            type                        1
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                exec "exec viewSensitivity_med" close ingamecontrols_sensitivity;
+                open ingame_controls;
+            }
+            dvarTest                    "input_viewSensitivity"
+            focusDvar                   { "1" }
+        }
+        itemDef
+        {
+            name                        "sensitivity_high"
+            text                        "@MENU_HIGH"
+            rect                        80 120 128 24 0 0
+            type                        1
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                exec "exec viewSensitivity_high" close ingamecontrols_sensitivity;
+                open ingame_controls;
+            }
+            dvarTest                    "input_viewSensitivity"
+            focusDvar                   { "1.8" }
+        }
+        itemDef
+        {
+            name                        "sensitivity_veryhigh"
+            text                        "@MENU_VERY_HIGH"
+            rect                        80 140 128 24 0 0
+            type                        1
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                exec "exec viewSensitivity_ultra" close ingamecontrols_sensitivity;
+                open ingame_controls;
+            }
+            dvarTest                    "input_viewSensitivity"
+            focusDvar                   { "4" }
+        }
+    }
+}

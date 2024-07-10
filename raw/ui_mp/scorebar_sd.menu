@@ -1,0 +1,374 @@
+{
+    menuDef
+    {
+        name                        "scorebar_sd"
+        rect                        0 -20 640 480 8 8
+        visible                     when(FUNC_78() && !inkillcam() && !FUNC_73());
+        itemDef
+        {
+            rect                        0 -42.6667 341.333 42.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+            background                  "hud_scorebar"
+        }
+        itemDef
+        {
+            rect                        88 -24 128 12 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   0.75 0.75 0.75 1
+            background                  "hud_scorebar_topbar_bg"
+        }
+        itemDef
+        {
+            rect                        212 -24 17.3333 12 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   0.75 0.75 0.75 1
+            background                  "hud_scorebar_topcap_bg"
+        }
+        itemDef
+        {
+            rect                        88 -24 114.667 12 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   0.63 0.86 0.6 1
+            background                  "hud_scorebar_topbar"
+            exp rect w                  (20 / 1.5) + FUNC_103() * (172 / 1.5);
+        }
+        itemDef
+        {
+            rect                        202.667 -24 10.6667 12 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   0.872 0.945 0.872 1
+            background                  "hud_scorebar_topcap"
+            exp rect x                  ((132 + 20) / 1.5) + (FUNC_103() * (172 / 1.5)) - (6 / 1.5);
+        }
+        itemDef
+        {
+            rect                        88 -10.6667 128 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   0.75 0.75 0.75 1
+            background                  "hud_scorebar_bottombar_bg"
+        }
+        itemDef
+        {
+            rect                        212 -10.6667 10.6667 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   0.75 0.75 0.75 1
+            background                  "hud_scorebar_bottomcap_bg"
+        }
+        itemDef
+        {
+            rect                        88 -10.6667 114.667 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   0.78 0.278 0.239 1
+            background                  "hud_scorebar_bottombar"
+            exp rect w                  ((20) / 1.5) + FUNC_104() * (172 / 1.5);
+        }
+        itemDef
+        {
+            rect                        202.667 -10.6667 10.6667 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   0.921 0.892 0.892 1
+            background                  "hud_scorebar_bottomcap"
+            exp rect x                  ((132 + 20) / 1.5) + (FUNC_104() * (172 / 1.5)) - (6 / 1.5);
+        }
+        itemDef
+        {
+            rect                        5.33333 -38.6667 54.6667 54.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when(team("name") == "TEAM_AXIS" || (team("name") == "TEAM_FREE" && (localvarstring("ui_team") == "opfor")));
+            textscale                   0.55
+            exp material                dvarstring(g_TeamIcon_Axis) + "_fade";
+        }
+        itemDef
+        {
+            rect                        5.33333 -38.6667 54.6667 54.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when(team("name") == "TEAM_ALLIES" || (team("name") == "TEAM_FREE" && (localvarstring("ui_team") == "marines")));
+            textscale                   0.55
+            exp material                dvarstring(g_TeamIcon_Allies) + "_fade";
+        }
+        itemDef
+        {
+            rect                        6 126 100 30 8 8
+            decoration                  
+            visible                     when(FUNC_88() && FUNC_87() && !FUNC_85() && !FUNC_90());
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            forecolor                   1 1 1 0.65
+            exp text                    "@MPUI_FIRST_HALF";
+        }
+        itemDef
+        {
+            rect                        6 126 100 30 8 8
+            decoration                  
+            visible                     when(FUNC_88() && !FUNC_87() && !FUNC_85() && !FUNC_90());
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            forecolor                   1 1 1 0.65
+            exp text                    "@MPUI_SECOND_HALF";
+        }
+        itemDef
+        {
+            rect                        6 126 100 30 8 8
+            decoration                  
+            visible                     when(FUNC_85() && !FUNC_90());
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            forecolor                   0.85 0.4 0.4 1
+            exp text                    "@MP_OVERTIME";
+        }
+        itemDef
+        {
+            rect                        112 26 48 48 8 8
+            style                       3
+            decoration                  
+            visible                     when(FUNC_112() > 0 && FUNC_112() < 4);
+            textscale                   0.55
+            forecolor                   1 1 1 0.5
+            exp material                "hud_suitcase_bomb";
+        }
+        itemDef
+        {
+            rect                        112 26 48 48 8 8
+            style                       3
+            decoration                  
+            visible                     when(FUNC_112() == 4);
+            textscale                   0.55
+            exp material                "dpad_killstreak_nuke";
+        }
+        itemDef
+        {
+            rect                        112 26 100 30 8 8
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR") && FUNC_147());
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   7
+            textfont                    10
+            forecolor                   1 0.55 0.55 1
+            exp text                    "@MENU_SAB_DANGER";
+        }
+        itemDef
+        {
+            rect                        112 26 100 30 8 8
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR") && FUNC_150());
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   7
+            textfont                    10
+            exp text                    "@MENU_SAB_NEUTRAL";
+        }
+        itemDef
+        {
+            rect                        112 26 100 30 8 8
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR") && FUNC_148());
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   7
+            textfont                    10
+            forecolor                   0.63 0.86 0.6 1
+            exp text                    "@MENU_SAB_SAFE";
+        }
+        itemDef
+        {
+            rect                        112 26 100 30 8 8
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR") && FUNC_149());
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   7
+            textfont                    10
+            forecolor                   1 0.55 0.55 1
+            exp text                    "@MENU_CONTESTED";
+        }
+        itemDef
+        {
+            rect                        5.33333 -38.6667 54.6667 54.6667 8 10
+            decoration                  
+            visible                     when(FUNC_89() >= 60 && !dvarint(ui_bomb_timer));
+            textalign                   13
+            textaligny                  -58
+            textscale                   0.3333
+            textstyle                   8
+            textfont                    10
+            exp text                    secondsascountdown(FUNC_89());
+        }
+        itemDef
+        {
+            rect                        5.33333 -38.6667 54.6667 54.6667 8 10
+            decoration                  
+            visible                     when(FUNC_89() >= 30 && FUNC_89() < 60 && !dvarint(ui_bomb_timer));
+            textalign                   13
+            textaligny                  -58
+            textscale                   0.3333
+            textstyle                   8
+            textfont                    10
+            forecolor                   0.85 0.5 0 1
+            glowcolor                   0.75 0.55 0 1
+            exp text                    secondsascountdown(FUNC_89());
+        }
+        itemDef
+        {
+            rect                        5.33333 -38.6667 54.6667 54.6667 8 10
+            decoration                  
+            visible                     when(FUNC_89() >= 0 && FUNC_89() < 30 && !dvarint(ui_bomb_timer));
+            textalign                   12
+            textaligny                  -58
+            textscale                   0.3333
+            textstyle                   8
+            textfont                    10
+            forecolor                   0.85 0.4 0.4 1
+            glowcolor                   1 0.25 0 1
+            exp text                    secondsascountdown(FUNC_89()) + "." + (9 - int((milliseconds() / 100) % 10));
+        }
+        itemDef
+        {
+            rect                        112 42 100 30 8 8
+            decoration                  
+            visible                     when(dvarint(ui_bomb_timer) == 1 || dvarint(ui_bomb_timer) == 4);
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            glowcolor                   1 0.25 0 1
+            exp text                    secondsascountdown(FUNC_89()) + "." + (9 - int((milliseconds() / 100) % 10));
+        }
+        itemDef
+        {
+            rect                        112 26 100 30 8 8
+            decoration                  
+            visible                     when(dvarint(ui_bomb_timer) > 1 && dvarint(ui_bombtimer_a) >= 0 && dvarint(ui_bomb_timer) != 4);
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            glowcolor                   1 0.25 0 1
+            exp text                    locstring("@MP_BOMB_A_COLON_N_N", dvarint(ui_bombtimer_a), (9 - int((milliseconds() / 100) % 10)));
+        }
+        itemDef
+        {
+            rect                        112 26 100 30 8 8
+            decoration                  
+            visible                     when(dvarint(ui_bomb_timer) > 1 && dvarint(ui_bombtimer_b) >= 0 && dvarint(ui_bomb_timer) != 4);
+            textalign                   12
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            glowcolor                   1 0.25 0 1
+            exp text                    locstring("@MP_BOMB_B_COLON_N_N", dvarint(ui_bombtimer_b), (9 - int((milliseconds() / 100) % 10)));
+        }
+        itemDef
+        {
+            rect                        65.3333 -24.6667 0.666667 0.666667 8 10
+            decoration                  
+            visible                     when((milliseconds() % 30000) > 0 && (milliseconds() % 30000) < 4000 && (FUNC_89() < 0 || FUNC_89() > 60));
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            forecolor                   1 0.8 0.4 0.85
+            exp text                    gametypename();
+        }
+        itemDef
+        {
+            text                        "@MPUI_WINNING_CAPS"
+            rect                        65.3333 -24.6667 0.666667 0.666667 8 10
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR") && FUNC_105() && (((milliseconds() % 30000) > 4000 && (milliseconds() % 30000) < 30000) || (FUNC_89() >= 0 && FUNC_89() <= 60)));
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            forecolor                   0.4 1 0.4 1
+        }
+        itemDef
+        {
+            text                        "@MPUI_LOSING_CAPS"
+            rect                        65.3333 -24.6667 0.666667 0.666667 8 10
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR") && FUNC_107() && (((milliseconds() % 30000) > 4000 && (milliseconds() % 30000) < 30000) || (FUNC_89() >= 0 && FUNC_89() <= 60)));
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            forecolor                   1 0.4 0.4 1
+        }
+        itemDef
+        {
+            text                        "@MPUI_TIED_CAPS"
+            rect                        65.3333 -24.6667 0.666667 0.666667 8 10
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR") && FUNC_106() && (((milliseconds() % 30000) > 4000 && (milliseconds() % 30000) < 30000) || (FUNC_89() >= 0 && FUNC_89() <= 60)));
+            textscale                   0.3333
+            textstyle                   6
+            textfont                    10
+            forecolor                   1 1 0.5 1
+        }
+        itemDef
+        {
+            rect                        60 -26.6667 16 16 8 10
+            style                       3
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textscale                   0.55
+            forecolor                   0.63 0.86 0.6 1
+            background                  "hud_teamcaret"
+        }
+        itemDef
+        {
+            rect                        72 -12.6667 0.666667 0.666667 8 10
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textalign                   12
+            textscale                   0.3333
+            textstyle                   7
+            textfont                    10
+            exp text                    FUNC_101();
+        }
+        itemDef
+        {
+            rect                        72 -12.6667 0.666667 0.666667 8 10
+            decoration                  
+            visible                     when((team("name") != "TEAM_SPECTATOR"));
+            textalign                   4
+            textscale                   0.3333
+            textstyle                   7
+            textfont                    10
+            exp text                    FUNC_102();
+        }
+    }
+}

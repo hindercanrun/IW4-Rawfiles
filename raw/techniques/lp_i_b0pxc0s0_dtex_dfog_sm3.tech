@@ -1,0 +1,22 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "lp_i_dfog_s_tc0_dtex_sm3.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "lp_i_dfog_b0c0s0px_sm3.hlsl"
+  {
+    specularMapSampler = material.specularMap;
+    colorMapSampler = material.colorMap;
+    envMapParms = material.envMapParms;
+  }
+
+  vertex.position = code.position;
+  vertex.color[0] = code.color;
+  vertex.texcoord[0] = code.texcoord[0];
+  vertex.normal = code.normal;
+  vertex.texcoord[3] = code.texcoord[1];
+}

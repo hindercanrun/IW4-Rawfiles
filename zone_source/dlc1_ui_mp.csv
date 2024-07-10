@@ -1,0 +1,14 @@
+techniqueset,2d
+image,preview_mp_compact
+material,preview_mp_compact
+image,preview_mp_complex
+material,preview_mp_complex
+image,preview_mp_crash
+material,preview_mp_crash
+image,preview_mp_overgrown
+material,preview_mp_overgrown
+image,preview_mp_storm
+material,preview_mp_storm
+image,loadscreen_mp_dlc
+material,loadscreen_mp_bonusmaps
+rawfile,dlc1_ui_mp

@@ -1,0 +1,14 @@
+{
+  stateMap "passthrough"; // TODO
+  // Cannot dump vertex shader l_point_tc0.hlsl due to being a referenced asset
+
+  pixelShader 3.0 "l_omni_b0c0o0.hlsl"
+  {
+    attenuationSampler = sampler.light.attenuation;
+    colorMapSampler = material.colorMap;
+    lightPosition = constant.light.position;
+    lightDiffuse = constant.light.diffuse;
+    fogColorLinear = float4( 0, 0, 0, 0 );
+  }
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

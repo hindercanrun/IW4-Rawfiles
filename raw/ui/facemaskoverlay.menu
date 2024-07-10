@@ -1,0 +1,21 @@
+{
+    menuDef
+    {
+        name                        "facemaskoverlay"
+        rect                        0 0 960 480 2 2
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     when(dvarbool(hud_gasMaskOverlay) == 1);
+        itemDef
+        {
+            name                        "FacemaskOverlayBG"
+            rect                        -427 -240 854 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "gasmask_overlay"
+        }
+    }
+}

@@ -1,0 +1,219 @@
+{
+    menuDef
+    {
+        name                        "weaponbar_hd"
+        rect                        0 -20 640 480 4 4
+        visible                     when(FUNC_78() && !FUNC_73() && FUNC_64());
+        itemDef
+        {
+            rect                        -349.333 -56 349.333 56 10 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+            background                  "hud_weaponbar"
+        }
+        itemDef
+        {
+            rect                        -136 -12.6667 37.3333 0.666667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_139() < 100);
+            ownerdraw                   119
+            textscale                   0.5833
+            textstyle                   6
+            textfont                    9
+        }
+        itemDef
+        {
+            rect                        -128 -12.6667 37.3333 0.666667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_139() >= 100);
+            ownerdraw                   119
+            textscale                   0.437475
+            textstyle                   6
+            textfont                    9
+        }
+        itemDef
+        {
+            name                        "offhandFragIcon"
+            rect                        -108 -11.3333 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_142() > 1);
+            ownerdraw                   103
+            textscale                   0.55
+            forecolor                   0.75 0.75 0.75 1
+        }
+        itemDef
+        {
+            name                        "offhandFragIcon"
+            rect                        -104 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_142());
+            ownerdraw                   103
+            textscale                   0.55
+        }
+        itemDef
+        {
+            name                        "offhandSmokeIcon"
+            rect                        -133.333 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_143() > 2);
+            ownerdraw                   104
+            textscale                   0.55
+            forecolor                   0.5 0.5 0.5 1
+        }
+        itemDef
+        {
+            name                        "offhandSmokeIcon"
+            rect                        -129.333 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_143() > 1);
+            ownerdraw                   104
+            textscale                   0.55
+            forecolor                   0.75 0.75 0.75 1
+        }
+        itemDef
+        {
+            name                        "offhandSmokeIcon"
+            rect                        -125.333 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_143());
+            ownerdraw                   104
+            textscale                   0.55
+        }
+        itemDef
+        {
+            name                        "clipGraphic"
+            rect                        -130 -22.6667 0 0 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   117
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+        }
+        itemDef
+        {
+            name                        "clipGraphic"
+            rect                        -130 -5.33333 0 0 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   121
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+        }
+        itemDef
+        {
+            rect                        -102.667 -32.6667 37.3333 0.666667 10 10
+            decoration                  
+            type                        8
+            visible                     when(inkillcam() || spectatingclient());
+            ownerdraw                   83
+            textalign                   2
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    10
+        }
+        itemDef
+        {
+            rect                        -102.667 -32.6667 37.3333 0.666667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_58() && FUNC_62());
+            ownerdraw                   81
+            textalign                   2
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    10
+        }
+        itemDef
+        {
+            name                        "lowammowarning"
+            rect                        -50 0 100 100 2 2
+            decoration                  
+            type                        8
+            visible                     when(FUNC_58() && FUNC_62());
+            ownerdraw                   120
+            textalign                   9
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    9
+            forecolor                   1 1 1 0.65
+        }
+        itemDef
+        {
+            name                        "Shadow_Pass1"
+            rect                        -108 -77 126 126 10 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "hud_compass_alpha"
+        }
+        itemDef
+        {
+            name                        "Shadow_Pass2"
+            rect                        -108 -77 126 126 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   166
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "hud_compass_letters_shadow_step2"
+        }
+        itemDef
+        {
+            name                        "Shadow_Pass3"
+            rect                        -108 -77 126 126 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   166
+            textscale                   0.55
+            background                  "hud_compass_letters_shadow_step3"
+        }
+        itemDef
+        {
+            name                        "Pass1"
+            rect                        -109 -78 126 126 10 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "hud_compass_alpha"
+        }
+        itemDef
+        {
+            name                        "Pass2"
+            rect                        -109 -78 126 126 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   166
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "hud_compass_letters_step2"
+        }
+        itemDef
+        {
+            name                        "Pass3"
+            rect                        -109 -78 126 126 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   166
+            textscale                   0.55
+            background                  "hud_compass_letters_step3"
+        }
+    }
+}

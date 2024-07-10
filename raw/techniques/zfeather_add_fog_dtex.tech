@@ -1,0 +1,22 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "zfeather_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    featherParms = material.featherParms;
+  }
+
+  pixelShader 3.0 "zfeather_premul.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    floatZSampler = sampler.floatZ;
+    featherParms = material.featherParms;
+    fogColorGamma = float4( 0, 0, 0, 0 );
+  }
+
+  vertex.position = code.position;
+  vertex.color[0] = code.color;
+  vertex.texcoord[0] = code.texcoord[0];
+}

@@ -1,0 +1,189 @@
+{
+    menuDef
+    {
+        name                        "weaponinfo"
+        rect                        2 -20 640 480 4 4
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     when(!(player("number") + 1 == dvarint(ui_remotemissile_playernum)) && (dvarbool(hud_missionFailed) == 0) && (dvarstring(createfx) != "on") && !flashbanged() && !usingvehicle() && !ui_active() && !(gamemsgwndactive(2)) && (dvarint(ammoCounterHide) == 0));
+        itemDef
+        {
+            name                        "weaponbar_line"
+            rect                        -349.333 -54.6667 261.333 56 10 10
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            background                  "hud_weaponbar_line"
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            rect                        -133.333 -12.6667 37.3333 0.666667 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   119
+            textscale                   0.437475
+            textstyle                   6
+            textfont                    9
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandSmokeIcon"
+            rect                        -150.667 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34() > 3);
+            ownerdraw                   104
+            textscale                   0.55
+            forecolor                   0.7 0.7 0.7 1
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandSmokeIcon"
+            rect                        -157.333 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34() > 2);
+            ownerdraw                   104
+            textscale                   0.55
+            forecolor                   0.7 0.7 0.7 1
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandSmokeIcon"
+            rect                        -164 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34() > 1);
+            ownerdraw                   104
+            textscale                   0.55
+            forecolor                   0.7 0.7 0.7 1
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandSmokeIcon"
+            rect                        -170.667 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34());
+            ownerdraw                   104
+            textscale                   0.55
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandSmokeIcon"
+            rect                        -170.667 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34() == 0);
+            ownerdraw                   104
+            textscale                   0.55
+            forecolor                   0.5 0.3 0.3 1
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandFragIcon"
+            rect                        -102.667 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_33() > 3);
+            ownerdraw                   103
+            textscale                   0.55
+            forecolor                   0.7 0.7 0.7 1
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandFragIcon"
+            rect                        -109.333 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_33() > 2);
+            ownerdraw                   103
+            textscale                   0.55
+            forecolor                   0.7 0.7 0.7 1
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandFragIcon"
+            rect                        -116 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_33() > 1);
+            ownerdraw                   103
+            textscale                   0.55
+            forecolor                   0.7 0.7 0.7 1
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandFragIcon"
+            rect                        -122.667 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_33());
+            ownerdraw                   103
+            textscale                   0.55
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "offhandFragIcon"
+            rect                        -122.667 -12 18.6667 18.6667 10 10
+            decoration                  
+            type                        8
+            visible                     when(FUNC_33() == 0);
+            ownerdraw                   103
+            textscale                   0.55
+            forecolor                   0.5 0.3 0.3 1
+            exp forecolor a             hudfade("weapon");
+        }
+        itemDef
+        {
+            name                        "clipGraphic"
+            rect                        -137.333 -20 0 0 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   117
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+            exp forecolor a             hudfade("weapon") * 0.65;
+        }
+        itemDef
+        {
+            name                        "clipGraphic"
+            rect                        -137.333 -26 0 0 10 10
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   121
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+            exp forecolor a             hudfade("weapon") * 0.65;
+        }
+        itemDef
+        {
+            rect                        -105.333 -32.6667 37.3333 0.666667 10 10
+            decoration                  
+            type                        8
+            visible                     when(1);
+            ownerdraw                   81
+            textalign                   2
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    10
+            exp forecolor a             hudfade("weaponName");
+        }
+    }
+}

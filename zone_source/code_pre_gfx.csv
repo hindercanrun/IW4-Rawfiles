@@ -1,0 +1,8 @@
+rawfile,codescripts/$default
+rawfile,configure.csv
+rawfile,configure.cfg
+rawfile,safemode.cfg
+rawfile,default.cfg
+rawfile,language.cfg
+rawfile,ragdoll.cfg
+rawfile,code_pre_gfx

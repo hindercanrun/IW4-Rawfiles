@@ -1,0 +1,20 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "laser.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "laser.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    detailMapSampler = material.detailMap;
+    fogColorLinear = float4( 0, 0, 0, 0 );
+  }
+
+  vertex.position = code.position;
+  vertex.color[0] = code.color;
+  vertex.texcoord[0] = code.texcoord[0];
+}

@@ -1,0 +1,9 @@
+"unlit":
+"emissive":
+"emissive dfog":
+"emissive shadow":
+"emissive shadow dfog":
+  vertcol_simple_falloff_fog_dtex;
+
+"solid wireframe":
+  wireframe_solid_dtex;

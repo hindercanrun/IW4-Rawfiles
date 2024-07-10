@@ -1,0 +1,22 @@
+iwmap 4
+"000_Global" flags active
+"The Map" flags
+// entity 0
+{
+  "classname" "worldspawn"
+  // brush 0
+  {
+    // TODO: Brush data
+  }
+  // brush 1
+  {
+    physics_box
+    {
+      1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 1.000000 6.000000 0.000000 0.500000 26.000000 1.000000 1.500000
+    }
+  }
+  // brush 2
+  {
+    // TODO: Brush data
+  }
+}

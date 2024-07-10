@@ -1,0 +1,896 @@
+{
+    menuDef
+    {
+        name                        "page_unlocks_weapons"
+        rect                        -272 50 544 337 2 1
+        style                       1
+        backcolor                   1 1 1 0
+        focuscolor                  1 1 1 1
+        background                  "white"
+        popup                       
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     1
+        onOpen
+        {
+            setLocalVarInt ui_centerPopup 1;
+            setLocalVarInt ui_leftArrow 0;
+            setLocalVarInt ui_rightArrow 0;
+            setLocalVarInt ui_CamoHeight ((unlockeditemcount("camo") > 0) * ((18 + 48) + 5));
+            setLocalVarInt ui_AttachmentHeight ((unlockeditemcount("attachment") > 0) * ((18 + 48) + 5));
+            setLocalVarInt ui_WeaponHeight ((unlockeditemcount("weapon") > 0) * ((18 + 125) + 5));
+            setLocalVarInt ui_WeaponUnlocksHeight (28 + localvarint("ui_CamoHeight") + localvarint("ui_AttachmentHeight") + localvarint("ui_WeaponHeight") + 24 - 5);
+            setLocalVarInt ui_CamoY (28);
+            setLocalVarInt ui_AttachmentY (localvarint("ui_CamoY") + localvarint("ui_CamoHeight"));
+            setLocalVarInt ui_WeaponY (localvarint("ui_AttachmentY") + localvarint("ui_AttachmentHeight"));
+            setLocalVarString ui_navbutton_a "@PLATFORM_BACK_CAPS";
+            if (localvarint("ui_autoopened"))
+            {
+                play new_weapon_unlocks;
+            }
+        }
+        onClose
+        {
+            setLocalVarInt ui_centerPopup 0;
+            if ("page_unlocks_weapons" == "page_unlocks_titles")
+            {
+                if ((unlockeditemcount("icon")))
+                {
+                    open page_unlocks_emblems;
+                }
+                else
+                {
+                    if ((unlockeditemcount("perk")))
+                    {
+                        open page_unlocks_perks;
+                    }
+                    else
+                    {
+                        if ((unlockeditemcount("weapon") || unlockeditemcount("attachment") || unlockeditemcount("camo")))
+                        {
+                            open page_unlocks_weapons;
+                        }
+                        else
+                        {
+                            if ((unlockeditemcount("feature") || unlockeditemcount("challenge")))
+                            {
+                                open page_unlocks_features;
+                            }
+                            else
+                            {
+                                open page_summary;
+                            }
+                        }
+                    }
+                }
+            }
+            if ("page_unlocks_weapons" == "page_unlocks_emblems")
+            {
+                if ((unlockeditemcount("perk")))
+                {
+                    open page_unlocks_perks;
+                }
+                else
+                {
+                    if ((unlockeditemcount("weapon") || unlockeditemcount("attachment") || unlockeditemcount("camo")))
+                    {
+                        open page_unlocks_weapons;
+                    }
+                    else
+                    {
+                        if ((unlockeditemcount("feature") || unlockeditemcount("challenge")))
+                        {
+                            open page_unlocks_features;
+                        }
+                        else
+                        {
+                            open page_summary;
+                        }
+                    }
+                }
+            }
+            if ("page_unlocks_weapons" == "page_unlocks_perks")
+            {
+                if ((unlockeditemcount("weapon") || unlockeditemcount("attachment") || unlockeditemcount("camo")))
+                {
+                    open page_unlocks_weapons;
+                }
+                else
+                {
+                    if ((unlockeditemcount("feature") || unlockeditemcount("challenge")))
+                    {
+                        open page_unlocks_features;
+                    }
+                    else
+                    {
+                        open page_summary;
+                    }
+                }
+            }
+            if ("page_unlocks_weapons" == "page_unlocks_weapons")
+            {
+                if ((unlockeditemcount("feature") || unlockeditemcount("challenge")))
+                {
+                    open page_unlocks_features;
+                }
+                else
+                {
+                    open page_summary;
+                }
+            }
+            if ("page_unlocks_weapons" == "page_unlocks_features")
+            {
+                open page_summary;
+            }
+            play mouse_over;
+        }
+        onESC
+        {
+            close self;
+            close self;
+        }
+        execKeyInt 1
+        {
+            close self;
+        }
+        itemDef
+        {
+            rect                        -854 -480 3416 1920 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0 0.66
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        -854 -480 3416 1920 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   1 1 1 1
+            background                  "xpbar_stencilbase"
+        }
+        itemDef
+        {
+            rect                        0 0 544 0 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.5 0.5 0.5 1
+            background                  "white"
+            exp rect h                  localvarint("ui_WeaponUnlocksHeight");
+        }
+        itemDef
+        {
+            rect                        0 0 1708 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.4
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  0 - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  0 - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 544 0 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "mockup_popup_bg_stencilfill"
+            exp rect h                  localvarint("ui_WeaponUnlocksHeight");
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.4
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  (- 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  (- 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        -64 -64 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tl"
+        }
+        itemDef
+        {
+            rect                        0 -64 544 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_t"
+        }
+        itemDef
+        {
+            rect                        544 -64 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tr"
+        }
+        itemDef
+        {
+            rect                        544 0 64 0 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_r"
+            exp rect h                  localvarint("ui_WeaponUnlocksHeight");
+        }
+        itemDef
+        {
+            rect                        544 0 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_br"
+            exp rect y                  (0 - 0) + (localvarint("ui_WeaponUnlocksHeight"));
+        }
+        itemDef
+        {
+            rect                        0 0 544 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_b"
+            exp rect y                  (0 - 0) + (localvarint("ui_WeaponUnlocksHeight"));
+        }
+        itemDef
+        {
+            rect                        -64 0 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_bl"
+            exp rect y                  (0 - 0) + (localvarint("ui_WeaponUnlocksHeight"));
+        }
+        itemDef
+        {
+            rect                        -64 0 64 0 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_l"
+            exp rect h                  localvarint("ui_WeaponUnlocksHeight");
+        }
+        itemDef
+        {
+            text                        "@MPUI_WEAPON_UNLOCKS"
+            rect                        0 0 544 28 0 0
+            decoration                  
+            visible                     1
+            textalign                   5
+            textscale                   0.5833
+            textfont                    9
+        }
+        itemDef
+        {
+            rect                        5 -19 272 24 2 1
+            visible                     1
+            textalign                   8
+            textalignx                  -1
+            textscale                   0.375
+            textfont                    3
+            action
+            {
+                play mouse_click;
+                escape self;
+            }
+            exp text                    localvarstring("ui_navbutton_a");
+            exp rect y                  localvarfloat("ui_WeaponUnlocksHeight") - 24;
+        }
+        itemDef
+        {
+            rect                        0 0 544 66 0 0
+            style                       3
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("camo"))));
+            textscale                   0.55
+            forecolor                   0 0 0 0.3
+            background                  "white"
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_CamoY");
+        }
+        itemDef
+        {
+            rect                        0 0 544 66 0 0
+            style                       3
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("camo"))));
+            textscale                   0.55
+            forecolor                   0 0 0 0.125
+            background                  "gradient_vertical_rect"
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_CamoY");
+        }
+        itemDef
+        {
+            rect                        0 0 544 18 0 0
+            style                       3
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("camo"))));
+            textscale                   0.55
+            forecolor                   0 0 0 0.38
+            background                  "gradient"
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_CamoY");
+        }
+        itemDef
+        {
+            rect                        0 0 544 18 0 0
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("camo"))));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textfont                    9
+            forecolor                   1 1 1 0.65
+            exp text                    "@MPUI_CAMO_PRE";
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_CamoY");
+        }
+        itemDef
+        {
+            rect                        180.333 0 3 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(1 < (unlockeditemcount("camo")));
+            textscale                   0.55
+            forecolor                   0 0 0 0.38
+            background                  "gradient_line_separator"
+            exp rect y                  localvarint("ui_CamoY") + 18;
+        }
+        itemDef
+        {
+            rect                        360.667 0 3 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(2 < (unlockeditemcount("camo")));
+            textscale                   0.55
+            forecolor                   0 0 0 0.38
+            background                  "gradient_line_separator"
+            exp rect y                  localvarint("ui_CamoY") + 18;
+        }
+        itemDef
+        {
+            rect                        3 0 177.333 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(0 < (unlockeditemcount("camo")));
+            textscale                   0.55
+            exp material                tablelookup("mp/camoTable.csv", 1, unlockeditem("camo", 0, 1), 5);
+            exp rect y                  localvarint("ui_CamoY") + 18;
+        }
+        itemDef
+        {
+            rect                        3 0 177.333 18 0 0
+            decoration                  
+            visible                     when(0 < (unlockeditemcount("camo")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("mp/statstable.csv", 4, unlockeditem("camo", 0, 0), 3);
+            exp rect y                  localvarint("ui_CamoY") + 18;
+        }
+        itemDef
+        {
+            rect                        3 0 177.333 18 0 0
+            decoration                  
+            autowrapped                 
+            visible                     when(0 < (unlockeditemcount("camo")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.35
+            textstyle                   3
+            textfont                    3
+            forecolor                   1 1 1 0.8
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, unlockeditem("camo", 0, 1), 2);
+            exp rect y                  localvarint("ui_CamoY") + 18 + 18;
+        }
+        itemDef
+        {
+            rect                        183.333 0 177.333 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(1 < (unlockeditemcount("camo")));
+            textscale                   0.55
+            exp material                tablelookup("mp/camoTable.csv", 1, unlockeditem("camo", 1, 1), 5);
+            exp rect y                  localvarint("ui_CamoY") + 18;
+        }
+        itemDef
+        {
+            rect                        183.333 0 177.333 18 0 0
+            decoration                  
+            visible                     when(1 < (unlockeditemcount("camo")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("mp/statstable.csv", 4, unlockeditem("camo", 1, 0), 3);
+            exp rect y                  localvarint("ui_CamoY") + 18;
+        }
+        itemDef
+        {
+            rect                        183.333 0 177.333 18 0 0
+            decoration                  
+            autowrapped                 
+            visible                     when(1 < (unlockeditemcount("camo")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.35
+            textstyle                   3
+            textfont                    3
+            forecolor                   1 1 1 0.8
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, unlockeditem("camo", 1, 1), 2);
+            exp rect y                  localvarint("ui_CamoY") + 18 + 18;
+        }
+        itemDef
+        {
+            rect                        363.667 0 177.333 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(2 < (unlockeditemcount("camo")));
+            textscale                   0.55
+            exp material                tablelookup("mp/camoTable.csv", 1, unlockeditem("camo", 2, 1), 5);
+            exp rect y                  localvarint("ui_CamoY") + 18;
+        }
+        itemDef
+        {
+            rect                        363.667 0 177.333 18 0 0
+            decoration                  
+            visible                     when(2 < (unlockeditemcount("camo")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("mp/statstable.csv", 4, unlockeditem("camo", 2, 0), 3);
+            exp rect y                  localvarint("ui_CamoY") + 18;
+        }
+        itemDef
+        {
+            rect                        363.667 0 177.333 18 0 0
+            decoration                  
+            autowrapped                 
+            visible                     when(2 < (unlockeditemcount("camo")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.35
+            textstyle                   3
+            textfont                    3
+            forecolor                   1 1 1 0.8
+            exp text                    "@" + tablelookup("mp/camoTable.csv", 1, unlockeditem("camo", 2, 1), 2);
+            exp rect y                  localvarint("ui_CamoY") + 18 + 18;
+        }
+        itemDef
+        {
+            text                        "..."
+            rect                        363.667 0 177.333 18 0 0
+            decoration                  
+            visible                     when((unlockeditemcount("camo")) > 2);
+            textalign                   2
+            textalignx                  -2
+            textaligny                  17
+            textscale                   0.4
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp rect y                  localvarint("ui_CamoY") + (18 + 48) - 18;
+        }
+        itemDef
+        {
+            rect                        0 0 544 66 0 0
+            style                       3
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("attachment"))));
+            textscale                   0.55
+            forecolor                   0 0 0 0.3
+            background                  "white"
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_AttachmentY");
+        }
+        itemDef
+        {
+            rect                        0 0 544 66 0 0
+            style                       3
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("attachment"))));
+            textscale                   0.55
+            forecolor                   0 0 0 0.125
+            background                  "gradient_vertical_rect"
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_AttachmentY");
+        }
+        itemDef
+        {
+            rect                        0 0 544 18 0 0
+            style                       3
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("attachment"))));
+            textscale                   0.55
+            forecolor                   0 0 0 0.38
+            background                  "gradient"
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_AttachmentY");
+        }
+        itemDef
+        {
+            rect                        0 0 544 18 0 0
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("attachment"))));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textfont                    9
+            forecolor                   1 1 1 0.65
+            exp text                    "@MPUI_ATTACHMENT_PRE";
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_AttachmentY");
+        }
+        itemDef
+        {
+            rect                        180.333 0 3 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(1 < (unlockeditemcount("attachment")));
+            textscale                   0.55
+            forecolor                   0 0 0 0.38
+            background                  "gradient_line_separator"
+            exp rect y                  localvarint("ui_AttachmentY") + 18;
+        }
+        itemDef
+        {
+            rect                        360.667 0 3 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(2 < (unlockeditemcount("attachment")));
+            textscale                   0.55
+            forecolor                   0 0 0 0.38
+            background                  "gradient_line_separator"
+            exp rect y                  localvarint("ui_AttachmentY") + 18;
+        }
+        itemDef
+        {
+            rect                        132.333 0 48 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(0 < (unlockeditemcount("attachment")));
+            textscale                   0.55
+            exp material                tablelookup("mp/attachmentTable.csv", 4, unlockeditem("attachment", 0, 1), 6);
+            exp rect y                  localvarint("ui_AttachmentY") + 18;
+        }
+        itemDef
+        {
+            rect                        3 0 177.333 18 0 0
+            decoration                  
+            visible                     when(0 < (unlockeditemcount("attachment")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("mp/statstable.csv", 4, unlockeditem("attachment", 0, 0), 3);
+            exp rect y                  localvarint("ui_AttachmentY") + 18;
+        }
+        itemDef
+        {
+            rect                        3 0 177.333 18 0 0
+            decoration                  
+            autowrapped                 
+            visible                     when(0 < (unlockeditemcount("attachment")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.35
+            textstyle                   3
+            textfont                    3
+            forecolor                   1 1 1 0.8
+            exp text                    "@" + tablelookup("mp/attachmentTable.csv", 4, unlockeditem("attachment", 0, 1), 3);
+            exp rect y                  localvarint("ui_AttachmentY") + 18 + 18;
+        }
+        itemDef
+        {
+            rect                        312.667 0 48 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(1 < (unlockeditemcount("attachment")));
+            textscale                   0.55
+            exp material                tablelookup("mp/attachmentTable.csv", 4, unlockeditem("attachment", 1, 1), 6);
+            exp rect y                  localvarint("ui_AttachmentY") + 18;
+        }
+        itemDef
+        {
+            rect                        183.333 0 177.333 18 0 0
+            decoration                  
+            visible                     when(1 < (unlockeditemcount("attachment")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("mp/statstable.csv", 4, unlockeditem("attachment", 1, 0), 3);
+            exp rect y                  localvarint("ui_AttachmentY") + 18;
+        }
+        itemDef
+        {
+            rect                        183.333 0 177.333 18 0 0
+            decoration                  
+            autowrapped                 
+            visible                     when(1 < (unlockeditemcount("attachment")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.35
+            textstyle                   3
+            textfont                    3
+            forecolor                   1 1 1 0.8
+            exp text                    "@" + tablelookup("mp/attachmentTable.csv", 4, unlockeditem("attachment", 1, 1), 3);
+            exp rect y                  localvarint("ui_AttachmentY") + 18 + 18;
+        }
+        itemDef
+        {
+            rect                        493 0 48 48 0 0
+            style                       3
+            decoration                  
+            visible                     when(2 < (unlockeditemcount("attachment")));
+            textscale                   0.55
+            exp material                tablelookup("mp/attachmentTable.csv", 4, unlockeditem("attachment", 2, 1), 6);
+            exp rect y                  localvarint("ui_AttachmentY") + 18;
+        }
+        itemDef
+        {
+            rect                        363.667 0 177.333 18 0 0
+            decoration                  
+            visible                     when(2 < (unlockeditemcount("attachment")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("mp/statstable.csv", 4, unlockeditem("attachment", 2, 0), 3);
+            exp rect y                  localvarint("ui_AttachmentY") + 18;
+        }
+        itemDef
+        {
+            rect                        363.667 0 177.333 18 0 0
+            decoration                  
+            autowrapped                 
+            visible                     when(2 < (unlockeditemcount("attachment")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.35
+            textstyle                   3
+            textfont                    3
+            forecolor                   1 1 1 0.8
+            exp text                    "@" + tablelookup("mp/attachmentTable.csv", 4, unlockeditem("attachment", 2, 1), 3);
+            exp rect y                  localvarint("ui_AttachmentY") + 18 + 18;
+        }
+        itemDef
+        {
+            text                        "..."
+            rect                        363.667 0 177.333 18 0 0
+            decoration                  
+            visible                     when((unlockeditemcount("attachment")) > 3);
+            textalign                   2
+            textalignx                  -2
+            textaligny                  17
+            textscale                   0.4
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp rect y                  localvarint("ui_AttachmentY") + (18 + 48) - 18;
+        }
+        itemDef
+        {
+            rect                        0 0 544 143 0 0
+            style                       3
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("weapon"))));
+            textscale                   0.55
+            forecolor                   0 0 0 0.3
+            background                  "white"
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_WeaponY");
+        }
+        itemDef
+        {
+            rect                        0 0 544 143 0 0
+            style                       3
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("weapon"))));
+            textscale                   0.55
+            forecolor                   0 0 0 0.125
+            background                  "gradient_vertical_rect"
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_WeaponY");
+        }
+        itemDef
+        {
+            rect                        0 0 544 18 0 0
+            style                       3
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("weapon"))));
+            textscale                   0.55
+            forecolor                   0 0 0 0.38
+            background                  "gradient"
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_WeaponY");
+        }
+        itemDef
+        {
+            rect                        0 0 544 18 0 0
+            decoration                  
+            visible                     when(("itemIndex" < (unlockeditemcount("weapon"))));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textfont                    9
+            forecolor                   1 1 1 0.65
+            exp text                    "@MPUI_WEAPON_PRE";
+            exp rect x                  0;
+            exp rect y                  localvarint("ui_WeaponY");
+        }
+        itemDef
+        {
+            rect                        270.5 0 3 125 0 0
+            style                       3
+            decoration                  
+            visible                     when(1 < (unlockeditemcount("weapon")));
+            textscale                   0.55
+            forecolor                   0 0 0 0.38
+            background                  "gradient_line_separator"
+            exp rect y                  localvarint("ui_WeaponY") + 18;
+        }
+        itemDef
+        {
+            rect                        70.5 0 200 100 0 0
+            style                       3
+            decoration                  
+            visible                     when(0 < (unlockeditemcount("weapon")));
+            textscale                   0.55
+            exp material                tablelookup("mp/statsTable.csv", 4, unlockeditem("weapon", 0), 6);
+            exp rect y                  localvarint("ui_WeaponY") + 18;
+        }
+        itemDef
+        {
+            rect                        3 0 267.5 18 0 0
+            decoration                  
+            visible                     when(0 < (unlockeditemcount("weapon")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("mp/statsTable.csv", 4, unlockeditem("weapon", 0), 3);
+            exp rect y                  localvarint("ui_WeaponY") + 18;
+        }
+        itemDef
+        {
+            rect                        3 0 267.5 36 0 0
+            decoration                  
+            autowrapped                 
+            visible                     when(0 < (unlockeditemcount("weapon")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.35
+            textstyle                   3
+            textfont                    3
+            forecolor                   1 1 1 0.8
+            exp text                    "@" + tablelookup("mp/statstable.csv", 4, unlockeditem("weapon", 0), 7);
+            exp rect y                  localvarint("ui_WeaponY") + (18 + 125) - 36;
+        }
+        itemDef
+        {
+            rect                        341 0 200 100 0 0
+            style                       3
+            decoration                  
+            visible                     when(1 < (unlockeditemcount("weapon")));
+            textscale                   0.55
+            exp material                tablelookup("mp/statsTable.csv", 4, unlockeditem("weapon", 1), 6);
+            exp rect y                  localvarint("ui_WeaponY") + 18;
+        }
+        itemDef
+        {
+            rect                        273.5 0 267.5 18 0 0
+            decoration                  
+            visible                     when(1 < (unlockeditemcount("weapon")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("mp/statsTable.csv", 4, unlockeditem("weapon", 1), 3);
+            exp rect y                  localvarint("ui_WeaponY") + 18;
+        }
+        itemDef
+        {
+            rect                        273.5 0 267.5 36 0 0
+            decoration                  
+            autowrapped                 
+            visible                     when(1 < (unlockeditemcount("weapon")));
+            textalignx                  3
+            textaligny                  16
+            textscale                   0.35
+            textstyle                   3
+            textfont                    3
+            forecolor                   1 1 1 0.8
+            exp text                    "@" + tablelookup("mp/statstable.csv", 4, unlockeditem("weapon", 1), 7);
+            exp rect y                  localvarint("ui_WeaponY") + (18 + 125) - 36;
+        }
+        itemDef
+        {
+            text                        "..."
+            rect                        273.5 0 267.5 18 0 0
+            decoration                  
+            visible                     when((unlockeditemcount("weapon")) > 2);
+            textalign                   2
+            textalignx                  -2
+            textaligny                  17
+            textscale                   0.4
+            textstyle                   3
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp rect y                  localvarint("ui_WeaponY") + (18 + 125) - 18;
+        }
+    }
+}

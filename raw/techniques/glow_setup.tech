@@ -1,0 +1,15 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "glow_setup.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "glow_setup.hlsl"
+  {
+    colorMapSampler = sampler.resolvedScene;
+    colorMapPostSunSampler = sampler.resolvedPostSun;
+  }
+  // Cannot dump vertex decl ppt0t0 due to being a referenced asset
+}

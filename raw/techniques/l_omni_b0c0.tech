@@ -1,0 +1,6 @@
+{
+  stateMap "passthrough"; // TODO
+  // Cannot dump vertex shader l_point_tc0.hlsl due to being a referenced asset
+  // Cannot dump pixel shader l_omni_b0c0.hlsl due to being a referenced asset
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

@@ -1,0 +1,23 @@
+{
+    menuDef
+    {
+        name                        "missionobjective"
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     1
+        itemDef
+        {
+            name                        "backdrop"
+            rect                        -1 -1 1 1 0 0
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   101
+            textscale                   0.55
+            forecolor                   0 0 0 0.7
+        }
+    }
+}

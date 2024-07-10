@@ -1,0 +1,23 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "custom_growing_ice_cracks_lm_omni_dfog_s_tc0_sm3.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "custom_growing_ice_cracks_lm_spot_dfog_b0c0s0_sm3.hlsl"
+  {
+    specularMapSampler = material.specularMap;
+    colorMapSampler = material.colorMap;
+    lightSpotDir = constant.light.spotDir;
+    lightSpotFactors = constant.light.spotFactors;
+    lightFalloffPlacement = constant.light.falloffPlacement;
+    lightPosition = constant.light.position;
+    lightDiffuse = constant.light.diffuse;
+    lightSpecular = constant.light.specular;
+    envMapParms = material.envMapParms;
+  }
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

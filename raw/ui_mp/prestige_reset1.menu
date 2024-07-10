@@ -1,0 +1,309 @@
+{
+    menuDef
+    {
+        name                        "prestige_reset1"
+        rect                        -150 -102 300 204 2 2
+        style                       1
+        backcolor                   1 1 1 1
+        focuscolor                  1 1 1 1
+        background                  "white"
+        outOfBoundsClick            
+        popup                       
+        allowedBinding              "+talk"
+        visible                     1
+        exp rect Y                  0 - (24 + 9 * 20) / 2;
+        onOpen
+        {
+            setFocus cancel_button;
+        }
+        onESC
+        {
+            close self;
+        }
+        itemDef
+        {
+            rect                        -854 -480 3416 1920 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0 0.35
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        -854 -480 3416 1920 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   1 1 1 1
+            background                  "xpbar_stencilbase"
+        }
+        itemDef
+        {
+            rect                        -277 0 854 204 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.5 0.5 0.5 1
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        0 0 1708 480 2 9
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  (0 - (854 - 300) * 0.5) - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 2 9
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  (0 - (854 - 300) * 0.5) - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        -277 0 854 0 2 9
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "mockup_popup_bg_stencilfill"
+            exp rect h                  (24 + 9 * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 2 9
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  (0 - (854 - 300) * 0.5) + (0 - 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 2 9
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  (0 - (854 - 300) * 0.5) + (0 - 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        -341 -64 64 64 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tl"
+        }
+        itemDef
+        {
+            rect                        -277 -64 854 64 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_t"
+        }
+        itemDef
+        {
+            rect                        577 -64 64 64 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tr"
+        }
+        itemDef
+        {
+            rect                        577 0 64 204 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_r"
+        }
+        itemDef
+        {
+            rect                        577 204 64 64 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_br"
+        }
+        itemDef
+        {
+            rect                        -277 204 854 64 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_b"
+        }
+        itemDef
+        {
+            rect                        -341 204 64 64 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_bl"
+        }
+        itemDef
+        {
+            rect                        -341 0 64 204 2 2
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_l"
+        }
+        itemDef
+        {
+            rect                        0 0 300 24 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   5
+            textscale                   0.375
+            textfont                    9
+            background                  "gradient_fadein"
+            exp text                    "@MENU_PRESTIGE_RESET_TITLE1";
+        }
+        itemDef
+        {
+            group                       "mw2_button"
+            rect                        4 24 292 20 0 0
+            style                       1
+            decoration                  
+            autowrapped                 
+            type                        1
+            visible                     1
+            textalign                   4
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 1 0.65
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            exp text                    "@PATCH_PRESTIGE_RESET_WARNING1";
+        }
+        itemDef
+        {
+            text                        "@MENU_PRESTIGE_RESET_TITLE2"
+            group                       "mw2_popup_button"
+            rect                        4 164 292 20 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalign                   4
+            textalignx                  4
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_flipped"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                close self open prestige_reset2;
+            }
+        }
+        itemDef
+        {
+            name                        "cancel_button"
+            text                        "@MENU_CANCEL"
+            group                       "mw2_popup_button"
+            rect                        4 184 292 20 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalign                   4
+            textalignx                  4
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar_flipped"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                close self;
+            }
+        }
+    }
+}

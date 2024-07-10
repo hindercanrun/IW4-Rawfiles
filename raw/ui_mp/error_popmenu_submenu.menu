@@ -1,0 +1,93 @@
+{
+    menuDef
+    {
+        name                        "error_popmenu_submenu"
+        fullscreen                  1
+        rect                        0 0 640 480 0 0
+        style                       1
+        border                      1
+        focuscolor                  1 1 1 1
+        onClose
+        {
+            uiScript clearError resolveError;
+        }
+        onESC
+        {
+            uiScript clearError;
+            close error_popmenu_submenu;
+        }
+        itemDef
+        {
+            name                        "backimage2fade"
+            rect                        -128 0 896 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0 0.3
+            forecolor                   0 0 0 0.3
+            background                  "white"
+        }
+        itemDef
+        {
+            name                        "backimage2fade"
+            rect                        50 177 535 200 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "popmenu_bg"
+        }
+        itemDef
+        {
+            name                        "confirm"
+            rect                        326 200 110 20 0 0
+            decoration                  
+            visible                     1
+            textalign                   1
+            textalignx                  -62
+            textaligny                  5
+            textscale                   0.5833
+            forecolor                   1 0.8 0.4 1
+            dvar                        "com_errorTitle"
+        }
+        itemDef
+        {
+            name                        "errorinfo"
+            rect                        120 210 400 255 0 0
+            style                       1
+            decoration                  
+            autowrapped                 
+            visible                     1
+            textalign                   1
+            textaligny                  23
+            textscale                   0.35
+            dvar                        "com_errorMessage"
+        }
+        itemDef
+        {
+            name                        "back"
+            text                        "@MENU_EXIT"
+            rect                        270 360 100 17 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalign                   1
+            textaligny                  13
+            textscale                   0.3
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                uiScript clearError;
+                resolveError;
+                close error_popmenu_submenu;
+            }
+        }
+    }
+}

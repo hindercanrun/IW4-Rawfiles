@@ -1,0 +1,177 @@
+{
+    menuDef
+    {
+        name                        "playercard_killedby_hd"
+        rect                        0 0 640 480 4 4
+        visible                     when(FUNC_68());
+        exp rect Y                  (max(min((1 - (milliseconds() - localvarint("ui_show_killedBy")) / 150), 1), 0) * (180));
+        itemDef
+        {
+            rect                        0 0 208 48 9 10
+            style                       3
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0));
+            textscale                   0.55
+            forecolor                   0 0 0 0.25
+            background                  "white"
+            exp rect x                  (0 - 104);
+            exp rect y                  (- 80);
+        }
+        itemDef
+        {
+            rect                        0 0 208 48 9 10
+            style                       1
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0));
+            textalign                   4
+            textaligny                  -20
+            textscale                   0.375
+            textstyle                   7
+            textfont                    6
+            backcolor                   1 1 1 1
+            background                  "cardtitle_248x48"
+            exp rect x                  (0 - 104);
+            exp rect y                  (- 80);
+        }
+        itemDef
+        {
+            rect                        0 0 160 32 9 10
+            style                       1
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0));
+            textalign                   9
+            textscale                   0.375
+            textstyle                   8
+            textfont                    3
+            backcolor                   1 1 1 1
+            exp text                    "@" + tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 7), 1);
+            exp material                tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 7), 2);
+            exp rect x                  0 - 104;
+            exp rect y                  - 80 - 2;
+            exp forecolor r             tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 7), 3);
+            exp forecolor g             tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 7), 4);
+            exp forecolor b             tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 7), 5);
+        }
+        itemDef
+        {
+            rect                        0 0 160 18 9 10
+            decoration                  
+            visible                     when(FUNC_22());
+            textalign                   4
+            textalignx                  8
+            textscale                   0.3333
+            textstyle                   8
+            textfont                    10
+            forecolor                   0.6 0.8 0.6 1
+            exp text                    getplayercardinfo(8, 0, 7);
+            exp rect x                  0 - 104;
+            exp rect y                  (- 80) + 28;
+        }
+        itemDef
+        {
+            rect                        0 0 160 18 9 10
+            decoration                  
+            visible                     when(FUNC_25());
+            textalign                   4
+            textalignx                  8
+            textscale                   0.3333
+            textstyle                   8
+            textfont                    10
+            forecolor                   0.8 0.35 0.4 1
+            exp text                    getplayercardinfo(8, 0, 7);
+            exp rect x                  0 - 104;
+            exp rect y                  (- 80) + 28;
+        }
+        itemDef
+        {
+            rect                        0 0 48 48 9 10
+            style                       3
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0));
+            textscale                   0.55
+            exp material                tablelookupbyrow("mp/cardIconTable.csv", getplayercardinfo(2, 0, 7), 1);
+            exp rect x                  (0 - 104) + 160;
+            exp rect y                  (- 80);
+        }
+        itemDef
+        {
+            rect                        0 0 208 20 9 10
+            style                       3
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0));
+            textscale                   0.55
+            forecolor                   0 0 0 0.25
+            background                  "white"
+            exp rect x                  (0 - 104);
+            exp rect y                  (- 80) + 48;
+        }
+        itemDef
+        {
+            rect                        0 0 208 20 9 10
+            style                       1
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0));
+            textscale                   0.55
+            backcolor                   1 1 1 1
+            background                  "cardtitle_248x20"
+            exp rect x                  (0 - 104);
+            exp rect y                  (- 80) + 48;
+        }
+        itemDef
+        {
+            rect                        0 0 208 20 9 10
+            style                       1
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0) && getplayercardinfo(9, 0, 7) != "");
+            textalign                   8
+            textalignx                  8
+            textscale                   0.375
+            textstyle                   7
+            textfont                    3
+            exp text                    "[" + getplayercardinfo(9, 0, 7) + "]";
+            exp rect x                  (0 - 104);
+            exp rect y                  (- 80) + 48;
+        }
+        itemDef
+        {
+            rect                        0 0 20 20 9 10
+            style                       1
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0) && (getplayercardinfo(4, 0, 7) >= 0));
+            textscale                   0.55
+            backcolor                   1 1 1 1
+            exp material                tablelookup("mp/rankIconTable.csv", 0, getplayercardinfo(4, 0, 7), (getplayercardinfo(5, 0, 7) + 1));
+            exp rect x                  (0 - 104) + 164;
+            exp rect y                  (- 80) + 48;
+        }
+        itemDef
+        {
+            rect                        0 0 20 20 9 10
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0) && (getplayercardinfo(4, 0, 7) >= 0));
+            textalign                   9
+            textalignx                  20
+            textscale                   0.375
+            textstyle                   7
+            textfont                    3
+            exp text                    tablelookup("mp/rankTable.csv", 0, getplayercardinfo(4, 0, 7), 14);
+            exp rect x                  (0 - 104) + 164;
+            exp rect y                  (- 80) + 48;
+        }
+        itemDef
+        {
+            rect                        0 0 208 20 9 10
+            style                       1
+            decoration                  
+            visible                     when((getplayercardinfo(0, 0, 7) != 0) && FUNC_45());
+            textalign                   5
+            textscale                   0.375
+            textstyle                   8
+            textfont                    6
+            glowcolor                   1 0.8 0.6 1
+            exp text                    "@MP_KILLED_BY";
+            exp rect x                  (0 - 104);
+            exp rect y                  (- 80) + (0 - 20);
+        }
+    }
+}

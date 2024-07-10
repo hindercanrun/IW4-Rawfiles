@@ -1,0 +1,75 @@
+{
+    menuDef
+    {
+        name                        "playercard_spectator_sd"
+        rect                        0 0 640 480 4 4
+        visible                     when(FUNC_79() && (getplayercardinfo(0, 0, 6)) && (FUNC_61() && FUNC_58()));
+        exp rect X                  (max((1 - (getplayercardinfo(7, 0, 6) / 150)), 0) * (208));
+        itemDef
+        {
+            rect                        0 0 208 48 2 1
+            style                       3
+            decoration                  
+            border                      1
+            borderSize                  1
+            visible                     when(1 && (getplayercardinfo(0, 0, 6) != 0));
+            textscale                   0.55
+            bordercolor                 0 0 0 0.75
+            background                  "cardtitle_248x48"
+            exp rect x                  (0) - ((208) / 2);
+            exp rect y                  30;
+        }
+        itemDef
+        {
+            rect                        0 0 160 32 2 1
+            style                       3
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 0, 6) != 0));
+            textscale                   0.55
+            exp material                tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 6), 2);
+            exp rect x                  (0) - ((208) / 2);
+            exp rect y                  30 - 2;
+        }
+        itemDef
+        {
+            rect                        0 0 160 32 2 1
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 0, 6) != 0));
+            textalign                   9
+            textscale                   0.375
+            textstyle                   8
+            textfont                    3
+            exp text                    "@" + tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 6), 1);
+            exp rect x                  (0) - ((208) / 2);
+            exp rect y                  30 - 2;
+            exp forecolor r             tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 6), 3);
+            exp forecolor g             tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 6), 4);
+            exp forecolor b             tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 0, 6), 5);
+        }
+        itemDef
+        {
+            rect                        0 0 160 18 2 1
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 0, 6) != 0));
+            textalign                   4
+            textalignx                  8
+            textscale                   0.3333
+            textstyle                   8
+            textfont                    10
+            exp text                    getplayercardinfo(8, 0, 6);
+            exp rect x                  (0) - ((208) / 2);
+            exp rect y                  (30) + 28;
+        }
+        itemDef
+        {
+            rect                        0 0 48 48 2 1
+            style                       3
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 0, 6) != 0));
+            textscale                   0.55
+            exp material                tablelookupbyrow("mp/cardIconTable.csv", getplayercardinfo(2, 0, 6), 1);
+            exp rect x                  ((0) - ((208) / 2)) + 158;
+            exp rect y                  (30);
+        }
+    }
+}

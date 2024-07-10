@@ -1,0 +1,144 @@
+{
+    menuDef
+    {
+        name                        "weaponjavelinhud"
+        rect                        0 0 960 480 2 2
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     when(adsjavelin());
+        itemDef
+        {
+            name                        "WeaponJavelinTargets"
+            rect                        -320 -240 640 480 0 0
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   192
+            textscale                   0.55
+            background                  "white"
+        }
+        itemDef
+        {
+            name                        "javelinlockbox"
+            rect                        -80 -40 160 80 0 0
+            style                       3
+            decoration                  
+            visible                     when(weaplockblink(11));
+            textscale                   0.55
+            background                  "hud_javelin_lock_box"
+        }
+        itemDef
+        {
+            name                        "javelinfilmgrain"
+            rect                        -230 -125 460 260 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "javelin_overlay_grain"
+        }
+        itemDef
+        {
+            name                        "WeaponJavelinBG"
+            rect                        -427 -240 854 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "hud_javelin_bg"
+        }
+        itemDef
+        {
+            name                        "javelinlockon"
+            rect                        154 -198 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(weaplockblink(4.5));
+            textscale                   0.55
+            background                  "hud_javelin_lock_on"
+        }
+        itemDef
+        {
+            name                        "javelincluon"
+            rect                        -300 -28 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(weaplockblink(0) && !weapattacktop() && !weapattackdirect());
+            textscale                   0.55
+            background                  "hud_javelin_clu_on"
+        }
+        itemDef
+        {
+            name                        "javelintopoff"
+            rect                        228 -124 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(weapattacktop());
+            textscale                   0.55
+            background                  "hud_javelin_top_on"
+        }
+        itemDef
+        {
+            name                        "javelindiroff"
+            rect                        228 -28 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(weapattackdirect());
+            textscale                   0.55
+            background                  "hud_javelin_dir_on"
+        }
+        itemDef
+        {
+            name                        "javelinday"
+            rect                        -226 -198 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(!player("nightvision"));
+            textscale                   0.55
+            background                  "hud_javelin_day_on"
+        }
+        itemDef
+        {
+            name                        "javelinnight"
+            rect                        -300 -125 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(player("nightvision"));
+            textscale                   0.55
+            background                  "hud_javelin_night_on"
+        }
+        itemDef
+        {
+            name                        "javelinrocket_on"
+            rect                        30 144 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(player("clipammo"));
+            textscale                   0.55
+            background                  "hud_javelin_rocket_on"
+        }
+        itemDef
+        {
+            name                        "javelinnorocket_on"
+            rect                        154 144 64 64 0 0
+            style                       3
+            decoration                  
+            visible                     when(!player("clipammo"));
+            textscale                   0.55
+            background                  "hud_javelin_norocket_on"
+        }
+        itemDef
+        {
+            name                        "chRect"
+            rect                        0 -90 0 0 2 2
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   113
+            textscale                   0.4583
+            textstyle                   3
+            textfont                    6
+        }
+    }
+}

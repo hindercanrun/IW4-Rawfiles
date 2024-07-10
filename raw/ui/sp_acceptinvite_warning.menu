@@ -1,0 +1,224 @@
+{
+    menuDef
+    {
+        name                        "sp_acceptinvite_warning"
+        rect                        204 135 235 160 0 0
+        style                       1
+        border                      1
+        focuscolor                  1 1 1 1
+        popup                       
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        blurWorld                   4.8
+        onOpen
+        {
+            focusFirst;
+        }
+        onESC
+        {
+            close sp_acceptinvite_warning;
+            open pausedmenu;
+        }
+        itemDef
+        {
+            name                        "backimage2fade"
+            rect                        -160 2 555 180 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "popmenu_bg"
+        }
+        itemDef
+        {
+            name                        "confirm"
+            text                        "@MENU_CONTINUE_SAVING"
+            rect                        126 25 110 20 0 0
+            decoration                  
+            visible                     when((!dvarbool(arcademode) && !dvarbool(coop) && !dvarbool(specialops)));
+            textalign                   1
+            textalignx                  -62
+            textaligny                  5
+            textscale                   0.5833
+            forecolor                   1 0.8 0.4 1
+        }
+        itemDef
+        {
+            name                        "txt"
+            text                        "@MENU_SAVEQUIT_TEXT_1"
+            rect                        70 35 110 20 0 0
+            style                       1
+            decoration                  
+            type                        1
+            visible                     when((!dvarbool(arcademode) && !dvarbool(coop) && !dvarbool(specialops)));
+            textalign                   1
+            textalignx                  -5
+            textaligny                  19
+            textscale                   0.35
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+        }
+        itemDef
+        {
+            name                        "txt"
+            text                        "@MENU_SAVEQUIT_TEXT_2"
+            rect                        70 50 110 20 0 0
+            style                       1
+            decoration                  
+            type                        1
+            visible                     when((!dvarbool(arcademode) && !dvarbool(coop) && !dvarbool(specialops)));
+            textalign                   1
+            textalignx                  -5
+            textaligny                  19
+            textscale                   0.35
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+        }
+        itemDef
+        {
+            name                        "txt"
+            text                        "@MENU_SAVEQUIT_TEXT_3"
+            rect                        70 65 110 20 0 0
+            style                       1
+            decoration                  
+            type                        1
+            visible                     when((!dvarbool(arcademode) && !dvarbool(coop) && !dvarbool(specialops)));
+            textalign                   1
+            textalignx                  -5
+            textaligny                  19
+            textscale                   0.35
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+        }
+        itemDef
+        {
+            name                        "resumegame"
+            text                        "@MENU_RESUMEGAME"
+            rect                        70 100 220 15 0 0
+            style                       1
+            type                        1
+            visible                     when((!dvarbool(arcademode) && !dvarbool(coop) && !dvarbool(specialops)));
+            textalign                   1
+            textalignx                  -60
+            textaligny                  19
+            textscale                   0.4583
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                close sp_acceptinvite_warning;
+                close pausedmenu;
+                uiScript saveRevert;
+            }
+        }
+        itemDef
+        {
+            name                        "saveandquit"
+            text                        "@CGAME_CONTINUE_SAVING"
+            rect                        70 125 220 15 0 0
+            style                       1
+            type                        1
+            visible                     when((!dvarbool(arcademode) && !dvarbool(coop) && !dvarbool(specialops)));
+            textalign                   1
+            textalignx                  -60
+            textaligny                  19
+            textscale                   0.4583
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                close sp_acceptinvite_warning;
+                setSaveExecOnSuccess disconnect open savegameinfo;
+                setdvar ui_skipMainLockout 1;
+            }
+        }
+        itemDef
+        {
+            name                        "confirm"
+            text                        "@MENU_QUIT_WARNING_ARCADE"
+            rect                        126 25 110 20 0 0
+            decoration                  
+            visible                     when(!(!dvarbool(arcademode) && !dvarbool(coop) && !dvarbool(specialops)));
+            textalign                   1
+            textalignx                  -62
+            textscale                   0.4583
+            forecolor                   1 0.8 0.4 1
+        }
+        itemDef
+        {
+            name                        "confirm"
+            text                        "@MENU_QUIT_WARNING"
+            rect                        126 25 110 20 0 0
+            decoration                  
+            visible                     when(dvarstring(credits_active) == "1");
+            textalign                   1
+            textalignx                  -62
+            textaligny                  5
+            textscale                   0.5833
+            forecolor                   1 0.8 0.4 1
+        }
+        itemDef
+        {
+            name                        "resumegame2"
+            text                        "@MENU_RESUMEGAME"
+            rect                        70 65 220 15 0 0
+            style                       1
+            type                        1
+            visible                     when(!(!dvarbool(arcademode) && !dvarbool(coop) && !dvarbool(specialops)));
+            textalign                   1
+            textalignx                  -60
+            textaligny                  19
+            textscale                   0.4583
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                close sp_acceptinvite_warning;
+                close pausedmenu;
+                uiScript saveRevert;
+            }
+        }
+        itemDef
+        {
+            name                        "quit"
+            text                        "@PLATFORM_QUIT"
+            rect                        70 90 220 15 0 0
+            style                       1
+            type                        1
+            visible                     when(!(!dvarbool(arcademode) && !dvarbool(coop) && !dvarbool(specialops)));
+            textalign                   1
+            textalignx                  -60
+            textaligny                  19
+            textscale                   0.4583
+            textfont                    1
+            forecolor                   0.4823 0.4823 0.4823 1
+            onFocus
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                close sp_acceptinvite_warning;
+                close pausedmenu;
+                exec confirmInvite;
+            }
+        }
+    }
+}

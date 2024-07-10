@@ -1,0 +1,239 @@
+{
+    functionDef
+    {
+        name                        "FUNC_0"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_1"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_2"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_3"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_4"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_5"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_6"
+        value                       team("name") == "TEAM_ALLIES";
+    }
+    functionDef
+    {
+        name                        "FUNC_7"
+        value                       team("name") == "TEAM_AXIS";
+    }
+    functionDef
+    {
+        name                        "FUNC_8"
+        value                       ((team("name") == "TEAM_AXIS") * 1) + ((team("name") == "TEAM_ALLIES") * 2);
+    }
+    functionDef
+    {
+        name                        "FUNC_9"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14);
+    }
+    functionDef
+    {
+        name                        "FUNC_10"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15);
+    }
+    functionDef
+    {
+        name                        "FUNC_11"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16);
+    }
+    functionDef
+    {
+        name                        "FUNC_12"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14);
+    }
+    functionDef
+    {
+        name                        "FUNC_13"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15);
+    }
+    functionDef
+    {
+        name                        "FUNC_14"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16);
+    }
+    functionDef
+    {
+        name                        "FUNC_15"
+        value                       (FUNC_12() * FUNC_7()) + (FUNC_9() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_16"
+        value                       (FUNC_13() * FUNC_7()) + (FUNC_10() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_17"
+        value                       (FUNC_14() * FUNC_7()) + (FUNC_11() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_18"
+        value                       (FUNC_12() * !(FUNC_7())) + (FUNC_9() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_19"
+        value                       (FUNC_13() * !(FUNC_7())) + (FUNC_10() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_20"
+        value                       (FUNC_14() * !(FUNC_7())) + (FUNC_11() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_21"
+        value                       max(0, (localvarint("ui_ac130timer") - milliseconds()) / 1000);
+    }
+    functionDef
+    {
+        name                        "FUNC_22"
+        value                       (getplayercardinfo(0, 0, 7) != 0) && (getplayercardinfo(6, 0, 7) && getplayercardinfo(6, 0, 7) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_23"
+        value                       (getplayercardinfo(0, 0, 8) != 0) && (getplayercardinfo(6, 0, 8) && getplayercardinfo(6, 0, 8) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_24"
+        value                       (getplayercardinfo(0, 0, 5) != 0) && (getplayercardinfo(6, 0, 5) && getplayercardinfo(6, 0, 5) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_25"
+        value                       (getplayercardinfo(0, 0, 7) != 0) && (!getplayercardinfo(6, 0, 7) || getplayercardinfo(6, 0, 7) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_26"
+        value                       (getplayercardinfo(0, 0, 8) != 0) && (!getplayercardinfo(6, 0, 8) || getplayercardinfo(6, 0, 8) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_27"
+        value                       (getplayercardinfo(0, 0, 5) != 0) && (!getplayercardinfo(6, 0, 5) || getplayercardinfo(6, 0, 5) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_28"
+        value                       getplayerdata("customClasses", 0, "inUse") || getplayerdata("customClasses", 1, "inUse") || getplayerdata("customClasses", 2, "inUse") || getplayerdata("customClasses", 3, "inUse") || getplayerdata("customClasses", 4, "inUse") || getplayerdata("customClasses", 5, "inUse") || getplayerdata("customClasses", 6, "inUse") || getplayerdata("customClasses", 7, "inUse") || getplayerdata("customClasses", 8, "inUse") || getplayerdata("customClasses", 9, "inUse");
+    }
+    functionDef
+    {
+        name                        "FUNC_29"
+        value                       dvarbool(cl_ingame) || dvarbool(sv_running);
+    }
+    functionDef
+    {
+        name                        "FUNC_30"
+        value                       dvarbool(cl_ingame) || dvarbool(sv_running) || inlobby();
+    }
+    functionDef
+    {
+        name                        "FUNC_31"
+        value                       (dvarstring(gameMode) == "so" && FUNC_30()) || (dvarstring(gameMode) == "mp" && FUNC_30());
+    }
+    functionDef
+    {
+        name                        "FUNC_33"
+        value                       player("fragAmmo");
+    }
+    functionDef
+    {
+        name                        "FUNC_34"
+        value                       player("smokeAmmo");
+    }
+    loadMenu { "ui/error_popmenu.menu" }
+    loadMenu { "ui/error_popmenu_submenu.menu" }
+    loadMenu { "ui/save_corrupted.menu" }
+    loadMenu { "ui/popup_connecting.menu" }
+    loadMenu { "ui/popup_acceptinginvite.menu" }
+    loadMenu { "ui/popup_gettingdata.menu" }
+    loadMenu { "ui/error_popmenu_party.menu" }
+    loadMenu { "ui/error_popmenu_lobby.menu" }
+    loadMenu { "ui/popup_reconnectingtoparty.menu" }
+    loadMenu { "ui/acceptinvite_warning.menu" }
+    loadMenu { "ui/pregame_loaderror.menu" }
+    loadMenu { "ui/pregame_loaderror_mp.menu" }
+    loadMenu { "ui/menu_resetstats_warning.menu" }
+    loadMenu { "ui/pausedmenu.menu" }
+    loadMenu { "ui/pausedbkgnd.menu" }
+    loadMenu { "ui/objectiveinfo.menu" }
+    loadMenu { "ui/overheadmap.menu" }
+    loadMenu { "ui/main_controls.menu" }
+    loadMenu { "ui/main_options.menu" }
+    loadMenu { "ui/options_graphics.menu" }
+    loadMenu { "ui/options_graphics_texture.menu" }
+    loadMenu { "ui/options_control_defaults.menu" }
+    loadMenu { "ui/options_graphics_defaults.menu" }
+    loadMenu { "ui/pregame.menu" }
+    loadMenu { "ui/sp_acceptinvite_warning.menu" }
+    loadMenu { "ui/savegameloading.menu" }
+    loadMenu { "ui/savegameinfo.menu" }
+    loadMenu { "ui/savegame_warning.menu" }
+    loadMenu { "ui/savegame_warning_arcade.menu" }
+    loadMenu { "ui/savegame_warning_noprofile.menu" }
+    loadMenu { "ui/savegame_warning_noprofile1.menu" }
+    loadMenu { "ui/restart_warning.menu" }
+    loadMenu { "ui/last_checkpoint_warning.menu" }
+    loadMenu { "ui/menu_special_features.menu" }
+    loadMenu { "ui/invert_axis_pc.menu" }
+    loadMenu { "ui/select_difficulty.menu" }
+    loadMenu { "ui/con_areyousure.menu" }
+    loadMenu { "ui/con_areyousure_easier.menu" }
+    loadMenu { "ui/con_areyousure_again.menu" }
+    loadMenu { "ui/con_vet.menu" }
+    loadMenu { "ui/all_restart_popmenu.menu" }
+    loadMenu { "ui/vid_restart_popmenu.menu" }
+    loadMenu { "ui/sp_vid_restart_popmenu_listen.menu" }
+    loadMenu { "ui/mp_vid_restart_popmenu_listen.menu" }
+    loadMenu { "ui/vid_restart_popmenu_dead.menu" }
+    loadMenu { "ui/snd_restart_popmenu.menu" }
+    loadMenu { "ui/popmenu_difficulty.menu" }
+    loadMenu { "ui/popmenu_specialops_difficulty.menu" }
+    loadMenu { "ui/popmenu_specialops_splitscreen_skip_difficulty.menu" }
+    loadMenu { "ui/popmenu_specialops_online_difficulty.menu" }
+    loadMenu { "ui/popmenu_specialops_splitscreen_difficulty_p1.menu" }
+    loadMenu { "ui/popmenu_specialops_splitscreen_difficulty_p2.menu" }
+    loadMenu { "ui/ingame_difficulty.menu" }
+    loadMenu { "ui/offensive_skip.menu" }
+    loadMenu { "ui/offensive_skip_popup.menu" }
+    loadMenu { "ui/offensive_skip_popup_skipnow.menu" }
+    loadMenu { "ui/offensive_skip_popup_continue.menu" }
+    loadMenu { "ui/offensive_skip_popup_confirm.menu" }
+    loadMenu { "ui/pc_options_video.menu" }
+    loadMenu { "ui/pc_options_advanced_video.menu" }
+    loadMenu { "ui/apply_picmip_popmenu.menu" }
+    loadMenu { "ui/pc_options_audio.menu" }
+    loadMenu { "ui/pc_options_controls.menu" }
+    loadMenu { "ui/pc_options_voice.menu" }
+    loadMenu { "ui/pc_options_movement.menu" }
+    loadMenu { "ui/pc_options_actions.menu" }
+    loadMenu { "ui/pc_options_look.menu" }
+}

@@ -1,0 +1,720 @@
+{
+    menuDef
+    {
+        name                        "popup_callsign"
+        rect                        -64 0 280 0 1 1
+        style                       1
+        backcolor                   1 1 1 1
+        focuscolor                  1 1 1 1
+        background                  "white"
+        outOfBoundsClick            
+        popup                       
+        allowedBinding              "+talk"
+        visible                     1
+        exp rect Y                  localvarfloat("ui_popup_callsign_ypos");
+        exp rect H                  24 + (7) * 20;
+        onOpen
+        {
+            setLocalVarFloat ui_popup_callsign_ypos localvarfloat("ui_popupYPos");
+            setLocalVarInt ui_leftPopup 1;
+        }
+        onClose
+        {
+            setLocalVarInt ui_leftPopup 0;
+            if (dvarbool(splitscreen))
+            {
+                execnow splitscreencontrols;
+            }
+        }
+        onESC
+        {
+            close self;
+        }
+        itemDef
+        {
+            rect                        -854 -480 1708 960 1 1
+            style                       1
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            backcolor                   0 0 0 0.35
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        -854 -480 1708 960 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   1 1 1 1
+            background                  "xpbar_stencilbase"
+        }
+        itemDef
+        {
+            rect                        0 0 280 0 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.5 0.5 0.5 1
+            background                  "white"
+            exp rect h                  24 + (7) * 20;
+        }
+        itemDef
+        {
+            rect                        0 0 1708 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  0 - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  0 - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 280 0 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "mockup_popup_bg_stencilfill"
+            exp rect h                  (24 + (7) * 20);
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.75
+            background                  "mw2_popup_bg_fogstencil"
+            exp rect x                  (- 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.85 0.85 0.85 1
+            background                  "mw2_popup_bg_fogscroll"
+            exp rect x                  (- 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 280 0 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0
+            background                  "small_box_lightfx"
+            exp rect h                  (24 + (7) * 20);
+        }
+        itemDef
+        {
+            rect                        -32 -32 32 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tl"
+        }
+        itemDef
+        {
+            rect                        0 -32 280 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_t"
+        }
+        itemDef
+        {
+            rect                        280 -32 32 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_tr"
+        }
+        itemDef
+        {
+            rect                        280 0 32 0 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_r"
+            exp rect h                  (24 + (7) * 20);
+        }
+        itemDef
+        {
+            rect                        280 0 32 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_br"
+            exp rect y                  (0 - 0) + ((24 + (7) * 20));
+        }
+        itemDef
+        {
+            rect                        0 0 280 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_b"
+            exp rect y                  (0 - 0) + ((24 + (7) * 20));
+        }
+        itemDef
+        {
+            rect                        -32 0 32 32 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_bl"
+            exp rect y                  (0 - 0) + ((24 + (7) * 20));
+        }
+        itemDef
+        {
+            rect                        -32 0 32 0 0 0
+            style                       3
+            decoration                  
+            visible                     when(!localvarint("ui_centerPopup"));
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "drop_shadow_l"
+            exp rect h                  (24 + (7) * 20);
+        }
+        itemDef
+        {
+            rect                        280 0 -256 0 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.35 0.35 0.35 1
+            background                  "gradient_slow_fadein"
+            exp rect h                  24 + (7) * 20;
+        }
+        itemDef
+        {
+            rect                        280 0 -640 0 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.35 0.35 0.35 1
+            background                  "gradient_fadein"
+            exp rect h                  24 + (7) * 20;
+        }
+        itemDef
+        {
+            rect                        0 0 208 70 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 1, 0) != 0));
+            textscale                   0.55
+            forecolor                   0 0 0 0.25
+            background                  "white"
+            exp rect x                  ((216 + 64 + 64));
+            exp rect y                  (6);
+        }
+        itemDef
+        {
+            rect                        0 0 208 70 1 1
+            style                       1
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 1, 0) != 0));
+            textalign                   4
+            textaligny                  -20
+            textscale                   0.375
+            textstyle                   7
+            textfont                    6
+            backcolor                   1 1 1 1
+            background                  "cardtitle_248x48"
+            exp rect x                  ((216 + 64 + 64));
+            exp rect y                  (6);
+        }
+        itemDef
+        {
+            rect                        0 0 160 32 1 1
+            style                       1
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 1, 0) != 0));
+            textalign                   9
+            textscale                   0.375
+            textstyle                   8
+            textfont                    3
+            backcolor                   1 1 1 1
+            exp text                    "@" + tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 1, 0), 1);
+            exp material                tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 1, 0), 2);
+            exp rect x                  (216 + 64 + 64);
+            exp rect y                  6 - 2;
+            exp forecolor r             tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 1, 0), 3);
+            exp forecolor g             tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 1, 0), 4);
+            exp forecolor b             tablelookupbyrow("mp/cardTitleTable.csv", getplayercardinfo(1, 1, 0), 5);
+        }
+        itemDef
+        {
+            rect                        0 0 160 18 1 1
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 1, 0) != 0));
+            textalign                   4
+            textalignx                  8
+            textscale                   0.3333
+            textstyle                   8
+            textfont                    10
+            exp text                    getplayercardinfo(8, 1, 0);
+            exp rect x                  (216 + 64 + 64);
+            exp rect y                  (6) + 28;
+        }
+        itemDef
+        {
+            rect                        0 0 48 48 1 1
+            style                       3
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 1, 0) != 0));
+            textscale                   0.55
+            exp material                tablelookupbyrow("mp/cardIconTable.csv", getplayercardinfo(2, 1, 0), 1);
+            exp rect x                  ((216 + 64 + 64)) + 160;
+            exp rect y                  (6);
+        }
+        itemDef
+        {
+            rect                        0 0 208 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 1, 0) != 0) && getplayercardinfo(9, 1, 0) != "");
+            textalign                   8
+            textalignx                  8
+            textscale                   0.375
+            textstyle                   7
+            textfont                    3
+            exp text                    "[" + getplayercardinfo(9, 1, 0) + "]";
+            exp rect x                  ((216 + 64 + 64));
+            exp rect y                  (6) + 48;
+        }
+        itemDef
+        {
+            rect                        0 0 20 20 1 1
+            style                       1
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 1, 0) != 0) && (getplayercardinfo(4, 1, 0) >= 0));
+            textscale                   0.55
+            backcolor                   1 1 1 1
+            exp material                tablelookup("mp/rankIconTable.csv", 0, getplayercardinfo(4, 1, 0), (getplayercardinfo(5, 1, 0) + 1));
+            exp rect x                  ((216 + 64 + 64)) + 164;
+            exp rect y                  (6) + 48;
+        }
+        itemDef
+        {
+            rect                        0 0 20 20 1 1
+            decoration                  
+            visible                     when(1 && (getplayercardinfo(0, 1, 0) != 0) && (getplayercardinfo(4, 1, 0) >= 0));
+            textalign                   9
+            textalignx                  20
+            textscale                   0.375
+            textstyle                   7
+            textfont                    3
+            exp text                    tablelookup("mp/rankTable.csv", 0, getplayercardinfo(4, 1, 0), 14);
+            exp rect x                  ((216 + 64 + 64)) + 164;
+            exp rect y                  (6) + 48;
+        }
+        itemDef
+        {
+            text                        "@MPUI_KILLSTREAKS"
+            rect                        344 78 208 20 1 1
+            decoration                  
+            visible                     1
+            textalign                   5
+            textscale                   0.3333
+            textfont                    10
+        }
+        itemDef
+        {
+            rect                        344 96 66 64 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        344 96 66 64 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0 0 0 0.35
+            background                  "gradient_inset_rect"
+        }
+        itemDef
+        {
+            rect                        415 96 66 64 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        415 96 66 64 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0 0 0 0.35
+            background                  "gradient_inset_rect"
+        }
+        itemDef
+        {
+            rect                        486 96 66 64 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0 0 0 0.15
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        486 96 66 64 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0 0 0 0.35
+            background                  "gradient_inset_rect"
+        }
+        itemDef
+        {
+            rect                        361 106 32 32 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   13
+            textaligny                  18
+            textscale                   0.375
+            textfont                    3
+            backcolor                   1 1 1 1
+            forecolor                   1 1 1 0.65
+            exp text                    locstring("@MPUI_N_KILLS", int(tablelookup("mp/killstreakTable.csv", 1, getplayerdata("killstreaks", 0), 4)));
+            exp material                tablelookup("mp/killstreakTable.csv", 1, getplayerdata("killstreaks", 0), 14);
+        }
+        itemDef
+        {
+            rect                        432 106 32 32 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   13
+            textaligny                  18
+            textscale                   0.375
+            textfont                    3
+            backcolor                   1 1 1 1
+            forecolor                   1 1 1 0.65
+            exp text                    locstring("@MPUI_N_KILLS", int(tablelookup("mp/killstreakTable.csv", 1, getplayerdata("killstreaks", 1), 4)));
+            exp material                tablelookup("mp/killstreakTable.csv", 1, getplayerdata("killstreaks", 1), 14);
+        }
+        itemDef
+        {
+            rect                        503 106 32 32 1 1
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   13
+            textaligny                  18
+            textscale                   0.375
+            textfont                    3
+            backcolor                   1 1 1 1
+            forecolor                   1 1 1 0.65
+            exp text                    locstring("@MPUI_N_KILLS", int(tablelookup("mp/killstreakTable.csv", 1, getplayerdata("killstreaks", 2), 4)));
+            exp material                tablelookup("mp/killstreakTable.csv", 1, getplayerdata("killstreaks", 2), 14);
+        }
+        itemDef
+        {
+            text                        "@MENU_PLAYERCARD"
+            rect                        0 0 280 22 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   6
+            textalignx                  -4
+            textscale                   0.375
+            textfont                    9
+            backcolor                   1 1 1 0.25
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            name                        "settings_change_title"
+            text                        "@MENU_TITLE_CAPS"
+            group                       "mw2_popup_button"
+            rect                        0 24 336 20 0 0
+            style                       1
+            type                        1
+            visible                     1
+            disabled                    when(!isitemunlocked("playercard_title") && (getplayerdata("prestige") == 0));
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                if (isitemunlocked("playercard_title"))
+                {
+                    setLocalVarString ui_hint_text ("@MPUI_DESC_PLAYERCARD_TITLE");
+                }
+                else
+                {
+                    if (tablelookup("mp/unlockTable.csv", 0, "playercard_title", 2) == 9999)
+                    {
+                        setLocalVarString ui_hint_text "@PERKS_UNLOCKED_AT_NONE";
+                    }
+                    else
+                    {
+                        if (tablelookup("mp/unlockTable.csv", 0, "playercard_title", 3) != "")
+                        {
+                            setLocalVarString ui_hint_text "@PERKS_UNLOCKED_BY_CHALLENGE";
+                        }
+                        else
+                        {
+                            setLocalVarString ui_hint_text ("@" + tablelookup("mp/rankTable.csv", 0, tablelookup("mp/unlockTable.csv", 0, "playercard_title", 2), 17));
+                        }
+                    }
+                    exec "set ui_hint_text THIS MENU SHOULD BE UPDATED TO USE setLocalVarString ui_hint_text;";
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                setPlayerData ( featureNew , playercard_title , false );
+                open menu_playercard_title_popup;
+            }
+        }
+        itemDef
+        {
+            rect                        64 24 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when((getplayerdataanybooltrue("titleNew") || getplayerdata("featureNew", "playercard_title")));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            name                        "settings_change_icon"
+            text                        "@MENU_EMBLEM_CAPS"
+            group                       "mw2_popup_button"
+            rect                        0 44 336 20 0 0
+            style                       1
+            type                        1
+            visible                     1
+            disabled                    when(!isitemunlocked("playercard_icon") && (getplayerdata("prestige") == 0));
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                if (isitemunlocked("playercard_icon"))
+                {
+                    setLocalVarString ui_hint_text ("@MPUI_DESC_PLAYERCARD_ICON");
+                }
+                else
+                {
+                    if (tablelookup("mp/unlockTable.csv", 0, "playercard_icon", 2) == 9999)
+                    {
+                        setLocalVarString ui_hint_text "@PERKS_UNLOCKED_AT_NONE";
+                    }
+                    else
+                    {
+                        if (tablelookup("mp/unlockTable.csv", 0, "playercard_icon", 3) != "")
+                        {
+                            setLocalVarString ui_hint_text "@PERKS_UNLOCKED_BY_CHALLENGE";
+                        }
+                        else
+                        {
+                            setLocalVarString ui_hint_text ("@" + tablelookup("mp/rankTable.csv", 0, tablelookup("mp/unlockTable.csv", 0, "playercard_icon", 2), 17));
+                        }
+                    }
+                    exec "set ui_hint_text THIS MENU SHOULD BE UPDATED TO USE setLocalVarString ui_hint_text;";
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                setPlayerData ( featureNew , playercard_icon , false );
+                open menu_playercard_icon_popup;
+            }
+        }
+        itemDef
+        {
+            rect                        64 44 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when((getplayerdataanybooltrue("iconNew") || getplayerdata("featureNew", "playercard_icon")));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            rect                        0 64 280 1 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            name                        "settings_change_cas"
+            text                        "@MENU_KILLSTREAK_REWARDS_CAPS"
+            group                       "mw2_popup_button"
+            rect                        0 64 336 20 0 0
+            style                       1
+            type                        1
+            visible                     when(1);
+            disabled                    when(!isitemunlocked("cas"));
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+                if (isitemunlocked("cas"))
+                {
+                    setLocalVarString ui_hint_text ("@MPUI_DESC_KILLSTREAK_REWARDS");
+                }
+                else
+                {
+                    setLocalVarString ui_hint_text ("@MPUI_DESC_KILLSTREAK_REWARDS_LOCKED");
+                }
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                open menu_cas_popup;
+            }
+        }
+        itemDef
+        {
+            rect                        64 64 40 20 1 1
+            style                       3
+            decoration                  
+            visible                     when((getplayerdata("featureNew", "cas") || getplayerdata("featureNew", "token_1") || getplayerdata("featureNew", "token_2") || getplayerdata("featureNew", "token_3") || getplayerdata("featureNew", "token_4") || getplayerdata("featureNew", "token_5") || getplayerdata("featureNew", "token_6") || getplayerdata("featureNew", "token_7") || getplayerdata("featureNew", "token_8") || getplayerdata("featureNew", "token_9") || getplayerdata("featureNew", "token_10") || getplayerdata("featureNew", "token_11") || getplayerdata("featureNew", "token_12")));
+            textscale                   0.55
+            background                  "specialty_new"
+        }
+        itemDef
+        {
+            group                       "mw2_popup_button"
+            rect                        64 124 216 20 0 0
+            style                       1
+            decoration                  
+            autowrapped                 
+            type                        1
+            visible                     1
+            textalign                   6
+            textalignx                  -4
+            textscale                   0.375
+            textfont                    3
+            forecolor                   1 1 1 0.65
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_popup_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_popupAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 1 1 1 0;
+                setLocalVarBool ui_popupAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            exp text                    localvarstring("ui_hint_text");
+        }
+    }
+}

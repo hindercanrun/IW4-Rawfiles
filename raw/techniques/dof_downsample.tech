@@ -1,0 +1,17 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "dof_downsample.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "dof_downsample.hlsl"
+  {
+    colorMapSampler = sampler.resolvedScene;
+    floatZSampler = sampler.floatZ;
+  }
+
+  vertex.position = code.position;
+  vertex.texcoord[0] = code.texcoord[0];
+}

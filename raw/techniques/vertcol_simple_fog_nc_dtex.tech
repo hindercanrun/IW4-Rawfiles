@@ -1,0 +1,17 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "vertcol_simple_fog_nc_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "vertcol_simple_fog_nc.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+  }
+
+  vertex.position = code.position;
+  vertex.texcoord[0] = code.texcoord[0];
+}

@@ -1,0 +1,591 @@
+{
+    menuDef
+    {
+        name                        "pausedmenu"
+        rect                        0 0 640 480 4 4
+        focuscolor                  1 1 1 1
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        allowedBinding              "pause"
+        onOpen
+        {
+            showMenu pausedbkgnd showMenu objectiveinfo showMenu overheadmap;
+            setLocalVarInt ui_ingame 1;
+            focusfirst;
+        }
+        onClose
+        {
+            hideMenu pausedbkgnd hideMenu objectiveinfo hideMenu overheadmap;
+        }
+        onESC
+        {
+            close pausedmenu;
+        }
+        itemDef
+        {
+            name                        "pausedMsg"
+            text                        "@MENU_PAUSED_CAP"
+            rect                        -160 13 160 40 10 8
+            decoration                  
+            visible                     when(!dvarbool(coop));
+            textalign                   4
+            textscale                   0.5
+            textfont                    9
+            exp rect y                  13 + ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 24;
+        }
+        itemDef
+        {
+            name                        "resumegame"
+            text                        "@MENU_RESUME_CREDITS"
+            group                       "paused_buttons"
+            rect                        -200 48 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when((dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                close pausedmenu;
+            }
+            exp rect y                  (28 + 1 * 20) + ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 24;
+        }
+        itemDef
+        {
+            name                        "resumegame"
+            text                        "@MENU_RESUMEGAME"
+            group                       "paused_buttons"
+            rect                        -200 48 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                close pausedmenu;
+            }
+            exp rect y                  (28 + 1 * 20) + ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 24;
+        }
+        itemDef
+        {
+            name                        "credits_quit"
+            text                        "@PLATFORM_QUIT"
+            group                       "paused_buttons"
+            rect                        -200 68 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when((dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                setdvar credits_active 0;
+                close pausedmenu;
+                exec disconnect;
+            }
+            exp rect y                  (28 + 2 * 20) + ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 24;
+        }
+        itemDef
+        {
+            text                        "@MENU_OPTIONS"
+            group                       "paused_buttons"
+            rect                        -200 68 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                execnow "set ui_allow_graphic_change 1";
+                open pc_options_video;
+                close pausedmenu;
+            }
+            exp rect y                  (28 + 2 * 20) + ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 24;
+        }
+        itemDef
+        {
+            name                        "difficulty_locked"
+            text                        "@MENU_LOWER_DIFFICULTY"
+            group                       "paused_buttons"
+            rect                        -200 88 336 20 10 8
+            style                       1
+            decoration                  
+            type                        1
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && ((dvarint(g_gameskill) == 0) || (dvarstring(mapname) == "trainer")) && !((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textstyle                   3
+            textfont                    3
+            forecolor                   0.5 0.5 0.5 1
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            exp rect y                  (28 + 3 * 20) + ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 24;
+        }
+        itemDef
+        {
+            name                        "difficulty"
+            text                        "@MENU_LOWER_DIFFICULTY"
+            group                       "paused_buttons"
+            rect                        -200 88 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && (dvarint(g_gameskill) > 0) && (dvarstring(mapname) != "trainer") && !((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                open ingame_difficulty;
+            }
+            exp rect y                  (28 + 3 * 20) + ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 24;
+        }
+        itemDef
+        {
+            name                        "last_checkpoint"
+            text                        "@MENU_LAST_CHECKPOINT"
+            group                       "paused_buttons"
+            rect                        -200 108 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && (!dvarbool(arcademode) && !dvarbool(coop) && !(dvarbool(specialops))) && !((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                open last_checkpoint_warning;
+                close pausedmenu;
+            }
+            exp rect y                  (28 + 4 * 20) + ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 24;
+        }
+        itemDef
+        {
+            name                        "last_checkpoint_locked"
+            text                        "@MENU_LAST_CHECKPOINT"
+            group                       "paused_buttons"
+            rect                        -200 108 336 20 10 8
+            style                       1
+            decoration                  
+            type                        1
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && !(!dvarbool(arcademode) && !dvarbool(coop) && !(dvarbool(specialops))) && !((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textstyle                   3
+            textfont                    3
+            forecolor                   0.5 0.5 0.5 1
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            exp rect y                  (28 + 4 * 20) + ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 24;
+        }
+        itemDef
+        {
+            name                        "restartlevel"
+            text                        "@MENU_RESTART_MISSION"
+            group                       "paused_buttons"
+            rect                        -200 128 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                close pausedmenu;
+                open restart_warning;
+            }
+            exp rect y                  (28 + 5 * 20) - ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 16;
+        }
+        itemDef
+        {
+            name                        "saveandquit"
+            text                        "@PLATFORM_SAVE_AND_QUIT"
+            group                       "paused_buttons"
+            rect                        -200 148 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when(!(dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free") && !(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && (!dvarbool(arcademode) && !dvarbool(coop) && !(dvarbool(specialops))) && savegameavailable());
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                close pausedmenu;
+                open savegame_warning;
+            }
+            exp rect y                  (28 + 6 * 20) - ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 16;
+        }
+        itemDef
+        {
+            name                        "arcade_quit"
+            text                        "@PLATFORM_QUIT"
+            group                       "paused_buttons"
+            rect                        -200 148 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when(!(dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free") && !(!dvarbool(arcademode) && !dvarbool(coop) && !(dvarbool(specialops))));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                close pausedmenu;
+                open savegame_warning_arcade;
+            }
+            exp rect y                  (28 + 6 * 20) - ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 16;
+        }
+        itemDef
+        {
+            name                        "quit"
+            text                        "@PLATFORM_QUIT"
+            group                       "paused_buttons"
+            rect                        -200 148 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when((dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free") || (!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && (!dvarbool(arcademode) && !dvarbool(coop) && !(dvarbool(specialops))) && !savegameavailable()));
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                close pausedmenu;
+                open savegame_warning_noprofile;
+            }
+            exp rect y                  (28 + 6 * 20) - ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 16;
+        }
+        itemDef
+        {
+            name                        "skip_airport"
+            text                        "@MENU_SP_SKIP_MISSION"
+            group                       "paused_buttons"
+            rect                        -200 168 336 20 10 8
+            style                       1
+            type                        1
+            visible                     when(dvarstring(mapname) == "airport");
+            textalign                   4
+            textalignx                  40
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "popup_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+                play mouse_over;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+                setItemColor paused_buttons backcolor 0 0 0 "0.0";
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                close pausedmenu;
+                open offensive_skip_popup_confirm;
+            }
+            exp rect y                  (28 + 7 * 20) - ((dvarbool(specialops)) || (dvarstring(mapname) == "ending" && dvarstring(ui_char_museum_mode) == "free")) * 16;
+        }
+    }
+}

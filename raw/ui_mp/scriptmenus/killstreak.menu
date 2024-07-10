@@ -1,0 +1,90 @@
+{
+    menuDef
+    {
+        name                        "killstreak"
+        decoration                  
+        rect                        0 0 640 1 1 0
+        exp rect Y                  FUNC_151() * (0 - 40) * FUNC_128();
+        onOpen
+        {
+            lerp alpha from 0 to 1 over "0.15";
+            lerp x from - 640 to 0 over "0.15";
+            setLocalVarString tempName (tablelookupbyrow("mp/splashTable.csv", splashrownum(0), 0));
+            setLocalVarString ui_ksHint localvarstring("tempName");
+            close splash;
+            close challenge;
+            close defcon;
+            close killstreak_pickup;
+            close perk_challenge;
+            close promotion;
+        }
+        onRequestClose
+        {
+            lerp x from 0 to 640 over "0.15";
+            lerp alpha from 1 to 0 over "0.15";
+        }
+        itemDef
+        {
+            name                        "killstreak_title"
+            rect                        0 -110 0 0 2 2
+            decoration                  
+            visible                     when(FUNC_128());
+            textalign                   1
+            textscale                   0.5833
+            textstyle                   3
+            textfont                    9
+            exp text                    getsplashtext(0);
+            exp glowcolor r             tablelookupbyrow("mp/splashTable.csv", splashrownum(0), 5);
+            exp glowcolor g             tablelookupbyrow("mp/splashTable.csv", splashrownum(0), 6);
+            exp glowcolor b             tablelookupbyrow("mp/splashTable.csv", splashrownum(0), 7);
+            exp glowcolor a             tablelookupbyrow("mp/splashTable.csv", splashrownum(0), 8);
+        }
+        itemDef
+        {
+            name                        "killstreak_description"
+            rect                        0 -90 0 0 2 2
+            decoration                  
+            visible                     when(FUNC_128());
+            textalign                   1
+            textscale                   0.375
+            textstyle                   3
+            exp text                    getsplashdescription(0);
+        }
+        itemDef
+        {
+            name                        "killstreak_icon"
+            rect                        -24 -190 48 48 2 2
+            style                       3
+            decoration                  
+            visible                     when(FUNC_128() && FUNC_152() && FUNC_58());
+            textscale                   0.55
+            exp material                tablelookup("mp/killstreakTable.csv", 1, localvarstring("tempName"), 14);
+        }
+        itemDef
+        {
+            name                        "killstreak_title_ss"
+            rect                        0 -135 0 0 2 2
+            decoration                  
+            visible                     when(FUNC_127());
+            textalign                   1
+            textscale                   0.87495
+            textstyle                   3
+            textfont                    9
+            exp text                    getsplashtext(0);
+            exp glowcolor r             tablelookupbyrow("mp/splashTable.csv", splashrownum(0), 5);
+            exp glowcolor g             tablelookupbyrow("mp/splashTable.csv", splashrownum(0), 6);
+            exp glowcolor b             tablelookupbyrow("mp/splashTable.csv", splashrownum(0), 7);
+            exp glowcolor a             tablelookupbyrow("mp/splashTable.csv", splashrownum(0), 8);
+        }
+        itemDef
+        {
+            name                        "killstreak_icon_ss"
+            rect                        -20 -135 40 40 2 2
+            style                       3
+            decoration                  
+            visible                     when(FUNC_127() && FUNC_152() && FUNC_58());
+            textscale                   0.55
+            exp material                tablelookup("mp/killstreakTable.csv", 1, localvarstring("tempName"), 14);
+        }
+    }
+}

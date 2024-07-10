@@ -1,0 +1,640 @@
+{
+    menuDef
+    {
+        name                        "team_marinesopfor"
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        blurWorld                   7
+        legacySplitScreenScale      
+        onOpen
+        {
+            setfocus team_choose_auto;
+        }
+        onESC
+        {
+            scriptMenuResponse back;
+        }
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0 0 0 0.4
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0
+            background                  "mockup_bg_glow"
+            exp forecolor a             ((sin(milliseconds() / 1500) + 1) * 0.25) + 0.25;
+        }
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0
+            background                  "mockup_bg_glow"
+            exp forecolor a             ((sin(milliseconds() / 480) + 1) * 0.25) + 0.25;
+        }
+        itemDef
+        {
+            rect                        -64 0 280 480 1 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0 0 0 0.25
+            background                  "gradient_fadein_fadebottom"
+        }
+        itemDef
+        {
+            text                        "@MPUI_CHOOSE_TEAM"
+            rect                        0 0 272 28 1 1
+            decoration                  
+            visible                     1
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.5
+            textfont                    9
+        }
+        itemDef
+        {
+            name                        "fullmap_border"
+            rect                        -260 135 240 240 3 1
+            decoration                  
+            border                      1
+            borderSize                  0.666667
+            visible                     when(FUNC_34());
+            textscale                   0.55
+            bordercolor                 1 1 1 0.35
+        }
+        itemDef
+        {
+            rect                        -260 135 240 240 3 1
+            style                       3
+            decoration                  
+            visible                     when(FUNC_34());
+            textscale                   0.55
+            forecolor                   0.89 0.98 0.95 0.05
+            background                  "minimap_scanlines"
+        }
+        itemDef
+        {
+            name                        "fullmap_map"
+            rect                        -260 135 240 240 3 1
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34());
+            ownerdraw                   181
+            textscale                   0.55
+            background                  "compass_map_default"
+        }
+        itemDef
+        {
+            name                        "fullmap_friendlies"
+            rect                        -260 135 240 240 3 1
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34());
+            ownerdraw                   185
+            textscale                   0.55
+            exp forecolor a             1 - radarjamintensity();
+        }
+        itemDef
+        {
+            name                        "fullmap_enemies"
+            rect                        -260 135 240 240 3 1
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34());
+            ownerdraw                   188
+            textscale                   0.55
+            exp forecolor a             1 - radarjamintensity();
+        }
+        itemDef
+        {
+            name                        "fullmap_objectives"
+            rect                        -260 135 240 240 3 1
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34());
+            ownerdraw                   182
+            textscale                   0.55
+            background                  "objective_line"
+        }
+        itemDef
+        {
+            name                        "fullmap_sentries"
+            rect                        -260 135 240 240 3 1
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34());
+            ownerdraw                   189
+            textscale                   0.55
+            exp forecolor a             1 - radarjamintensity();
+        }
+        itemDef
+        {
+            name                        "fullmap_player"
+            rect                        -260 135 240 240 3 1
+            decoration                  
+            type                        8
+            visible                     when(FUNC_34());
+            ownerdraw                   183
+            textscale                   0.55
+            background                  "compassping_player"
+            exp forecolor a             1 - radarjamintensity();
+        }
+        itemDef
+        {
+            rect                        -260 135 240 240 3 1
+            style                       3
+            decoration                  
+            visible                     when(radarisjammed() && FUNC_34());
+            textscale                   0.55
+            forecolor                   0.64 0.74 0.71 1
+            background                  "white"
+            exp forecolor a             radarjamintensity();
+        }
+        itemDef
+        {
+            rect                        -260 135 240 240 3 1
+            style                       3
+            decoration                  
+            visible                     when(radarisjammed() && FUNC_34());
+            textscale                   0.55
+            forecolor                   0.89 0.98 0.95 1
+            background                  "ac130_overlay_grain"
+            exp forecolor a             radarjamintensity();
+        }
+        itemDef
+        {
+            rect                        -260 135 240 240 3 1
+            style                       3
+            decoration                  
+            visible                     when(FUNC_34());
+            textscale                   0.55
+            background                  "stencil_base"
+        }
+        itemDef
+        {
+            rect                        -260 135 240 240 3 1
+            style                       3
+            decoration                  
+            visible                     when(FUNC_34());
+            textscale                   0.55
+            background                  "scanlines_stencil"
+            exp rect y                  (135 - 240) + ((240 * 2) * FUNC_33());
+        }
+        itemDef
+        {
+            rect                        -260 135 240 240 3 1
+            style                       3
+            decoration                  
+            visible                     when(FUNC_34());
+            textscale                   0.55
+            forecolor                   0.89 0.98 0.95 1
+            background                  "stencil_fill"
+        }
+        itemDef
+        {
+            rect                        -260 115 -136 20 3 1
+            style                       1
+            decoration                  
+            visible                     when(FUNC_34());
+            textalign                   4
+            textalignx                  4
+            textscale                   0.375
+            textfont                    9
+            backcolor                   0 0 0 0.35
+            background                  "gradient_fadein"
+            exp text                    getmapname();
+        }
+        itemDef
+        {
+            rect                        10 58 128 128 1 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_team") == "marines");
+            textscale                   0.55
+            forecolor                   1 1 1 0.275
+            exp material                dvarstring(g_TeamIcon_Allies);
+        }
+        itemDef
+        {
+            rect                        10 58 128 128 1 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_team") == "opfor");
+            textscale                   0.55
+            forecolor                   1 1 1 0.275
+            exp material                dvarstring(g_TeamIcon_Axis);
+        }
+        itemDef
+        {
+            rect                        10 58 128 128 1 1
+            style                       3
+            decoration                  
+            visible                     when(team("name") == "TEAM_FREE" && localvarstring("ui_team") == "marines");
+            textscale                   0.55
+            forecolor                   1 1 1 0.275
+            exp material                dvarstring(g_TeamIcon_Allies);
+        }
+        itemDef
+        {
+            rect                        10 58 128 128 1 1
+            style                       3
+            decoration                  
+            visible                     when(team("name") == "TEAM_FREE" && localvarstring("ui_team") == "opfor");
+            textscale                   0.55
+            forecolor                   1 1 1 0.275
+            exp material                dvarstring(g_TeamIcon_Axis);
+        }
+        itemDef
+        {
+            rect                        10 196 128 128 1 1
+            decoration                  
+            visible                     when(team("name") == "TEAM_ALLIES");
+            textscale                   0.4583
+            textstyle                   6
+            textfont                    6
+            forecolor                   1 1 1 0.2
+            exp text                    "@" + dvarstring(g_TeamName_Allies);
+        }
+        itemDef
+        {
+            rect                        10 196 128 128 1 1
+            decoration                  
+            visible                     when(team("name") == "TEAM_FREE" && localvarstring("ui_team") == "marines");
+            textscale                   0.4583
+            textstyle                   6
+            textfont                    6
+            forecolor                   1 1 1 0.2
+            exp text                    "@" + dvarstring(g_TeamName_Allies);
+        }
+        itemDef
+        {
+            rect                        10 196 128 128 1 1
+            decoration                  
+            visible                     when(team("name") == "TEAM_AXIS");
+            textscale                   0.4583
+            textstyle                   6
+            textfont                    6
+            forecolor                   1 1 1 0.2
+            exp text                    "@" + dvarstring(g_TeamName_Axis);
+        }
+        itemDef
+        {
+            rect                        10 196 128 128 1 1
+            decoration                  
+            visible                     when(team("name") == "TEAM_FREE" && localvarstring("ui_team") == "opfor");
+            textscale                   0.4583
+            textstyle                   6
+            textfont                    6
+            forecolor                   1 1 1 0.2
+            exp text                    "@" + dvarstring(g_TeamName_Axis);
+        }
+        itemDef
+        {
+            name                        "team_choose_spectator"
+            text                        "@MPUI_SPECTATOR"
+            group                       "mw2_button"
+            rect                        -64 28 336 20 1 1
+            style                       1
+            type                        1
+            visible                     when(team("name") != "TEAM_SPECTATOR");
+            disabled                    when(team("name") == "TEAM_SPECTATOR" || !dvarbool(scr_game_spectatetype));
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                scriptMenuResponse spectator;
+            }
+        }
+        itemDef
+        {
+            name                        "team_choose_axis"
+            group                       "mw2_button"
+            rect                        -64 48 336 20 1 1
+            style                       1
+            type                        1
+            visible                     1
+            disabled                    when(team("name") == "TEAM_AXIS");
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                scriptMenuResponse axis;
+            }
+            exp text                    "@" + dvarstring(g_TeamName_Axis);
+        }
+        itemDef
+        {
+            name                        "team_choose_allies"
+            group                       "mw2_button"
+            rect                        -64 68 336 20 1 1
+            style                       1
+            type                        1
+            visible                     1
+            disabled                    when(team("name") == "TEAM_ALLIES");
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                scriptMenuResponse allies;
+            }
+            exp text                    "@" + dvarstring(g_TeamName_Allies);
+        }
+        itemDef
+        {
+            rect                        0 88 216 1 1 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            name                        "team_choose_auto"
+            text                        "@MPUI_AUTOASSIGN"
+            group                       "mw2_button"
+            rect                        -64 88 336 20 1 1
+            style                       1
+            type                        1
+            visible                     1
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                scriptMenuResponse autoassign;
+            }
+        }
+        itemDef
+        {
+            rect                        0 108 216 1 1 1
+            style                       3
+            decoration                  
+            visible                     when(team("name") == "TEAM_SPECTATOR");
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            name                        "team_choose_endgame"
+            text                        "@MPUI_END_GAME"
+            group                       "mw2_button"
+            rect                        -64 108 336 20 1 1
+            style                       1
+            type                        1
+            visible                     when(team("name") == "TEAM_SPECTATOR" && (dvarbool(onlineunrankedgameandhost) || dvarbool(sv_running)));
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                open popup_endgame;
+            }
+        }
+        itemDef
+        {
+            name                        "team_choose_leavegame"
+            text                        "@MPUI_LEAVE_GAME"
+            group                       "mw2_button"
+            rect                        -64 108 336 20 1 1
+            style                       1
+            type                        1
+            visible                     when(team("name") == "TEAM_SPECTATOR" && (!dvarbool(onlineunrankedgameandhost) && !dvarbool(sv_running)));
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+                setLocalVarFloat ui_popupYPos getfocuseditemy();
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                if ((inprivateparty() && !privatepartyhost() && privatepartyhostinlobby()))
+                {
+                    open popup_leavegameandparty;
+                }
+                else
+                {
+                    open popup_leavegame;
+                }
+            }
+        }
+        itemDef
+        {
+            text                        "@PLATFORM_BACK_CAPS"
+            group                       "mw2_button"
+            rect                        -64 -20 336 20 1 3
+            style                       1
+            type                        1
+            visible                     when("@PLATFORM_BACK_CAPS" == "@PLATFORM_BACK_CAPS");
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                escape self;
+            }
+        }
+        itemDef
+        {
+            text                        "@PLATFORM_BACK_CAPS"
+            group                       "mw2_button"
+            rect                        -64 -20 336 20 1 3
+            style                       1
+            type                        1
+            visible                     when("@PLATFORM_BACK_CAPS" == "@PLATFORM_GAME_SUMMARY_CAPS");
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                open popup_summary;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "vertcol_simple_fog_ua_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    uvAnimParms = material.uvAnimParms;
+  }
+
+  pixelShader 3.0 "vertcol_simple_fog_lin.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+  }
+  // Cannot dump vertex decl ppcc0t0t0 due to being a referenced asset
+}

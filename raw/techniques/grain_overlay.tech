@@ -1,0 +1,14 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "grain_overlay.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "grain_overlay.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+  }
+  // Cannot dump vertex decl ppcc0t0t0 due to being a referenced asset
+}

@@ -1,0 +1,11 @@
+"unlit":
+"emissive dfog":
+"emissive shadow dfog":
+  zfeather_eyeofs_fog_dtex_dfog;
+
+"emissive":
+"emissive shadow":
+  zfeather_eyeofs_fog_dtex;
+
+"solid wireframe":
+  wireframe_solid_dtex;

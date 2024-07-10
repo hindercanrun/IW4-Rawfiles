@@ -1,0 +1,12 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "vertcol_simple_nofog_eo_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    eyeOffsetParms = material.eyeOffsetParms;
+  }
+  // Cannot dump pixel shader vertcol_simple_nofog.hlsl due to being a referenced asset
+  // Cannot dump vertex decl ppcc0t0t0 due to being a referenced asset
+}

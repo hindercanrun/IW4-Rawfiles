@@ -1,0 +1,13 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "zfeather_eo_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    eyeOffsetParms = material.eyeOffsetParms;
+    featherParms = material.featherParms;
+  }
+  // Cannot dump pixel shader zfeather_premul.hlsl due to being a referenced asset
+  // Cannot dump vertex decl ppcc0t0t0 due to being a referenced asset
+}

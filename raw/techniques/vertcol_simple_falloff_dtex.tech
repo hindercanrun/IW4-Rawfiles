@@ -1,0 +1,14 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "vertcol_simple_nofog_fo_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    falloffBeginColor = material.falloffBeginColor;
+    falloffEndColor = material.falloffEndColor;
+    falloffParms = material.falloffParms;
+  }
+  // Cannot dump pixel shader vertcol_simple_nofog.hlsl due to being a referenced asset
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

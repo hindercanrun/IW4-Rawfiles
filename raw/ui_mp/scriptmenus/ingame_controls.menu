@@ -1,0 +1,202 @@
+{
+    menuDef
+    {
+        name                        "ingame_controls"
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        blurWorld                   6
+        legacySplitScreenScale      
+        onOpen
+        {
+            exec Updatedvarsfromprofile;
+        }
+        onESC
+        {
+            close ingame_controls;
+        }
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0 1
+        }
+        itemDef
+        {
+            rect                        0 55 854 75 4 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "gradient_top"
+        }
+        itemDef
+        {
+            rect                        0 351 854 75 4 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "gradient_bottom"
+        }
+        itemDef
+        {
+            rect                        -128 0 896 66 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.1412 0.1412 0.1412 1
+        }
+        itemDef
+        {
+            rect                        -128 66 896 2 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "line_horizontal"
+        }
+        itemDef
+        {
+            rect                        -128 416 896 64 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.1412 0.1412 0.1412 1
+        }
+        itemDef
+        {
+            rect                        -128 414 896 2 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "line_horizontal"
+        }
+        itemDef
+        {
+            name                        "cancel"
+            text                        "@PLATFORM_BACK"
+            rect                        505 422 100 16 0 0
+            type                        1
+            visible                     when(!localvarbool("ui_hideBack"));
+            textalign                   9
+            textscale                   0.4583
+            textfont                    1
+            action
+            {
+                close self;
+            }
+        }
+        itemDef
+        {
+            text                        "CONTROLS"
+            rect                        48 40 0 0 0 0
+            decoration                  
+            visible                     1
+            textscale                   0.5833
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+        }
+        itemDef
+        {
+            text                        "@MENU_LOW"
+            rect                        228 120 128 24 0 0
+            decoration                  
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            dvarTest                    "input_viewSensitivity"
+            showDvar                    { "0.8" }
+        }
+        itemDef
+        {
+            text                        "@MENU_MEDIUM"
+            rect                        228 120 128 24 0 0
+            decoration                  
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            dvarTest                    "input_viewSensitivity"
+            showDvar                    { "1" }
+        }
+        itemDef
+        {
+            text                        "@MENU_HIGH"
+            rect                        228 120 128 24 0 0
+            decoration                  
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            dvarTest                    "input_viewSensitivity"
+            showDvar                    { "1.8" }
+        }
+        itemDef
+        {
+            text                        "@MENU_VERY_HIGH"
+            rect                        228 120 128 24 0 0
+            decoration                  
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            dvarTest                    "input_viewSensitivity"
+            showDvar                    { "4" }
+        }
+        itemDef
+        {
+            text                        "@MENU_DISABLED"
+            rect                        228 140 128 24 0 0
+            decoration                  
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            dvarTest                    "input_invertpitch"
+            showDvar                    { "0" }
+        }
+        itemDef
+        {
+            text                        "@MENU_ENABLED"
+            rect                        228 140 128 24 0 0
+            decoration                  
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            dvarTest                    "input_invertpitch"
+            showDvar                    { "1" }
+        }
+        itemDef
+        {
+            text                        "@MENU_DISABLED"
+            rect                        228 160 128 24 0 0
+            decoration                  
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            dvarTest                    "gpad_rumble"
+            showDvar                    { "0" }
+        }
+        itemDef
+        {
+            text                        "@MENU_ENABLED"
+            rect                        228 160 128 24 0 0
+            decoration                  
+            visible                     1
+            textaligny                  20
+            textscale                   0.4583
+            textfont                    1
+            dvarTest                    "gpad_rumble"
+            showDvar                    { "1" }
+        }
+    }
+}

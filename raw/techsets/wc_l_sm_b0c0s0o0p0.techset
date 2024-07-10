@@ -1,0 +1,59 @@
+"unlit":
+  vcsh;
+
+"lit":
+  lm_b0pxc0s0o0_sm3;
+
+"lit dfog":
+  lm_b0pxc0s0o0_dfog_sm3;
+
+"lit sun":
+  lm_sun_b0pxc0s0o0_sm3;
+
+"lit sun dfog":
+  lm_sun_b0pxc0s0o0_dfog_sm3;
+
+"lit sun shadow":
+  lm_sm_sun_b0pxc0s0o0_sm3;
+
+"lit sun shadow dfog":
+  lm_sm_sun_b0pxc0s0o0_dfog_sm3;
+
+"lit spot":
+  lm_spot_b0pxc0s0o0_sm3;
+
+"lit spot dfog":
+  lm_spot_b0pxc0s0o0_dfog_sm3;
+
+"lit spot shadow":
+  lm_sm_spot_b0pxc0s0o0_sm3;
+
+"lit spot shadow dfog":
+  lm_sm_spot_b0pxc0s0o0_dfog_sm3;
+
+"lit omni":
+  lm_omni_b0pxc0s0o0_sm3;
+
+"lit omni dfog":
+  lm_omni_b0pxc0s0o0_dfog_sm3;
+
+"lit omni shadow":
+  lm_sm_omni_b0pxc0s0o0_sm3;
+
+"lit omni shadow dfog":
+  lm_sm_omni_b0pxc0s0o0_dfog_sm3;
+
+"light spot":
+  l_spot_b0c0o0;
+
+"light omni":
+  l_omni_b0c0o0;
+
+"light spot shadow":
+  l_spot_shad_sm_b0c0o0;
+
+"solid wireframe":
+  wireframe_solid;
+
+"debug bumpmap":
+  debug_bumpmap;

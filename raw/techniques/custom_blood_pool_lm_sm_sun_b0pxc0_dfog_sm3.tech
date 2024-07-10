@@ -1,0 +1,19 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "custom_blood_pool_lm_sm_sun_dfog_tc0_sm3.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    shadowLookupMatrix = constant.transposeShadowLookupMatrix;
+  }
+
+  pixelShader 3.0 "custom_blood_pool_lm_sm_sun_dfog_b0c0px_sm3.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    shadowmapSamplerSun = sampler.shadowmapSun;
+    lightPosition = constant.light.position;
+    lightDiffuse = constant.light.diffuse;
+  }
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

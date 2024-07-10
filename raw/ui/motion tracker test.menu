@@ -1,0 +1,21 @@
+{
+    menuDef
+    {
+        name                        "motion tracker test"
+        rect                        0 0 109 109 8 8
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     when(dvarbool(motionTrackerTest));
+        itemDef
+        {
+            rect                        5.5 5 89.5 89.5 0 0
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   153
+            textscale                   0.55
+            background                  "compassping_friendly"
+        }
+    }
+}

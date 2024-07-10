@@ -1,0 +1,190 @@
+{
+    menuDef
+    {
+        name                        "objectiveinfo"
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        itemDef
+        {
+            rect                        20 10 400 32 8 8
+            decoration                  
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && 1 && (dvarbool(specialops)) && !dvarbool(coop));
+            textalign                   4
+            textscale                   0.5833
+            textfont                    9
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("sp/specopstable.csv", 1, dvarstring(ui_load_so_level), 2);
+        }
+        itemDef
+        {
+            rect                        20 10 400 32 8 8
+            decoration                  
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && 1 && (dvarbool(specialops)) && dvarbool(coop));
+            textalign                   4
+            textscale                   0.5833
+            textfont                    9
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@" + tablelookup("sp/specopstable.csv", 1, dvarstring(coop_mapname), 2);
+        }
+        itemDef
+        {
+            rect                        20 38 -320 1 8 8
+            style                       3
+            decoration                  
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && 1 && (dvarbool(specialops)));
+            textscale                   0.55
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        20 38 400 32 8 8
+            decoration                  
+            type                        8
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && 1 && (dvarbool(specialops)));
+            ownerdraw                   99
+            textalign                   4
+            textscale                   0.5
+            textfont                    9
+            exp rect y                  38 + (dvarbool(specialops)) * 24;
+        }
+        itemDef
+        {
+            rect                        20 38 400 32 8 8
+            decoration                  
+            type                        8
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && 1 && !(dvarbool(specialops)));
+            ownerdraw                   99
+            textalign                   4
+            textscale                   0.5
+            textfont                    9
+            forecolor                   1 0.8 0.4 1
+            exp rect y                  38 + (dvarbool(specialops)) * 24;
+        }
+        itemDef
+        {
+            name                        "objectivecheckbox"
+            rect                        20 64 16 16 8 8
+            decoration                  
+            type                        8
+            visible                     when(1);
+            ownerdraw                   100
+            textscale                   0.375
+            textstyle                   3
+            textfont                    3
+            exp rect y                  64 + (dvarbool(specialops)) * 24;
+        }
+        itemDef
+        {
+            name                        "minimapTickerBorder"
+            rect                        -159 -196 120 120 10 10
+            decoration                  
+            type                        8
+            visible                     when(!dvarbool(ui_hidemap));
+            ownerdraw                   151
+            textscale                   0.55
+            background                  "minimap_tickertape_background"
+            exp rect w                  120 + 2;
+            exp rect h                  16;
+        }
+        itemDef
+        {
+            name                        "minimapTicker"
+            rect                        -158 -192 120 120 10 10
+            decoration                  
+            type                        8
+            visible                     when(!dvarbool(ui_hidemap));
+            ownerdraw                   146
+            textscale                   0.55
+            background                  "minimap_tickertape_mp"
+            exp rect h                  10;
+        }
+        itemDef
+        {
+            rect                        -158 -180 120 120 10 10
+            decoration                  
+            type                        8
+            visible                     when(!dvarbool(ui_hidemap));
+            ownerdraw                   159
+            textscale                   0.55
+            background                  "compass_map_default"
+        }
+        itemDef
+        {
+            rect                        -158 -180 120 120 10 10
+            decoration                  
+            type                        8
+            visible                     when(!dvarbool(ui_hidemap));
+            ownerdraw                   155
+            textscale                   0.55
+        }
+        itemDef
+        {
+            rect                        -158 -180 120 120 10 10
+            decoration                  
+            type                        8
+            visible                     when(!dvarbool(ui_hidemap));
+            ownerdraw                   153
+            textscale                   0.55
+            background                  "compassping_friendly"
+        }
+        itemDef
+        {
+            rect                        -158 -180 120 120 10 10
+            decoration                  
+            type                        8
+            visible                     when(!dvarbool(ui_hidemap));
+            ownerdraw                   150
+            textscale                   0.55
+            background                  "compassping_player"
+        }
+        itemDef
+        {
+            rect                        -158 -180 120 120 10 10
+            decoration                  
+            type                        8
+            visible                     when(!dvarbool(ui_hidemap));
+            ownerdraw                   152
+            textscale                   0.55
+            background                  "objective_line"
+        }
+        itemDef
+        {
+            name                        "minimapBG"
+            rect                        -174 -187 120 120 10 10
+            decoration                  
+            type                        8
+            visible                     when(!dvarbool(ui_hidemap));
+            ownerdraw                   151
+            textscale                   0.55
+            background                  "minimap_background"
+            exp rect w                  120 + 26;
+            exp rect h                  120 + 26;
+        }
+        itemDef
+        {
+            name                        "intel_items_title"
+            rect                        20 -60 400 32 8 10
+            decoration                  
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && !(dvarbool(specialops)));
+            textalign                   4
+            textscale                   0.375
+            textfont                    9
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@MENU_SP_CURRENT_LEVEL_INTEL_TITLE";
+        }
+        itemDef
+        {
+            name                        "intel_items"
+            rect                        20 -60 400 32 8 10
+            decoration                  
+            visible                     when(!(dvarstring(mapname) == "ending" && ((dvarstring(ui_char_museum_mode) == "credits_2") || (dvarstring(ui_char_museum_mode) == "credits_black"))) && !(dvarbool(specialops)));
+            textalign                   4
+            textaligny                  16
+            textscale                   0.375
+            exp text                    locstring("@MENU_SP_CURRENT_LEVEL_INTELS", dvarint(ui_level_player_cheatpoints), dvarint(ui_level_cheatpoints));
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "vertcol_untextured_flag_dtex_nofog.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+    flagParms = material.flagParms;
+  }
+  // Cannot dump pixel shader vertcol_untextured_lin_nofog.hlsl due to being a referenced asset
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

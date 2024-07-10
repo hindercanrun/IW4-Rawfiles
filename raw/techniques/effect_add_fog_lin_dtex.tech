@@ -1,0 +1,11 @@
+{
+  stateMap "passthrough"; // TODO
+  // Cannot dump vertex shader vertcol_simple_fog_dtex.hlsl due to being a referenced asset
+
+  pixelShader 3.0 "vertcol_simple_add_lin_fog.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    fogColorLinear = float4( 0, 0, 0, 0 );
+  }
+  // Cannot dump vertex decl ppcc0t0t0 due to being a referenced asset
+}

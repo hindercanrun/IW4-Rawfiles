@@ -1,0 +1,6 @@
+{
+  stateMap "passthrough"; // TODO
+  // Cannot dump vertex shader vertcol_untextured_nofog.hlsl due to being a referenced asset
+  // Cannot dump pixel shader vertcol_untextured_lin_nofog.hlsl due to being a referenced asset
+  // Cannot dump vertex decl ppcc0 due to being a referenced asset
+}

@@ -1,0 +1,16 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "post_light.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+    inverseViewProjectionMatrix = constant.inverseTransposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "post_light.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    floatZSampler = sampler.floatZ;
+  }
+  // Cannot dump vertex decl ppcc0 due to being a referenced asset
+}

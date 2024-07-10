@@ -1,0 +1,19 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "debug_normals_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "debug_normals.hlsl"
+  {
+    normalMapSampler = material.normalMap;
+  }
+
+  vertex.position = code.position;
+  vertex.texcoord[0] = code.texcoord[0];
+  vertex.normal = code.normal;
+  vertex.texcoord[1] = code.tangent;
+}

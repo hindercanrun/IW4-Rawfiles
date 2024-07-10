@@ -1,0 +1,15 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "custom_growing_ice_cracks_vertcol_simple_fog.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "custom_growing_ice_cracks_vertcol_shaded_fog_lin.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+  }
+  // Cannot dump vertex decl ppcc0t0t0 due to being a referenced asset
+}

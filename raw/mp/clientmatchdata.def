@@ -1,0 +1,174 @@
+// ====================
+// Version 13
+// Calculated checksum did not match checksum in file
+// Overriding checksum to match original value
+// ====================
+version 13
+{
+  checksumoverride 2107762698;
+
+  enum ENUM_0
+  {
+    "none",
+    "killstreak",
+    "headshots",
+    "damagedone",
+    "damagetaken",
+    "knifekills",
+    "assists",
+    "pistolkills",
+    "grenadekills",
+    "multikill",
+    "finalkill",
+    "deaths",
+    "kills",
+    "uavs",
+    "airstrikes",
+    "helicopters",
+    "mvp",
+    "overkill",
+    "suicides",
+    "flankkills",
+    "flankdeaths",
+    "fragkills",
+    "c4kills",
+    "semtexkills",
+    "claymorekills",
+    "throwingknifekills",
+    "smgkills",
+    "arkills",
+    "rocketkills",
+    "shotgunkills",
+    "lmgkills",
+    "sniperkills",
+    "pistolheadshots",
+    "smgheadshots",
+    "arheadshots",
+    "shotgunheadshots",
+    "lmgheadshots",
+    "sniperheadshots",
+    "punisher",
+    "equipmentkills",
+    "bulletpenkills",
+    "revengekills",
+    "avengekills",
+    "rescues",
+    "longshots",
+    "higherrankkills",
+    "adskills",
+    "hipfirekills",
+    "laststandkills",
+    "laststanderkills",
+    "lowerrankkills",
+    "otherweaponkills",
+    "shotgundeaths",
+    "shortestlife",
+    "highlander",
+    "kdratio10",
+    "noawards",
+    "noflankdeaths",
+    "deathstreak",
+    "mostmultikills",
+    "killedotherteam",
+    "killedotherteamonelife",
+    "distancetraveled",
+    "sprinttime",
+    "crouchtime",
+    "pronetime",
+    "comebacks",
+    "longestlife",
+    "killcamtimewatched",
+    "killcamskipped",
+    "mostreloads",
+    "mostswaps",
+    "mostshotsfired",
+    "timeinspot",
+    "mostcamperkills",
+    "greatestavgalt",
+    "leastavgalt",
+    "killsteals",
+    "mostff",
+    "killedsameplayer",
+    "mostweaponsused",
+    "closertoenemies",
+    "mostclasseschanged",
+    "mosttacprevented",
+    "explosionssurvived",
+    "shieldblocks",
+    "fbhits",
+    "stunhits",
+    "scopedkills",
+    "thermalkills",
+    "thumperkills",
+    "kdratio",
+    "afk",
+    "participant",
+    "shieldkills",
+    "shielddeaths",
+    "throwbacks",
+    "bombsplanted",
+    "bombsdefused",
+    "targetsdestroyed",
+    "bombcarrierkills",
+    "killsasbombcarrier",
+    "bombscarried",
+    "pointscaptured",
+    "hqscaptured",
+    "hqsdestroyed",
+    "flagscaptured",
+    "flagsreturned",
+    "flagscarried",
+    "flagcarrierkills",
+    "killsasflagcarrier"
+  };
+
+  enum ENUM_1
+  {
+    "none",
+    "us_army",
+    "opforce_composite",
+    "seals_udt",
+    "secret_service",
+    "opforce_arctic",
+    "opforce_airborne",
+    "militia",
+    "socom_141",
+    "socom_141_forest",
+    "socom_141_arctic",
+    "socom_141_desert"
+  };
+
+  enum ENUM_2
+  {
+    "none",
+    "neutral",
+    "allies",
+    "axis"
+  };
+
+  struct root
+  {
+    STRUCT_2 players[18];
+    byte highlightCount;
+    STRUCT_1 highlights[18];
+    byte scoreboardPlayerCount;
+    byte scoreboards[ENUM_2][18];
+  };
+
+  struct STRUCT_1
+  {
+    ENUM_0 award;
+    byte clientId;
+    int value;
+  };
+
+  struct STRUCT_2
+  {
+    string(22) xuid;
+    int score;
+    short kills;
+    short assists;
+    short deaths;
+    ENUM_1 faction;
+  };
+}

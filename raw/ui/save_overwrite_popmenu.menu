@@ -1,0 +1,89 @@
+{
+    menuDef
+    {
+        name                        "save_overwrite_popmenu"
+        rect                        220 220 200 80 0 0
+        style                       1
+        border                      1
+        backcolor                   0.1 0.15 0.1 1
+        bordercolor                 0.5 0.5 0.5 0.5
+        focuscolor                  1 1 1 1
+        popup                       
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        onESC
+        {
+            close save_overwrite_popmenu;
+            open save_load_menu;
+        }
+        itemDef
+        {
+            name                        "confirm"
+            text                        "@MENU_OVERWRITE_EXISTING_FILE"
+            rect                        0 0 212 60 0 0
+            decoration                  
+            visible                     1
+            textalign                   1
+            textalignx                  6
+            textaligny                  20
+            textscale                   0.24
+            textstyle                   3
+        }
+        itemDef
+        {
+            name                        "overwrite_ok"
+            text                        "@MENU_YES"
+            rect                        25 35 50 20 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalign                   1
+            textalignx                  -2
+            textaligny                  15
+            textscale                   0.25
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.95 1
+            mouseEnter
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                close save_overwrite_popmenu;
+                close save_load_menu;
+                close main;
+                uiScript forcesave;
+            }
+        }
+        itemDef
+        {
+            name                        "overwrite_no"
+            text                        "@MENU_NO"
+            rect                        120 35 50 20 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalign                   1
+            textalignx                  -2
+            textaligny                  15
+            textscale                   0.25
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.95 1
+            mouseEnter
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                open save_load_menu close save_overwrite_popmenu;
+                uiScript loadSavegames;
+                uiScript update ui_savegameListAutosave;
+            }
+        }
+    }
+}

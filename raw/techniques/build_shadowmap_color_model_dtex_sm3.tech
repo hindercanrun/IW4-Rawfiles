@@ -1,0 +1,6 @@
+{
+  stateMap "passthrough"; // TODO
+  // Cannot dump vertex shader shadowmap_build.hlsl due to being a referenced asset
+  // Cannot dump pixel shader shadowmap_build_sm3.hlsl due to being a referenced asset
+  // Cannot dump vertex decl pp due to being a referenced asset
+}

@@ -1,0 +1,28 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "custom_growing_ice_cracks_lm_sm_omni_dfog_tc0n0_sm3.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    shadowLookupMatrix = constant.transposeShadowLookupMatrix;
+  }
+
+  pixelShader 3.0 "custom_growing_ice_cracks_lm_sm_spot_dfog_b0c0n0_sm3.hlsl"
+  {
+    normalMapSampler = material.normalMap;
+    colorMapSampler = material.colorMap;
+    shadowmapSamplerSpot = sampler.shadowmapSpot;
+    lightSpotDir = constant.light.spotDir;
+    lightSpotFactors = constant.light.spotFactors;
+    lightFalloffPlacement = constant.light.falloffPlacement;
+    lightPosition = constant.light.position;
+    lightDiffuse = constant.light.diffuse;
+  }
+
+  vertex.position = code.position;
+  vertex.color[0] = code.color;
+  vertex.texcoord[0] = code.texcoord[0];
+  vertex.normal = code.normal;
+  vertex.texcoord[2] = code.tangent;
+}

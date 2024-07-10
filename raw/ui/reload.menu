@@ -1,0 +1,25 @@
+{
+    menuDef
+    {
+        name                        "reload"
+        rect                        0 -20 640 480 4 4
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     when(!(player("number") + 1 == dvarint(ui_remotemissile_playernum)) && (dvarbool(hud_missionFailed) == 0) && (dvarstring(createfx) != "on") && !flashbanged() && !usingvehicle() && !ui_active() && (dvarint(ammoCounterHide) == 0));
+        itemDef
+        {
+            name                        "lowammowarning"
+            rect                        -50 0 100 100 2 2
+            decoration                  
+            type                        8
+            visible                     when((dvarint(g_gameskill) == 0) || (dvarint(g_gameskill) == 1));
+            ownerdraw                   120
+            textalign                   9
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    9
+            exp forecolor a             hudfade("weapon");
+        }
+    }
+}

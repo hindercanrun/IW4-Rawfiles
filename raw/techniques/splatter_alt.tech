@@ -1,0 +1,15 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "splatter_alt.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "splatter_alt.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    colorMapSampler1 = material.colorMap2;
+  }
+  // Cannot dump vertex decl ppcc0t0t0 due to being a referenced asset
+}

@@ -1,0 +1,805 @@
+{
+    functionDef
+    {
+        name                        "FUNC_0"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_1"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_2"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_3"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_4"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_5"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_6"
+        value                       team("name") == "TEAM_ALLIES";
+    }
+    functionDef
+    {
+        name                        "FUNC_7"
+        value                       team("name") == "TEAM_AXIS";
+    }
+    functionDef
+    {
+        name                        "FUNC_8"
+        value                       ((team("name") == "TEAM_AXIS") * 1) + ((team("name") == "TEAM_ALLIES") * 2);
+    }
+    functionDef
+    {
+        name                        "FUNC_9"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14);
+    }
+    functionDef
+    {
+        name                        "FUNC_10"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15);
+    }
+    functionDef
+    {
+        name                        "FUNC_11"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16);
+    }
+    functionDef
+    {
+        name                        "FUNC_12"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14);
+    }
+    functionDef
+    {
+        name                        "FUNC_13"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15);
+    }
+    functionDef
+    {
+        name                        "FUNC_14"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16);
+    }
+    functionDef
+    {
+        name                        "FUNC_15"
+        value                       (FUNC_12() * FUNC_7()) + (FUNC_9() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_16"
+        value                       (FUNC_13() * FUNC_7()) + (FUNC_10() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_17"
+        value                       (FUNC_14() * FUNC_7()) + (FUNC_11() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_18"
+        value                       (FUNC_12() * !(FUNC_7())) + (FUNC_9() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_19"
+        value                       (FUNC_13() * !(FUNC_7())) + (FUNC_10() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_20"
+        value                       (FUNC_14() * !(FUNC_7())) + (FUNC_11() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_21"
+        value                       max(0, (localvarint("ui_ac130timer") - milliseconds()) / 1000);
+    }
+    functionDef
+    {
+        name                        "FUNC_22"
+        value                       (getplayercardinfo(0, 0, 7) != 0) && (getplayercardinfo(6, 0, 7) && getplayercardinfo(6, 0, 7) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_23"
+        value                       (getplayercardinfo(0, 0, 8) != 0) && (getplayercardinfo(6, 0, 8) && getplayercardinfo(6, 0, 8) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_24"
+        value                       (getplayercardinfo(0, 0, 5) != 0) && (getplayercardinfo(6, 0, 5) && getplayercardinfo(6, 0, 5) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_25"
+        value                       (getplayercardinfo(0, 0, 7) != 0) && (!getplayercardinfo(6, 0, 7) || getplayercardinfo(6, 0, 7) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_26"
+        value                       (getplayercardinfo(0, 0, 8) != 0) && (!getplayercardinfo(6, 0, 8) || getplayercardinfo(6, 0, 8) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_27"
+        value                       (getplayercardinfo(0, 0, 5) != 0) && (!getplayercardinfo(6, 0, 5) || getplayercardinfo(6, 0, 5) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_28"
+        value                       getplayerdata("customClasses", 0, "inUse") || getplayerdata("customClasses", 1, "inUse") || getplayerdata("customClasses", 2, "inUse") || getplayerdata("customClasses", 3, "inUse") || getplayerdata("customClasses", 4, "inUse") || getplayerdata("customClasses", 5, "inUse") || getplayerdata("customClasses", 6, "inUse") || getplayerdata("customClasses", 7, "inUse") || getplayerdata("customClasses", 8, "inUse") || getplayerdata("customClasses", 9, "inUse");
+    }
+    functionDef
+    {
+        name                        "FUNC_29"
+        value                       dvarbool(cl_ingame) || dvarbool(sv_running);
+    }
+    functionDef
+    {
+        name                        "FUNC_30"
+        value                       dvarbool(cl_ingame) || dvarbool(sv_running) || inlobby();
+    }
+    functionDef
+    {
+        name                        "FUNC_31"
+        value                       (dvarstring(gameMode) == "so" && FUNC_30()) || (dvarstring(gameMode) == "mp" && FUNC_30());
+    }
+    functionDef
+    {
+        name                        "FUNC_32"
+        value                       dvarbool(onlinegame) && dvarbool(xblive_privatematch);
+    }
+    functionDef
+    {
+        name                        "FUNC_33"
+        value                       !FUNC_32();
+    }
+    functionDef
+    {
+        name                        "FUNC_34"
+        value                       weaponname() == "riotshield_mp";
+    }
+    functionDef
+    {
+        name                        "FUNC_35"
+        value                       weaponname() == "ac130_105mm_mp";
+    }
+    functionDef
+    {
+        name                        "FUNC_36"
+        value                       weaponname() == "ac130_40mm_mp";
+    }
+    functionDef
+    {
+        name                        "FUNC_37"
+        value                       weaponname() == "ac130_25mm_mp";
+    }
+    functionDef
+    {
+        name                        "FUNC_38"
+        value                       FUNC_35() || FUNC_36() || FUNC_37();
+    }
+    functionDef
+    {
+        name                        "FUNC_39"
+        value                       weaponname() == "killstreak_ac130_mp";
+    }
+    functionDef
+    {
+        name                        "FUNC_40"
+        value                       weaponname() == "killstreak_helicopter_minigun_mp";
+    }
+    functionDef
+    {
+        name                        "FUNC_41"
+        value                       weaponname() == "killstreak_predator_missile_mp";
+    }
+    functionDef
+    {
+        name                        "FUNC_42"
+        value                       weaponname() == "heli_remote_mp";
+    }
+    functionDef
+    {
+        name                        "FUNC_43"
+        value                       adsjavelin();
+    }
+    functionDef
+    {
+        name                        "FUNC_44"
+        value                       dvarint(scr_gameended);
+    }
+    functionDef
+    {
+        name                        "FUNC_45"
+        value                       !FUNC_44();
+    }
+    functionDef
+    {
+        name                        "FUNC_46"
+        value                       getperk("equipment") == "_specialty_blastshield" && (FUNC_45() || inkillcam());
+    }
+    functionDef
+    {
+        name                        "FUNC_47"
+        value                       FUNC_39() || FUNC_40() || FUNC_41() || FUNC_38() || FUNC_43() || FUNC_42() || missilecam();
+    }
+    functionDef
+    {
+        name                        "FUNC_48"
+        value                       !FUNC_47();
+    }
+    functionDef
+    {
+        name                        "FUNC_49"
+        value                       FUNC_47() || FUNC_46();
+    }
+    functionDef
+    {
+        name                        "FUNC_50"
+        value                       !FUNC_49();
+    }
+    functionDef
+    {
+        name                        "FUNC_51"
+        value                       dvarbool(g_hardcore);
+    }
+    functionDef
+    {
+        name                        "FUNC_52"
+        value                       !FUNC_51();
+    }
+    functionDef
+    {
+        name                        "FUNC_53"
+        value                       ui_active();
+    }
+    functionDef
+    {
+        name                        "FUNC_54"
+        value                       !FUNC_53();
+    }
+    functionDef
+    {
+        name                        "FUNC_55"
+        value                       menuisopen("scoreboard");
+    }
+    functionDef
+    {
+        name                        "FUNC_56"
+        value                       !FUNC_55();
+    }
+    functionDef
+    {
+        name                        "FUNC_57"
+        value                       inkillcam();
+    }
+    functionDef
+    {
+        name                        "FUNC_58"
+        value                       !FUNC_57();
+    }
+    functionDef
+    {
+        name                        "FUNC_59"
+        value                       flashbanged();
+    }
+    functionDef
+    {
+        name                        "FUNC_60"
+        value                       !FUNC_59();
+    }
+    functionDef
+    {
+        name                        "FUNC_61"
+        value                       spectatingclient();
+    }
+    functionDef
+    {
+        name                        "FUNC_62"
+        value                       !FUNC_61();
+    }
+    functionDef
+    {
+        name                        "FUNC_63"
+        value                       spectatingfree();
+    }
+    functionDef
+    {
+        name                        "FUNC_64"
+        value                       !FUNC_63();
+    }
+    functionDef
+    {
+        name                        "FUNC_65"
+        value                       spectatingclient() || spectatingfree();
+    }
+    functionDef
+    {
+        name                        "FUNC_66"
+        value                       !FUNC_65();
+    }
+    functionDef
+    {
+        name                        "FUNC_67"
+        value                       milliseconds() - localvarint("ui_show_perks") < 5000;
+    }
+    functionDef
+    {
+        name                        "FUNC_68"
+        value                       milliseconds() - localvarint("ui_show_killedBy") < 4000 || FUNC_57();
+    }
+    functionDef
+    {
+        name                        "FUNC_69"
+        value                       !FUNC_68();
+    }
+    functionDef
+    {
+        name                        "FUNC_70"
+        value                       milliseconds() - localvarint("ui_show_youKilled") < 2500 && FUNC_69();
+    }
+    functionDef
+    {
+        name                        "FUNC_71"
+        value                       FUNC_61() && dvarbool(cg_thirdPersonSpectator);
+    }
+    functionDef
+    {
+        name                        "FUNC_72"
+        value                       !FUNC_71();
+    }
+    functionDef
+    {
+        name                        "FUNC_73"
+        value                       selecting_location();
+    }
+    functionDef
+    {
+        name                        "FUNC_74"
+        value                       !FUNC_73();
+    }
+    functionDef
+    {
+        name                        "FUNC_75"
+        value                       scoped();
+    }
+    functionDef
+    {
+        name                        "FUNC_76"
+        value                       !FUNC_75();
+    }
+    functionDef
+    {
+        name                        "FUNC_77"
+        value                       !isempjammed();
+    }
+    functionDef
+    {
+        name                        "FUNC_78"
+        value                       FUNC_54() && FUNC_52() && FUNC_60() && FUNC_48() && FUNC_77() && FUNC_45();
+    }
+    functionDef
+    {
+        name                        "FUNC_79"
+        value                       FUNC_54() && FUNC_60() && FUNC_48() && FUNC_77() && FUNC_45();
+    }
+    functionDef
+    {
+        name                        "FUNC_80"
+        value                       FUNC_54() && FUNC_52() && FUNC_58() && FUNC_45();
+    }
+    functionDef
+    {
+        name                        "FUNC_81"
+        value                       FUNC_54() && FUNC_52() && FUNC_62() && FUNC_58() && FUNC_45() && FUNC_60() && FUNC_48();
+    }
+    functionDef
+    {
+        name                        "FUNC_82"
+        value                       FUNC_54() && FUNC_62() && FUNC_60() && FUNC_50() && FUNC_76() && FUNC_74() && FUNC_77() && (FUNC_52() || radarisenabled() || dvarint(g_compassShowEnemies)) && FUNC_45();
+    }
+    functionDef
+    {
+        name                        "FUNC_83"
+        value                       int(radarjamintensity() >= 1);
+    }
+    functionDef
+    {
+        name                        "FUNC_84"
+        value                       dvarint(ui_scorelimit);
+    }
+    functionDef
+    {
+        name                        "FUNC_85"
+        value                       dvarint(ui_overtime);
+    }
+    functionDef
+    {
+        name                        "FUNC_86"
+        value                       dvarint(ui_timelimit);
+    }
+    functionDef
+    {
+        name                        "FUNC_87"
+        value                       timeleft() + 1 > (FUNC_86() * 60 * 0.5);
+    }
+    functionDef
+    {
+        name                        "FUNC_88"
+        value                       dvarint(ui_halftime);
+    }
+    functionDef
+    {
+        name                        "FUNC_89"
+        value                       int(timeleft() - (FUNC_86() * 0.5 * 60 * (FUNC_88() && FUNC_87())));
+    }
+    functionDef
+    {
+        name                        "FUNC_90"
+        value                       timeleft() < 1;
+    }
+    functionDef
+    {
+        name                        "FUNC_91"
+        value                       team("name");
+    }
+    functionDef
+    {
+        name                        "FUNC_92"
+        value                       player("score");
+    }
+    functionDef
+    {
+        name                        "FUNC_93"
+        value                       scoreatrank(1);
+    }
+    functionDef
+    {
+        name                        "FUNC_94"
+        value                       scoreatrank(2);
+    }
+    functionDef
+    {
+        name                        "FUNC_95"
+        value                       FUNC_92() / dvarint(ui_scorelimit);
+    }
+    functionDef
+    {
+        name                        "FUNC_96"
+        value                       FUNC_93() / dvarint(ui_scorelimit);
+    }
+    functionDef
+    {
+        name                        "FUNC_97"
+        value                       FUNC_94() / dvarint(ui_scorelimit);
+    }
+    functionDef
+    {
+        name                        "FUNC_98"
+        value                       ((FUNC_92() == FUNC_93()) * FUNC_94()) + ((FUNC_92() != FUNC_93()) * FUNC_93());
+    }
+    functionDef
+    {
+        name                        "FUNC_99"
+        value                       FUNC_91() == "TEAM_FREE";
+    }
+    functionDef
+    {
+        name                        "FUNC_100"
+        value                       !FUNC_99();
+    }
+    functionDef
+    {
+        name                        "FUNC_101"
+        value                       (team("score") * FUNC_100()) + (FUNC_92() * FUNC_99());
+    }
+    functionDef
+    {
+        name                        "FUNC_102"
+        value                       (otherteam("score") * FUNC_100()) + (FUNC_98() * FUNC_99());
+    }
+    functionDef
+    {
+        name                        "FUNC_103"
+        value                       FUNC_101() / dvarint(ui_scorelimit);
+    }
+    functionDef
+    {
+        name                        "FUNC_104"
+        value                       FUNC_102() / dvarint(ui_scorelimit);
+    }
+    functionDef
+    {
+        name                        "FUNC_105"
+        value                       (FUNC_101() > FUNC_102() && FUNC_91() != "TEAM_FREE") || (FUNC_92() == FUNC_93() && FUNC_93() != FUNC_94() && FUNC_91() == "TEAM_FREE");
+    }
+    functionDef
+    {
+        name                        "FUNC_106"
+        value                       (FUNC_101() == FUNC_102() && FUNC_91() != "TEAM_FREE") || (FUNC_92() == FUNC_93() && FUNC_93() == FUNC_94() && FUNC_91() == "TEAM_FREE");
+    }
+    functionDef
+    {
+        name                        "FUNC_107"
+        value                       (FUNC_101() < FUNC_102() && FUNC_91() != "TEAM_FREE") || (FUNC_92() != FUNC_93() && FUNC_91() == "TEAM_FREE");
+    }
+    functionDef
+    {
+        name                        "FUNC_108"
+        value                       (FUNC_107() * - 1) + (FUNC_105() || FUNC_106());
+    }
+    functionDef
+    {
+        name                        "FUNC_109"
+        value                       player("score");
+    }
+    functionDef
+    {
+        name                        "FUNC_110"
+        value                       dvarbool(widescreen);
+    }
+    functionDef
+    {
+        name                        "FUNC_111"
+        value                       !FUNC_110();
+    }
+    functionDef
+    {
+        name                        "FUNC_112"
+        value                       dvarint(ui_bomb_timer);
+    }
+    functionDef
+    {
+        name                        "FUNC_113"
+        value                       tablelookup("mp/rankTable.csv", 0, levelforexperience(getplayerdata("experience")), 2);
+    }
+    functionDef
+    {
+        name                        "FUNC_114"
+        value                       tablelookup("mp/rankTable.csv", 0, levelforexperience(getplayerdata("experience")), 7);
+    }
+    functionDef
+    {
+        name                        "FUNC_115"
+        value                       min((getplayerdata("experience") - FUNC_113()) / (FUNC_114() - FUNC_113()), 0.9999);
+    }
+    functionDef
+    {
+        name                        "FUNC_116"
+        value                       min((getplayerdata("restXPGoal") - FUNC_113()) / (FUNC_114() - FUNC_113()), 0.9999);
+    }
+    functionDef
+    {
+        name                        "FUNC_117"
+        value                       ((640 + (213.333 * dvarbool(widescreen))) * getadjustedsafeareahorizontal());
+    }
+    functionDef
+    {
+        name                        "FUNC_118"
+        value                       (480 * getadjustedsafeareavertical());
+    }
+    functionDef
+    {
+        name                        "FUNC_119"
+        value                       (640 + (213.333 * dvarbool(widescreen)));
+    }
+    functionDef
+    {
+        name                        "FUNC_120"
+        value                       480;
+    }
+    functionDef
+    {
+        name                        "FUNC_121"
+        value                       ((FUNC_115() * 0.95) + 0.005 + int(FUNC_115() * 10) * 0.005) * FUNC_117();
+    }
+    functionDef
+    {
+        name                        "FUNC_122"
+        value                       ((FUNC_116() * 0.95) + 0.005 + int(FUNC_116() * 10) * 0.005) * FUNC_117();
+    }
+    functionDef
+    {
+        name                        "FUNC_123"
+        value                       (16 / (1 + (0.5 * dvarbool(widescreen)))) * getadjustedsafeareahorizontal();
+    }
+    functionDef
+    {
+        name                        "FUNC_124"
+        value                       ((640 + (213.333 * dvarbool(widescreen))) * getadjustedsafeareahorizontal()) * 0.5;
+    }
+    functionDef
+    {
+        name                        "FUNC_125"
+        value                       FUNC_121() * 0.5;
+    }
+    functionDef
+    {
+        name                        "FUNC_126"
+        value                       FUNC_122() * 0.5;
+    }
+    functionDef
+    {
+        name                        "FUNC_127"
+        value                       dvarbool(splitscreen);
+    }
+    functionDef
+    {
+        name                        "FUNC_128"
+        value                       !FUNC_127();
+    }
+    functionDef
+    {
+        name                        "FUNC_129"
+        value                       dvarbool(hiDef);
+    }
+    functionDef
+    {
+        name                        "FUNC_130"
+        value                       !FUNC_129();
+    }
+    functionDef
+    {
+        name                        "FUNC_131"
+        value                       getperk("perk1");
+    }
+    functionDef
+    {
+        name                        "FUNC_132"
+        value                       getperk("perk2");
+    }
+    functionDef
+    {
+        name                        "FUNC_133"
+        value                       getperk("perk3");
+    }
+    functionDef
+    {
+        name                        "FUNC_134"
+        value                       getperk("perk4");
+    }
+    functionDef
+    {
+        name                        "FUNC_135"
+        value                       tablelookup("mp/perkTable.csv", 1, FUNC_131(), 7) == "active";
+    }
+    functionDef
+    {
+        name                        "FUNC_136"
+        value                       tablelookup("mp/perkTable.csv", 1, FUNC_132(), 7) == "active";
+    }
+    functionDef
+    {
+        name                        "FUNC_137"
+        value                       tablelookup("mp/perkTable.csv", 1, FUNC_133(), 7) == "active";
+    }
+    functionDef
+    {
+        name                        "FUNC_138"
+        value                       tablelookup("mp/perkTable.csv", 1, FUNC_134(), 7) == "active";
+    }
+    functionDef
+    {
+        name                        "FUNC_139"
+        value                       player("stockAmmo");
+    }
+    functionDef
+    {
+        name                        "FUNC_140"
+        value                       player("clipAmmo");
+    }
+    functionDef
+    {
+        name                        "FUNC_141"
+        value                       player("clipammo_left");
+    }
+    functionDef
+    {
+        name                        "FUNC_142"
+        value                       player("fragAmmo");
+    }
+    functionDef
+    {
+        name                        "FUNC_143"
+        value                       player("smokeAmmo");
+    }
+    functionDef
+    {
+        name                        "FUNC_144"
+        value                       dvarint("scr_" + dvarstring(g_gametype) + "_winlimit") > 1 || dvarint("scr_" + dvarstring(g_gametype) + "_roundlimit") > 1;
+    }
+    functionDef
+    {
+        name                        "FUNC_145"
+        value                       (milliseconds() % 4000) / 4000;
+    }
+    functionDef
+    {
+        name                        "FUNC_146"
+        value                       1 - FUNC_145();
+    }
+    functionDef
+    {
+        name                        "FUNC_147"
+        value                       dvarstring(ui_danger_team) != "BombExploded" && (team("name") == "TEAM_ALLIES" && dvarstring(ui_danger_team) == "allies") || (team("name") == "TEAM_AXIS" && dvarstring(ui_danger_team) == "axis");
+    }
+    functionDef
+    {
+        name                        "FUNC_148"
+        value                       dvarstring(ui_danger_team) != "BombExploded" && (team("name") == "TEAM_ALLIES" && dvarstring(ui_danger_team) == "axis") || (team("name") == "TEAM_AXIS" && dvarstring(ui_danger_team) == "allies");
+    }
+    functionDef
+    {
+        name                        "FUNC_149"
+        value                       dvarstring(ui_danger_team) == "contested";
+    }
+    functionDef
+    {
+        name                        "FUNC_150"
+        value                       dvarstring(ui_danger_team) != "BombExploded" && dvarstring(ui_danger_team) == "none";
+    }
+    functionDef
+    {
+        name                        "FUNC_151"
+        value                       dvarbool(camera_thirdPerson);
+    }
+    functionDef
+    {
+        name                        "FUNC_152"
+        value                       !FUNC_151();
+    }
+    functionDef
+    {
+        name                        "FUNC_153"
+        value                       (FUNC_78() && FUNC_70() && FUNC_58()) && !dvarbool(ui_hide_playercards) && !FUNC_68() && !FUNC_57();
+    }
+    functionDef
+    {
+        name                        "FUNC_154"
+        value                       FUNC_54() && (FUNC_68() || FUNC_57()) && !dvarbool(ui_hide_playercards);
+    }
+    functionDef
+    {
+        name                        "FUNC_155"
+        value                       (FUNC_149() || FUNC_148() || FUNC_150() || FUNC_147());
+    }
+    functionDef
+    {
+        name                        "FUNC_156"
+        value                       dvarint(ui_bomb_timer);
+    }
+    loadMenu { "ui_mp/hud_fullscreen.menu" }
+    loadMenu { "ui_mp/hold_breath_hint.menu" }
+    loadMenu { "ui_mp/targetmap_fullscreen.menu" }
+    loadMenu { "ui_mp/playercard_spectator_hd.menu" }
+    loadMenu { "ui_mp/scorebar_hd.menu" }
+    loadMenu { "ui_mp/weaponbar_hd.menu" }
+    loadMenu { "ui_mp/dpad_hd.menu" }
+    loadMenu { "ui_mp/xpbar_hd.menu" }
+    loadMenu { "ui_mp/minimap_fullscreen.menu" }
+    loadMenu { "ui_mp/killcam_fullscreen.menu" }
+    loadMenu { "ui_mp/perks_info_hd.menu" }
+    loadMenu { "ui_mp/javelin_overlay_hd.menu" }
+    loadMenu { "ui_mp/missilecam_hud_hd.menu" }
+    loadMenu { "ui_mp/ac130_hud_hd.menu" }
+    loadMenu { "ui_mp/remote_chopper_overlay_hd.menu" }
+    loadMenu { "ui_mp/playercard_youkilled_hd.menu" }
+    loadMenu { "ui_mp/playercard_killedby_hd.menu" }
+    loadMenu { "ui_mp/safearea_hd.menu" }
+}

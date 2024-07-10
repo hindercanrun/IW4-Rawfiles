@@ -1,0 +1,43 @@
+{
+    menuDef
+    {
+        name                        "connect"
+        rect                        0 0 640 480 0 0
+        style                       1
+        backcolor                   1 1 1 1
+        focuscolor                  1 1 1 1
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        fadeInAmount                0.002
+        visible                     1
+        itemDef
+        {
+            rect                        -107 0 854 480 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.2 0.2 0.2 1
+        }
+        itemDef
+        {
+            rect                        192 424 256 8 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.2 0.2 0.2 1
+        }
+        itemDef
+        {
+            name                        "loadbar"
+            rect                        192 424 256 8 0 0
+            style                       6
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "white"
+        }
+    }
+}

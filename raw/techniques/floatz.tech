@@ -1,0 +1,15 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "floatz.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "floatz.hlsl"
+  {
+    rawFloatZSampler = sampler.rawFloatZ;
+  }
+
+  vertex.position = code.position;
+}

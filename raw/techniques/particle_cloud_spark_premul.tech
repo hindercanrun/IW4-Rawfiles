@@ -1,0 +1,17 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "particle_cloud_spark.hlsl"
+  {
+    worldViewMatrix = constant.transposeWorldViewMatrix;
+    worldViewMatrix1 = constant.transposeWorldViewMatrix1;
+    worldViewMatrix2 = constant.transposeWorldViewMatrix2;
+    projectionMatrix = constant.transposeProjectionMatrix;
+  }
+
+  pixelShader 3.0 "particle_cloud_spark_premul.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+  }
+  // Cannot dump vertex decl ppt0t0 due to being a referenced asset
+}

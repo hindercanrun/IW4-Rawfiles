@@ -1,0 +1,20 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "lm_omni_fog_tc0_sm3.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "lm_spot_fog_b0c0px_sm3.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    lightSpotDir = constant.light.spotDir;
+    lightSpotFactors = constant.light.spotFactors;
+    lightFalloffPlacement = constant.light.falloffPlacement;
+    lightPosition = constant.light.position;
+    lightDiffuse = constant.light.diffuse;
+  }
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

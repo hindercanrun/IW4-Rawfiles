@@ -1,0 +1,10 @@
+{
+  stateMap "passthrough"; // TODO
+  // Cannot dump vertex shader vertcol_simple_dtex.hlsl due to being a referenced asset
+
+  pixelShader 3.0 "vertcol_simple_add.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+  }
+  // Cannot dump vertex decl ppcc0t0t0 due to being a referenced asset
+}

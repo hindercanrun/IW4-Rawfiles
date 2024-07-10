@@ -1,0 +1,14 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "shadowmap_build.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "shadowmap_build_sm3.hlsl"
+  {
+  }
+
+  vertex.position = code.position;
+}

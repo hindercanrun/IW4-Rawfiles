@@ -1,0 +1,49 @@
+{
+    menuDef
+    {
+        name                        "pausedbkgnd"
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        blurWorld                   4.8
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0 0.35
+        }
+        itemDef
+        {
+            rect                        0 0 854 75 4 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "gradient_top"
+        }
+        itemDef
+        {
+            rect                        0 480 854 75 4 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "gradient_bottom"
+        }
+        itemDef
+        {
+            rect                        -164 0 -280 480 10 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.75 0.75 0.75 0.25
+            background                  "gradient_fadein_fadebottom"
+        }
+    }
+}

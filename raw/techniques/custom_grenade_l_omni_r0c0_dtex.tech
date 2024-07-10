@@ -1,0 +1,19 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "custom_grenade_l_point_tc0_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "custom_grenade_l_omni_r0c0.hlsl"
+  {
+    attenuationSampler = sampler.light.attenuation;
+    colorMapSampler = material.colorMap;
+    lightPosition = constant.light.position;
+    lightDiffuse = constant.light.diffuse;
+    fogColorLinear = float4( 0, 0, 0, 0 );
+  }
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

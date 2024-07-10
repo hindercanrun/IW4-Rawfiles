@@ -1,0 +1,12 @@
+{
+    menuDef
+    {
+        name                        "class_marines"
+        rect                        0 0 0 0 0 0
+        onOpen
+        {
+            setLocalVarString ui_team "marines";
+            open class close self;
+        }
+    }
+}

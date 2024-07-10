@@ -1,0 +1,88 @@
+"depth prepass":
+  zprepass;
+
+"build floatz":
+  build_floatz_dtex;
+
+"build shadowmap depth":
+  build_shadowmap_model;
+
+"build shadowmap color":
+  build_shadowmap_color_model_dtex_sm3;
+
+"unlit":
+  vcsh_dtex_nofog;
+
+"lit":
+"lit dfog":
+  lp_r0c0n0s0_dtex_nofog_sm3;
+
+"lit sun":
+"lit sun dfog":
+  lp_sun_r0c0n0s0_dtex_nofog_sm3;
+
+"lit sun shadow":
+"lit sun shadow dfog":
+  lp_sm_sun_r0c0n0s0_dtex_nofog_sm3;
+
+"lit spot":
+"lit spot dfog":
+  lp_spot_r0c0n0s0_dtex_nofog_sm3;
+
+"lit spot shadow":
+"lit spot shadow dfog":
+  lp_sm_spot_r0c0n0s0_dtex_nofog_sm3;
+
+"lit omni":
+"lit omni dfog":
+  lp_omni_r0c0n0s0_dtex_nofog_sm3;
+
+"lit omni shadow":
+"lit omni shadow dfog":
+  lp_sm_omni_r0c0n0s0_dtex_nofog_sm3;
+
+"lit instanced":
+"lit instanced dfog":
+  lp_i_r0c0n0s0_dtex_nofog_sm3;
+
+"lit instanced sun":
+"lit instanced sun dfog":
+  lp_i_sun_r0c0n0s0_dtex_nofog_sm3;
+
+"lit instanced sun shadow":
+"lit instanced sun shadow dfog":
+  lp_sm_i_sun_r0c0n0s0_dtex_nofog_sm3;
+
+"lit instanced spot":
+"lit instanced spot dfog":
+  lp_i_spot_r0c0n0s0_dtex_nofog_sm3;
+
+"lit instanced spot shadow":
+"lit instanced spot shadow dfog":
+  lp_sm_i_spot_r0c0n0s0_dtex_nofog_sm3;
+
+"lit instanced omni":
+"lit instanced omni dfog":
+  lp_i_omni_r0c0n0s0_dtex_nofog_sm3;
+
+"lit instanced omni shadow":
+"lit instanced omni shadow dfog":
+  lp_sm_i_omni_r0c0n0s0_dtex_nofog_sm3;
+
+"light spot":
+  l_spot_r0c0n0_dtex;
+
+"light omni":
+  l_omni_r0c0n0_dtex;
+
+"light spot shadow":
+  l_spot_shad_sm_r0c0n0_dtex;
+
+"solid wireframe":
+  wireframe_solid_dtex;
+
+"debug bumpmap":
+  debug_bumpmap_dtex;
+
+"debug bumpmap instanced":
+  debug_bumpmap_i_dtex;

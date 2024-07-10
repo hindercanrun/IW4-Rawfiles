@@ -1,0 +1,215 @@
+{
+    menuDef
+    {
+        name                        "xpbar_hd"
+        rect                        0 0 640 480 8 8
+        visible                     when(FUNC_78() && !inkillcam() && !FUNC_73() && FUNC_66() && FUNC_33());
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "720_xpbar_empty"
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 853.333 10.6667 4 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "xpbar_stencilbase"
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "720_xpbar_outlineglow"
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.85
+            background                  "720_xpbar_solid"
+            exp rect x                  FUNC_122() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when(FUNC_116() > FUNC_115());
+            textscale                   0.55
+            forecolor                   1 0.65 0 1
+            background                  "xpbar_solidfill"
+            exp rect x                  FUNC_122() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when(FUNC_116() > FUNC_115());
+            textscale                   0.55
+            background                  "xpbar_caprest"
+            exp rect x                  FUNC_122() - FUNC_123();
+            exp rect w                  FUNC_123();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 853.333 10.6667 4 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "xpbar_stencilbase"
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "720_xpbar"
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "720_xpbar_fade"
+            exp rect x                  FUNC_121() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when(FUNC_116() > FUNC_115());
+            textscale                   0.55
+            background                  "xpbar_restfill"
+            exp rect x                  FUNC_121() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when(FUNC_116() <= FUNC_115());
+            textscale                   0.55
+            background                  "xpbar_xpfill"
+            exp rect x                  FUNC_121() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when(FUNC_115() >= 0.005);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "xpbar_capshadow"
+            exp rect x                  FUNC_121() - FUNC_123();
+            exp rect w                  FUNC_123();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "720_xpbar_outline"
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   1 1 1 0.55
+            background                  "720_xpbar_solid"
+            exp rect x                  FUNC_121() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when(FUNC_116() > FUNC_115());
+            textscale                   0.55
+            forecolor                   0.541176 0.937255 0.984314 1
+            background                  "xpbar_solidfill"
+            exp rect x                  FUNC_121() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     when(FUNC_116() <= FUNC_115());
+            textscale                   0.55
+            forecolor                   0.913725 0.780392 0.458824 1
+            background                  "xpbar_solidfill"
+            exp rect x                  FUNC_121() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "720_xpbar_shadow"
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "720_xpbar_solid"
+            exp rect x                  FUNC_121() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+        itemDef
+        {
+            rect                        0 -10.6667 0 10.6667 8 10
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "xpbar_solidfill"
+            exp rect x                  FUNC_121() - FUNC_117();
+            exp rect w                  FUNC_117();
+        }
+    }
+}

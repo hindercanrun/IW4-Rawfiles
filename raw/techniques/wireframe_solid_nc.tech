@@ -1,0 +1,14 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "vertcol_untextured_nc_nofog.hlsl"
+  {
+    worldViewProjectionMatrix = constant.transposeWorldViewProjectionMatrix;
+  }
+
+  pixelShader 3.0 "vertcol_untextured_lin_nc_nofog.hlsl"
+  {
+  }
+
+  vertex.position = code.position;
+}

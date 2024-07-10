@@ -1,0 +1,60 @@
+{
+    menuDef
+    {
+        name                        "dpad_sd"
+        rect                        0 -16 640 480 4 4
+        visible                     when(FUNC_78() && !FUNC_73() && FUNC_64());
+        itemDef
+        {
+            rect                        -68.6667 -42 42.6667 42.6667 10 10
+            style                       3
+            decoration                  
+            visible                     when(actionslotusable(3));
+            textscale                   0.55
+            background                  "hud_dpad_arrow_left"
+        }
+        itemDef
+        {
+            rect                        -93 -33 32 32 10 10
+            type                        8
+            visible                     1
+            ownerdraw                   173
+            textalign                   2
+            textalignx                  -21
+            textaligny                  -3
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    10
+        }
+        itemDef
+        {
+            rect                        -63 -63 32 32 10 10
+            type                        8
+            visible                     1
+            ownerdraw                   171
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    10
+        }
+        itemDef
+        {
+            rect                        -68.6667 -42 42.6667 42.6667 10 10
+            style                       3
+            decoration                  
+            visible                     when(actionslotusable(4));
+            textscale                   0.55
+            background                  "hud_dpad_arrow_right"
+        }
+        itemDef
+        {
+            rect                        -28 -34 28 28 10 10
+            type                        8
+            visible                     1
+            ownerdraw                   174
+            textalignx                  -40
+            textscale                   0.3333
+            textstyle                   3
+            textfont                    10
+        }
+    }
+}

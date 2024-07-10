@@ -1,0 +1,22 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "zfeather_foa_nf_eo_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    eyeOffsetParms = material.eyeOffsetParms;
+    falloffBeginColor = material.falloffBeginColor;
+    featherParms = material.featherParms;
+    falloffEndColor = material.falloffEndColor;
+    falloffParms = material.falloffParms;
+  }
+
+  pixelShader 3.0 "zfeather_premul_nf.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+    floatZSampler = sampler.floatZ;
+    featherParms = material.featherParms;
+  }
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}

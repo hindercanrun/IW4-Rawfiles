@@ -1,0 +1,191 @@
+{
+    functionDef
+    {
+        name                        "FUNC_0"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_1"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_2"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16) * (player("teamname") == "TEAM_ALLIES")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16) * (player("teamname") == "TEAM_AXIS"));
+    }
+    functionDef
+    {
+        name                        "FUNC_3"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_4"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_5"
+        value                       (tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16) * (player("teamname") == "TEAM_AXIS")) + (tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16) * (player("teamname") == "TEAM_ALLIES"));
+    }
+    functionDef
+    {
+        name                        "FUNC_6"
+        value                       team("name") == "TEAM_ALLIES";
+    }
+    functionDef
+    {
+        name                        "FUNC_7"
+        value                       team("name") == "TEAM_AXIS";
+    }
+    functionDef
+    {
+        name                        "FUNC_8"
+        value                       ((team("name") == "TEAM_AXIS") * 1) + ((team("name") == "TEAM_ALLIES") * 2);
+    }
+    functionDef
+    {
+        name                        "FUNC_9"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 14);
+    }
+    functionDef
+    {
+        name                        "FUNC_10"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 15);
+    }
+    functionDef
+    {
+        name                        "FUNC_11"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("allieschar"), 16);
+    }
+    functionDef
+    {
+        name                        "FUNC_12"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 14);
+    }
+    functionDef
+    {
+        name                        "FUNC_13"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 15);
+    }
+    functionDef
+    {
+        name                        "FUNC_14"
+        value                       tablelookup("mp/factionTable.csv", 0, getmapcustom("axischar"), 16);
+    }
+    functionDef
+    {
+        name                        "FUNC_15"
+        value                       (FUNC_12() * FUNC_7()) + (FUNC_9() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_16"
+        value                       (FUNC_13() * FUNC_7()) + (FUNC_10() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_17"
+        value                       (FUNC_14() * FUNC_7()) + (FUNC_11() * FUNC_6());
+    }
+    functionDef
+    {
+        name                        "FUNC_18"
+        value                       (FUNC_12() * !(FUNC_7())) + (FUNC_9() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_19"
+        value                       (FUNC_13() * !(FUNC_7())) + (FUNC_10() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_20"
+        value                       (FUNC_14() * !(FUNC_7())) + (FUNC_11() * (!FUNC_6()));
+    }
+    functionDef
+    {
+        name                        "FUNC_21"
+        value                       max(0, (localvarint("ui_ac130timer") - milliseconds()) / 1000);
+    }
+    functionDef
+    {
+        name                        "FUNC_22"
+        value                       (getplayercardinfo(0, 0, 7) != 0) && (getplayercardinfo(6, 0, 7) && getplayercardinfo(6, 0, 7) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_23"
+        value                       (getplayercardinfo(0, 0, 8) != 0) && (getplayercardinfo(6, 0, 8) && getplayercardinfo(6, 0, 8) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_24"
+        value                       (getplayercardinfo(0, 0, 5) != 0) && (getplayercardinfo(6, 0, 5) && getplayercardinfo(6, 0, 5) == FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_25"
+        value                       (getplayercardinfo(0, 0, 7) != 0) && (!getplayercardinfo(6, 0, 7) || getplayercardinfo(6, 0, 7) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_26"
+        value                       (getplayercardinfo(0, 0, 8) != 0) && (!getplayercardinfo(6, 0, 8) || getplayercardinfo(6, 0, 8) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_27"
+        value                       (getplayercardinfo(0, 0, 5) != 0) && (!getplayercardinfo(6, 0, 5) || getplayercardinfo(6, 0, 5) != FUNC_8());
+    }
+    functionDef
+    {
+        name                        "FUNC_28"
+        value                       getplayerdata("customClasses", 0, "inUse") || getplayerdata("customClasses", 1, "inUse") || getplayerdata("customClasses", 2, "inUse") || getplayerdata("customClasses", 3, "inUse") || getplayerdata("customClasses", 4, "inUse") || getplayerdata("customClasses", 5, "inUse") || getplayerdata("customClasses", 6, "inUse") || getplayerdata("customClasses", 7, "inUse") || getplayerdata("customClasses", 8, "inUse") || getplayerdata("customClasses", 9, "inUse");
+    }
+    functionDef
+    {
+        name                        "FUNC_29"
+        value                       dvarbool(cl_ingame) || dvarbool(sv_running);
+    }
+    functionDef
+    {
+        name                        "FUNC_30"
+        value                       dvarbool(cl_ingame) || dvarbool(sv_running) || inlobby();
+    }
+    functionDef
+    {
+        name                        "FUNC_31"
+        value                       (dvarstring(gameMode) == "so" && FUNC_30()) || (dvarstring(gameMode) == "mp" && FUNC_30());
+    }
+    functionDef
+    {
+        name                        "FUNC_32"
+        value                       (milliseconds() % 4000) / 4000;
+    }
+    functionDef
+    {
+        name                        "FUNC_33"
+        value                       1 - FUNC_32();
+    }
+    functionDef
+    {
+        name                        "FUNC_34"
+        value                       !isempjammed();
+    }
+    functionDef
+    {
+        name                        "FUNC_35"
+        value                       (localvarstring("ui_attachment1Name") == "silencer") || (localvarstring("ui_attachment2Name") == "silencer") || (localvarstring("ui_attachment3Name") == "silencer") || (localvarstring("ui_attachment4Name") == "silencer") || (localvarstring("ui_attachment5Name") == "silencer") || (localvarstring("ui_attachment6Name") == "silencer") || (localvarstring("ui_attachment8Name") == "silencer") || (localvarstring("ui_attachment9Name") == "silencer") || (localvarstring("ui_attachment10Name") == "silencer") || (localvarstring("ui_attachment11Name") == "silencer") || (localvarstring("ui_attachment12Name") == "silencer") || (localvarstring("ui_attachment13Name") == "silencer") || (localvarstring("ui_attachment14Name") == "silencer") || (localvarstring("ui_attachment15Name") == "silencer");
+    }
+    loadMenu { "ui_mp/player_popup_party.menu" }
+    loadMenu { "ui_mp/player_popup_publiclobby.menu" }
+    loadMenu { "ui_mp/player_popup_privatematch.menu" }
+    loadMenu { "ui_mp/hostchangewarning.menu" }
+    loadMenu { "ui_mp/youarehost.menu" }
+    loadMenu { "ui_mp/popup_serverpassword.menu" }
+    loadMenu { "ui_mp/popup_joinpassword.menu" }
+    loadMenu { "ui_mp/settings_map.menu" }
+    loadMenu { "ui_mp/settings_bonus_map.menu" }
+}

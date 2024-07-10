@@ -1,0 +1,1461 @@
+{
+    menuDef
+    {
+        name                        "pc_join_unranked"
+        rect                        0 0 640 480 0 0
+        style                       1
+        focuscolor                  1 1 1 1
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        onOpen
+        {
+            uiScript UpdateFilter;
+        }
+        onESC
+        {
+            uiScript closeJoin close self;
+            open main_text;
+        }
+        itemDef
+        {
+            rect                        -107 0 854 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "animbg_blur_back"
+        }
+        itemDef
+        {
+            rect                        -107 0 1708 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "animbg_blur_fogscroll"
+            exp rect x                  (- 107) - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        -107 0 854 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "animbg_blur_front"
+        }
+        itemDef
+        {
+            rect                        -120 -32 348 64 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        228 -32 16 -64 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        56 448 528 40 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        584 448 16 64 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        40 448 -16 64 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        -120 464 160 32 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        600 464 160 32 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 0.95 0.175
+            background                  "white"
+        }
+        itemDef
+        {
+            rect                        48 40 0 0 0 0
+            decoration                  
+            visible                     1
+            textalign                   4
+            textalignx                  -36
+            textaligny                  -36
+            textscale                   0.5833
+            textstyle                   6
+            textfont                    1
+            forecolor                   1 0.8 0.4 1
+            exp text                    "@MENU_JOIN_SERVER_CAP";
+        }
+        itemDef
+        {
+            rect                        -63.5 2 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        -68 2 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        -63.5 2 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 1);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        -68 2 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 1);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        -63.5 22 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        -68 22 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        -63.5 22 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 2);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        -68 22 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 2);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        -63.5 42 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        -68 42 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        -63.5 42 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 3);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        -68 42 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 3);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        190.5 2 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        186 2 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        190.5 2 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 4);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        186 2 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 4);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        190.5 22 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        186 22 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        190.5 22 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 5);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        186 22 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 5);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        190.5 42 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        186 42 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            forecolor                   0.9 0.9 1 0.07
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            rect                        190.5 42 -229.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 6);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "gradient_fadein"
+        }
+        itemDef
+        {
+            rect                        186 42 -4.5 18 2 1
+            style                       3
+            decoration                  
+            visible                     when(localvarstring("ui_choicegroup") == "joinserver" && localvarint("ui_highlight") == 6);
+            textscale                   0.55
+            forecolor                   0.9 0.95 1 0.35
+            background                  "button_highlight_end"
+        }
+        itemDef
+        {
+            name                        "sourcefield"
+            rect                        -58 2 170 15 2 1
+            style                       1
+            type                        8
+            visible                     1
+            ownerdraw                   220
+            textaligny                  16
+            textscale                   0.33
+            textstyle                   3
+            textfont                    1
+            onFocus
+            {
+                setLocalVarInt ui_highlight 1;
+                setLocalVarString ui_choicegroup "joinserver";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+                setLocalVarString ui_choicegroup "";
+            }
+            mouseEnter
+            {
+                show message_source;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_source;
+            }
+            action
+            {
+                play mouse_click;
+            }
+        }
+        itemDef
+        {
+            name                        "gametypefield"
+            text                        "@MENU_GAME_TYPE"
+            rect                        -58 22 170 15 2 1
+            style                       1
+            type                        8
+            visible                     1
+            ownerdraw                   253
+            textaligny                  16
+            textscale                   0.33
+            textstyle                   3
+            textfont                    1
+            onFocus
+            {
+                setLocalVarInt ui_highlight 2;
+                setLocalVarString ui_choicegroup "joinserver";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+                setLocalVarString ui_choicegroup "";
+            }
+            mouseEnter
+            {
+                show message_typefilter;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_typefilter;
+            }
+            action
+            {
+                play mouse_click;
+            }
+        }
+        itemDef
+        {
+            name                        "filterServers"
+            text                        "@MENU_FILTER_SERVERS"
+            rect                        -58 42 130 15 2 1
+            style                       1
+            type                        1
+            visible                     1
+            textaligny                  16
+            textscale                   0.33
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.95 1
+            onFocus
+            {
+                setLocalVarInt ui_highlight 3;
+                setLocalVarString ui_choicegroup "joinserver";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+                setLocalVarString ui_choicegroup "";
+            }
+            mouseEnter
+            {
+                show message_filterServers;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_filterServers;
+            }
+            action
+            {
+                play mouse_click;
+                open filter_popmenu;
+            }
+        }
+        itemDef
+        {
+            name                        "refreshdate"
+            rect                        8 42 265 18 0 0
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   247
+            textaligny                  16
+            textscale                   0.25
+            textstyle                   3
+            textfont                    1
+        }
+        itemDef
+        {
+            name                        "refreshSource"
+            text                        "@MENU_REFRESH_LIST"
+            rect                        196 2 130 15 2 1
+            style                       1
+            type                        1
+            visible                     1
+            textaligny                  16
+            textscale                   0.33
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.95 1
+            onFocus
+            {
+                setLocalVarInt ui_highlight 4;
+                setLocalVarString ui_choicegroup "joinserver";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+                setLocalVarString ui_choicegroup "";
+            }
+            mouseEnter
+            {
+                show message_refreshSOurce;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_refreshSource;
+            }
+            action
+            {
+                play mouse_click;
+                uiScript RefreshServers;
+            }
+        }
+        itemDef
+        {
+            name                        "refreshFilter"
+            text                        "@MENU_QUICK_REFRESH"
+            rect                        196 22 130 15 2 1
+            style                       1
+            type                        1
+            visible                     1
+            textaligny                  16
+            textscale                   0.33
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.95 1
+            onFocus
+            {
+                setLocalVarInt ui_highlight 5;
+                setLocalVarString ui_choicegroup "joinserver";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+                setLocalVarString ui_choicegroup "";
+            }
+            mouseEnter
+            {
+                show message_refreshFilter;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_refreshFilter;
+            }
+            action
+            {
+                play mouse_click;
+                uiScript RefreshFilter;
+            }
+        }
+        itemDef
+        {
+            text                        "@MENU_NEW_FAVORITE"
+            rect                        196 42 130 15 2 1
+            style                       1
+            decoration                  
+            type                        1
+            visible                     when(dvarint(ui_netSource) != 2);
+            textaligny                  16
+            textscale                   0.33
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.5 0.5 0.5 0.5
+        }
+        itemDef
+        {
+            name                        "createFavorite"
+            text                        "@MENU_NEW_FAVORITE"
+            rect                        196 42 130 15 2 1
+            style                       1
+            type                        1
+            visible                     1
+            textaligny                  16
+            textscale                   0.33
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.95 1
+            onFocus
+            {
+                setLocalVarInt ui_highlight 6;
+                setLocalVarString ui_choicegroup "joinserver";
+            }
+            leaveFocus
+            {
+                setLocalVarInt ui_highlight 0;
+                setLocalVarString ui_choicegroup "";
+            }
+            mouseEnter
+            {
+                show message_createFavorite;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_createFavorite;
+            }
+            action
+            {
+                play mouse_click;
+                open createfavorite_popmenu;
+            }
+            dvarTest                    "ui_netSource"
+            showDvar                    { "2" }
+        }
+        itemDef
+        {
+            name                        "window"
+            group                       "grpSystembutton"
+            rect                        4 64 634 380 0 0
+            style                       1
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0 0.3
+        }
+        itemDef
+        {
+            name                        "passwordColumn"
+            group                       "grpColumn"
+            rect                        2 62 22 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "hardwareColumn"
+            group                       "grpColumn"
+            rect                        24 62 22 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "serverColumn"
+            group                       "grpColumn"
+            rect                        46 62 210 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "mapColumn"
+            group                       "grpColumn"
+            rect                        256 62 72 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "playerColumn"
+            group                       "grpColumn"
+            rect                        328 62 52 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "typeColumn"
+            group                       "grpColumn"
+            rect                        380 62 104 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "voiceColumn"
+            group                       "grpColumn"
+            rect                        484 62 22 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "pureColumn"
+            group                       "grpColumn"
+            rect                        506 62 22 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "modColumn"
+            group                       "grpColumn"
+            rect                        528 62 22 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "pbColumn"
+            group                       "grpColumn"
+            rect                        550 62 22 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "pingColumn"
+            group                       "grpColumn"
+            rect                        572 62 42 380 0 0
+            style                       1
+            decoration                  
+            border                      1
+            visible                     1
+            textscale                   0.55
+            backcolor                   0 0 0.4 0.15
+            bordercolor                 0.1 0.1 0.12 0.5
+        }
+        itemDef
+        {
+            name                        "serverlist"
+            rect                        4 80 626 363 0 0
+            style                       1
+            type                        6
+            visible                     1
+            textalign                   1
+            textscale                   0.25
+            textfont                    1
+            outlinecolor                0.9 0.9 0.95 0.175
+            execKeyInt 13
+            {
+                uiScript JoinServer;
+            }
+            elementwidth                120
+            elementheight               16
+            feeder                      2
+            columns                     11
+                                        1 16 20 0
+                                        23 16 10 0
+                                        48 208 22 0
+                                        258 70 25 0
+                                        330 50 10 0
+                                        382 102 22 0
+                                        486 16 14 0
+                                        508 16 10 0
+                                        530 16 20 0
+                                        552 20 20 0
+                                        574 40 20 0
+            doubleclick
+            {
+                uiScript JoinServer;
+            }
+        }
+        itemDef
+        {
+            name                        "password"
+            group                       "grpTabs"
+            rect                        4 64 20 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor passwordColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor passwordColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 0;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor password backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor passwordColumn backcolor 0 0 "0.4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "passwordicon"
+            rect                        7 64 16 16 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "hud_server_locked"
+        }
+        itemDef
+        {
+            name                        "hardware"
+            group                       "grpTabs"
+            rect                        26 64 20 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor hardwareColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor hardwareColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 1;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor hardware backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor hardwareColumn backcolor 0 0 "0.4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "hardwareicon"
+            rect                        29 64 16 16 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "server_hardware_header"
+        }
+        itemDef
+        {
+            name                        "server"
+            text                        "@MENU_SERVER NAME"
+            group                       "grpTabs"
+            rect                        48 64 208 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalignx                  4
+            textaligny                  14
+            textscale                   0.25
+            textfont                    1
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor serverColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor serverColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 2;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor server backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor serverColumn backcolor 0 0 "0.4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "map"
+            text                        "@MENU_MAP_NAME"
+            group                       "grpTabs"
+            rect                        258 64 70 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalignx                  4
+            textaligny                  14
+            textscale                   0.25
+            textfont                    1
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor mapColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor mapColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 3;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor map backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor mapColumn backcolor 0 0 ".4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "Players"
+            text                        "@MENU_NUMPLAYERS"
+            group                       "grpTabs"
+            rect                        330 64 50 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalignx                  4
+            textaligny                  14
+            textscale                   0.25
+            textfont                    1
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor playerColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor playerColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 4;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor Players backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor playerColumn backcolor 0 0 ".4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "Type"
+            text                        "@MENU_TYPE1"
+            group                       "grpTabs"
+            rect                        382 64 102 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalignx                  4
+            textaligny                  14
+            textscale                   0.25
+            textfont                    1
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor typeColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor typeColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 5;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor Type backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor typeColumn backcolor 0 0 ".4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "voice"
+            group                       "grpTabs"
+            rect                        486 64 20 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor voiceColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor voiceColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 6;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor voice backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor voiceColumn backcolor 0 0 ".4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "voiceicon"
+            rect                        489 64 16 16 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "voice_on"
+        }
+        itemDef
+        {
+            name                        "pure"
+            group                       "grpTabs"
+            rect                        508 64 20 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor pureColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor pureColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 7;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor pure backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor pureColumn backcolor 0 0 ".4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "pureicon"
+            rect                        510 64 16 16 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "hud_server_pure"
+        }
+        itemDef
+        {
+            name                        "Mod"
+            group                       "grpTabs"
+            rect                        530 64 20 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor modColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor modColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 8;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor Mod backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor modColumn backcolor 0 0 ".4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "modicon"
+            rect                        532 64 16 16 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "mod_header"
+        }
+        itemDef
+        {
+            name                        "pb"
+            group                       "grpTabs"
+            rect                        552 64 20 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textscale                   0.55
+            backcolor                   0.9 0.9 0.95 0.175
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor pbColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor pbColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 9;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor pb backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor pbColumn backcolor 0 0 ".4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "pbicon"
+            rect                        554 64 16 16 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            textscale                   0.55
+            background                  "punkbusterlogo"
+        }
+        itemDef
+        {
+            name                        "Ping"
+            text                        "@MENU_PING"
+            group                       "grpTabs"
+            rect                        574 64 40 16 0 0
+            style                       1
+            type                        1
+            visible                     1
+            textalignx                  4
+            textaligny                  14
+            textscale                   0.25
+            textfont                    1
+            backcolor                   0.1 0.2 0.37 1
+            mouseEnter
+            {
+                show message_sort;
+                setitemcolor pingColumn bordercolor 1 1 1 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_sort;
+                setitemcolor pingColumn bordercolor "0.1" "0.1" "0.12" "0.5";
+            }
+            action
+            {
+                play mouse_click;
+                uiScript ServerSort 10;
+                setitemcolor grpTabs backcolor "0.9" "0.9" "0.95" "0.175";
+                setitemcolor Ping backcolor ".1" ".2" ".37" 1;
+                setitemcolor grpColumn backcolor 0 0 0 0;
+                setitemcolor pingColumn backcolor 0 0 ".4" ".15";
+            }
+        }
+        itemDef
+        {
+            name                        "serverinfo"
+            text                        "@MENU_SERVER_INFO"
+            rect                        70 -26 92 20 2 3
+            style                       1
+            type                        1
+            border                      1
+            textalign                   1
+            textalignx                  9
+            textaligny                  18
+            textscale                   0.375
+            textfont                    1
+            backcolor                   0.9 0.9 0.95 0.175
+            forecolor                   0.9 0.9 0.92 0.75
+            bordercolor                 0.1 0.1 0.1 0.25
+            mouseEnter
+            {
+                show message_serverinfo;
+                setitemcolor serverinfo backcolor ".1" ".2" ".37" 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_serverinfo;
+                setitemcolor serverinfo backcolor "0.9" "0.9" "0.95" "0.175";
+            }
+            action
+            {
+                play mouse_click;
+                open serverinfo_popmenu;
+            }
+        }
+        itemDef
+        {
+            name                        "findplayer"
+            text                        "@MENU_FIND_FRIEND"
+            rect                        160 -26 92 20 2 3
+            style                       1
+            type                        1
+            border                      1
+            textalign                   1
+            textaligny                  18
+            textscale                   0.375
+            textfont                    1
+            backcolor                   0.9 0.9 0.95 0.175
+            forecolor                   0.9 0.9 0.92 0.75
+            bordercolor                 0.1 0.1 0.1 0.25
+            mouseEnter
+            {
+                show message_findplayer;
+                setitemcolor findplayer backcolor ".1" ".2" ".37" 1;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_findplayer;
+                setitemcolor findplayer backcolor "0.9" "0.9" "0.95" "0.175";
+            }
+            action
+            {
+                play mouse_click;
+                open findplayer_popmenu;
+            }
+        }
+        itemDef
+        {
+            name                        "addFavorite"
+            text                        "@MENU_ADD_TO_FAVORITES"
+            rect                        -176 -26 92 20 2 3
+            style                       1
+            type                        1
+            ownerdrawFlag               12
+            textalign                   1
+            textaligny                  18
+            textscale                   0.375
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.92 0.75
+            mouseEnter
+            {
+                show message_addFavorite;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_addFavorite;
+            }
+            action
+            {
+                play mouse_click;
+                uiScript addFavorite;
+                open fav_message_popmenu;
+            }
+        }
+        itemDef
+        {
+            name                        "delfavorite"
+            text                        "@MENU_DEL_FAVORITE"
+            rect                        -176 -26 92 20 2 3
+            style                       1
+            type                        1
+            visible                     1
+            ownerdrawFlag               2
+            textalign                   1
+            textaligny                  18
+            textscale                   0.375
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.92 0.75
+            mouseEnter
+            {
+                show message_delFavorite;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_delFavorite;
+            }
+            action
+            {
+                play mouse_click;
+                open del_fav_popmenu;
+            }
+        }
+        itemDef
+        {
+            name                        "passwordenter"
+            text                        "@MENU_PASSWORD"
+            rect                        -46 -26 80 20 2 3
+            style                       1
+            type                        1
+            visible                     1
+            textalign                   1
+            textaligny                  18
+            textscale                   0.375
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.92 0.75
+            mouseEnter
+            {
+                show message_password;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_password;
+            }
+            action
+            {
+                play mouse_click;
+                open password_popmenu;
+            }
+        }
+        itemDef
+        {
+            name                        "serverinfo"
+            text                        "@MENU_SERVER_INFO"
+            rect                        50 -26 92 20 2 3
+            style                       1
+            type                        1
+            visible                     1
+            textalign                   1
+            textaligny                  18
+            textscale                   0.375
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.92 0.75
+            mouseEnter
+            {
+                show message_password;
+                play mouse_over;
+            }
+            mouseExit
+            {
+                hide message_password;
+            }
+            action
+            {
+                play mouse_click;
+                open serverinfo_popmenu;
+            }
+        }
+        itemDef
+        {
+            name                        "accept"
+            text                        "@MENU_JOIN_SERVER"
+            rect                        160 -26 92 20 2 3
+            style                       1
+            type                        1
+            visible                     1
+            textalign                   1
+            textaligny                  18
+            textscale                   0.375
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.92 0.75
+            mouseEnter
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                uiScript JoinServer;
+            }
+        }
+        itemDef
+        {
+            name                        "back"
+            text                        "@MENU_BACK"
+            rect                        -250 -26 40 20 2 3
+            style                       1
+            type                        1
+            visible                     1
+            textaligny                  18
+            textscale                   0.375
+            textstyle                   3
+            textfont                    1
+            forecolor                   0.9 0.9 0.92 0.75
+            mouseEnter
+            {
+                play mouse_over;
+            }
+            action
+            {
+                play mouse_click;
+                close self;
+                close createserver;
+                close joinserver;
+                close multi_menu;
+                open main;
+            }
+        }
+    }
+}

@@ -1,0 +1,743 @@
+{
+    menuDef
+    {
+        name                        "pc_options_actions"
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        onOpen
+        {
+            setLocalVarBool ui_hideBack 1;
+        }
+        onClose
+        {
+            setLocalVarBool ui_hideBack 0;
+        }
+        onESC
+        {
+            close self;
+        }
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   0 0 0 1
+            background                  "black"
+        }
+        itemDef
+        {
+            rect                        0 0 1708 480 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   1 1 1 0.5
+            background                  "mw2_main_cloud_overlay"
+            exp rect x                  (0 - 107) - ((float(milliseconds() % 60000) / 60000) * (854));
+        }
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   1 1 1 0.5
+            background                  "mw2_main_cloud_overlay"
+            exp rect x                  (- 107 + 854) + ((float(milliseconds() % 50000) / 50000) * (854));
+        }
+        itemDef
+        {
+            rect                        -427 -240 854 480 2 2
+            style                       3
+            decoration                  
+            visible                     when(dvarstring(gameMode) == "sp");
+            textscale                   0.55
+            background                  "mw2_main_sp_image"
+        }
+        itemDef
+        {
+            rect                        -427 -240 854 480 2 2
+            style                       3
+            decoration                  
+            visible                     when(dvarstring(gameMode) == "so");
+            textscale                   0.55
+            background                  "mw2_main_co_image"
+        }
+        itemDef
+        {
+            rect                        -427 -240 854 480 2 2
+            style                       3
+            decoration                  
+            visible                     when(dvarstring(gameMode) == "mp");
+            textscale                   0.55
+            background                  "mw2_main_mp_image"
+        }
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       3
+            decoration                  
+            visible                     when(!FUNC_29());
+            textscale                   0.55
+            forecolor                   1 1 1 0
+            background                  "mockup_bg_glow"
+            exp forecolor a             ((sin(milliseconds() / 1500) + 1) * 0.25) + 0.25;
+        }
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            style                       3
+            decoration                  
+            visible                     when(!FUNC_29());
+            textscale                   0.55
+            forecolor                   1 1 1 0
+            background                  "mockup_bg_glow"
+            exp forecolor a             ((sin(milliseconds() / 480) + 1) * 0.25) + 0.25;
+        }
+        itemDef
+        {
+            text                        "@MENU_ACTIONS"
+            rect                        232 0 344 28 1 1
+            decoration                  
+            visible                     1
+            textalign                   5
+            textscale                   0.5
+            textfont                    9
+        }
+        itemDef
+        {
+            rect                        232 28 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+attack"
+        }
+        itemDef
+        {
+            text                        "@MENU_FIRE_WEAPON"
+            rect                        232 28 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 48 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+toggleads_throw"
+        }
+        itemDef
+        {
+            text                        "@MENU_AIM_DOWN_THE_SIGHT"
+            rect                        232 48 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 68 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+speed_throw"
+        }
+        itemDef
+        {
+            text                        "@MENU_HOLD_AIM_DOWN_SIGHT"
+            rect                        232 68 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 88 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+reload"
+        }
+        itemDef
+        {
+            text                        "@MENU_RELOAD_WEAPON"
+            rect                        232 88 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 108 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "weapnext"
+        }
+        itemDef
+        {
+            text                        "@MENU_SWITCH_WEAPON"
+            rect                        232 108 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 128 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+melee"
+        }
+        itemDef
+        {
+            text                        "@MENU_MELEE_ATTACK"
+            rect                        232 128 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 148 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+activate"
+        }
+        itemDef
+        {
+            text                        "@MENU_USE"
+            rect                        232 148 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 168 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+frag"
+        }
+        itemDef
+        {
+            text                        "@MENU_FRAG_EQUIPMENT"
+            rect                        232 168 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 188 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+smoke"
+        }
+        itemDef
+        {
+            text                        "@MENU_THROW_SPECIAL_GRENADE"
+            rect                        232 188 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 208 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+actionslot 3"
+        }
+        itemDef
+        {
+            text                        "@MENU_WEAPON_ATTACHMENT"
+            rect                        232 208 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 228 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+actionslot 4"
+        }
+        itemDef
+        {
+            text                        "@MENU_INVENTORY_KILLSTREAK"
+            rect                        232 228 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 248 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+actionslot 2"
+        }
+        itemDef
+        {
+            text                        "@MENU_SECONDARY_INVENTORY"
+            rect                        232 248 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        232 268 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+actionslot 1"
+        }
+        itemDef
+        {
+            text                        "@MENU_NVG_WATCH"
+            rect                        232 268 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            rect                        216 308 -292 1 1 1
+            style                       3
+            decoration                  
+            visible                     when(1);
+            textscale                   0.55
+            forecolor                   1 1 1 0.65
+            background                  "line_horizontal"
+        }
+        itemDef
+        {
+            rect                        232 308 344 20 1 1
+            style                       1
+            type                        14
+            visible                     when(1);
+            textalign                   4
+            textalignx                  180
+            textscale                   0.375
+            textfont                    3
+            background                  "menu_setting_selection_bar"
+            onFocus
+            {
+                setItemColor self backcolor 0 0 0 1 play mouse_over;
+                show keyBindStatus;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 0;
+                hide keyBindStatus;
+            }
+            action
+            {
+                play mouse_click;
+            }
+            dvar                        "+scores"
+        }
+        itemDef
+        {
+            text                        "@MENU_SHOW_OBJECTIVES_SCORES"
+            rect                        232 308 344 20 1 1
+            decoration                  
+            visible                     when(1);
+            textalign                   6
+            textalignx                  -180
+            textscale                   0.375
+            textfont                    3
+        }
+        itemDef
+        {
+            text                        "@PLATFORM_BACK_CAPS"
+            group                       "mw2_button"
+            rect                        -64 -20 336 20 1 3
+            style                       1
+            type                        1
+            visible                     when("@PLATFORM_BACK_CAPS" == "@PLATFORM_BACK_CAPS");
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                escape self;
+            }
+        }
+        itemDef
+        {
+            text                        "@PLATFORM_BACK_CAPS"
+            group                       "mw2_button"
+            rect                        -64 -20 336 20 1 3
+            style                       1
+            type                        1
+            visible                     when("@PLATFORM_BACK_CAPS" == "@PLATFORM_GAME_SUMMARY_CAPS");
+            textalign                   6
+            textalignx                  -60
+            textscale                   0.375
+            textfont                    3
+            disablecolor                0.6 0.55 0.55 1
+            background                  "menu_button_selection_bar"
+            onFocus
+            {
+                play mouse_over;
+                if (dvarstring(gameMode) != "mp")
+                {
+                    setItemColor mw2_button backcolor 0 0 0 0;
+                }
+                setItemColor self backcolor 0 0 0 1;
+                setLocalVarBool ui_menuAButton 1;
+            }
+            leaveFocus
+            {
+                setItemColor self backcolor 0 0 0 "0.0";
+                setLocalVarString ui_hint_text "@NULL_EMPTY";
+                setLocalVarBool ui_menuAButton 0;
+            }
+            action
+            {
+                play mouse_click;
+                play mouse_click;
+                open popup_summary;
+            }
+        }
+        itemDef
+        {
+            name                        "keyBindStatus"
+            rect                        10 20 500 240 2 3
+            style                       1
+            decoration                  
+            autowrapped                 
+            type                        8
+            ownerdraw                   250
+            textalign                   1
+            textscale                   0.375
+            forecolor                   0.65 0.65 0.65 1
+        }
+    }
+}

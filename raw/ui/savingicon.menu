@@ -1,0 +1,22 @@
+{
+    menuDef
+    {
+        name                        "savingicon"
+        rect                        -100 10 40 40 10 8
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+        visible                     1
+        itemDef
+        {
+            name                        "chRect"
+            rect                        0 0 40 40 0 0
+            decoration                  
+            type                        8
+            visible                     1
+            ownerdraw                   111
+            textscale                   0.55
+            background                  "saving"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "_type": "leaderboard",
+    "_version": 1,
+    "columns": [
+        {
+            "aggregationFunction": "last",
+            "colId": 65535,
+            "hidden": false,
+            "name": "Rank",
+            "precision": 0,
+            "propertyId": 268468225,
+            "statName": "",
+            "type": "number"
+        },
+        {
+            "aggregationFunction": "last",
+            "colId": 65533,
+            "hidden": false,
+            "name": "Gamer Name",
+            "precision": 0,
+            "propertyId": 1073774594,
+            "statName": "",
+            "type": "number"
+        }
+    ],
+    "id": 0
+}

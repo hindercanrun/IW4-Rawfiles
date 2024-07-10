@@ -1,0 +1,18 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 3.0 "vertcol_simple_fog_fo_dtex.hlsl"
+  {
+    worldMatrix = constant.transposeWorldMatrix;
+    viewProjectionMatrix = constant.transposeViewProjectionMatrix;
+    falloffBeginColor = material.falloffBeginColor;
+    falloffEndColor = material.falloffEndColor;
+    falloffParms = material.falloffParms;
+  }
+
+  pixelShader 3.0 "vertcol_simple_fog.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+  }
+  // Cannot dump vertex decl ppcc0t0t0nn due to being a referenced asset
+}
